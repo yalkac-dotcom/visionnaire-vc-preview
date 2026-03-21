@@ -7,7 +7,7 @@ export function ContactSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="contact" className="py-32 md:py-40 bg-warm-gray">
+    <section id="contact" className="py-32 md:py-40 bg-soft-ivory">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <ScrollReveal>
@@ -30,7 +30,7 @@ export function ContactSection() {
             <div className="flex flex-wrap justify-center gap-4 mb-16">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-accent/85 transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-[hsl(var(--gold-deep))] transition-all duration-200 active:scale-[0.97]"
               >
                 {t.contact.cta}
               </Link>

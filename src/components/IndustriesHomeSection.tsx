@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 
 export function IndustriesHomeSection() {
   const { t } = useLanguage();
-
-  // Show first 6 industries on homepage
   const items = t.industries.items.slice(0, 6);
 
   return (
@@ -28,12 +26,12 @@ export function IndustriesHomeSection() {
           </p>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border/50">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
           {items.map((item, i) => (
             <ScrollReveal key={item.slug} delay={i * 70}>
               <Link
                 to={`/branchen/${item.slug}`}
-                className="block bg-background p-7 md:p-9 h-full group hover:bg-warm-gray transition-colors duration-300"
+                className="block bg-cloud-neutral p-7 md:p-9 h-full group hover:bg-soft-ivory transition-colors duration-300"
               >
                 <h3 className="text-foreground text-sm md:text-base font-light mb-3 tracking-[-0.01em] group-hover:text-accent transition-colors duration-200">
                   {item.name}
@@ -41,7 +39,7 @@ export function IndustriesHomeSection() {
                 <p className="text-muted-foreground text-sm leading-[1.7] mb-6">
                   {item.desc}
                 </p>
-                <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/40 group-hover:text-accent transition-colors duration-200">
+                <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/35 group-hover:text-accent transition-colors duration-200">
                   <ArrowRight size={11} className="transition-transform duration-200 group-hover:translate-x-1" />
                 </span>
               </Link>
@@ -53,7 +51,7 @@ export function IndustriesHomeSection() {
           <div className="mt-14 text-center">
             <Link
               to="/branchen"
-              className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-foreground/60 hover:text-accent transition-colors duration-200"
+              className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-foreground/50 hover:text-accent transition-colors duration-200"
             >
               {t.industryPage.backToOverview}
               <ArrowRight size={12} />

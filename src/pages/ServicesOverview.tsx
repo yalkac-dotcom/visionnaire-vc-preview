@@ -8,7 +8,7 @@ export default function ServicesOverview() {
 
   return (
     <>
-      <section className="bg-warm-gray pt-36 pb-24 md:pt-44 md:pb-32">
+      <section className="bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32">
         <div className="container">
           <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{t.services.label}</p>
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-light leading-[1.18] tracking-[-0.01em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "250ms" }}>{t.services.headline}</h1>
@@ -18,10 +18,10 @@ export default function ServicesOverview() {
 
       <section className="py-28 md:py-36 bg-background">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-px bg-border/50">
+          <div className="grid md:grid-cols-2 gap-px bg-border">
             {t.services.items.map((item, i) => (
               <ScrollReveal key={item.slug} delay={i * 70}>
-                <Link to={`/leistungen/${item.slug}`} className="block bg-background p-8 md:p-10 lg:p-14 h-full group hover:bg-warm-gray transition-colors duration-300">
+                <Link to={`/leistungen/${item.slug}`} className="block bg-background p-8 md:p-10 lg:p-14 h-full group hover:bg-cloud-neutral transition-colors duration-300">
                   <span className="text-accent/50 text-[11px] tracking-[0.2em] font-light mb-5 block">{item.number}</span>
                   <h3 className="text-foreground text-lg md:text-xl font-light mb-4 tracking-[-0.01em] group-hover:text-accent transition-colors duration-200">{item.title}</h3>
                   <p className="text-muted-foreground text-sm leading-[1.7] mb-7">{item.desc}</p>
@@ -32,7 +32,7 @@ export default function ServicesOverview() {
                       </li>
                     ))}
                   </ul>
-                  <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/40 group-hover:text-accent transition-colors duration-200">
+                  <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/35 group-hover:text-accent transition-colors duration-200">
                     {t.services.requestCta} <ArrowRight size={12} className="transition-transform duration-200 group-hover:translate-x-1" />
                   </span>
                 </Link>
