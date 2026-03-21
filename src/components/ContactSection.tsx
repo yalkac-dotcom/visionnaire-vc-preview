@@ -47,7 +47,7 @@ export function ContactSection() {
             <div className="flex flex-col sm:flex-row justify-center gap-8 text-sm text-muted-foreground">
               <a
                 href={`mailto:${t.contact.email}`}
-                className="inline-flex items-center gap-2.5 hover:text-[hsl(var(--gold-deep))] transition-colors duration-200"
+                className="inline-flex items-center gap-2.5 hover:text-[hsl(var(--brand-blue))] transition-colors duration-200"
               >
                 <Mail size={14} strokeWidth={1.5} />
                 {t.contact.email}
