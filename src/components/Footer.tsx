@@ -1,4 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   const { t } = useLanguage();
@@ -7,6 +8,25 @@ export function Footer() {
   return (
     <footer className="bg-primary py-14 md:py-18">
       <div className="container">
+        {/* Nav links */}
+        <div className="mb-10 pb-10 border-b border-primary-foreground/6 flex flex-wrap gap-x-8 gap-y-3 text-[11px] uppercase tracking-[0.18em]">
+          <Link to="/#services" className="text-primary-foreground/30 hover:text-primary-foreground/60 transition-colors duration-200">
+            {t.footer.navServices}
+          </Link>
+          <Link to="/branchen" className="text-primary-foreground/30 hover:text-primary-foreground/60 transition-colors duration-200">
+            {t.footer.navIndustries}
+          </Link>
+          <Link to="/unternehmensbereiche" className="text-primary-foreground/30 hover:text-primary-foreground/60 transition-colors duration-200">
+            {t.nav.businessUnits}
+          </Link>
+          <Link to="/#why-us" className="text-primary-foreground/30 hover:text-primary-foreground/60 transition-colors duration-200">
+            {t.nav.whyUs}
+          </Link>
+          <Link to="/#contact" className="text-primary-foreground/30 hover:text-primary-foreground/60 transition-colors duration-200">
+            {t.footer.navContact}
+          </Link>
+        </div>
+
         {/* Domizil note */}
         <div className="mb-10 pb-10 border-b border-primary-foreground/6">
           <p className="text-primary-foreground/25 text-[11px] tracking-[0.15em] uppercase">
@@ -44,16 +64,10 @@ export function Footer() {
             >
               {t.footer.domizilLink}
             </a>
-            <a
-              href="#"
-              className="hover:text-primary-foreground/60 transition-colors duration-200"
-            >
+            <a href="#" className="hover:text-primary-foreground/60 transition-colors duration-200">
               {t.footer.impressum}
             </a>
-            <a
-              href="#"
-              className="hover:text-primary-foreground/60 transition-colors duration-200"
-            >
+            <a href="#" className="hover:text-primary-foreground/60 transition-colors duration-200">
               {t.footer.datenschutz}
             </a>
           </div>
