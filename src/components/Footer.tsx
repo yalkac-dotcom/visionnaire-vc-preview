@@ -15,7 +15,7 @@ export function Footer() {
           <Link to="/unternehmensbereiche" className="text-soft-charcoal hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.navBusinessUnits}</Link>
           <Link to="/ueber-uns" className="text-soft-charcoal hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.navAbout}</Link>
           <Link to="/insights" className="text-soft-charcoal hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.navInsights}</Link>
-          <Link to="/#contact" className="text-soft-charcoal hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.navContact}</Link>
+          <Link to="/kontakt" className="text-soft-charcoal hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.navContact}</Link>
         </div>
 
         {/* Domizil note */}
