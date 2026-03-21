@@ -6,59 +6,59 @@
 
 @layer base {
   :root {
-    /* Visionnaire CI — refined editorial palette */
-    --background: 38 22% 95%;        /* Warm White #F6F3ED */
+    /* Visionnaire CI — refined editorial palette (warmer, more substance) */
+    --background: 36 28% 92%;        /* Warm White #F3EEE6 */
     --foreground: 216 10% 16%;       /* Primary Text #262A30 */
 
-    --card: 34 22% 91%;              /* Soft Ivory #EEE7DC */
+    --card: 34 28% 87%;              /* Refined Ivory #E9DFD1 */
     --card-foreground: 216 10% 16%;
 
-    --popover: 34 22% 91%;
+    --popover: 34 28% 87%;
     --popover-foreground: 216 10% 16%;
 
     /* Primary — Blue brand */
     --primary: 210 35% 22%;           /* Primary Blue #24364A */
-    --primary-foreground: 38 22% 96%;
+    --primary-foreground: 36 28% 96%;
 
-    --secondary: 34 22% 91%;         /* Soft Ivory */
+    --secondary: 34 28% 87%;         /* Refined Ivory */
     --secondary-foreground: 216 10% 16%;
 
-    --muted: 34 22% 91%;
-    --muted-foreground: 215 8% 47%;  /* Muted Text #6F7680 */
+    --muted: 34 28% 87%;
+    --muted-foreground: 213 8% 44%;  /* Muted Text #69707A */
 
     /* Accent — Rich Blue */
     --accent: 209 35% 29%;            /* Rich Blue #304A63 */
-    --accent-foreground: 38 22% 96%;
+    --accent-foreground: 36 28% 96%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 32 22% 82%;            /* Light Stone edge */
-    --input: 30 20% 76%;
+    --border: 32 24% 78%;            /* Stronger stone edge */
+    --input: 30 22% 72%;
     --ring: 210 35% 22%;
 
     --radius: 0.125rem;
 
     /* Custom tokens */
     --dark-surface: 210 20% 18%;
-    --deep-taupe: 215 8% 47%;
+    --deep-taupe: 213 8% 44%;
     --gold: 38 38% 52%;              /* Primary Gold #B39156 */
     --gold-soft: 38 34% 59%;         /* Soft Gold #C4A56B */
     --gold-deep: 37 32% 42%;         /* Deep Gold #947643 */
     --gold-tint: 36 32% 82%;         /* Gold Tint #E7D9BD */
-    --warm-white: 38 22% 95%;        /* #F6F3ED */
-    --soft-ivory: 34 22% 91%;        /* #EEE7DC */
-    --light-stone: 30 22% 85%;       /* #E4DACC */
-    --cloud-neutral: 36 20% 93%;
-    --soft-charcoal: 215 10% 33%;    /* Secondary Text #4B535D */
-    --warm-grey: 215 8% 47%;         /* Muted Text #6F7680 */
+    --warm-white: 36 28% 92%;        /* #F3EEE6 */
+    --soft-ivory: 34 28% 87%;        /* #E9DFD1 */
+    --light-stone: 32 28% 80%;       /* #DDD0BD */
+    --cloud-neutral: 35 26% 90%;     /* Between warm-white and ivory */
+    --soft-charcoal: 213 10% 32%;    /* Secondary Text #49515B */
+    --warm-grey: 213 8% 44%;         /* Muted Text #69707A */
     --footer-bg: 210 33% 18%;        /* Deep Footer Blue #1E2D3E */
 
     /* Blue brand tokens */
     --brand-blue: 210 35% 22%;       /* Primary Blue #24364A */
     --brand-blue-light: 209 35% 29%; /* Rich Blue #304A63 */
-    --brand-blue-muted: 212 16% 47%; /* Soft Blue-Grey #66788C */
-    --brand-blue-tint: 210 18% 88%;
+    --brand-blue-muted: 209 16% 49%; /* Soft Blue-Grey #6A7C90 */
+    --brand-blue-tint: 210 20% 86%;
 
     --sidebar-background: 38 22% 95%;
     --sidebar-foreground: 216 10% 16%;
