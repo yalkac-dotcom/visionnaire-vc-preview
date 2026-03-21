@@ -68,7 +68,7 @@ export const translations: Record<Locale, Translations> = {
       subline: "Strategische Beratung und hochwertige Geschäftsumfelder — verbunden durch dieselbe Haltung, getragen von einem gemeinsamen Qualitätsanspruch.",
       architectureLabel: "Markenarchitektur",
       architectureHeadline: "Zwei Ausdrucksformen, eine Markenwelt",
-      architectureText: "Visionnaire Consulting und Visionnaire Domicil verbindet ein gemeinsamer Qualitätsanspruch und dieselbe ruhige, strategische Grundhaltung. Was sie unterscheidet, ist ihr jeweiliger Fokus — strategische Beratung auf der einen, hochwertige Geschäftsräume und repräsentative Umfelder auf der anderen Seite. Gemeinsam bilden sie eine kohärente Markenwelt, die in unterschiedlichen Feldern mit demselben Anspruch agiert.",
+      architectureText: "Visionnaire Consulting und Visionnaire Domizil verbindet ein gemeinsamer Qualitätsanspruch und dieselbe ruhige, strategische Grundhaltung. Was sie unterscheidet, ist ihr jeweiliger Fokus — strategische Beratung auf der einen, hochwertige Geschäftsräume und repräsentative Umfelder auf der anderen Seite. Gemeinsam bilden sie eine kohärente Markenwelt, die in unterschiedlichen Feldern mit demselben Anspruch agiert.",
       items: [
         {
           name: "Visionnaire Consulting",
@@ -77,8 +77,8 @@ export const translations: Record<Locale, Translations> = {
           role: "Muttermarke",
         },
         {
-          name: "Visionnaire Domicil",
-          desc: "Hochwertige Büro- und Geschäftsraumlösungen in repräsentativem Umfeld. Visionnaire Domicil steht für Premiumbüros, professionelle Geschäftsräume, Business-Center-nahe Services und eine kultivierte Arbeitsumgebung mit klarem Qualitätsanspruch.",
+          name: "Visionnaire Domizil",
+          desc: "Hochwertige Büro- und Geschäftsraumlösungen in repräsentativem Umfeld. Visionnaire Domizil steht für Premiumbüros, professionelle Geschäftsräume, Business-Center-nahe Services und eine kultivierte Arbeitsumgebung mit klarem Qualitätsanspruch.",
           href: "https://visionnaire.de",
           role: "Verbundener Geschäftsbereich",
         },
@@ -184,7 +184,7 @@ export const translations: Record<Locale, Translations> = {
       brand: "VISIONNAIRE",
       consulting: "Consulting",
       rights: "Alle Rechte vorbehalten.",
-      domizilLink: "Visionnaire Domicil",
+      domizilLink: "Visionnaire Domizil",
       domizilNote: "Ein verbundener Geschäftsbereich der Visionnaire-Welt",
       impressum: "Impressum",
       datenschutz: "Datenschutz",
@@ -330,7 +330,7 @@ export const translations: Record<Locale, Translations> = {
       subline: "Strategic advisory and premium business environments — connected by the same conviction, carried by a shared commitment to quality.",
       architectureLabel: "Brand Architecture",
       architectureHeadline: "Two expressions, one brand world",
-      architectureText: "Visionnaire Consulting and Visionnaire Domicil share a common commitment to quality and the same calm, strategic disposition. What distinguishes them is their respective focus — strategic advisory on one side, premium business spaces and distinguished environments on the other. Together, they form a coherent brand world that operates across different fields with the same exacting standards.",
+      architectureText: "Visionnaire Consulting and Visionnaire Domizil share a common commitment to quality and the same calm, strategic disposition. What distinguishes them is their respective focus — strategic advisory on one side, premium business spaces and distinguished environments on the other. Together, they form a coherent brand world that operates across different fields with the same exacting standards.",
       items: [
         {
           name: "Visionnaire Consulting",
@@ -339,8 +339,8 @@ export const translations: Record<Locale, Translations> = {
           role: "Parent Brand",
         },
         {
-          name: "Visionnaire Domicil",
-          desc: "Premium office and business space solutions in distinguished environments. Visionnaire Domicil stands for premium offices, professional business rooms, business-centre services and a cultivated working environment with a clear commitment to quality.",
+          name: "Visionnaire Domizil",
+          desc: "Premium office and business space solutions in distinguished environments. Visionnaire Domizil stands for premium offices, professional business rooms, business-centre services and a cultivated working environment with a clear commitment to quality.",
           href: "https://visionnaire.de",
           role: "Connected Business Area",
         },
@@ -446,7 +446,7 @@ export const translations: Record<Locale, Translations> = {
       brand: "VISIONNAIRE",
       consulting: "Consulting",
       rights: "All rights reserved.",
-      domizilLink: "Visionnaire Domicil",
+      domizilLink: "Visionnaire Domizil",
       domizilNote: "A connected business area of the Visionnaire world",
       impressum: "Legal Notice",
       datenschutz: "Privacy Policy",

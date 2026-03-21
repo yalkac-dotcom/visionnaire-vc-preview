@@ -10,7 +10,7 @@ export function BusinessUnitsHomeSection() {
     <section id="business-units" className="py-24 md:py-28 bg-cloud-neutral">
       <div className="container">
         <ScrollReveal>
-          <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5">{t.businessUnits.label}</p>
+          <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">{t.businessUnits.label}</p>
         </ScrollReveal>
         <ScrollReveal delay={80}>
           <h2 className="text-foreground text-xl md:text-2xl font-light mb-5 tracking-[-0.01em]">{t.businessUnits.headline}</h2>
@@ -28,11 +28,11 @@ export function BusinessUnitsHomeSection() {
                 <h3 className="text-foreground text-sm font-medium mb-3 tracking-[-0.01em]">{unit.name}</h3>
                 <p className="text-muted-foreground text-sm leading-[1.7] mb-6 flex-1">{unit.desc.length > 160 ? unit.desc.substring(0, 160) + "…" : unit.desc}</p>
                 {i === 0 ? (
-                  <Link to="/leistungen" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-foreground transition-colors duration-200">
+                  <Link to="/leistungen" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
                     {t.cta.consultationCta} <ArrowUpRight size={11} />
                   </Link>
                 ) : (
-                  <a href={unit.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-foreground transition-colors duration-200">
+                  <a href={unit.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
                     {t.cta.contactCta} <ArrowUpRight size={11} />
                   </a>
                 )}
@@ -43,7 +43,7 @@ export function BusinessUnitsHomeSection() {
 
         <ScrollReveal delay={200}>
           <div className="mt-10 text-center">
-            <Link to="/unternehmensbereiche" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-foreground transition-colors duration-200">
+            <Link to="/unternehmensbereiche" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
               {t.nav.businessUnits} <ArrowUpRight size={11} />
             </Link>
           </div>

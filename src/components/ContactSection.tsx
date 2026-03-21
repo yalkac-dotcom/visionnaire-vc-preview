@@ -11,7 +11,7 @@ export function ContactSection() {
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <ScrollReveal>
-            <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5">
+            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">
               {t.contact.label}
             </p>
           </ScrollReveal>
@@ -36,7 +36,7 @@ export function ContactSection() {
               </Link>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--gold-tint))] transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-[hsl(var(--brand-blue))]/25 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
               >
                 {t.contact.ctaSecondary}
               </Link>
@@ -47,14 +47,14 @@ export function ContactSection() {
             <div className="flex flex-col sm:flex-row justify-center gap-8 text-sm text-muted-foreground">
               <a
                 href={`mailto:${t.contact.email}`}
-                className="inline-flex items-center gap-2.5 hover:text-[hsl(var(--gold-deep))] transition-colors duration-200"
+                className="inline-flex items-center gap-2.5 hover:text-[hsl(var(--brand-blue))] transition-colors duration-200"
               >
                 <Mail size={14} strokeWidth={1.5} />
                 {t.contact.email}
               </a>
               <a
                 href={`tel:${t.contact.phone.replace(/\s/g, "")}`}
-                className="inline-flex items-center gap-2.5 hover:text-[hsl(var(--gold-deep))] transition-colors duration-200"
+                className="inline-flex items-center gap-2.5 hover:text-[hsl(var(--brand-blue))] transition-colors duration-200"
               >
                 <Phone size={14} strokeWidth={1.5} />
                 {t.contact.phone}

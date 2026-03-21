@@ -16,9 +16,9 @@
     --popover: 43 37% 96%;
     --popover-foreground: 34 8% 17%;
 
-    /* Primary — Gold accent (used for buttons) */
-    --primary: 40 39% 55%;          /* Primary Gold #B89A5E */
-    --primary-foreground: 34 8% 17%; /* Dark text on gold #2F2C28 — WCAG AA 5.2:1 */
+    /* Primary — Blue brand (used for buttons) */
+    --primary: 215 40% 28%;          /* Deep corporate blue #2B3F5C */
+    --primary-foreground: 40 36% 97%; /* Light text on blue #FAF8F4 */
 
     --secondary: 37 35% 93%;        /* Soft Ivory #F3EEE6 */
     --secondary-foreground: 34 8% 17%;
@@ -26,16 +26,16 @@
     --muted: 37 35% 93%;
     --muted-foreground: 33 7% 51%;  /* Warm Grey #8A8278 */
 
-    /* Accent — Deep Gold for hover */
-    --accent: 39 33% 47%;           /* Deep Gold #9E8350 */
-    --accent-foreground: 43 40% 97%; /* Light text on deep gold — 6.3:1 */
+    /* Accent — Slightly lighter blue for hover */
+    --accent: 215 35% 22%;           /* Darker blue for hover #2A3750 */
+    --accent-foreground: 40 36% 97%; /* Light text */
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 34 25% 85%;           /* #E5DCCF */
     --input: 35 22% 82%;            /* #DDD3C4 */
-    --ring: 40 39% 55%;             /* Primary Gold focus ring */
+    --ring: 215 40% 28%;             /* Blue focus ring */
 
     --radius: 0.125rem;
 
@@ -52,7 +52,13 @@
     --cloud-neutral: 43 37% 96%;    /* #F9F7F2 */
     --soft-charcoal: 34 8% 33%;     /* #5A544C */
     --warm-grey: 33 7% 51%;         /* #8A8278 */
-    --footer-bg: 36 30% 89%;        /* #EFE7DB */
+    --footer-bg: 215 35% 18%;       /* Elegant dark blue #1E2A3D */
+
+    /* Blue brand tokens */
+    --brand-blue: 215 40% 28%;      /* Deep corporate blue #2B3F5C */
+    --brand-blue-light: 215 30% 38%; /* Mid blue #44567A */
+    --brand-blue-muted: 215 20% 50%; /* Muted blue for text */
+    --brand-blue-tint: 215 25% 92%; /* Very light blue tint #E4E9F0 */
 
     --sidebar-background: 43 37% 96%;
     --sidebar-foreground: 34 8% 17%;
@@ -114,6 +120,15 @@
   }
   .bg-footer {
     background-color: hsl(var(--footer-bg));
+  }
+  .bg-brand-blue {
+    background-color: hsl(var(--brand-blue));
+  }
+  .bg-brand-blue-tint {
+    background-color: hsl(var(--brand-blue-tint));
+  }
+  .text-brand-blue {
+    color: hsl(var(--brand-blue));
   }
   .text-soft-charcoal {
     color: hsl(var(--soft-charcoal));

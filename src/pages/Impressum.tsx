@@ -12,7 +12,7 @@ export default function Impressum() {
       <section className="bg-soft-ivory pt-36 pb-20 md:pt-44 md:pb-28">
         <div className="container">
           <p
-            className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up"
+            className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up"
             style={{ animationDelay: "100ms" }}
           >
             {im.label}
@@ -47,9 +47,9 @@ export default function Impressum() {
                   <p className="text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">Telefon</p>
                   <a
                     href={`tel:${im.phone.replace(/\s/g, "")}`}
-                    className="inline-flex items-center gap-2.5 text-foreground text-sm hover:text-[hsl(var(--gold-deep))] transition-colors duration-200"
+                    className="inline-flex items-center gap-2.5 text-foreground text-sm hover:text-[hsl(var(--brand-blue))] transition-colors duration-200"
                   >
-                    <Phone size={13} strokeWidth={1.5} className="text-[hsl(var(--gold-soft))]" />
+                    <Phone size={13} strokeWidth={1.5} className="text-muted-foreground" />
                     {im.phone}
                   </a>
                 </div>
@@ -65,9 +65,9 @@ export default function Impressum() {
                 <p className="text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">E-Mail</p>
                 <a
                   href={`mailto:${im.email}`}
-                  className="inline-flex items-center gap-2.5 text-foreground text-sm hover:text-[hsl(var(--gold-deep))] transition-colors duration-200"
+                  className="inline-flex items-center gap-2.5 text-foreground text-sm hover:text-[hsl(var(--brand-blue))] transition-colors duration-200"
                 >
-                  <Mail size={13} strokeWidth={1.5} className="text-[hsl(var(--gold-soft))]" />
+                  <Mail size={13} strokeWidth={1.5} className="text-muted-foreground" />
                   {im.email}
                 </a>
               </div>

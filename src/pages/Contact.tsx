@@ -13,7 +13,7 @@ export default function Contact() {
       <section className="bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32">
         <div className="container">
           <p
-            className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up"
+            className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up"
             style={{ animationDelay: "100ms" }}
           >
             {t.contact.label}
@@ -161,12 +161,12 @@ export default function Contact() {
                 <div className="md:pt-4">
                   {/* Address */}
                   <div className="mb-14">
-                    <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-7">
+                    <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-7">
                       {t.contact.label}
                     </p>
                     {t.contact.address && (
                       <div className="flex items-start gap-3 text-foreground text-sm mb-5">
-                        <MapPin size={14} strokeWidth={1.5} className="text-[hsl(var(--gold-soft))] mt-0.5 shrink-0" />
+                        <MapPin size={14} strokeWidth={1.5} className="text-muted-foreground mt-0.5 shrink-0" />
                         <div>
                           <p className="font-medium">{t.contact.address}</p>
                           {t.contact.addressLines?.map((line) => (
@@ -181,16 +181,16 @@ export default function Contact() {
                   <div className="mb-14 pb-14 border-b border-border">
                     <a
                       href={`tel:${t.contact.phone.replace(/\s/g, "")}`}
-                      className="flex items-center gap-3 text-foreground text-sm hover:text-[hsl(var(--gold-deep))] transition-colors duration-200 mb-4"
+                      className="flex items-center gap-3 text-foreground text-sm hover:text-[hsl(var(--brand-blue))] transition-colors duration-200 mb-4"
                     >
-                      <Phone size={14} strokeWidth={1.5} className="text-[hsl(var(--gold-soft))]" />
+                      <Phone size={14} strokeWidth={1.5} className="text-muted-foreground" />
                       {t.contact.phone}
                     </a>
                     <a
                       href={`mailto:${t.contact.email}`}
-                      className="flex items-center gap-3 text-foreground text-sm hover:text-[hsl(var(--gold-deep))] transition-colors duration-200"
+                      className="flex items-center gap-3 text-foreground text-sm hover:text-[hsl(var(--brand-blue))] transition-colors duration-200"
                     >
-                      <Mail size={14} strokeWidth={1.5} className="text-[hsl(var(--gold-soft))]" />
+                      <Mail size={14} strokeWidth={1.5} className="text-muted-foreground" />
                       {t.contact.email}
                     </a>
                   </div>

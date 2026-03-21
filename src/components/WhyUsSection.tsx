@@ -10,7 +10,7 @@ export function WhyUsSection() {
         <div className="grid md:grid-cols-12 gap-12 md:gap-16 mb-20">
           <div className="md:col-span-5">
             <ScrollReveal>
-              <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
+              <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">
                 {t.whyUs.label}
               </p>
               <h2 className="text-foreground text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-light leading-[1.2] tracking-[-0.01em]">

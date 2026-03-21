@@ -39,10 +39,10 @@ export function Header() {
     ? "bg-[hsl(40_36%_95%/0.88)] backdrop-blur-md shadow-[0_1px_0_0_hsl(var(--border))]"
     : "bg-background";
 
-  const linkClass = "text-foreground/50 hover:text-[hsl(var(--gold-deep))] text-[11px] uppercase tracking-[0.18em] transition-colors duration-200";
+  const linkClass = "text-foreground/50 hover:text-[hsl(var(--brand-blue))] text-[11px] uppercase tracking-[0.18em] transition-colors duration-200";
 
   const dropdownBg = "bg-card border border-border";
-  const dropdownTextClass = "text-foreground/50 hover:text-[hsl(var(--gold-deep))] hover:bg-secondary";
+  const dropdownTextClass = "text-foreground/50 hover:text-[hsl(var(--brand-blue))] hover:bg-secondary";
   const dropdownItemClass = `block px-6 py-3.5 ${dropdownTextClass} text-[11px] uppercase tracking-[0.18em] transition-colors duration-200`;
 
   const SmartLink = ({ to, children, className }: { to: string; children: React.ReactNode; className?: string }) => {
@@ -108,7 +108,7 @@ export function Header() {
             {locale === "de" ? "EN" : "DE"}
           </button>
 
-          <SmartLink to="/#contact" className="ml-1 text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-primary hover:bg-primary hover:text-primary-foreground px-6 py-2.5 transition-all duration-200 active:scale-[0.97]">
+          <SmartLink to="/#contact" className="ml-1 text-[11px] uppercase tracking-[0.18em] border border-[hsl(var(--brand-blue))]/25 text-primary hover:bg-primary hover:text-primary-foreground px-6 py-2.5 transition-all duration-200 active:scale-[0.97]">
             {t.nav.projectCta}
           </SmartLink>
         </nav>
