@@ -23,7 +23,7 @@ export interface Translations {
   footer: { brand: string; consulting: string; rights: string; domizilLink: string; impressum: string; datenschutz: string };
 }
 
-export const translations = {
+export const translations: Record<Locale, Translations> = {
   de: {
     nav: {
       expertise: "Expertise",
