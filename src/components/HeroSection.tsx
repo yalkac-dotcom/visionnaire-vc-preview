@@ -53,15 +53,16 @@ export function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <a
-        href="#expertise"
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 group"
-        aria-label="Scroll down"
-      >
-        <div className="w-[22px] h-[36px] rounded-full border border-primary-foreground/25 flex items-start justify-center pt-[7px] animate-scroll-indicator">
-          <div className="w-[3px] h-[7px] rounded-full bg-primary-foreground/50 animate-scroll-dot" />
-        </div>
-      </a>
+      <div className="absolute bottom-10 left-0 right-0 z-10 flex justify-center">
+        <a
+          href="#expertise"
+          aria-label="Scroll down"
+        >
+          <div className="w-[22px] h-[36px] rounded-full border border-primary-foreground/25 flex items-start justify-center pt-[7px] animate-scroll-indicator">
+            <div className="w-[3px] h-[7px] rounded-full bg-primary-foreground/50 animate-scroll-dot" />
+          </div>
+        </a>
+      </div>
 
       {/* Subtle bottom divider */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-foreground/10 to-transparent" />
