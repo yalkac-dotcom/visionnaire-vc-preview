@@ -5,16 +5,16 @@ export function HeroSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-screen flex items-center bg-primary overflow-hidden">
-      {/* Background image */}
+    <section className="relative min-h-[92vh] flex items-center bg-primary overflow-hidden">
+      {/* Background image — lighter overlay */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Premium corporate architecture"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-40"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/70 to-primary/40" />
       </div>
 
       {/* Content */}
@@ -27,7 +27,7 @@ export function HeroSection() {
             {t.hero.headline}
           </h1>
           <p
-            className="text-primary-foreground/50 text-[15px] md:text-base leading-[1.7] max-w-[520px] mb-12 animate-reveal-up"
+            className="text-primary-foreground/60 text-[15px] md:text-base leading-[1.7] max-w-[520px] mb-12 animate-reveal-up"
             style={{ animationDelay: "400ms" }}
           >
             {t.hero.subline}
@@ -38,19 +38,19 @@ export function HeroSection() {
           >
             <a
               href="#contact"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-accent/90 transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-accent/85 transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.cta}
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary-foreground/20 text-primary-foreground/70 hover:text-primary-foreground px-7 py-3 hover:bg-primary-foreground/5 transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary-foreground/25 text-primary-foreground/75 hover:text-primary-foreground px-7 py-3 hover:bg-primary-foreground/5 transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.ctaSecondary}
             </a>
           </div>
           <p
-            className="text-primary-foreground/25 text-[11px] tracking-[0.2em] uppercase animate-reveal-up"
+            className="text-primary-foreground/30 text-[11px] tracking-[0.2em] uppercase animate-reveal-up"
             style={{ animationDelay: "800ms" }}
           >
             {t.hero.tagline}
@@ -67,7 +67,6 @@ export function HeroSection() {
         </a>
       </div>
 
-      {/* Bottom divider */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-foreground/8 to-transparent" />
     </section>
   );
