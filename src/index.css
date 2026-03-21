@@ -90,29 +90,42 @@
 }
 
 @layer utilities {
-  .text-navy {
-    color: hsl(var(--navy));
-  }
-  .bg-navy {
-    background-color: hsl(var(--navy));
-  }
-  .bg-navy-light {
-    background-color: hsl(var(--navy-light));
-  }
-  .bg-navy-dark {
-    background-color: hsl(var(--navy-dark));
-  }
-  .text-gold-accent {
+  .text-gold {
     color: hsl(var(--gold));
   }
+  .bg-dark-surface {
+    background-color: hsl(var(--dark-surface));
+  }
+  .bg-warm-white {
+    background-color: hsl(var(--warm-white));
+  }
+  .bg-soft-ivory {
+    background-color: hsl(var(--soft-ivory));
+  }
+  .bg-light-stone {
+    background-color: hsl(var(--light-stone));
+  }
+  .bg-cloud-neutral {
+    background-color: hsl(var(--cloud-neutral));
+  }
+  .bg-gold-tint {
+    background-color: hsl(var(--gold-tint));
+  }
+  .text-soft-charcoal {
+    color: hsl(var(--soft-charcoal));
+  }
+  .text-warm-grey {
+    color: hsl(var(--warm-grey));
+  }
+  .border-light-stone {
+    border-color: hsl(var(--light-stone));
+  }
+  /* Legacy aliases for compatibility */
   .bg-warm-gray {
-    background-color: hsl(var(--warm-gray));
+    background-color: hsl(var(--soft-ivory));
   }
   .bg-warm-gray-dark {
-    background-color: hsl(var(--warm-gray-dark));
-  }
-  .border-gold-accent {
-    border-color: hsl(var(--gold));
+    background-color: hsl(var(--light-stone));
   }
 }
 
