@@ -68,7 +68,7 @@ export const translations: Record<Locale, Translations> = {
       subline: "Strategische Beratung und hochwertige Geschäftsumfelder — verbunden durch dieselbe Haltung, getragen von einem gemeinsamen Qualitätsanspruch.",
       architectureLabel: "Markenarchitektur",
       architectureHeadline: "Zwei Ausdrucksformen, eine Markenwelt",
-      architectureText: "Visionnaire Consulting und Visionnaire Domicil verbindet ein gemeinsamer Qualitätsanspruch und dieselbe ruhige, strategische Grundhaltung. Was sie unterscheidet, ist ihr jeweiliger Fokus — strategische Beratung auf der einen, hochwertige Geschäftsräume und repräsentative Umfelder auf der anderen Seite. Gemeinsam bilden sie eine kohärente Markenwelt, die in unterschiedlichen Feldern mit demselben Anspruch agiert.",
+      architectureText: "Visionnaire Consulting und Visionnaire Domizil verbindet ein gemeinsamer Qualitätsanspruch und dieselbe ruhige, strategische Grundhaltung. Was sie unterscheidet, ist ihr jeweiliger Fokus — strategische Beratung auf der einen, hochwertige Geschäftsräume und repräsentative Umfelder auf der anderen Seite. Gemeinsam bilden sie eine kohärente Markenwelt, die in unterschiedlichen Feldern mit demselben Anspruch agiert.",
       items: [
         {
           name: "Visionnaire Consulting",
