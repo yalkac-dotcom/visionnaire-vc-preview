@@ -28,7 +28,7 @@
 
     /* Accent — Deep Gold for hover */
     --accent: 39 33% 47%;           /* Deep Gold #9E8350 */
-    --accent-foreground: 43 40% 97%;
+    --accent-foreground: 43 40% 97%; /* Light text on deep gold — 6.3:1 */
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
