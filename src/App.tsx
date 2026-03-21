@@ -15,6 +15,7 @@ import About from "./pages/About";
 import Insights from "./pages/Insights";
 import Contact from "./pages/Contact";
 import Impressum from "./pages/Impressum";
+import Datenschutz from "./pages/Datenschutz";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
