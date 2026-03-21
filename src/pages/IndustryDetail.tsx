@@ -10,31 +10,30 @@ export default function IndustryDetail() {
   const industry = t.industries.items.find((i) => i.slug === slug);
   if (!industry) return <Navigate to="/branchen" replace />;
 
-  // Find matching services for this industry
   const matchingServices = t.services.items.filter((s) =>
     s.relevantIndustries.includes(industry.slug)
   );
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-primary pt-32 pb-20 md:pt-40 md:pb-28">
+      {/* Hero — light */}
+      <section className="bg-warm-gray pt-36 pb-24 md:pt-44 md:pb-32">
         <div className="container">
           <Link
             to="/branchen"
-            className="inline-flex items-center gap-2 text-primary-foreground/30 hover:text-primary-foreground/60 text-[11px] uppercase tracking-[0.18em] mb-10 transition-colors duration-200"
+            className="inline-flex items-center gap-2 text-muted-foreground/50 hover:text-accent text-[11px] uppercase tracking-[0.18em] mb-10 transition-colors duration-200"
           >
             <ArrowLeft size={12} />
             {t.industryPage.backToOverview}
           </Link>
           <h1
-            className="text-primary-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-light leading-[1.18] tracking-[-0.01em] max-w-2xl mb-7 animate-reveal-up"
+            className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-light leading-[1.18] tracking-[-0.01em] max-w-2xl mb-7 animate-reveal-up"
             style={{ animationDelay: "150ms" }}
           >
             {industry.heroHeadline}
           </h1>
           <p
-            className="text-primary-foreground/45 text-[15px] md:text-base leading-[1.7] max-w-xl mb-12 animate-reveal-up"
+            className="text-muted-foreground text-[15px] md:text-base leading-[1.7] max-w-xl mb-12 animate-reveal-up"
             style={{ animationDelay: "300ms" }}
           >
             {industry.heroSubline}
@@ -42,7 +41,7 @@ export default function IndustryDetail() {
           <div className="flex flex-wrap gap-4 animate-reveal-up" style={{ animationDelay: "450ms" }}>
             <Link
               to="/#contact"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-accent/90 transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-accent/85 transition-all duration-200 active:scale-[0.97]"
             >
               {t.industryPage.ctaPrimary}
             </Link>
@@ -50,8 +49,8 @@ export default function IndustryDetail() {
         </div>
       </section>
 
-      {/* Intro / Branchenverständnis */}
-      <section className="py-24 md:py-32 bg-background">
+      {/* Intro */}
+      <section className="py-28 md:py-36 bg-background">
         <div className="container">
           <div className="max-w-3xl">
             <ScrollReveal>
@@ -64,7 +63,7 @@ export default function IndustryDetail() {
       </section>
 
       {/* Consulting fields */}
-      <section className="py-20 md:py-28 bg-warm-gray">
+      <section className="py-24 md:py-32 bg-warm-gray">
         <div className="container">
           <ScrollReveal>
             <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
@@ -74,8 +73,8 @@ export default function IndustryDetail() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {industry.consultingFields.map((field, i) => (
               <ScrollReveal key={field} delay={i * 70}>
-                <div className="bg-background p-7 md:p-8 border border-border/60">
-                  <div className="w-6 h-px bg-accent/50 mb-5" />
+                <div className="bg-background p-7 md:p-8">
+                  <div className="w-6 h-px bg-accent/35 mb-5" />
                   <p className="text-foreground text-sm font-medium tracking-[-0.01em]">
                     {field}
                   </p>
@@ -87,7 +86,7 @@ export default function IndustryDetail() {
       </section>
 
       {/* Challenges */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container">
           <ScrollReveal>
             <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
@@ -97,8 +96,8 @@ export default function IndustryDetail() {
           <div className="max-w-2xl mt-10">
             {industry.challenges.map((challenge, i) => (
               <ScrollReveal key={challenge} delay={i * 60}>
-                <div className="flex items-start gap-4 py-5 border-b border-border/60 last:border-b-0">
-                  <span className="w-1.5 h-1.5 rounded-full bg-accent/40 mt-[7px] shrink-0" />
+                <div className="flex items-start gap-4 py-5 border-b border-border/50 last:border-b-0">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent/35 mt-[7px] shrink-0" />
                   <p className="text-muted-foreground text-sm leading-[1.7]">
                     {challenge}
                   </p>
@@ -111,7 +110,7 @@ export default function IndustryDetail() {
 
       {/* Case studies */}
       {industry.caseStudies.length > 0 && (
-        <section className="py-20 md:py-28 bg-warm-gray">
+        <section className="py-24 md:py-32 bg-warm-gray">
           <div className="container">
             <ScrollReveal>
               <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-12">
@@ -121,7 +120,7 @@ export default function IndustryDetail() {
             <div className="grid md:grid-cols-2 gap-6">
               {industry.caseStudies.map((cs, i) => (
                 <ScrollReveal key={cs.title} delay={i * 80}>
-                  <div className="bg-background p-8 md:p-10 border border-border/60">
+                  <div className="bg-background p-8 md:p-10">
                     <h3 className="text-foreground text-base font-light mb-3 tracking-[-0.01em]">
                       {cs.title}
                     </h3>
@@ -138,7 +137,7 @@ export default function IndustryDetail() {
 
       {/* Matching services */}
       {matchingServices.length > 0 && (
-        <section className="py-20 md:py-28 bg-background">
+        <section className="py-24 md:py-32 bg-background">
           <div className="container">
             <ScrollReveal>
               <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
@@ -149,10 +148,10 @@ export default function IndustryDetail() {
               {matchingServices.map((service, i) => (
                 <ScrollReveal key={service.number} delay={i * 80}>
                   <Link
-                    to={`/#service-${service.title.toLowerCase().replace(/[^a-z]/g, "-")}`}
-                    className="block bg-warm-gray p-8 md:p-10 group hover:bg-warm-gray-dark transition-colors duration-300 border border-border/40"
+                    to={`/leistungen/${service.slug}`}
+                    className="block bg-warm-gray p-8 md:p-10 group hover:bg-warm-gray-dark transition-colors duration-300"
                   >
-                    <span className="text-accent/60 text-[11px] tracking-[0.2em] font-light mb-3 block">
+                    <span className="text-accent/50 text-[11px] tracking-[0.2em] font-light mb-3 block">
                       {service.number}
                     </span>
                     <h3 className="text-foreground text-base font-light mb-3 tracking-[-0.01em] group-hover:text-accent transition-colors duration-200">
