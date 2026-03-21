@@ -59,7 +59,7 @@ export default function Contact() {
 
             {/* Contact details — 2 cols */}
             <ScrollReveal delay={120}>
-              <div className="md:col-span-2 pt-2">
+              <div className="pt-2">
                 <div className="mb-14">
                   <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-7">{t.contact.label}</p>
                   <a href={`mailto:${t.contact.email}`} className="flex items-center gap-3 text-foreground text-sm hover:text-accent transition-colors duration-200 mb-5">
