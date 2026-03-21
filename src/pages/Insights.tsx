@@ -13,7 +13,7 @@ export default function Insights() {
           <img src={heroInsights} alt="Insights" className="w-full h-full object-cover opacity-[0.15]" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/50 via-transparent to-[hsl(var(--soft-ivory))]/70" />
         </div>
-        <div className="container">
+        <div className="container relative z-10">
           <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{t.insights.label}</p>
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-normal leading-[1.15] tracking-[-0.015em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "250ms" }}>{t.insights.headline}</h1>
           <p className="text-[hsl(var(--soft-charcoal))] text-[15px] md:text-base leading-[1.7] max-w-xl animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.insights.subline}</p>
