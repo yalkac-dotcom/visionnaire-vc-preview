@@ -43,7 +43,7 @@ export function BusinessUnitsHomeSection() {
 
         <ScrollReveal delay={200}>
           <div className="mt-10 text-center">
-            <Link to="/unternehmensbereiche" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-foreground transition-colors duration-200">
+            <Link to="/unternehmensbereiche" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
               {t.nav.businessUnits} <ArrowUpRight size={11} />
             </Link>
           </div>
