@@ -1,6 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import heroImage from "@/assets/hero-consulting.jpg";
-import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   const { t } = useLanguage();
@@ -12,39 +11,46 @@ export function HeroSection() {
         <img
           src={heroImage}
           alt="Premium corporate architecture"
-          className="w-full h-full object-cover opacity-35"
+          className="w-full h-full object-cover opacity-30"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-primary/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" />
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 pt-32 pb-24 md:pt-40 md:pb-32">
-        <div className="max-w-2xl">
+      <div className="container relative z-10 pt-32 pb-28 md:pt-44 md:pb-36">
+        <div className="max-w-[640px]">
           <h1
-            className="text-primary-foreground text-3xl md:text-4xl lg:text-[3.25rem] font-light leading-[1.15] mb-6 animate-reveal-up"
+            className="text-primary-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-light leading-[1.18] tracking-[-0.01em] mb-7 animate-reveal-up"
             style={{ animationDelay: "200ms" }}
           >
             {t.hero.headline}
           </h1>
           <p
-            className="text-primary-foreground/60 text-base md:text-lg leading-relaxed max-w-xl mb-10 animate-reveal-up"
+            className="text-primary-foreground/50 text-[15px] md:text-base leading-[1.7] max-w-[520px] mb-12 animate-reveal-up"
             style={{ animationDelay: "400ms" }}
           >
             {t.hero.subline}
           </p>
           <div
-            className="flex flex-wrap gap-4 mb-10 animate-reveal-up"
+            className="flex flex-wrap gap-4 mb-14 animate-reveal-up"
             style={{ animationDelay: "600ms" }}
           >
-            <Button variant="hero" size="lg" asChild>
-              <a href="#contact">{t.hero.cta}</a>
-            </Button>
-            <Button variant="hero-outline" size="lg" asChild>
-              <a href="#contact">{t.hero.ctaSecondary}</a>
-            </Button>
+            <a
+              href="#contact"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-accent/90 transition-all duration-200 active:scale-[0.97]"
+            >
+              {t.hero.cta}
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary-foreground/20 text-primary-foreground/70 hover:text-primary-foreground px-7 py-3 hover:bg-primary-foreground/5 transition-all duration-200 active:scale-[0.97]"
+            >
+              {t.hero.ctaSecondary}
+            </a>
           </div>
           <p
-            className="text-primary-foreground/35 text-xs tracking-widest uppercase animate-reveal-up"
+            className="text-primary-foreground/25 text-[11px] tracking-[0.2em] uppercase animate-reveal-up"
             style={{ animationDelay: "800ms" }}
           >
             {t.hero.tagline}
@@ -53,19 +59,16 @@ export function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-0 right-0 z-10 flex justify-center">
-        <a
-          href="#expertise"
-          aria-label="Scroll down"
-        >
-          <div className="w-[22px] h-[36px] rounded-full border border-primary-foreground/25 flex items-start justify-center pt-[7px] animate-scroll-indicator">
-            <div className="w-[3px] h-[7px] rounded-full bg-primary-foreground/50 animate-scroll-dot" />
+      <div className="absolute bottom-12 left-0 right-0 z-10 flex justify-center">
+        <a href="#expertise" aria-label="Scroll down">
+          <div className="w-[20px] h-[32px] rounded-full border border-primary-foreground/20 flex items-start justify-center pt-[6px] animate-scroll-indicator">
+            <div className="w-[2.5px] h-[6px] rounded-full bg-primary-foreground/40 animate-scroll-dot" />
           </div>
         </a>
       </div>
 
-      {/* Subtle bottom divider */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-foreground/10 to-transparent" />
+      {/* Bottom divider */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-foreground/8 to-transparent" />
     </section>
   );
 }

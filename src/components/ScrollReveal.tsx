@@ -7,7 +7,12 @@ interface ScrollRevealProps {
   direction?: "up" | "left";
 }
 
-export function ScrollReveal({ children, className = "", delay = 0, direction = "up" }: ScrollRevealProps) {
+export function ScrollReveal({
+  children,
+  className = "",
+  delay = 0,
+  direction = "up",
+}: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -18,11 +23,13 @@ export function ScrollReveal({ children, className = "", delay = 0, direction = 
       ([entry]) => {
         if (entry.isIntersecting) {
           el.style.animationDelay = `${delay}ms`;
-          el.classList.add(direction === "left" ? "animate-reveal-left" : "animate-reveal-up");
+          el.classList.add(
+            direction === "left" ? "animate-reveal-left" : "animate-reveal-up"
+          );
           observer.unobserve(el);
         }
       },
-      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -30px 0px" }
     );
 
     observer.observe(el);
