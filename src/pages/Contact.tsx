@@ -23,8 +23,8 @@ export default function Contact() {
         <div className="container">
           <div className="grid md:grid-cols-5 gap-16 md:gap-20 max-w-5xl mx-auto">
             {/* Form — 3 cols */}
-            <ScrollReveal>
-              <div className="md:col-span-3">
+            <div className="md:col-span-3">
+              <ScrollReveal>
                 <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
                   <div>
                     <label className="block text-muted-foreground/60 text-[11px] uppercase tracking-[0.18em] mb-3">{t.contact.formName}</label>
