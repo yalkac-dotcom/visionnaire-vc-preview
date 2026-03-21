@@ -124,7 +124,7 @@ export default function IndustryDetail() {
           <ScrollReveal delay={100}>
             <div className="flex flex-wrap justify-center gap-4">
               <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent transition-all duration-200 active:scale-[0.97]">{t.cta.projectCta}</Link>
-              <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--gold-tint))] transition-all duration-200 active:scale-[0.97]">{t.cta.contactCta}</Link>
+              <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-[hsl(var(--brand-blue))]/25 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]">{t.cta.contactCta}</Link>
             </div>
           </ScrollReveal>
         </div>
