@@ -446,7 +446,7 @@ export const translations: Record<Locale, Translations> = {
       brand: "VISIONNAIRE",
       consulting: "Consulting",
       rights: "All rights reserved.",
-      domizilLink: "Visionnaire Domicil",
+      domizilLink: "Visionnaire Domizil",
       domizilNote: "A connected business area of the Visionnaire world",
       impressum: "Legal Notice",
       datenschutz: "Privacy Policy",
