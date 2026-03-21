@@ -1,5 +1,28 @@
 export type Locale = "de" | "en";
 
+interface ServiceItem {
+  number: string;
+  title: string;
+  desc: string;
+  details: string[];
+}
+
+interface WhyUsItem {
+  title: string;
+  desc: string;
+}
+
+export interface Translations {
+  nav: { expertise: string; services: string; whyUs: string; contact: string; projectCta: string };
+  hero: { tagline: string; headline: string; subline: string; cta: string; ctaSecondary: string };
+  expertise: { label: string; headline: string; text: string };
+  services: { label: string; headline: string; requestCta: string; items: ServiceItem[] };
+  whyUs: { label: string; headline: string; items: WhyUsItem[] };
+  domizil: { label: string; headline: string; text: string; cta: string };
+  contact: { label: string; headline: string; text: string; cta: string; ctaSecondary: string; email: string; phone: string };
+  footer: { brand: string; consulting: string; rights: string; domizilLink: string; impressum: string; datenschutz: string };
+}
+
 export const translations = {
   de: {
     nav: {
