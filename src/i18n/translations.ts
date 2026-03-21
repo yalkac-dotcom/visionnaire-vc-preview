@@ -339,8 +339,8 @@ export const translations: Record<Locale, Translations> = {
           role: "Parent Brand",
         },
         {
-          name: "Visionnaire Domicil",
-          desc: "Premium office and business space solutions in distinguished environments. Visionnaire Domicil stands for premium offices, professional business rooms, business-centre services and a cultivated working environment with a clear commitment to quality.",
+          name: "Visionnaire Domizil",
+          desc: "Premium office and business space solutions in distinguished environments. Visionnaire Domizil stands for premium offices, professional business rooms, business-centre services and a cultivated working environment with a clear commitment to quality.",
           href: "https://visionnaire.de",
           role: "Connected Business Area",
         },
