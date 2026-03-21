@@ -57,7 +57,7 @@ export default function BusinessUnits() {
             <div className="grid md:grid-cols-12 gap-12 md:gap-16">
               <div className="md:col-span-4">
                 <ScrollReveal>
-                  <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5">{t.businessUnits.architectureLabel}</p>
+                  <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">{t.businessUnits.architectureLabel}</p>
                   <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-light leading-[1.2] tracking-[-0.01em]">{t.businessUnits.architectureHeadline}</h2>
                 </ScrollReveal>
               </div>
