@@ -26,8 +26,8 @@
     --muted: 210 14% 94%;
     --muted-foreground: 215 12% 50%;
 
-    /* Refined gold accent — warm bronze-taupe, muted corporate */
-    --accent: 35 28% 40%;
+    /* Refined gold accent — quiet corporate bronze, no yellow cast */
+    --accent: 32 22% 37%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 51%;
@@ -43,8 +43,8 @@
     --navy: 215 40% 16%;
     --navy-light: 215 30% 22%;
     --navy-dark: 215 45% 10%;
-    --gold: 35 28% 40%;
-    --gold-muted: 35 14% 74%;
+    --gold: 32 22% 37%;
+    --gold-muted: 32 12% 72%;
     --warm-gray: 30 8% 96%;
     --warm-gray-dark: 30 6% 92%;
 
