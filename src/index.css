@@ -97,8 +97,8 @@
   .bg-navy-dark {
     background-color: hsl(var(--navy-dark));
   }
-  .text-amber-accent {
-    color: hsl(var(--amber));
+  .text-gold-accent {
+    color: hsl(var(--gold));
   }
   .bg-warm-gray {
     background-color: hsl(var(--warm-gray));
@@ -106,8 +106,8 @@
   .bg-warm-gray-dark {
     background-color: hsl(var(--warm-gray-dark));
   }
-  .border-amber-accent {
-    border-color: hsl(var(--amber));
+  .border-gold-accent {
+    border-color: hsl(var(--gold));
   }
 }
 
