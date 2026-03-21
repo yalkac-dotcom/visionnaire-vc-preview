@@ -36,7 +36,7 @@ export function Footer() {
           <div className="flex flex-wrap gap-8 text-[11px] text-soft-charcoal">
             <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.domizilLink}</a>
             <Link to="/impressum" className="hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.impressum}</Link>
-            <a href="#" className="hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.datenschutz}</a>
+            <Link to="/datenschutz" className="hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.datenschutz}</Link>
           </div>
         </div>
       </div>
