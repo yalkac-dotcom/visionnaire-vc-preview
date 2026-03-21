@@ -59,7 +59,38 @@ export default function BusinessUnits() {
         </div>
       </section>
 
-      {/* Brand Architecture */}
+      {/* Domizil Visual Gallery */}
+      <section className="py-24 md:py-32 bg-soft-ivory">
+        <div className="container">
+          <ScrollReveal>
+            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">Raumqualität</p>
+            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] max-w-lg mb-16">Repräsentative Arbeitsumgebungen auf höchstem Niveau</h2>
+          </ScrollReveal>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+            {[
+              { src: domizilLobby, alt: "Eleganter Empfangsbereich", label: "Empfang" },
+              { src: domizilOffice, alt: "Hochwertige Büroflächen", label: "Büroflächen" },
+              { src: domizilMeeting, alt: "Stilvoller Meetingraum", label: "Konferenz" },
+              { src: domizilWorkspace, alt: "Ruhiger Arbeitsbereich", label: "Arbeitsplatz" },
+            ].map((img, i) => (
+              <ScrollReveal key={img.label} delay={i * 80}>
+                <div className="group relative overflow-hidden aspect-[4/5]">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[hsl(var(--brand-blue))]/60 to-transparent h-1/3" />
+                  <span className="absolute bottom-4 left-4 text-white/90 text-[11px] uppercase tracking-[0.18em]">{img.label}</span>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       {t.businessUnits.architectureLabel && (
         <section className="py-32 md:py-40 bg-cloud-neutral">
           <div className="container">
