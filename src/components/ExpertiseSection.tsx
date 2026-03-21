@@ -14,7 +14,7 @@ export function ExpertiseSection() {
             </p>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <h2 className="text-foreground text-[1.5rem] md:text-[2.125rem] lg:text-[2.625rem] font-light leading-[1.18] tracking-[-0.015em] mb-8">
+            <h2 className="text-foreground text-[1.5rem] md:text-[2.125rem] lg:text-[2.625rem] font-normal leading-[1.18] tracking-[-0.02em] mb-8">
               {t.expertise.headline}
             </h2>
           </ScrollReveal>

@@ -60,13 +60,13 @@
     --brand-blue-muted: 209 16% 49%; /* Soft Blue-Grey #6A7C90 */
     --brand-blue-tint: 210 20% 86%;
 
-    --sidebar-background: 38 22% 95%;
+    --sidebar-background: 36 28% 92%;
     --sidebar-foreground: 216 10% 16%;
     --sidebar-primary: 216 10% 16%;
-    --sidebar-primary-foreground: 38 22% 95%;
-    --sidebar-accent: 34 22% 91%;
+    --sidebar-primary-foreground: 36 28% 92%;
+    --sidebar-accent: 34 28% 87%;
     --sidebar-accent-foreground: 216 10% 16%;
-    --sidebar-border: 32 22% 82%;
+    --sidebar-border: 32 24% 78%;
     --sidebar-ring: 210 35% 22%;
   }
 }
