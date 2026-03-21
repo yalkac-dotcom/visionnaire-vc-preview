@@ -46,6 +46,7 @@ export function BusinessUnitsHomeSection() {
                     {t.cta.contactCta} <ArrowUpRight size={11} />
                   </a>
                 )}
+                </div>
               </div>
             </ScrollReveal>
           ))}
