@@ -54,8 +54,8 @@ export default function Contact() {
                     {t.contact.formSend}
                   </button>
                 </form>
-              </div>
-            </ScrollReveal>
+              </ScrollReveal>
+            </div>
 
             {/* Contact details — 2 cols */}
             <ScrollReveal delay={120}>
