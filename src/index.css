@@ -26,8 +26,8 @@
     --muted: 210 14% 94%;
     --muted-foreground: 215 12% 50%;
 
-    /* Refined gold accent — elegant, matte, premium */
-    --accent: 43 50% 49%;
+    /* Refined gold accent — muted, warm, corporate-premium */
+    --accent: 38 36% 46%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 51%;
@@ -43,8 +43,8 @@
     --navy: 215 40% 16%;
     --navy-light: 215 30% 22%;
     --navy-dark: 215 45% 10%;
-    --gold: 43 50% 49%;
-    --gold-muted: 43 25% 82%;
+    --gold: 38 36% 46%;
+    --gold-muted: 38 18% 78%;
     --warm-gray: 30 8% 96%;
     --warm-gray-dark: 30 6% 92%;
 
