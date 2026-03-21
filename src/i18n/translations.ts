@@ -330,7 +330,7 @@ export const translations: Record<Locale, Translations> = {
       subline: "Strategic advisory and premium business environments — connected by the same conviction, carried by a shared commitment to quality.",
       architectureLabel: "Brand Architecture",
       architectureHeadline: "Two expressions, one brand world",
-      architectureText: "Visionnaire Consulting and Visionnaire Domicil share a common commitment to quality and the same calm, strategic disposition. What distinguishes them is their respective focus — strategic advisory on one side, premium business spaces and distinguished environments on the other. Together, they form a coherent brand world that operates across different fields with the same exacting standards.",
+      architectureText: "Visionnaire Consulting and Visionnaire Domizil share a common commitment to quality and the same calm, strategic disposition. What distinguishes them is their respective focus — strategic advisory on one side, premium business spaces and distinguished environments on the other. Together, they form a coherent brand world that operates across different fields with the same exacting standards.",
       items: [
         {
           name: "Visionnaire Consulting",
