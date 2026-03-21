@@ -39,7 +39,7 @@ export function Header() {
     ? "bg-[hsl(40_36%_95%/0.88)] backdrop-blur-md shadow-[0_1px_0_0_hsl(var(--border))]"
     : "bg-background";
 
-  const linkClass = "text-foreground/50 hover:text-[hsl(var(--gold-deep))] text-[11px] uppercase tracking-[0.18em] transition-colors duration-200";
+  const linkClass = "text-foreground/50 hover:text-[hsl(var(--brand-blue))] text-[11px] uppercase tracking-[0.18em] transition-colors duration-200";
 
   const dropdownBg = "bg-card border border-border";
   const dropdownTextClass = "text-foreground/50 hover:text-[hsl(var(--gold-deep))] hover:bg-secondary";
