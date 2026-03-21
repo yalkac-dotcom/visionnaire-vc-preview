@@ -1,29 +1,22 @@
-import { LanguageProvider } from "@/i18n/LanguageContext";
-import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { ExpertiseSection } from "@/components/ExpertiseSection";
 import { ServicesSection } from "@/components/ServicesSection";
-import { IndustriesSection } from "@/components/IndustriesSection";
+import { IndustriesHomeSection } from "@/components/IndustriesHomeSection";
 import { WhyUsSection } from "@/components/WhyUsSection";
-import { DomizilSection } from "@/components/DomizilSection";
+import { BusinessUnitsHomeSection } from "@/components/BusinessUnitsHomeSection";
 import { ContactSection } from "@/components/ContactSection";
-import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <LanguageProvider>
-      <Header />
-      <main>
-        <HeroSection />
-        <ExpertiseSection />
-        <ServicesSection />
-        <IndustriesSection />
-        <WhyUsSection />
-        <DomizilSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </LanguageProvider>
+    <main>
+      <HeroSection />
+      <ExpertiseSection />
+      <ServicesSection />
+      <IndustriesHomeSection />
+      <WhyUsSection />
+      <BusinessUnitsHomeSection />
+      <ContactSection />
+    </main>
   );
 };
 

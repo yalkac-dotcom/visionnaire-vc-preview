@@ -1,0 +1,200 @@
+import { useParams, Link, Navigate } from "react-router-dom";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { ScrollReveal } from "@/components/ScrollReveal";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+
+export default function IndustryDetail() {
+  const { slug } = useParams<{ slug: string }>();
+  const { t } = useLanguage();
+
+  const industry = t.industries.items.find((i) => i.slug === slug);
+  if (!industry) return <Navigate to="/branchen" replace />;
+
+  // Find matching services for this industry
+  const matchingServices = t.services.items.filter((s) =>
+    s.relevantIndustries.includes(industry.slug)
+  );
+
+  return (
+    <>
+      {/* Hero */}
+      <section className="bg-primary pt-32 pb-20 md:pt-40 md:pb-28">
+        <div className="container">
+          <Link
+            to="/branchen"
+            className="inline-flex items-center gap-2 text-primary-foreground/30 hover:text-primary-foreground/60 text-[11px] uppercase tracking-[0.18em] mb-10 transition-colors duration-200"
+          >
+            <ArrowLeft size={12} />
+            {t.industryPage.backToOverview}
+          </Link>
+          <h1
+            className="text-primary-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-light leading-[1.18] tracking-[-0.01em] max-w-2xl mb-7 animate-reveal-up"
+            style={{ animationDelay: "150ms" }}
+          >
+            {industry.heroHeadline}
+          </h1>
+          <p
+            className="text-primary-foreground/45 text-[15px] md:text-base leading-[1.7] max-w-xl mb-12 animate-reveal-up"
+            style={{ animationDelay: "300ms" }}
+          >
+            {industry.heroSubline}
+          </p>
+          <div className="flex flex-wrap gap-4 animate-reveal-up" style={{ animationDelay: "450ms" }}>
+            <Link
+              to="/#contact"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-accent/90 transition-all duration-200 active:scale-[0.97]"
+            >
+              {t.industryPage.ctaPrimary}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro / Branchenverständnis */}
+      <section className="py-24 md:py-32 bg-background">
+        <div className="container">
+          <div className="max-w-3xl">
+            <ScrollReveal>
+              <p className="text-muted-foreground text-[15px] md:text-base leading-[1.8]">
+                {industry.intro}
+              </p>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Consulting fields */}
+      <section className="py-20 md:py-28 bg-warm-gray">
+        <div className="container">
+          <ScrollReveal>
+            <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
+              {t.industryPage.consultingFields}
+            </p>
+          </ScrollReveal>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            {industry.consultingFields.map((field, i) => (
+              <ScrollReveal key={field} delay={i * 70}>
+                <div className="bg-background p-7 md:p-8 border border-border/60">
+                  <div className="w-6 h-px bg-accent/50 mb-5" />
+                  <p className="text-foreground text-sm font-medium tracking-[-0.01em]">
+                    {field}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Challenges */}
+      <section className="py-20 md:py-28 bg-background">
+        <div className="container">
+          <ScrollReveal>
+            <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
+              {t.industryPage.challengesLabel}
+            </p>
+          </ScrollReveal>
+          <div className="max-w-2xl mt-10">
+            {industry.challenges.map((challenge, i) => (
+              <ScrollReveal key={challenge} delay={i * 60}>
+                <div className="flex items-start gap-4 py-5 border-b border-border/60 last:border-b-0">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent/40 mt-[7px] shrink-0" />
+                  <p className="text-muted-foreground text-sm leading-[1.7]">
+                    {challenge}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Case studies */}
+      {industry.caseStudies.length > 0 && (
+        <section className="py-20 md:py-28 bg-warm-gray">
+          <div className="container">
+            <ScrollReveal>
+              <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-12">
+                {t.industryPage.projectsLabel}
+              </p>
+            </ScrollReveal>
+            <div className="grid md:grid-cols-2 gap-6">
+              {industry.caseStudies.map((cs, i) => (
+                <ScrollReveal key={cs.title} delay={i * 80}>
+                  <div className="bg-background p-8 md:p-10 border border-border/60">
+                    <h3 className="text-foreground text-base font-light mb-3 tracking-[-0.01em]">
+                      {cs.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-[1.7]">
+                      {cs.desc}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Matching services */}
+      {matchingServices.length > 0 && (
+        <section className="py-20 md:py-28 bg-background">
+          <div className="container">
+            <ScrollReveal>
+              <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
+                {t.industryPage.matchingServices}
+              </p>
+            </ScrollReveal>
+            <div className="grid md:grid-cols-2 gap-6 mt-12">
+              {matchingServices.map((service, i) => (
+                <ScrollReveal key={service.number} delay={i * 80}>
+                  <Link
+                    to={`/#service-${service.title.toLowerCase().replace(/[^a-z]/g, "-")}`}
+                    className="block bg-warm-gray p-8 md:p-10 group hover:bg-warm-gray-dark transition-colors duration-300 border border-border/40"
+                  >
+                    <span className="text-accent/60 text-[11px] tracking-[0.2em] font-light mb-3 block">
+                      {service.number}
+                    </span>
+                    <h3 className="text-foreground text-base font-light mb-3 tracking-[-0.01em] group-hover:text-accent transition-colors duration-200">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-[1.7]">
+                      {service.desc}
+                    </p>
+                  </Link>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* CTA */}
+      <section className="py-24 md:py-32 bg-primary">
+        <div className="container text-center">
+          <ScrollReveal>
+            <h2 className="text-primary-foreground text-[1.5rem] md:text-[2rem] font-light leading-[1.2] tracking-[-0.01em] mb-10">
+              {t.contact.headline}
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={100}>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                to="/#contact"
+                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-accent/90 transition-all duration-200 active:scale-[0.97]"
+              >
+                {t.cta.projectCta}
+              </Link>
+              <Link
+                to="/#contact"
+                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary-foreground/20 text-primary-foreground/70 hover:text-primary-foreground px-7 py-3 hover:bg-primary-foreground/5 transition-all duration-200 active:scale-[0.97]"
+              >
+                {t.cta.contactCta}
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+    </>
+  );
+}
