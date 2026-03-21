@@ -2,6 +2,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { industryImages } from "@/lib/industry-images";
 
 export function IndustriesHomeSection() {
   const { t } = useLanguage();
@@ -14,7 +15,7 @@ export function IndustriesHomeSection() {
           <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">{t.industries.label}</p>
         </ScrollReveal>
         <ScrollReveal delay={80}>
-          <h2 className="text-foreground text-[1.5rem] md:text-[2.125rem] lg:text-[2.625rem] font-light leading-[1.18] tracking-[-0.015em] max-w-2xl mb-6">{t.industries.headline}</h2>
+          <h2 className="text-foreground text-[1.5rem] md:text-[2.125rem] lg:text-[2.625rem] font-normal leading-[1.18] tracking-[-0.02em] max-w-2xl mb-6">{t.industries.headline}</h2>
         </ScrollReveal>
         <ScrollReveal delay={120}>
           <p className="text-muted-foreground text-[15px] leading-[1.7] max-w-xl mb-16">{t.industries.subline}</p>
@@ -23,12 +24,19 @@ export function IndustriesHomeSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
           {items.map((item, i) => (
             <ScrollReveal key={item.slug} delay={i * 70}>
-              <Link to={`/branchen/${item.slug}`} className="block bg-background p-7 md:p-9 h-full group hover:bg-soft-ivory transition-colors duration-300">
-                <h3 className="text-foreground text-sm md:text-base font-normal mb-3 tracking-[-0.01em] group-hover:text-brand-blue transition-colors duration-200">{item.name}</h3>
-                <p className="text-muted-foreground text-sm leading-[1.7] mb-6">{item.desc}</p>
-                <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/25 group-hover:text-[hsl(var(--brand-blue))] transition-colors duration-200">
-                  <ArrowRight size={11} className="transition-transform duration-200 group-hover:translate-x-1" />
-                </span>
+              <Link to={`/branchen/${item.slug}`} className="block bg-background h-full group hover:bg-soft-ivory transition-colors duration-300">
+                {industryImages[item.slug] && (
+                  <div className="h-40 overflow-hidden">
+                    <img src={industryImages[item.slug]} alt={item.name} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+                  </div>
+                )}
+                <div className="p-7 md:p-9">
+                  <h3 className="text-foreground text-sm md:text-base font-medium mb-3 tracking-[-0.01em] group-hover:text-brand-blue transition-colors duration-200">{item.name}</h3>
+                  <p className="text-muted-foreground text-sm leading-[1.7] mb-6">{item.desc}</p>
+                  <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/30 group-hover:text-[hsl(var(--brand-blue))] transition-colors duration-200">
+                    <ArrowRight size={11} className="transition-transform duration-200 group-hover:translate-x-1" />
+                  </span>
+                </div>
               </Link>
             </ScrollReveal>
           ))}
