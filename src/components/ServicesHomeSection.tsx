@@ -7,7 +7,7 @@ export function ServicesHomeSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="services" className="py-28 md:py-36 bg-warm-gray">
+    <section id="services" className="py-28 md:py-36 bg-soft-ivory">
       <div className="container">
         <ScrollReveal>
           <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">{t.services.label}</p>
@@ -19,14 +19,14 @@ export function ServicesHomeSection() {
           <p className="text-muted-foreground text-[15px] leading-[1.7] max-w-xl mb-16">{t.services.subline}</p>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border/60">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
           {t.services.items.map((item, i) => (
             <ScrollReveal key={item.slug} delay={i * 70}>
-              <Link to={`/leistungen/${item.slug}`} className="block bg-background p-7 md:p-9 h-full group hover:bg-background/80 transition-colors duration-300">
-                <span className="text-accent/60 text-[11px] tracking-[0.2em] font-light mb-4 block">{item.number}</span>
+              <Link to={`/leistungen/${item.slug}`} className="block bg-background p-7 md:p-9 h-full group hover:bg-cloud-neutral transition-colors duration-300">
+                <span className="text-accent/50 text-[11px] tracking-[0.2em] font-light mb-4 block">{item.number}</span>
                 <h3 className="text-foreground text-sm md:text-base font-light mb-3 tracking-[-0.01em] group-hover:text-accent transition-colors duration-200">{item.title}</h3>
                 <p className="text-muted-foreground text-sm leading-[1.7] mb-6">{item.desc}</p>
-                <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/40 group-hover:text-accent transition-colors duration-200">
+                <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/35 group-hover:text-accent transition-colors duration-200">
                   <ArrowRight size={11} className="transition-transform duration-200 group-hover:translate-x-1" />
                 </span>
               </Link>
@@ -36,7 +36,7 @@ export function ServicesHomeSection() {
 
         <ScrollReveal delay={200}>
           <div className="mt-14 text-center">
-            <Link to="/leistungen" className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-foreground/60 hover:text-accent transition-colors duration-200">
+            <Link to="/leistungen" className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-foreground/50 hover:text-accent transition-colors duration-200">
               {t.servicePage.backToOverview} <ArrowRight size={12} />
             </Link>
           </div>

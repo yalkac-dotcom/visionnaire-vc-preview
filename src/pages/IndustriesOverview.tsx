@@ -8,7 +8,7 @@ export default function IndustriesOverview() {
 
   return (
     <>
-      <section className="bg-warm-gray pt-36 pb-24 md:pt-44 md:pb-32">
+      <section className="bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32">
         <div className="container">
           <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>
             {t.industries.label}
@@ -24,12 +24,12 @@ export default function IndustriesOverview() {
 
       <section className="py-28 md:py-36 bg-background">
         <div className="container">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border/50">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
             {t.industries.items.map((item, i) => (
               <ScrollReveal key={item.slug} delay={i * 70}>
                 <Link
                   to={`/branchen/${item.slug}`}
-                  className="block bg-background p-8 md:p-10 h-full group hover:bg-warm-gray transition-colors duration-300"
+                  className="block bg-background p-8 md:p-10 h-full group hover:bg-cloud-neutral transition-colors duration-300"
                 >
                   <h3 className="text-foreground text-base md:text-lg font-light mb-4 tracking-[-0.01em] group-hover:text-accent transition-colors duration-200">
                     {item.name}
@@ -37,7 +37,7 @@ export default function IndustriesOverview() {
                   <p className="text-muted-foreground text-sm leading-[1.7] mb-8">
                     {item.desc}
                   </p>
-                  <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/40 group-hover:text-accent transition-colors duration-200">
+                  <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/35 group-hover:text-accent transition-colors duration-200">
                     {t.industryPage.ctaSecondary}
                     <ArrowRight size={12} className="transition-transform duration-200 group-hover:translate-x-1" />
                   </span>

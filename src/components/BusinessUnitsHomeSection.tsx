@@ -7,7 +7,7 @@ export function BusinessUnitsHomeSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="business-units" className="py-24 md:py-28 bg-warm-gray">
+    <section id="business-units" className="py-24 md:py-28 bg-soft-ivory">
       <div className="container">
         <ScrollReveal>
           <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
@@ -25,20 +25,20 @@ export function BusinessUnitsHomeSection() {
           </p>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-3 gap-px bg-border/60">
+        <div className="grid md:grid-cols-3 gap-px bg-border">
           {t.businessUnits.items.map((unit, i) => (
             <ScrollReveal key={unit.name} delay={i * 80}>
               <div className="bg-background p-7 md:p-9 h-full flex flex-col">
-                <div className="w-6 h-px bg-accent/40 mb-5" />
+                <div className="w-6 h-px bg-accent/30 mb-5" />
                 <span className="text-accent/40 text-[10px] uppercase tracking-[0.18em] mb-2 block">{unit.role}</span>
                 <h3 className="text-foreground text-sm font-medium mb-3 tracking-[-0.01em]">{unit.name}</h3>
                 <p className="text-muted-foreground text-sm leading-[1.7] mb-6 flex-1">{unit.desc.length > 120 ? unit.desc.substring(0, 120) + "…" : unit.desc}</p>
                 {i === 0 ? (
-                  <Link to={unit.href} className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/50 hover:text-accent transition-colors duration-200">
+                  <Link to={unit.href} className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/45 hover:text-accent transition-colors duration-200">
                     {t.cta.consultationCta} <ArrowUpRight size={11} />
                   </Link>
                 ) : (
-                  <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/50 hover:text-accent transition-colors duration-200">
+                  <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/45 hover:text-accent transition-colors duration-200">
                     {t.cta.contactCta} <ArrowUpRight size={11} />
                   </a>
                 )}
@@ -49,7 +49,7 @@ export function BusinessUnitsHomeSection() {
 
         <ScrollReveal delay={200}>
           <div className="mt-10 text-center">
-            <Link to="/unternehmensbereiche" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/50 hover:text-accent transition-colors duration-200">
+            <Link to="/unternehmensbereiche" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/45 hover:text-accent transition-colors duration-200">
               {t.nav.businessUnits} <ArrowUpRight size={11} />
             </Link>
           </div>
