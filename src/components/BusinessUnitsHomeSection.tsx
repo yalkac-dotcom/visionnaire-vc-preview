@@ -10,7 +10,7 @@ export function BusinessUnitsHomeSection() {
     <section id="business-units" className="py-24 md:py-28 bg-warm-gray">
       <div className="container">
         <ScrollReveal>
-          <p className="text-muted-foreground/60 text-[11px] uppercase tracking-[0.2em] mb-5">
+          <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
             {t.businessUnits.label}
           </p>
         </ScrollReveal>
@@ -30,8 +30,9 @@ export function BusinessUnitsHomeSection() {
             <ScrollReveal key={unit.name} delay={i * 80}>
               <div className="bg-background p-7 md:p-9 h-full flex flex-col">
                 <div className="w-6 h-px bg-accent/40 mb-5" />
+                <span className="text-accent/40 text-[10px] uppercase tracking-[0.18em] mb-2 block">{unit.role}</span>
                 <h3 className="text-foreground text-sm font-medium mb-3 tracking-[-0.01em]">{unit.name}</h3>
-                <p className="text-muted-foreground text-sm leading-[1.7] mb-6 flex-1">{unit.desc}</p>
+                <p className="text-muted-foreground text-sm leading-[1.7] mb-6 flex-1">{unit.desc.length > 120 ? unit.desc.substring(0, 120) + "…" : unit.desc}</p>
                 {i === 0 ? (
                   <Link to={unit.href} className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/50 hover:text-accent transition-colors duration-200">
                     {t.cta.consultationCta} <ArrowUpRight size={11} />

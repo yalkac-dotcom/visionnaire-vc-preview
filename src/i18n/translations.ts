@@ -30,6 +30,7 @@ export const translations: Record<Locale, Translations> = {
       label: "Unsere Expertise",
       headline: "Strategien entwickeln. Märkte erschließen. Marken aufbauen.",
       text: "Visionnaire Consulting verbindet strategische Beratung, operative Umsetzung und internationale Netzwerke. Wir begleiten Unternehmen von der ersten Idee bis zur erfolgreichen Markteinführung — mit Präzision, Erfahrung und einem ganzheitlichen Ansatz.",
+      text2: "Unser Fokus liegt auf der Verbindung von strategischer Klarheit, Markenverständnis und Entwicklungskompetenz — für Vorhaben, die mehr erfordern als Standardkonzepte.",
     },
     services: {
       label: "Leistungen",
@@ -65,10 +66,28 @@ export const translations: Record<Locale, Translations> = {
       label: "Verbundene Unternehmensbereiche",
       headline: "Die Visionnaire Gruppe",
       subline: "Ein Markenuniversum mit klarer Struktur — verbunden durch gemeinsame Werte, getragen von spezialisierter Kompetenz.",
+      architectureLabel: "Markenarchitektur",
+      architectureHeadline: "Gemeinsame Haltung, unterschiedliche Ausdrucksformen",
+      architectureText: "Die Einheiten der Visionnaire Gruppe verbindet ein gemeinsamer Qualitätsanspruch und dieselbe diskrete, strategische Grundhaltung. Was sie unterscheidet, ist ihr jeweiliger Fokus — von der strategischen Beratung über hochwertige Immobilien bis zur professionellen Geschäftsinfrastruktur. Gemeinsam bilden sie ein kohärentes Markenuniversum, das in unterschiedlichen Feldern mit demselben Anspruch agiert.",
       items: [
-        { name: "Visionnaire Consulting", desc: "Strategische Beratung, Markenentwicklung und operative Umsetzung für internationale Unternehmen.", href: "/" },
-        { name: "Visionnaire Domizil", desc: "Hochwertige Wohn- und Gewerbeimmobilien mit internationalem Anspruch und klarer Markenidentität.", href: "/unternehmensbereiche" },
-        { name: "Business Center", desc: "Premium-Büro- und Geschäftsräume für Unternehmen mit Anspruch an Lage, Service und Repräsentation.", href: "/unternehmensbereiche" },
+        {
+          name: "Visionnaire Consulting",
+          desc: "Strategische Premium-Beratung an der Schnittstelle von Positionierung, Transformation, Marke, Wachstum und Struktur. Visionnaire Consulting ist die Muttermarke der Gruppe und verbindet strategische Tiefe mit operativer Umsetzungskompetenz.",
+          href: "/",
+          role: "Muttermarke",
+        },
+        {
+          name: "Visionnaire Domizil",
+          desc: "Hochwertige Wohn- und Gewerbeimmobilien mit internationalem Anspruch und klarer Markenidentität. Visionnaire Domizil steht für eine Verbindung von Raum, Qualität und Repräsentation in anspruchsvollen Umfeldern.",
+          href: "/unternehmensbereiche",
+          role: "Verbundener Geschäftsbereich",
+        },
+        {
+          name: "Business Center",
+          desc: "Premium-Büro- und Geschäftsräume für Unternehmen mit Anspruch an Lage, Service und Repräsentation. Das Business Center bietet professionelle Infrastruktur, diskrete Serviceleistungen und ein hochwertiges Arbeitsumfeld.",
+          href: "/unternehmensbereiche",
+          role: "Verbundener Geschäftsbereich",
+        },
       ],
     },
     about: {
@@ -76,13 +95,14 @@ export const translations: Record<Locale, Translations> = {
       headline: "Strategisch. Diskret. International.",
       subline: "Visionnaire Consulting verbindet unternehmerisches Denken mit strategischer Tiefe — für Organisationen, die Klarheit, Struktur und nachhaltiges Wachstum suchen.",
       approach: {
-        label: "Unser Anspruch",
+        label: "Haltung & Anspruch",
         headline: "Beratung mit Haltung",
-        text: "Wir glauben nicht an austauschbare Konzepte. Jede Zusammenarbeit beginnt mit einem tiefen Verständnis für die spezifische Situation, die Branche und die Ziele unserer Mandanten. Unsere Arbeit ist geprägt von Diskretion, Präzision und dem Anspruch, Ergebnisse zu schaffen, die tragen — nicht nur präsentiert werden.",
+        text: "Klarheit vor Lautstärke. Qualität vor Beliebigkeit. Strategische Tiefe vor Oberflächenwirkung. Visionnaire Consulting versteht Beratung als Verantwortung — für belastbare Ergebnisse, diskrete Prozesse und Entwicklung mit Maß. Jede Zusammenarbeit beginnt mit einem tiefen Verständnis für die spezifische Situation, die Branche und die Ziele unserer Mandanten.",
       },
       thinking: {
-        label: "Wie wir arbeiten",
-        headline: "Unser Beratungsverständnis",
+        label: "Wie wir denken",
+        headline: "Strategie, Marke und Struktur als Einheit",
+        text: "Wirksame Beratung entsteht nicht aus isolierten Einzeldisziplinen. Visionnaire verbindet strategische Analyse, Markenverständnis und operative Strukturierung zu einem ganzheitlichen, aber präzisen Blick — mit hoher Sensibilität für Markt, Substanz und Wahrnehmung.",
         points: [
           { title: "Strategie vor Taktik", desc: "Wir beginnen mit der Frage nach dem Warum, bevor wir das Wie gestalten. Klare Positionierung entsteht aus fundierter Analyse, nicht aus Trends." },
           { title: "Verbindung von Denken und Handeln", desc: "Unsere Beratung endet nicht mit der Empfehlung. Wir begleiten die Umsetzung und übernehmen Verantwortung für Ergebnisse." },
@@ -90,10 +110,26 @@ export const translations: Record<Locale, Translations> = {
           { title: "Vertrauen durch Substanz", desc: "Langfristige Beziehungen entstehen durch Qualität, nicht durch Versprechen. Unsere Mandanten kehren zurück, weil Ergebnisse überzeugen." },
         ],
       },
+      working: {
+        label: "Wie wir arbeiten",
+        headline: "Prinzipien unserer Beratung",
+        principles: [
+          { title: "Präzise Analyse", desc: "Jede strategische Empfehlung basiert auf sorgfältiger Recherche, fundierter Einordnung und tiefem Branchenverständnis." },
+          { title: "Klare Einordnung", desc: "Wir schaffen Orientierung in komplexen Situationen und reduzieren Komplexität auf das Wesentliche." },
+          { title: "Strategische Schärfung", desc: "Positionierung, Angebot und Marke werden so justiert, dass sie Substanz und Wirkung verbinden." },
+          { title: "Konsistente Ausrichtung", desc: "Alle Maßnahmen werden in eine kohärente Gesamtlogik eingebettet — ohne Brüche, ohne Redundanz." },
+          { title: "Hochwertige Umsetzungsperspektive", desc: "Wir denken vom Ergebnis her und begleiten den Weg dorthin mit operativer Präzision." },
+        ],
+      },
       position: {
         label: "Unsere Position",
         headline: "Zwischen Strategie, Marke und Struktur",
         text: "Visionnaire Consulting positioniert sich an der Schnittstelle von strategischer Beratung, Markenentwicklung und unternehmerischer Strukturierung. Wir arbeiten für Unternehmen, Family Offices, Entwickler und Marken, die strategische Klarheit und internationale Umsetzungskompetenz suchen — ohne Kompromisse an Qualität und Anspruch.",
+      },
+      connection: {
+        label: "Das Markenuniversum",
+        headline: "Verbunden durch Haltung und Qualität",
+        text: "Visionnaire Consulting, Visionnaire Domizil und das Business Center bilden ein zusammenhängendes Markenuniversum. Was sie verbindet, ist eine gemeinsame Haltung: Qualität, Diskretion und der Anspruch, in jedem Bereich das Beste zu leisten. Was sie unterscheidet, sind ihre jeweiligen Felder — strategische Beratung, hochwertige Immobilien, professionelle Geschäftsräume.",
       },
     },
     insights: {
@@ -112,6 +148,7 @@ export const translations: Record<Locale, Translations> = {
       label: "Kontakt",
       headline: "Lassen Sie uns sprechen",
       text: "Haben Sie ein Projekt, eine Idee oder eine strategische Herausforderung? Wir freuen uns auf den Austausch.",
+      intro: "Visionnaire Consulting begleitet ausgewählte Vorhaben in den Bereichen Strategie, Marke, Wachstum und Struktur. Wenn Sie ein konkretes Projekt, eine strategische Frage oder den Wunsch nach einem ersten Austausch haben — wir sind erreichbar.",
       cta: "Projekt besprechen",
       ctaSecondary: "Kontakt aufnehmen",
       email: "info@visionnaire.de",
@@ -122,6 +159,9 @@ export const translations: Record<Locale, Translations> = {
       formMessage: "Nachricht",
       formSend: "Nachricht senden",
       subjects: ["Projekt besprechen", "Beratung anfragen", "Allgemeine Anfrage"],
+      note: "Wir beraten vorrangig in den Feldern Strategie, Positionierung, Marke, Wachstum und Strukturierung — für Unternehmen, Entwickler, Family Offices und anspruchsvolle Marken.",
+      closingHeadline: "Der richtige Zeitpunkt ist jetzt",
+      closingText: "Klare Strategien entstehen im Gespräch. Wir freuen uns, von Ihnen zu hören.",
     },
     footer: {
       brand: "VISIONNAIRE",
@@ -185,6 +225,7 @@ export const translations: Record<Locale, Translations> = {
       label: "Our Expertise",
       headline: "Develop strategies. Enter markets. Build brands.",
       text: "Visionnaire Consulting combines strategic advisory, operational implementation and international networks. We guide companies from the initial idea to successful market entry — with precision, experience and a holistic approach.",
+      text2: "Our focus lies in connecting strategic clarity, brand understanding and development expertise — for endeavours that require more than standard concepts.",
     },
     services: {
       label: "Services",
@@ -220,10 +261,28 @@ export const translations: Record<Locale, Translations> = {
       label: "Connected Business Units",
       headline: "The Visionnaire Group",
       subline: "A brand universe with clear structure — connected by shared values, carried by specialised expertise.",
+      architectureLabel: "Brand Architecture",
+      architectureHeadline: "Shared conviction, distinct expression",
+      architectureText: "The units of the Visionnaire Group share a common commitment to quality and the same discreet, strategic disposition. What distinguishes them is their respective focus — from strategic advisory to premium real estate to professional business infrastructure. Together, they form a coherent brand universe that operates across different fields with the same exacting standards.",
       items: [
-        { name: "Visionnaire Consulting", desc: "Strategic advisory, brand development and operational implementation for international companies.", href: "/" },
-        { name: "Visionnaire Domizil", desc: "Premium residential and commercial properties with international ambition and clear brand identity.", href: "/unternehmensbereiche" },
-        { name: "Business Center", desc: "Premium office and business spaces for companies that value location, service and representation.", href: "/unternehmensbereiche" },
+        {
+          name: "Visionnaire Consulting",
+          desc: "Strategic premium advisory at the intersection of positioning, transformation, brand, growth and structure. Visionnaire Consulting is the parent brand and connects strategic depth with operational execution.",
+          href: "/",
+          role: "Parent Brand",
+        },
+        {
+          name: "Visionnaire Domizil",
+          desc: "Premium residential and commercial properties with international ambition and clear brand identity. Visionnaire Domizil represents a connection of space, quality and representation in discerning environments.",
+          href: "/unternehmensbereiche",
+          role: "Connected Business Unit",
+        },
+        {
+          name: "Business Center",
+          desc: "Premium office and business spaces for companies that value location, service and representation. The Business Center offers professional infrastructure, discreet services and a distinguished working environment.",
+          href: "/unternehmensbereiche",
+          role: "Connected Business Unit",
+        },
       ],
     },
     about: {
@@ -231,13 +290,14 @@ export const translations: Record<Locale, Translations> = {
       headline: "Strategic. Discreet. International.",
       subline: "Visionnaire Consulting combines entrepreneurial thinking with strategic depth — for organisations seeking clarity, structure and sustainable growth.",
       approach: {
-        label: "Our Standard",
+        label: "Conviction & Standards",
         headline: "Advisory with conviction",
-        text: "We don't believe in interchangeable concepts. Every engagement begins with a deep understanding of the specific situation, the industry and the objectives of our clients. Our work is defined by discretion, precision and the commitment to creating results that endure — not merely presented.",
+        text: "Clarity over volume. Quality over indifference. Strategic depth over surface effect. Visionnaire Consulting understands advisory as responsibility — for resilient results, discreet processes and development with measure. Every engagement begins with a deep understanding of the specific situation, the industry and the objectives of our clients.",
       },
       thinking: {
-        label: "How we work",
-        headline: "Our advisory philosophy",
+        label: "How we think",
+        headline: "Strategy, brand and structure as one",
+        text: "Effective advisory does not emerge from isolated disciplines. Visionnaire connects strategic analysis, brand understanding and operational structuring into a holistic yet precise perspective — with high sensitivity for markets, substance and perception.",
         points: [
           { title: "Strategy before tactics", desc: "We start with the question of why before shaping the how. Clear positioning emerges from thorough analysis, not from trends." },
           { title: "Connecting thinking and action", desc: "Our advisory doesn't end with the recommendation. We accompany execution and take responsibility for results." },
@@ -245,10 +305,26 @@ export const translations: Record<Locale, Translations> = {
           { title: "Trust through substance", desc: "Long-term relationships are built through quality, not promises. Our clients return because results speak." },
         ],
       },
+      working: {
+        label: "How we work",
+        headline: "Principles of our advisory",
+        principles: [
+          { title: "Precise analysis", desc: "Every strategic recommendation is grounded in careful research, informed assessment and deep industry understanding." },
+          { title: "Clear orientation", desc: "We create clarity in complex situations and reduce complexity to what truly matters." },
+          { title: "Strategic refinement", desc: "Positioning, offering and brand are calibrated to unite substance and impact." },
+          { title: "Consistent alignment", desc: "All measures are embedded in a coherent overall logic — without fractures, without redundancy." },
+          { title: "Quality-driven execution", desc: "We think from the outcome and accompany the path with operational precision." },
+        ],
+      },
       position: {
         label: "Our Position",
         headline: "Between strategy, brand and structure",
         text: "Visionnaire Consulting positions itself at the intersection of strategic advisory, brand development and entrepreneurial structuring. We work for companies, family offices, developers and brands seeking strategic clarity and international execution capability — without compromise on quality and standards.",
+      },
+      connection: {
+        label: "The Brand Universe",
+        headline: "Connected through conviction and quality",
+        text: "Visionnaire Consulting, Visionnaire Domizil and the Business Center form a cohesive brand universe. What connects them is a shared conviction: quality, discretion and the commitment to excellence in every field. What distinguishes them are their respective domains — strategic advisory, premium real estate, professional business spaces.",
       },
     },
     insights: {
@@ -267,6 +343,7 @@ export const translations: Record<Locale, Translations> = {
       label: "Contact",
       headline: "Let's talk",
       text: "Do you have a project, an idea or a strategic challenge? We look forward to the exchange.",
+      intro: "Visionnaire Consulting accompanies selected endeavours in strategy, brand, growth and structure. Whether you have a specific project, a strategic question or simply the wish for an initial conversation — we are here.",
       cta: "Discuss project",
       ctaSecondary: "Get in touch",
       email: "info@visionnaire.de",
@@ -277,6 +354,9 @@ export const translations: Record<Locale, Translations> = {
       formMessage: "Message",
       formSend: "Send message",
       subjects: ["Discuss project", "Request consultation", "General enquiry"],
+      note: "We advise primarily in the fields of strategy, positioning, brand, growth and structuring — for companies, developers, family offices and discerning brands.",
+      closingHeadline: "The right moment is now",
+      closingText: "Clear strategies emerge in conversation. We look forward to hearing from you.",
     },
     footer: {
       brand: "VISIONNAIRE",
