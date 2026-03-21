@@ -94,15 +94,15 @@ export default function ServiceDetail() {
       )}
 
       {/* CTA */}
-      <section className="py-24 md:py-32 bg-primary">
+      <section className="py-28 md:py-36 bg-warm-gray">
         <div className="container text-center">
           <ScrollReveal>
-            <h2 className="text-primary-foreground text-[1.5rem] md:text-[2rem] font-light leading-[1.2] tracking-[-0.01em] mb-10">{t.contact.headline}</h2>
+            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-light leading-[1.2] tracking-[-0.01em] mb-12">{t.contact.headline}</h2>
           </ScrollReveal>
           <ScrollReveal delay={100}>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-accent/90 transition-all duration-200 active:scale-[0.97]">{t.cta.projectCta}</Link>
-              <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary-foreground/20 text-primary-foreground/70 hover:text-primary-foreground px-7 py-3 hover:bg-primary-foreground/5 transition-all duration-200 active:scale-[0.97]">{t.cta.contactCta}</Link>
+              <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-accent/85 transition-all duration-200 active:scale-[0.97]">{t.cta.projectCta}</Link>
+              <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-foreground/15 text-foreground/60 hover:text-foreground px-7 py-3 hover:bg-foreground/3 transition-all duration-200 active:scale-[0.97]">{t.cta.contactCta}</Link>
             </div>
           </ScrollReveal>
         </div>
