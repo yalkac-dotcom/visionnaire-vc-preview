@@ -2,6 +2,10 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroConsulting from "@/assets/hero-consulting.jpg";
+import heroDomizil from "@/assets/hero-domizil.jpg";
+
+const unitImages = [heroConsulting, heroDomizil];
 
 export function BusinessUnitsHomeSection() {
   const { t } = useLanguage();
