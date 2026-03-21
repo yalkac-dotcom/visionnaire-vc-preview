@@ -9,7 +9,7 @@ export function ExpertiseSection() {
       <div className="container">
         <div className="max-w-3xl mx-auto">
           <ScrollReveal>
-            <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
+            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">
               {t.expertise.label}
             </p>
           </ScrollReveal>

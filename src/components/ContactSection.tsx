@@ -54,7 +54,7 @@ export function ContactSection() {
               </a>
               <a
                 href={`tel:${t.contact.phone.replace(/\s/g, "")}`}
-                className="inline-flex items-center gap-2.5 hover:text-[hsl(var(--gold-deep))] transition-colors duration-200"
+                className="inline-flex items-center gap-2.5 hover:text-[hsl(var(--brand-blue))] transition-colors duration-200"
               >
                 <Phone size={14} strokeWidth={1.5} />
                 {t.contact.phone}
