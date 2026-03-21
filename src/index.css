@@ -52,7 +52,13 @@
     --cloud-neutral: 43 37% 96%;    /* #F9F7F2 */
     --soft-charcoal: 34 8% 33%;     /* #5A544C */
     --warm-grey: 33 7% 51%;         /* #8A8278 */
-    --footer-bg: 36 30% 89%;        /* #EFE7DB */
+    --footer-bg: 215 35% 18%;       /* Elegant dark blue #1E2A3D */
+
+    /* Blue brand tokens */
+    --brand-blue: 215 40% 28%;      /* Deep corporate blue #2B3F5C */
+    --brand-blue-light: 215 30% 38%; /* Mid blue #44567A */
+    --brand-blue-muted: 215 20% 50%; /* Muted blue for text */
+    --brand-blue-tint: 215 25% 92%; /* Very light blue tint #E4E9F0 */
 
     --sidebar-background: 43 37% 96%;
     --sidebar-foreground: 34 8% 17%;
