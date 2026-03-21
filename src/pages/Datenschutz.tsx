@@ -11,7 +11,7 @@ export default function Datenschutz() {
       <section className="bg-soft-ivory pt-36 pb-20 md:pt-44 md:pb-28">
         <div className="container">
           <p
-            className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up"
+            className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up"
             style={{ animationDelay: "100ms" }}
           >
             {ds.label}
@@ -33,7 +33,7 @@ export default function Datenschutz() {
               <ScrollReveal key={section.title} delay={i * 40}>
                 <div className="mb-16 last:mb-0">
                   <div className="flex items-start gap-4 mb-6">
-                    <div className="w-8 h-px bg-[hsl(var(--gold-soft))] mt-[0.6em] shrink-0" />
+                    <div className="w-8 h-px bg-border mt-[0.6em] shrink-0" />
                     <h2 className="text-foreground text-base font-medium tracking-[-0.01em] leading-[1.4]">
                       {section.title}
                     </h2>

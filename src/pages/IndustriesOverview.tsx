@@ -10,7 +10,7 @@ export default function IndustriesOverview() {
     <>
       <section className="bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32">
         <div className="container">
-          <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{t.industries.label}</p>
+          <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{t.industries.label}</p>
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-light leading-[1.18] tracking-[-0.01em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "250ms" }}>{t.industries.headline}</h1>
           <p className="text-soft-charcoal text-[15px] md:text-base leading-[1.7] max-w-xl animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.industries.subline}</p>
         </div>
@@ -22,9 +22,9 @@ export default function IndustriesOverview() {
             {t.industries.items.map((item, i) => (
               <ScrollReveal key={item.slug} delay={i * 70}>
                 <Link to={`/branchen/${item.slug}`} className="block bg-background p-8 md:p-10 h-full group hover:bg-card transition-colors duration-300">
-                  <h3 className="text-foreground text-base md:text-lg font-light mb-4 tracking-[-0.01em] group-hover:text-[hsl(var(--gold))] transition-colors duration-200">{item.name}</h3>
+                  <h3 className="text-foreground text-base md:text-lg font-light mb-4 tracking-[-0.01em] group-hover:text-brand-blue transition-colors duration-200">{item.name}</h3>
                   <p className="text-muted-foreground text-sm leading-[1.7] mb-8">{item.desc}</p>
-                  <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/30 group-hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">
+                  <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/30 group-hover:text-[hsl(var(--brand-blue))] transition-colors duration-200">
                     {t.industryPage.ctaSecondary} <ArrowRight size={12} className="transition-transform duration-200 group-hover:translate-x-1" />
                   </span>
                 </Link>

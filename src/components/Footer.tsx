@@ -22,7 +22,7 @@ export function Footer() {
         <div className="mb-12 pb-12 border-b border-white/10">
           <p className="text-white/35 text-[11px] tracking-[0.15em] uppercase">
             {t.footer.domizilNote}:{" "}
-            <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-[hsl(var(--gold-soft))] transition-colors duration-200">{t.footer.domizilLink}</a>
+            <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-muted-foreground transition-colors duration-200">{t.footer.domizilLink}</a>
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export function Footer() {
             <p className="text-white/30 text-[11px]">© {year} Visionnaire Consulting GmbH. {t.footer.rights}</p>
           </div>
           <div className="flex flex-wrap gap-8 text-[11px] text-white/45">
-            <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="hover:text-[hsl(var(--gold-soft))] transition-colors duration-200">{t.footer.domizilLink}</a>
+            <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors duration-200">{t.footer.domizilLink}</a>
             <Link to="/impressum" className="hover:text-white/70 transition-colors duration-200">{t.footer.impressum}</Link>
             <Link to="/datenschutz" className="hover:text-white/70 transition-colors duration-200">{t.footer.datenschutz}</Link>
           </div>

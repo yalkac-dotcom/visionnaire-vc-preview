@@ -12,7 +12,7 @@ export default function About() {
       <section className="bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32">
         <div className="container">
           <p
-            className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up"
+            className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up"
             style={{ animationDelay: "100ms" }}
           >
             {t.about.label}
@@ -52,7 +52,7 @@ export default function About() {
           <div className="grid md:grid-cols-12 gap-12 md:gap-16">
             <div className="md:col-span-4">
               <ScrollReveal>
-                <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5">
+                <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">
                   {t.about.approach.label}
                 </p>
                 <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-light leading-[1.2] tracking-[-0.01em]">
@@ -78,7 +78,7 @@ export default function About() {
         <div className="container">
           <div className="max-w-3xl">
             <ScrollReveal>
-              <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5">
+              <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">
                 {t.about.thinking.label}
               </p>
             </ScrollReveal>
@@ -105,7 +105,7 @@ export default function About() {
         <section className="py-32 md:py-40 bg-background">
           <div className="container">
             <ScrollReveal>
-              <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5">
+              <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">
                 {t.about.working.label}
               </p>
             </ScrollReveal>
@@ -118,7 +118,7 @@ export default function About() {
               {t.about.working.principles.map((p, i) => (
                 <ScrollReveal key={p.title} delay={i * 70}>
                   <div className="bg-card p-7 md:p-8 h-full">
-                    <span className="text-[hsl(var(--gold-soft))] text-[11px] tracking-[0.2em] font-light mb-5 block">
+                    <span className="text-muted-foreground text-[11px] tracking-[0.2em] font-light mb-5 block">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <h3 className="text-foreground text-[13px] font-medium mb-3 tracking-[-0.01em]">
@@ -139,7 +139,7 @@ export default function About() {
           <div className="grid md:grid-cols-12 gap-12 md:gap-16">
             <div className="md:col-span-4">
               <ScrollReveal>
-                <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5">
+                <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">
                   {t.about.position.label}
                 </p>
                 <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-light leading-[1.2] tracking-[-0.01em]">
@@ -164,7 +164,7 @@ export default function About() {
           <div className="container">
             <div className="max-w-3xl">
               <ScrollReveal>
-                <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5">
+                <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">
                   {t.about.connection.label}
                 </p>
               </ScrollReveal>
@@ -181,7 +181,7 @@ export default function About() {
               <ScrollReveal delay={220}>
                 <Link
                   to="/unternehmensbereiche"
-                  className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-[hsl(var(--gold))] transition-colors duration-200"
+                  className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-brand-blue transition-colors duration-200"
                 >
                   {t.nav.businessUnits} <ArrowUpRight size={12} />
                 </Link>

@@ -24,9 +24,9 @@ export function IndustriesHomeSection() {
           {items.map((item, i) => (
             <ScrollReveal key={item.slug} delay={i * 70}>
               <Link to={`/branchen/${item.slug}`} className="block bg-card p-7 md:p-9 h-full group hover:bg-soft-ivory transition-colors duration-300">
-                <h3 className="text-foreground text-sm md:text-base font-light mb-3 tracking-[-0.01em] group-hover:text-[hsl(var(--gold))] transition-colors duration-200">{item.name}</h3>
+                <h3 className="text-foreground text-sm md:text-base font-light mb-3 tracking-[-0.01em] group-hover:text-brand-blue transition-colors duration-200">{item.name}</h3>
                 <p className="text-muted-foreground text-sm leading-[1.7] mb-6">{item.desc}</p>
-                <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/30 group-hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">
+                <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/30 group-hover:text-[hsl(var(--brand-blue))] transition-colors duration-200">
                   <ArrowRight size={11} className="transition-transform duration-200 group-hover:translate-x-1" />
                 </span>
               </Link>
@@ -36,7 +36,7 @@ export function IndustriesHomeSection() {
 
         <ScrollReveal delay={200}>
           <div className="mt-14 text-center">
-            <Link to="/branchen" className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-[hsl(var(--gold))] transition-colors duration-200">
+            <Link to="/branchen" className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-brand-blue transition-colors duration-200">
               {t.industryPage.backToOverview} <ArrowRight size={12} />
             </Link>
           </div>

@@ -23,10 +23,10 @@ export function ServicesHomeSection() {
           {t.services.items.map((item, i) => (
             <ScrollReveal key={item.slug} delay={i * 70}>
               <Link to={`/leistungen/${item.slug}`} className="block bg-background p-7 md:p-9 h-full group hover:bg-card transition-colors duration-300">
-                <span className="text-[hsl(var(--gold-soft))] text-[11px] tracking-[0.2em] font-light mb-4 block">{item.number}</span>
-                <h3 className="text-foreground text-sm md:text-base font-light mb-3 tracking-[-0.01em] group-hover:text-[hsl(var(--gold))] transition-colors duration-200">{item.title}</h3>
+                <span className="text-muted-foreground text-[11px] tracking-[0.2em] font-light mb-4 block">{item.number}</span>
+                <h3 className="text-foreground text-sm md:text-base font-light mb-3 tracking-[-0.01em] group-hover:text-brand-blue transition-colors duration-200">{item.title}</h3>
                 <p className="text-muted-foreground text-sm leading-[1.7] mb-6">{item.desc}</p>
-                <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/30 group-hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">
+                <span className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-foreground/30 group-hover:text-[hsl(var(--brand-blue))] transition-colors duration-200">
                   <ArrowRight size={11} className="transition-transform duration-200 group-hover:translate-x-1" />
                 </span>
               </Link>
@@ -36,7 +36,7 @@ export function ServicesHomeSection() {
 
         <ScrollReveal delay={200}>
           <div className="mt-14 text-center">
-            <Link to="/leistungen" className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-[hsl(var(--gold))] transition-colors duration-200">
+            <Link to="/leistungen" className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-brand-blue transition-colors duration-200">
               {t.servicePage.backToOverview} <ArrowRight size={12} />
             </Link>
           </div>
