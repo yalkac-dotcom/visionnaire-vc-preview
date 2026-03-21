@@ -10,25 +10,24 @@ export default function Contact() {
 
   return (
     <>
-      {/* Hero — lighter */}
+      {/* Hero */}
       <section className="relative min-h-[50vh] flex items-end bg-primary overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImage} alt="Premium meeting room" className="w-full h-full object-cover opacity-30" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/70 to-primary/40" />
+          <img src={heroImage} alt="Premium meeting room" className="w-full h-full object-cover opacity-40" loading="eager" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/60 to-primary/30" />
         </div>
         <div className="container relative z-10 pb-20 md:pb-28 pt-40">
           <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{t.contact.label}</p>
           <h1 className="text-primary-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-light leading-[1.18] tracking-[-0.01em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "250ms" }}>{t.contact.headline}</h1>
-          <p className="text-primary-foreground/55 text-[15px] md:text-base leading-[1.7] max-w-xl animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.contact.intro || t.contact.text}</p>
+          <p className="text-primary-foreground/60 text-[15px] md:text-base leading-[1.7] max-w-xl animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.contact.intro || t.contact.text}</p>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-foreground/8 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[hsl(var(--gold-tint)/0.3)] to-transparent" />
       </section>
 
-      {/* Form & Contact info — light bg */}
+      {/* Form & Contact info */}
       <section className="py-32 md:py-40 bg-background">
         <div className="container">
           <div className="grid md:grid-cols-12 gap-16 md:gap-20 max-w-5xl mx-auto">
-            {/* Form */}
             <div className="md:col-span-7">
               <ScrollReveal>
                 <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
@@ -56,14 +55,13 @@ export default function Contact() {
                     <label className="block text-muted-foreground/50 text-[11px] uppercase tracking-[0.18em] mb-3">{t.contact.formMessage}</label>
                     <textarea rows={5} className="w-full bg-transparent border-b border-border py-3.5 text-foreground text-sm focus:outline-none focus:border-accent transition-colors duration-200 resize-none" />
                   </div>
-                  <button type="submit" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-8 py-3.5 hover:bg-accent/85 transition-all duration-200 active:scale-[0.97] mt-2">
+                  <button type="submit" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-8 py-3.5 hover:bg-[hsl(var(--gold-deep))] transition-all duration-200 active:scale-[0.97] mt-2">
                     {t.contact.formSend}
                   </button>
                 </form>
               </ScrollReveal>
             </div>
 
-            {/* Contact details */}
             <div className="md:col-span-4 md:col-start-9">
               <ScrollReveal delay={150}>
                 <div className="md:pt-4">
@@ -77,13 +75,13 @@ export default function Contact() {
                     </a>
                   </div>
 
-                  <div className="pt-8 border-t border-border/50 mb-16">
+                  <div className="pt-8 border-t border-border mb-16">
                     <p className="text-muted-foreground text-sm leading-[1.7]">Visionnaire Consulting GmbH</p>
                   </div>
 
                   {t.contact.note && (
-                    <div className="pt-8 border-t border-border/50">
-                      <p className="text-muted-foreground/45 text-[13px] leading-[1.8]">{t.contact.note}</p>
+                    <div className="pt-8 border-t border-border">
+                      <p className="text-muted-foreground/50 text-[13px] leading-[1.8]">{t.contact.note}</p>
                     </div>
                   )}
                 </div>
@@ -93,9 +91,9 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Closing micro-section */}
+      {/* Closing */}
       {t.contact.closingHeadline && (
-        <section className="py-24 md:py-32 bg-warm-gray">
+        <section className="py-24 md:py-32 bg-soft-ivory">
           <div className="container text-center">
             <ScrollReveal>
               <h3 className="text-foreground text-lg md:text-xl font-light leading-[1.3] tracking-[-0.01em] mb-4">{t.contact.closingHeadline}</h3>
