@@ -19,20 +19,20 @@ export function BusinessUnitsHomeSection() {
           <p className="text-muted-foreground text-sm leading-[1.7] max-w-xl mb-14">{t.businessUnits.subline}</p>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-3 gap-px bg-border">
+        <div className="grid md:grid-cols-2 gap-px bg-border">
           {t.businessUnits.items.map((unit, i) => (
-            <ScrollReveal key={unit.name} delay={i * 80}>
+            <ScrollReveal key={unit.name} delay={i * 100}>
               <div className="bg-background p-7 md:p-9 h-full flex flex-col">
-                <div className="w-6 h-px bg-[hsl(var(--gold-soft))] mb-5" />
-                <span className="text-[hsl(var(--gold-soft))] text-[10px] uppercase tracking-[0.18em] mb-2 block">{unit.role}</span>
+                <div className="w-6 h-px bg-border mb-5" />
+                <span className="text-muted-foreground text-[10px] uppercase tracking-[0.18em] mb-2 block">{unit.role}</span>
                 <h3 className="text-foreground text-sm font-medium mb-3 tracking-[-0.01em]">{unit.name}</h3>
-                <p className="text-muted-foreground text-sm leading-[1.7] mb-6 flex-1">{unit.desc.length > 120 ? unit.desc.substring(0, 120) + "…" : unit.desc}</p>
+                <p className="text-muted-foreground text-sm leading-[1.7] mb-6 flex-1">{unit.desc.length > 160 ? unit.desc.substring(0, 160) + "…" : unit.desc}</p>
                 {i === 0 ? (
-                  <Link to={unit.href} className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-[hsl(var(--gold))] transition-colors duration-200">
+                  <Link to="/leistungen" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-foreground transition-colors duration-200">
                     {t.cta.consultationCta} <ArrowUpRight size={11} />
                   </Link>
                 ) : (
-                  <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-[hsl(var(--gold))] transition-colors duration-200">
+                  <a href={unit.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-foreground transition-colors duration-200">
                     {t.cta.contactCta} <ArrowUpRight size={11} />
                   </a>
                 )}
@@ -43,7 +43,7 @@ export function BusinessUnitsHomeSection() {
 
         <ScrollReveal delay={200}>
           <div className="mt-10 text-center">
-            <Link to="/unternehmensbereiche" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-[hsl(var(--gold))] transition-colors duration-200">
+            <Link to="/unternehmensbereiche" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-foreground transition-colors duration-200">
               {t.nav.businessUnits} <ArrowUpRight size={11} />
             </Link>
           </div>
