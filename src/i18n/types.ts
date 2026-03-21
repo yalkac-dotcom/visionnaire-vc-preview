@@ -221,4 +221,9 @@ export interface Translations {
     consultationCta: string;
     contactCta: string;
   };
+  datenschutz: {
+    label: string;
+    headline: string;
+    sections: { title: string; content: string[] }[];
+  };
 }
