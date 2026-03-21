@@ -30,7 +30,7 @@ export function ContactSection() {
             <div className="flex flex-wrap justify-center gap-4 mb-16">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]"
               >
                 {t.contact.cta}
               </Link>

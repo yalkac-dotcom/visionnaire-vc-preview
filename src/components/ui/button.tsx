@@ -15,9 +15,9 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // Visionnaire premium variants
-        hero: "bg-primary text-primary-foreground hover:bg-accent tracking-wide uppercase text-xs font-medium",
+        hero: "bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground tracking-wide uppercase text-xs font-medium",
         "hero-outline": "border border-primary/30 text-foreground/70 hover:bg-[hsl(var(--gold-tint))] tracking-wide uppercase text-xs font-medium",
-        premium: "bg-primary text-primary-foreground hover:bg-accent tracking-wide uppercase text-xs font-medium",
+        premium: "bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground tracking-wide uppercase text-xs font-medium",
         "premium-outline": "border border-primary/30 text-foreground/70 hover:bg-[hsl(var(--gold-tint))] tracking-wide uppercase text-xs font-medium",
       },
       size: {

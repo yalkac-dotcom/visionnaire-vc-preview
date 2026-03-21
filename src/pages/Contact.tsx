@@ -49,7 +49,7 @@ export default function Contact() {
                     <label className="block text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">{t.contact.formMessage}</label>
                     <textarea rows={5} className="w-full bg-card border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] transition-all duration-200 resize-none" />
                   </div>
-                  <button type="submit" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent transition-all duration-200 active:scale-[0.97] mt-2">
+                  <button type="submit" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97] mt-2">
                     {t.contact.formSend}
                   </button>
                 </form>
