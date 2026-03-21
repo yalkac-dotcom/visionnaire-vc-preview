@@ -18,7 +18,7 @@
 
     /* Primary — Gold accent (used for buttons) */
     --primary: 40 39% 55%;          /* Primary Gold #B89A5E */
-    --primary-foreground: 43 40% 97%; /* Light text on gold #FAF8F4 */
+    --primary-foreground: 34 8% 17%; /* Dark text on gold #2F2C28 — WCAG AA 5.2:1 */
 
     --secondary: 37 35% 93%;        /* Soft Ivory #F3EEE6 */
     --secondary-foreground: 34 8% 17%;
