@@ -149,16 +149,18 @@ export const translations: Record<Locale, Translations> = {
   },
   en: {
     nav: {
-      expertise: "Expertise",
       services: "Services",
-      whyUs: "Why us",
+      servicesDropdown: ["Consulting", "Sourcing", "Product Development", "Brand & Concept Development"],
+      industries: "Industries",
+      whyUs: "Why Visionnaire",
+      businessCenter: "Business Center",
       contact: "Contact",
       projectCta: "Discuss project",
     },
     hero: {
       tagline: "Strategic Consulting · Operational Implementation · International Networks",
-      headline: "From vision to execution",
-      subline: "Visionnaire Consulting supports companies strategically and operationally — from the initial idea to successful market launch.",
+      headline: "Strategy, products and brands. Internationally conceived. Precisely executed.",
+      subline: "Visionnaire Consulting supports companies in developing strategies, products and brands as well as implementing international business solutions.",
       cta: "Discuss project",
       ctaSecondary: "Get in touch",
     },
