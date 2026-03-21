@@ -77,8 +77,8 @@ export const translations: Record<Locale, Translations> = {
           role: "Muttermarke",
         },
         {
-          name: "Visionnaire Domicil",
-          desc: "Hochwertige Büro- und Geschäftsraumlösungen in repräsentativem Umfeld. Visionnaire Domicil steht für Premiumbüros, professionelle Geschäftsräume, Business-Center-nahe Services und eine kultivierte Arbeitsumgebung mit klarem Qualitätsanspruch.",
+          name: "Visionnaire Domizil",
+          desc: "Hochwertige Büro- und Geschäftsraumlösungen in repräsentativem Umfeld. Visionnaire Domizil steht für Premiumbüros, professionelle Geschäftsräume, Business-Center-nahe Services und eine kultivierte Arbeitsumgebung mit klarem Qualitätsanspruch.",
           href: "https://visionnaire.de",
           role: "Verbundener Geschäftsbereich",
         },
