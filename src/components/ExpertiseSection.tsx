@@ -19,10 +19,17 @@ export function ExpertiseSection() {
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={160}>
-            <p className="text-muted-foreground text-[15px] md:text-base leading-[1.8] max-w-2xl">
+            <p className="text-muted-foreground text-[15px] md:text-base leading-[1.8] mb-6">
               {t.expertise.text}
             </p>
           </ScrollReveal>
+          {t.expertise.text2 && (
+            <ScrollReveal delay={220}>
+              <p className="text-muted-foreground text-[15px] md:text-base leading-[1.8]">
+                {t.expertise.text2}
+              </p>
+            </ScrollReveal>
+          )}
         </div>
       </div>
     </section>

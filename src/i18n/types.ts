@@ -31,6 +31,7 @@ export interface BusinessUnit {
   name: string;
   desc: string;
   href: string;
+  role?: string;
 }
 
 export interface InsightItem {
@@ -65,6 +66,7 @@ export interface Translations {
     label: string;
     headline: string;
     text: string;
+    text2?: string;
   };
   services: {
     label: string;
@@ -95,6 +97,9 @@ export interface Translations {
     label: string;
     headline: string;
     subline: string;
+    architectureLabel?: string;
+    architectureHeadline?: string;
+    architectureText?: string;
     items: BusinessUnit[];
   };
   about: {
@@ -109,9 +114,20 @@ export interface Translations {
     thinking: {
       label: string;
       headline: string;
+      text?: string;
       points: { title: string; desc: string }[];
     };
+    working?: {
+      label: string;
+      headline: string;
+      principles: { title: string; desc: string }[];
+    };
     position: {
+      label: string;
+      headline: string;
+      text: string;
+    };
+    connection?: {
       label: string;
       headline: string;
       text: string;
@@ -128,6 +144,7 @@ export interface Translations {
     label: string;
     headline: string;
     text: string;
+    intro?: string;
     cta: string;
     ctaSecondary: string;
     email: string;
@@ -138,6 +155,9 @@ export interface Translations {
     formMessage: string;
     formSend: string;
     subjects: string[];
+    note?: string;
+    closingHeadline?: string;
+    closingText?: string;
   };
   footer: {
     brand: string;
