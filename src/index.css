@@ -121,6 +121,15 @@
   .bg-footer {
     background-color: hsl(var(--footer-bg));
   }
+  .bg-brand-blue {
+    background-color: hsl(var(--brand-blue));
+  }
+  .bg-brand-blue-tint {
+    background-color: hsl(var(--brand-blue-tint));
+  }
+  .text-brand-blue {
+    color: hsl(var(--brand-blue));
+  }
   .text-soft-charcoal {
     color: hsl(var(--soft-charcoal));
   }
