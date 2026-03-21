@@ -223,6 +223,56 @@ export const translations: Record<Locale, Translations> = {
       consultationCta: "Beratung anfragen",
       contactCta: "Kontakt aufnehmen",
     },
+    datenschutz: {
+      label: "Datenschutz",
+      headline: "Datenschutzerklärung",
+      sections: [
+        { title: "1. Verantwortlicher", content: [
+          "Verantwortlicher für die Datenverarbeitung auf dieser Website ist:",
+          "Visionnaire Consulting GmbH\nKrefelder Str. 562\n41066 Mönchengladbach\nDeutschland",
+          "Telefon: +49 (0)2161 83033-0\nE-Mail: welcome@visionnaire.de",
+        ]},
+        { title: "2. Allgemeine Hinweise zur Datenverarbeitung", content: [
+          "Der Schutz Ihrer personenbezogenen Daten ist uns ein wichtiges Anliegen. Wir verarbeiten personenbezogene Daten ausschließlich im Rahmen der gesetzlichen Vorschriften, insbesondere der Datenschutz-Grundverordnung (DSGVO) und der anwendbaren nationalen Datenschutzbestimmungen.",
+          "Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können oder die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.",
+        ]},
+        { title: "3. Erhebung und Verarbeitung personenbezogener Daten beim Besuch der Website", content: [
+          "Beim Besuch dieser Website können technisch erforderliche Daten verarbeitet werden, um die Website bereitzustellen, die Stabilität und Sicherheit zu gewährleisten und die Darstellung der Inhalte zu ermöglichen.",
+          "Hierzu können insbesondere folgende Daten gehören:\n• IP-Adresse\n• Datum und Uhrzeit des Zugriffs\n• Aufgerufene Seiten bzw. Dateien\n• Browsertyp und Browserversion\n• Verwendetes Betriebssystem\n• Referrer-URL\n• Hostname des zugreifenden Rechners",
+          "Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der sicheren, stabilen und technisch ordnungsgemäßen Bereitstellung der Website.",
+        ]},
+        { title: "4. Kontaktaufnahme", content: [
+          "Wenn Sie uns per E-Mail oder über ein Kontaktformular kontaktieren, verarbeiten wir die von Ihnen übermittelten Daten zur Bearbeitung Ihrer Anfrage.",
+          "Je nach Art der Anfrage können dies insbesondere sein:\n• Name\n• E-Mail-Adresse\n• Telefonnummer\n• Betreff\n• Nachrichteninhalt\n• Weitere freiwillig übermittelte Angaben",
+          "Die Verarbeitung erfolgt zur Bearbeitung Ihrer Anfrage und gegebenenfalls zur Durchführung vorvertraglicher Maßnahmen oder zur Erfüllung eines Vertragsverhältnisses auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Soweit die Verarbeitung nicht zur Vertragsanbahnung oder Vertragsdurchführung erforderlich ist, erfolgt sie auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.",
+        ]},
+        { title: "5. Speicherdauer", content: [
+          "Personenbezogene Daten werden nur so lange gespeichert, wie dies für die jeweiligen Verarbeitungszwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.",
+          "Sobald der jeweilige Zweck entfällt und keine gesetzlichen Aufbewahrungsfristen mehr entgegenstehen, werden die Daten gelöscht.",
+        ]},
+        { title: "6. Weitergabe an Dritte", content: [
+          "Eine Weitergabe personenbezogener Daten erfolgt nur, soweit dies gesetzlich zulässig ist, zur Vertragserfüllung erforderlich ist, eine Einwilligung vorliegt oder wir gesetzlich dazu verpflichtet sind.",
+          "Sofern externe Dienstleister für Hosting, technische Betreuung, Kommunikationsleistungen oder den Betrieb der Website eingesetzt werden, erfolgt deren Einbindung im Rahmen der gesetzlichen Vorgaben und gegebenenfalls auf Grundlage entsprechender Auftragsverarbeitungsverträge.",
+        ]},
+        { title: "7. Cookies und ähnliche Technologien", content: [
+          "Sofern auf dieser Website Cookies oder vergleichbare Technologien eingesetzt werden, erfolgt dies entsprechend den gesetzlichen Vorgaben.",
+          "Technisch erforderliche Cookies können auf Grundlage von § 25 Abs. 2 TDDDG eingesetzt werden, soweit sie für den Betrieb der Website zwingend erforderlich sind.",
+          "Soweit darüber hinausgehende Cookies oder Tracking-Technologien verwendet werden, erfolgt dies nur auf Grundlage einer entsprechenden Einwilligung nach § 25 Abs. 1 TDDDG in Verbindung mit Art. 6 Abs. 1 lit. a DSGVO, sofern eine solche Einwilligung gesetzlich erforderlich ist.",
+        ]},
+        { title: "8. Ihre Rechte", content: [
+          "Ihnen stehen nach Maßgabe der gesetzlichen Vorschriften insbesondere folgende Rechte zu:\n• Recht auf Auskunft gemäß Art. 15 DSGVO\n• Recht auf Berichtigung gemäß Art. 16 DSGVO\n• Recht auf Löschung gemäß Art. 17 DSGVO\n• Recht auf Einschränkung der Verarbeitung gemäß Art. 18 DSGVO\n• Recht auf Datenübertragbarkeit gemäß Art. 20 DSGVO\n• Recht auf Widerspruch gemäß Art. 21 DSGVO\n• Recht auf Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft",
+        ]},
+        { title: "9. Beschwerderecht bei einer Aufsichtsbehörde", content: [
+          "Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten nicht rechtmäßig erfolgt.",
+        ]},
+        { title: "10. Datensicherheit", content: [
+          "Wir treffen angemessene technische und organisatorische Maßnahmen, um Ihre Daten vor Verlust, Missbrauch, unberechtigtem Zugriff, unberechtigter Offenlegung oder unbefugter Veränderung zu schützen.",
+        ]},
+        { title: "11. Aktualität und Änderungen", content: [
+          "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn dies aufgrund geänderter rechtlicher, technischer oder organisatorischer Rahmenbedingungen erforderlich wird. Es gilt jeweils die auf dieser Website veröffentlichte Fassung.",
+        ]},
+      ],
+    },
   },
   en: {
     nav: {
@@ -440,6 +490,56 @@ export const translations: Record<Locale, Translations> = {
       projectCta: "Discuss project",
       consultationCta: "Request consultation",
       contactCta: "Get in touch",
+    },
+    datenschutz: {
+      label: "Privacy Policy",
+      headline: "Privacy Policy",
+      sections: [
+        { title: "1. Controller", content: [
+          "The controller for data processing on this website is:",
+          "Visionnaire Consulting GmbH\nKrefelder Str. 562\n41066 Mönchengladbach\nGermany",
+          "Phone: +49 (0)2161 83033-0\nEmail: welcome@visionnaire.de",
+        ]},
+        { title: "2. General information on data processing", content: [
+          "The protection of your personal data is important to us. We process personal data exclusively in accordance with the applicable legal provisions, in particular the General Data Protection Regulation (GDPR) and applicable national data protection regulations.",
+          "Personal data is any data that can be used to personally identify you or that relates to an identified or identifiable natural person.",
+        ]},
+        { title: "3. Collection and processing of personal data when visiting the website", content: [
+          "When visiting this website, technically necessary data may be processed in order to provide the website, ensure stability and security, and enable the display of content.",
+          "This may include the following data:\n• IP address\n• Date and time of access\n• Pages or files accessed\n• Browser type and version\n• Operating system\n• Referrer URL\n• Hostname of the accessing device",
+          "Processing is carried out on the basis of Art. 6(1)(f) GDPR. Our legitimate interest lies in the secure, stable and technically proper provision of the website.",
+        ]},
+        { title: "4. Contact", content: [
+          "If you contact us by email or via a contact form, we process the data you provide to handle your enquiry.",
+          "Depending on the nature of the enquiry, this may include:\n• Name\n• Email address\n• Phone number\n• Subject\n• Message content\n• Other voluntarily provided information",
+          "Processing is carried out to handle your enquiry and, where applicable, to carry out pre-contractual measures or to fulfil a contractual relationship on the basis of Art. 6(1)(b) GDPR. Where processing is not required for contract initiation or performance, it is carried out on the basis of Art. 6(1)(f) GDPR.",
+        ]},
+        { title: "5. Storage period", content: [
+          "Personal data is only stored for as long as is necessary for the respective processing purposes or as required by statutory retention obligations.",
+          "Once the respective purpose no longer applies and no statutory retention periods remain, the data will be deleted.",
+        ]},
+        { title: "6. Disclosure to third parties", content: [
+          "Personal data is only disclosed to third parties where this is legally permissible, necessary for contract performance, consent has been given, or we are legally obliged to do so.",
+          "Where external service providers are used for hosting, technical support, communication services or website operation, their involvement is carried out in accordance with legal requirements and, where applicable, on the basis of corresponding data processing agreements.",
+        ]},
+        { title: "7. Cookies and similar technologies", content: [
+          "Where cookies or comparable technologies are used on this website, this is done in accordance with the applicable legal requirements.",
+          "Technically necessary cookies may be used on the basis of § 25(2) TDDDG, insofar as they are strictly necessary for the operation of the website.",
+          "Where additional cookies or tracking technologies are used, this is done only on the basis of appropriate consent pursuant to § 25(1) TDDDG in conjunction with Art. 6(1)(a) GDPR, where such consent is legally required.",
+        ]},
+        { title: "8. Your rights", content: [
+          "You have the following rights under the applicable legal provisions:\n• Right of access pursuant to Art. 15 GDPR\n• Right to rectification pursuant to Art. 16 GDPR\n• Right to erasure pursuant to Art. 17 GDPR\n• Right to restriction of processing pursuant to Art. 18 GDPR\n• Right to data portability pursuant to Art. 20 GDPR\n• Right to object pursuant to Art. 21 GDPR\n• Right to withdraw consent with effect for the future",
+        ]},
+        { title: "9. Right to lodge a complaint with a supervisory authority", content: [
+          "You have the right to lodge a complaint with a data protection supervisory authority if you believe that the processing of your personal data is not lawful.",
+        ]},
+        { title: "10. Data security", content: [
+          "We take appropriate technical and organisational measures to protect your data against loss, misuse, unauthorised access, unauthorised disclosure or unauthorised modification.",
+        ]},
+        { title: "11. Currency and amendments", content: [
+          "We reserve the right to amend this privacy policy where necessary due to changes in legal, technical or organisational conditions. The version published on this website shall apply at all times.",
+        ]},
+      ],
     },
   },
 };
