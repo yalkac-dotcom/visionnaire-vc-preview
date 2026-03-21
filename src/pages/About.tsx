@@ -103,18 +103,18 @@ export default function About() {
       )}
 
       {/* Position — single dark accent section */}
-      <section className="py-28 md:py-32 bg-primary">
+      <section className="py-32 md:py-40 bg-warm-gray-dark">
         <div className="container">
           <div className="grid md:grid-cols-12 gap-12 md:gap-16">
             <div className="md:col-span-4">
               <ScrollReveal>
                 <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">{t.about.position.label}</p>
-                <h2 className="text-primary-foreground text-[1.5rem] md:text-[2rem] font-light leading-[1.2] tracking-[-0.01em]">{t.about.position.headline}</h2>
+                <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-light leading-[1.2] tracking-[-0.01em]">{t.about.position.headline}</h2>
               </ScrollReveal>
             </div>
             <div className="md:col-span-7 md:col-start-6">
               <ScrollReveal delay={120}>
-                <p className="text-primary-foreground/55 text-[15px] md:text-base leading-[1.9]">{t.about.position.text}</p>
+                <p className="text-muted-foreground text-[15px] md:text-base leading-[1.9]">{t.about.position.text}</p>
               </ScrollReveal>
             </div>
           </div>
