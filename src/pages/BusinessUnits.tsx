@@ -3,6 +3,10 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroDomizil from "@/assets/hero-domizil.jpg";
+import domizilOffice from "@/assets/domizil-office.jpg";
+import domizilMeeting from "@/assets/domizil-meeting.jpg";
+import domizilLobby from "@/assets/domizil-lobby.jpg";
+import domizilWorkspace from "@/assets/domizil-workspace.jpg";
 
 export default function BusinessUnits() {
   const { t } = useLanguage();
