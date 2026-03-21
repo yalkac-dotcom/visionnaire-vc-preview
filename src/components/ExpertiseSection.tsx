@@ -5,23 +5,25 @@ export function ExpertiseSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="expertise" className="py-24 md:py-32 bg-background">
+    <section id="expertise" className="py-28 md:py-36 bg-background">
       <div className="container">
-        <ScrollReveal>
-          <p className="text-accent text-xs uppercase tracking-widest mb-4">
-            {t.expertise.label}
-          </p>
-        </ScrollReveal>
-        <ScrollReveal delay={80}>
-          <h2 className="text-foreground text-2xl md:text-3xl lg:text-4xl font-light leading-tight max-w-2xl mb-8">
-            {t.expertise.headline}
-          </h2>
-        </ScrollReveal>
-        <ScrollReveal delay={160}>
-          <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-3xl">
-            {t.expertise.text}
-          </p>
-        </ScrollReveal>
+        <div className="max-w-3xl mx-auto">
+          <ScrollReveal>
+            <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
+              {t.expertise.label}
+            </p>
+          </ScrollReveal>
+          <ScrollReveal delay={80}>
+            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-light leading-[1.2] tracking-[-0.01em] mb-8">
+              {t.expertise.headline}
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={160}>
+            <p className="text-muted-foreground text-[15px] md:text-base leading-[1.8] max-w-2xl">
+              {t.expertise.text}
+            </p>
+          </ScrollReveal>
+        </div>
       </div>
     </section>
   );

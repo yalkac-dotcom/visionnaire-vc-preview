@@ -37,7 +37,7 @@
     --input: 214 20% 88%;
     --ring: 215 40% 16%;
 
-    --radius: 0.25rem;
+    --radius: 0.125rem;
 
     /* Custom tokens */
     --navy: 215 40% 16%;
@@ -115,8 +115,8 @@
 @keyframes reveal-up {
   from {
     opacity: 0;
-    transform: translateY(20px);
-    filter: blur(4px);
+    transform: translateY(18px);
+    filter: blur(3px);
   }
   to {
     opacity: 1;
@@ -128,8 +128,8 @@
 @keyframes reveal-left {
   from {
     opacity: 0;
-    transform: translateX(-20px);
-    filter: blur(4px);
+    transform: translateX(-18px);
+    filter: blur(3px);
   }
   to {
     opacity: 1;
@@ -139,23 +139,23 @@
 }
 
 .animate-reveal-up {
-  animation: reveal-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: reveal-up 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .animate-reveal-left {
-  animation: reveal-left 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: reveal-left 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 /* Scroll indicator — mouse symbol */
 @keyframes scroll-indicator-fade {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.7; }
 }
 
 @keyframes scroll-dot-move {
-  0% { opacity: 0.6; transform: translateY(0); }
+  0% { opacity: 0.5; transform: translateY(0); }
   50% { opacity: 1; transform: translateY(5px); }
-  100% { opacity: 0.6; transform: translateY(0); }
+  100% { opacity: 0.5; transform: translateY(0); }
 }
 
 .animate-scroll-indicator {

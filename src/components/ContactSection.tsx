@@ -1,56 +1,61 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { Button } from "@/components/ui/button";
 import { Mail, Phone } from "lucide-react";
 
 export function ContactSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="contact" className="py-24 md:py-32 bg-background">
+    <section id="contact" className="py-28 md:py-36 bg-background">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <ScrollReveal>
-            <p className="text-accent text-xs uppercase tracking-widest mb-4">
+            <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
               {t.contact.label}
             </p>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <h2 className="text-foreground text-2xl md:text-3xl lg:text-4xl font-light leading-tight mb-6">
+            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-light leading-[1.2] tracking-[-0.01em] mb-6">
               {t.contact.headline}
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={160}>
-            <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-10">
+            <p className="text-muted-foreground text-[15px] md:text-base leading-[1.7] mb-12 max-w-lg mx-auto">
               {t.contact.text}
             </p>
           </ScrollReveal>
 
           <ScrollReveal delay={240}>
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              <Button variant="premium" size="lg" asChild>
-                <a href={`mailto:${t.contact.email}`}>{t.contact.cta}</a>
-              </Button>
-              <Button variant="premium-outline" size="lg" asChild>
-                <a href={`mailto:${t.contact.email}`}>{t.contact.ctaSecondary}</a>
-              </Button>
+            <div className="flex flex-wrap justify-center gap-4 mb-14">
+              <a
+                href={`mailto:${t.contact.email}`}
+                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-primary/90 transition-all duration-200 active:scale-[0.97]"
+              >
+                {t.contact.cta}
+              </a>
+              <a
+                href={`mailto:${t.contact.email}`}
+                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/15 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-primary/3 transition-all duration-200 active:scale-[0.97]"
+              >
+                {t.contact.ctaSecondary}
+              </a>
             </div>
           </ScrollReveal>
 
           <ScrollReveal delay={320}>
-            <div className="flex flex-col sm:flex-row justify-center gap-6 text-sm text-muted-foreground">
+            <div className="flex flex-col sm:flex-row justify-center gap-8 text-sm text-muted-foreground/70">
               <a
                 href={`mailto:${t.contact.email}`}
-                className="inline-flex items-center gap-2 hover:text-foreground transition-colors"
+                className="inline-flex items-center gap-2.5 hover:text-foreground transition-colors duration-200"
               >
-                <Mail size={15} strokeWidth={1.5} />
+                <Mail size={14} strokeWidth={1.5} />
                 {t.contact.email}
               </a>
               <a
                 href={`tel:${t.contact.phone.replace(/\s/g, "")}`}
-                className="inline-flex items-center gap-2 hover:text-foreground transition-colors"
+                className="inline-flex items-center gap-2.5 hover:text-foreground transition-colors duration-200"
               >
-                <Phone size={15} strokeWidth={1.5} />
+                <Phone size={14} strokeWidth={1.5} />
                 {t.contact.phone}
               </a>
             </div>
