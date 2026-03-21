@@ -11,7 +11,7 @@ export function ContactSection() {
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <ScrollReveal>
-            <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5">
+            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">
               {t.contact.label}
             </p>
           </ScrollReveal>
