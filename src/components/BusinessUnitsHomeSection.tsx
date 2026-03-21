@@ -2,6 +2,10 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroConsulting from "@/assets/hero-consulting.jpg";
+import heroDomizil from "@/assets/hero-domizil.jpg";
+
+const unitImages = [heroConsulting, heroDomizil];
 
 export function BusinessUnitsHomeSection() {
   const { t } = useLanguage();
@@ -22,7 +26,13 @@ export function BusinessUnitsHomeSection() {
         <div className="grid md:grid-cols-2 gap-6">
           {t.businessUnits.items.map((unit, i) => (
             <ScrollReveal key={unit.name} delay={i * 100}>
-              <div className="bg-background border border-border p-8 md:p-10 h-full flex flex-col">
+              <div className="bg-background border border-border h-full flex flex-col overflow-hidden">
+                {unitImages[i] && (
+                  <div className="h-48 overflow-hidden">
+                    <img src={unitImages[i]} alt={unit.name} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+                  </div>
+                )}
+                <div className="p-8 md:p-10 flex flex-col flex-1">
                 <div className="w-8 h-[2px] bg-[hsl(var(--gold))] mb-6" />
                 <span className="text-brand-blue text-[10px] uppercase tracking-[0.18em] mb-2 block">{unit.role}</span>
                 <h3 className="text-foreground text-base font-medium mb-3 tracking-[-0.01em]">{unit.name}</h3>
@@ -36,6 +46,7 @@ export function BusinessUnitsHomeSection() {
                     {t.cta.contactCta} <ArrowUpRight size={11} />
                   </a>
                 )}
+                </div>
               </div>
             </ScrollReveal>
           ))}
