@@ -6,15 +6,15 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-[92vh] flex items-center bg-primary overflow-hidden">
-      {/* Background image — lighter overlay */}
+      {/* Background image — airy overlay */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Premium corporate architecture"
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover opacity-50"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/70 to-primary/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/75 via-primary/55 to-primary/25" />
       </div>
 
       {/* Content */}
