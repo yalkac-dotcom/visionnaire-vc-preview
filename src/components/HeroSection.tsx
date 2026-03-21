@@ -6,28 +6,33 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-[92vh] flex items-center bg-soft-ivory overflow-hidden">
-      {/* Background image — light, airy */}
+      {/* Background image — present but refined */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Premium corporate architecture"
-          className="w-full h-full object-cover opacity-[0.18]"
+          className="w-full h-full object-cover opacity-[0.22]"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--warm-white))]/60 via-transparent to-[hsl(var(--soft-ivory))]/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--warm-white))]/50 via-transparent to-[hsl(var(--soft-ivory))]/70" />
       </div>
 
       {/* Content */}
       <div className="container relative z-10 pt-32 pb-28 md:pt-44 md:pb-36">
         <div className="max-w-[640px]">
+          {/* Gold accent line */}
+          <div
+            className="w-12 h-[2px] bg-[hsl(var(--gold))] mb-8 animate-reveal-up"
+            style={{ animationDelay: "100ms" }}
+          />
           <h1
-            className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-light leading-[1.18] tracking-[-0.01em] mb-7 animate-reveal-up"
-            style={{ animationDelay: "200ms" }}
+            className="text-foreground text-[1.85rem] md:text-[2.5rem] lg:text-[3.25rem] font-light leading-[1.14] tracking-[-0.015em] mb-7 animate-reveal-up"
+            style={{ animationDelay: "200ms", lineHeight: "1.14" }}
           >
             {t.hero.headline}
           </h1>
           <p
-            className="text-soft-charcoal text-[15px] md:text-base leading-[1.7] max-w-[520px] mb-12 animate-reveal-up"
+            className="text-soft-charcoal text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-12 animate-reveal-up"
             style={{ animationDelay: "400ms" }}
           >
             {t.hero.subline}
@@ -38,19 +43,19 @@ export function HeroSection() {
           >
             <a
               href="#contact"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.cta}
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-[hsl(var(--brand-blue))]/25 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-foreground/20 text-foreground/80 hover:text-foreground px-8 py-3.5 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.ctaSecondary}
             </a>
           </div>
           <p
-            className="text-warm-grey text-[11px] tracking-[0.2em] uppercase animate-reveal-up"
+            className="text-soft-charcoal/60 text-[11px] tracking-[0.2em] uppercase animate-reveal-up"
             style={{ animationDelay: "800ms" }}
           >
             {t.hero.tagline}
@@ -61,8 +66,8 @@ export function HeroSection() {
       {/* Scroll indicator */}
       <div className="absolute bottom-12 left-0 right-0 z-10 flex justify-center">
         <a href="#expertise" aria-label="Scroll down">
-          <div className="w-[20px] h-[32px] rounded-full border border-foreground/15 flex items-start justify-center pt-[6px] animate-scroll-indicator">
-            <div className="w-[2.5px] h-[6px] rounded-full bg-foreground/25 animate-scroll-dot" />
+          <div className="w-[20px] h-[32px] rounded-full border border-foreground/20 flex items-start justify-center pt-[6px] animate-scroll-indicator">
+            <div className="w-[2.5px] h-[6px] rounded-full bg-foreground/30 animate-scroll-dot" />
           </div>
         </a>
       </div>

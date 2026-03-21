@@ -14,18 +14,18 @@ export function ExpertiseSection() {
             </p>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-light leading-[1.2] tracking-[-0.01em] mb-8">
+            <h2 className="text-foreground text-[1.5rem] md:text-[2.125rem] lg:text-[2.625rem] font-light leading-[1.18] tracking-[-0.015em] mb-8">
               {t.expertise.headline}
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={160}>
-            <p className="text-muted-foreground text-[15px] md:text-base leading-[1.8] mb-6">
+            <p className="text-muted-foreground text-[15px] md:text-[16px] leading-[1.8] mb-6">
               {t.expertise.text}
             </p>
           </ScrollReveal>
           {t.expertise.text2 && (
             <ScrollReveal delay={220}>
-              <p className="text-muted-foreground text-[15px] md:text-base leading-[1.8]">
+              <p className="text-muted-foreground text-[15px] md:text-[16px] leading-[1.8]">
                 {t.expertise.text2}
               </p>
             </ScrollReveal>
