@@ -112,6 +112,9 @@
   .bg-gold-tint {
     background-color: hsl(var(--gold-tint));
   }
+  .bg-footer {
+    background-color: hsl(var(--footer-bg));
+  }
   .text-soft-charcoal {
     color: hsl(var(--soft-charcoal));
   }
@@ -121,7 +124,7 @@
   .border-light-stone {
     border-color: hsl(var(--light-stone));
   }
-  /* Legacy aliases for compatibility */
+  /* Legacy aliases */
   .bg-warm-gray {
     background-color: hsl(var(--soft-ivory));
   }
