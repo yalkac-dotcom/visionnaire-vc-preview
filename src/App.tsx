@@ -14,6 +14,7 @@ import BusinessUnits from "./pages/BusinessUnits";
 import About from "./pages/About";
 import Insights from "./pages/Insights";
 import Contact from "./pages/Contact";
+import Impressum from "./pages/Impressum";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ const App = () => (
               <Route path="/ueber-uns" element={<About />} />
               <Route path="/insights" element={<Insights />} />
               <Route path="/kontakt" element={<Contact />} />
+              <Route path="/impressum" element={<Impressum />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </PageLayout>

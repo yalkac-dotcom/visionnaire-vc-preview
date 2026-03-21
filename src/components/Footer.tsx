@@ -15,7 +15,7 @@ export function Footer() {
           <Link to="/unternehmensbereiche" className="text-soft-charcoal hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.navBusinessUnits}</Link>
           <Link to="/ueber-uns" className="text-soft-charcoal hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.navAbout}</Link>
           <Link to="/insights" className="text-soft-charcoal hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.navInsights}</Link>
-          <Link to="/#contact" className="text-soft-charcoal hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.navContact}</Link>
+          <Link to="/kontakt" className="text-soft-charcoal hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.navContact}</Link>
         </div>
 
         {/* Domizil note */}
@@ -35,7 +35,7 @@ export function Footer() {
           </div>
           <div className="flex flex-wrap gap-8 text-[11px] text-soft-charcoal">
             <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.domizilLink}</a>
-            <a href="#" className="hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.impressum}</a>
+            <Link to="/impressum" className="hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.impressum}</Link>
             <a href="#" className="hover:text-[hsl(var(--gold-deep))] transition-colors duration-200">{t.footer.datenschutz}</a>
           </div>
         </div>
