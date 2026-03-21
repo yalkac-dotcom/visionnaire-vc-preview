@@ -16,9 +16,9 @@
     --popover: 43 37% 96%;
     --popover-foreground: 34 8% 17%;
 
-    /* Dark surface — used very sparingly for hero overlays & accents */
-    --primary: 30 12% 20%;          /* Dark Surface #3A342E */
-    --primary-foreground: 40 36% 95%;
+    /* Primary — Gold accent (used for buttons) */
+    --primary: 40 39% 55%;          /* Primary Gold #B89A5E */
+    --primary-foreground: 43 40% 97%; /* Light text on gold #FAF8F4 */
 
     --secondary: 37 35% 93%;        /* Soft Ivory #F3EEE6 */
     --secondary-foreground: 34 8% 17%;
@@ -26,16 +26,16 @@
     --muted: 37 35% 93%;
     --muted-foreground: 33 7% 51%;  /* Warm Grey #8A8278 */
 
-    /* Primary Gold accent — refined, warm, never yellow */
-    --accent: 40 39% 55%;           /* Primary Gold #B89A5E */
-    --accent-foreground: 43 37% 96%;
+    /* Accent — Deep Gold for hover */
+    --accent: 39 33% 47%;           /* Deep Gold #9E8350 */
+    --accent-foreground: 43 40% 97%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 37 30% 88%;           /* Light Stone #EAE3D8 */
-    --input: 37 30% 88%;
-    --ring: 40 39% 55%;
+    --border: 34 25% 85%;           /* #E5DCCF */
+    --input: 35 22% 82%;            /* #DDD3C4 */
+    --ring: 40 39% 55%;             /* Primary Gold focus ring */
 
     --radius: 0.125rem;
 
@@ -52,6 +52,7 @@
     --cloud-neutral: 43 37% 96%;    /* #F9F7F2 */
     --soft-charcoal: 34 8% 33%;     /* #5A544C */
     --warm-grey: 33 7% 51%;         /* #8A8278 */
+    --footer-bg: 36 30% 89%;        /* #EFE7DB */
 
     --sidebar-background: 43 37% 96%;
     --sidebar-foreground: 34 8% 17%;
@@ -59,7 +60,7 @@
     --sidebar-primary-foreground: 43 37% 96%;
     --sidebar-accent: 37 35% 93%;
     --sidebar-accent-foreground: 34 8% 17%;
-    --sidebar-border: 37 30% 88%;
+    --sidebar-border: 34 25% 85%;
     --sidebar-ring: 40 39% 55%;
   }
 }
@@ -111,6 +112,9 @@
   .bg-gold-tint {
     background-color: hsl(var(--gold-tint));
   }
+  .bg-footer {
+    background-color: hsl(var(--footer-bg));
+  }
   .text-soft-charcoal {
     color: hsl(var(--soft-charcoal));
   }
@@ -120,7 +124,7 @@
   .border-light-stone {
     border-color: hsl(var(--light-stone));
   }
-  /* Legacy aliases for compatibility */
+  /* Legacy aliases */
   .bg-warm-gray {
     background-color: hsl(var(--soft-ivory));
   }

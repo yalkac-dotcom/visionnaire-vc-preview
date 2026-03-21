@@ -7,11 +7,11 @@ export function ContactSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="contact" className="py-32 md:py-40 bg-soft-ivory">
+    <section id="contact" className="py-32 md:py-40 bg-cloud-neutral">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <ScrollReveal>
-            <p className="text-accent text-[11px] uppercase tracking-[0.2em] mb-5">
+            <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5">
               {t.contact.label}
             </p>
           </ScrollReveal>
@@ -30,13 +30,13 @@ export function ContactSection() {
             <div className="flex flex-wrap justify-center gap-4 mb-16">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-[hsl(var(--gold-deep))] transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent transition-all duration-200 active:scale-[0.97]"
               >
                 {t.contact.cta}
               </Link>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-foreground/15 text-foreground/60 hover:text-foreground px-7 py-3 hover:bg-foreground/3 transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--gold-tint))] transition-all duration-200 active:scale-[0.97]"
               >
                 {t.contact.ctaSecondary}
               </Link>
@@ -44,17 +44,17 @@ export function ContactSection() {
           </ScrollReveal>
 
           <ScrollReveal delay={320}>
-            <div className="flex flex-col sm:flex-row justify-center gap-8 text-sm text-muted-foreground/60">
+            <div className="flex flex-col sm:flex-row justify-center gap-8 text-sm text-muted-foreground">
               <a
                 href={`mailto:${t.contact.email}`}
-                className="inline-flex items-center gap-2.5 hover:text-accent transition-colors duration-200"
+                className="inline-flex items-center gap-2.5 hover:text-[hsl(var(--gold-deep))] transition-colors duration-200"
               >
                 <Mail size={14} strokeWidth={1.5} />
                 {t.contact.email}
               </a>
               <a
                 href={`tel:${t.contact.phone.replace(/\s/g, "")}`}
-                className="inline-flex items-center gap-2.5 hover:text-accent transition-colors duration-200"
+                className="inline-flex items-center gap-2.5 hover:text-[hsl(var(--gold-deep))] transition-colors duration-200"
               >
                 <Phone size={14} strokeWidth={1.5} />
                 {t.contact.phone}
