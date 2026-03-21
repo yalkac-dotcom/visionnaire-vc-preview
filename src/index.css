@@ -26,9 +26,9 @@
     --muted: 37 35% 93%;
     --muted-foreground: 33 7% 51%;  /* Warm Grey #8A8278 */
 
-    /* Accent — Deep Gold for hover */
-    --accent: 39 33% 47%;           /* Deep Gold #9E8350 */
-    --accent-foreground: 43 40% 97%; /* Light text on deep gold — 6.3:1 */
+    /* Accent — Slightly lighter blue for hover */
+    --accent: 215 35% 22%;           /* Darker blue for hover #2A3750 */
+    --accent-foreground: 40 36% 97%; /* Light text */
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
