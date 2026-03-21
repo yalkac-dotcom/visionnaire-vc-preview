@@ -6,7 +6,7 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-[92vh] flex items-center bg-primary overflow-hidden">
-      {/* Background image — airy overlay */}
+      {/* Background image — airy warm overlay */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
@@ -14,7 +14,7 @@ export function HeroSection() {
           className="w-full h-full object-cover opacity-50"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/75 via-primary/55 to-primary/25" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/60 to-primary/30" />
       </div>
 
       {/* Content */}
@@ -27,7 +27,7 @@ export function HeroSection() {
             {t.hero.headline}
           </h1>
           <p
-            className="text-primary-foreground/60 text-[15px] md:text-base leading-[1.7] max-w-[520px] mb-12 animate-reveal-up"
+            className="text-primary-foreground/65 text-[15px] md:text-base leading-[1.7] max-w-[520px] mb-12 animate-reveal-up"
             style={{ animationDelay: "400ms" }}
           >
             {t.hero.subline}
@@ -38,7 +38,7 @@ export function HeroSection() {
           >
             <a
               href="#contact"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-accent/85 transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-7 py-3 hover:bg-[hsl(var(--gold-deep))] transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.cta}
             </a>
@@ -67,7 +67,7 @@ export function HeroSection() {
         </a>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-foreground/8 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[hsl(var(--gold-tint)/0.3)] to-transparent" />
     </section>
   );
 }

@@ -6,10 +6,10 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-warm-gray-dark py-16 md:py-20 border-t border-border/50">
+    <footer className="bg-soft-ivory py-16 md:py-20 border-t border-border">
       <div className="container">
         {/* Nav links */}
-        <div className="mb-12 pb-12 border-b border-border/40 flex flex-wrap gap-x-8 gap-y-3 text-[11px] uppercase tracking-[0.18em]">
+        <div className="mb-12 pb-12 border-b border-border flex flex-wrap gap-x-8 gap-y-3 text-[11px] uppercase tracking-[0.18em]">
           <Link to="/leistungen" className="text-foreground/30 hover:text-accent transition-colors duration-200">{t.footer.navServices}</Link>
           <Link to="/branchen" className="text-foreground/30 hover:text-accent transition-colors duration-200">{t.footer.navIndustries}</Link>
           <Link to="/unternehmensbereiche" className="text-foreground/30 hover:text-accent transition-colors duration-200">{t.footer.navBusinessUnits}</Link>
@@ -19,7 +19,7 @@ export function Footer() {
         </div>
 
         {/* Domizil note */}
-        <div className="mb-12 pb-12 border-b border-border/40">
+        <div className="mb-12 pb-12 border-b border-border">
           <p className="text-foreground/20 text-[11px] tracking-[0.15em] uppercase">
             {t.footer.domizilNote}:{" "}
             <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="text-foreground/35 hover:text-accent transition-colors duration-200">{t.footer.domizilLink}</a>

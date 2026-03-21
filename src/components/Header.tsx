@@ -18,10 +18,8 @@ export function Header() {
   const toggleLocale = () => setLocale(locale === "de" ? "en" : "de");
   const isHome = location.pathname === "/";
 
-  // Pages with dark hero backgrounds where header should start transparent with light text
+  // Pages with dark hero backgrounds
   const hasDarkHero = isHome || location.pathname === "/ueber-uns" || location.pathname === "/kontakt" || location.pathname === "/unternehmensbereiche";
-
-  // Determine if header should use dark text (light bg) or light text (dark bg)
   const useLightText = hasDarkHero && !scrolled;
 
   useEffect(() => {
@@ -41,23 +39,21 @@ export function Header() {
 
   useEffect(() => { setMobileOpen(false); }, [location.pathname]);
 
-  // Dynamic classes based on context
   const headerBg = scrolled
-    ? "bg-background/98 backdrop-blur-md shadow-[0_1px_0_0_hsl(var(--border))]"
+    ? "bg-background/98 backdrop-blur-md shadow-[0_1px_0_0_hsl(var(--light-stone))]"
     : hasDarkHero
       ? "bg-transparent"
       : "bg-background";
 
-  const textBase = useLightText ? "text-primary-foreground" : "text-foreground";
-  const textMuted = useLightText ? "text-primary-foreground/60" : "text-foreground/60";
-  const textSubtle = useLightText ? "text-primary-foreground/30" : "text-foreground/30";
-  const borderBtn = useLightText ? "border-primary-foreground/20 text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/5" : "border-foreground/15 text-foreground/70 hover:text-foreground hover:bg-foreground/3";
+  const linkClass = useLightText
+    ? "text-primary-foreground/60 hover:text-primary-foreground text-[11px] uppercase tracking-[0.18em] transition-colors duration-200"
+    : "text-foreground/50 hover:text-foreground text-[11px] uppercase tracking-[0.18em] transition-colors duration-200";
 
-  const linkClass = `${textMuted} hover:${textBase} text-[11px] uppercase tracking-[0.18em] transition-colors duration-200`;
-
-  const dropdownBg = scrolled || !hasDarkHero ? "bg-background border-border/60" : "bg-primary border-primary-foreground/8";
-  const dropdownText = scrolled || !hasDarkHero ? "text-foreground/50 hover:text-foreground hover:bg-warm-gray" : "text-primary-foreground/50 hover:text-primary-foreground hover:bg-primary-foreground/5";
-  const dropdownItemClass = `block px-6 py-3.5 ${dropdownText} text-[11px] uppercase tracking-[0.18em] transition-colors duration-200`;
+  const dropdownBg = scrolled || !hasDarkHero ? "bg-background border border-border" : "bg-primary border border-primary-foreground/10";
+  const dropdownTextClass = scrolled || !hasDarkHero
+    ? "text-foreground/50 hover:text-foreground hover:bg-secondary"
+    : "text-primary-foreground/50 hover:text-primary-foreground hover:bg-primary-foreground/5";
+  const dropdownItemClass = `block px-6 py-3.5 ${dropdownTextClass} text-[11px] uppercase tracking-[0.18em] transition-colors duration-200`;
 
   const SmartLink = ({ to, children, className }: { to: string; children: React.ReactNode; className?: string }) => {
     if (to.startsWith("/#")) {
@@ -75,7 +71,6 @@ export function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-7">
-          {/* Services dropdown */}
           <div ref={servicesRef} className="relative">
             <button onClick={() => { setServicesOpen(!servicesOpen); setIndustriesOpen(false); }} className={`${linkClass} inline-flex items-center gap-1`}>
               {t.nav.services}
@@ -83,7 +78,7 @@ export function Header() {
             </button>
             {servicesOpen && (
               <div className={`absolute top-full left-0 mt-3 min-w-[280px] ${dropdownBg} shadow-lg`}>
-                <Link to="/leistungen" onClick={() => setServicesOpen(false)} className={`${dropdownItemClass} border-b ${scrolled || !hasDarkHero ? "border-border/40" : "border-primary-foreground/6"}`}>
+                <Link to="/leistungen" onClick={() => setServicesOpen(false)} className={`${dropdownItemClass} border-b ${scrolled || !hasDarkHero ? "border-border" : "border-primary-foreground/8"}`}>
                   {locale === "de" ? "Alle Leistungen" : "All Services"}
                 </Link>
                 {t.nav.servicesDropdown.map((item) => (
@@ -95,7 +90,6 @@ export function Header() {
             )}
           </div>
 
-          {/* Industries dropdown */}
           <div ref={industriesRef} className="relative">
             <button onClick={() => { setIndustriesOpen(!industriesOpen); setServicesOpen(false); }} className={`${linkClass} inline-flex items-center gap-1`}>
               {t.nav.industries}
@@ -103,7 +97,7 @@ export function Header() {
             </button>
             {industriesOpen && (
               <div className={`absolute top-full left-0 mt-3 min-w-[300px] ${dropdownBg} shadow-lg`}>
-                <Link to="/branchen" onClick={() => setIndustriesOpen(false)} className={`${dropdownItemClass} border-b ${scrolled || !hasDarkHero ? "border-border/40" : "border-primary-foreground/6"}`}>
+                <Link to="/branchen" onClick={() => setIndustriesOpen(false)} className={`${dropdownItemClass} border-b ${scrolled || !hasDarkHero ? "border-border" : "border-primary-foreground/8"}`}>
                   {locale === "de" ? "Alle Branchen" : "All Industries"}
                 </Link>
                 {t.nav.industriesDropdown.map((item) => (
@@ -120,25 +114,25 @@ export function Header() {
           <Link to="/insights" className={linkClass}>{t.nav.insights}</Link>
           <SmartLink to="/#contact" className={linkClass}>{t.nav.contact}</SmartLink>
 
-          <button onClick={toggleLocale} className={`${textSubtle} hover:${textMuted} text-[11px] uppercase tracking-[0.18em] transition-colors duration-200 ml-1`}>
+          <button onClick={toggleLocale} className={`${useLightText ? "text-primary-foreground/25 hover:text-primary-foreground/60" : "text-foreground/25 hover:text-foreground/60"} text-[11px] uppercase tracking-[0.18em] transition-colors duration-200 ml-1`}>
             {locale === "de" ? "EN" : "DE"}
           </button>
 
-          <SmartLink to="/#contact" className={`ml-1 text-[11px] uppercase tracking-[0.18em] border ${borderBtn} px-6 py-2.5 transition-all duration-200 active:scale-[0.97]`}>
+          <SmartLink to="/#contact" className={`ml-1 text-[11px] uppercase tracking-[0.18em] border ${useLightText ? "border-primary-foreground/20 text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/5" : "border-accent/40 text-accent hover:bg-accent hover:text-accent-foreground"} px-6 py-2.5 transition-all duration-200 active:scale-[0.97]`}>
             {t.nav.projectCta}
           </SmartLink>
         </nav>
 
         {/* Mobile controls */}
         <div className="flex lg:hidden items-center gap-3">
-          <button onClick={toggleLocale} className={`${textSubtle} text-[11px] uppercase tracking-[0.18em]`}>{locale === "de" ? "EN" : "DE"}</button>
-          <button onClick={() => setMobileOpen(!mobileOpen)} className={`${textMuted} p-1`}>{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
+          <button onClick={toggleLocale} className={`${useLightText ? "text-primary-foreground/30" : "text-foreground/30"} text-[11px] uppercase tracking-[0.18em]`}>{locale === "de" ? "EN" : "DE"}</button>
+          <button onClick={() => setMobileOpen(!mobileOpen)} className={`${useLightText ? "text-primary-foreground/70" : "text-foreground/70"} p-1`}>{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
         </div>
       </div>
 
-      {/* Mobile menu — always light background for readability */}
+      {/* Mobile menu */}
       {mobileOpen && (
-        <nav className="lg:hidden bg-background border-t border-border/50 pb-8 max-h-[80vh] overflow-y-auto">
+        <nav className="lg:hidden bg-background border-t border-border pb-8 max-h-[80vh] overflow-y-auto">
           <button onClick={() => setMobileServicesOpen(!mobileServicesOpen)} className="w-full flex items-center justify-between px-8 py-4 text-foreground/60 text-xs uppercase tracking-[0.18em]">
             {t.nav.services}
             <ChevronDown size={12} className={`transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`} />
@@ -185,7 +179,7 @@ export function Header() {
           ))}
 
           <div className="px-8 pt-4">
-            <SmartLink to="/#contact" className="inline-block text-[11px] uppercase tracking-[0.18em] border border-foreground/15 text-foreground/70 px-6 py-2.5">
+            <SmartLink to="/#contact" className="inline-block text-[11px] uppercase tracking-[0.18em] bg-accent text-accent-foreground px-6 py-2.5 active:scale-[0.97]">
               {t.nav.projectCta}
             </SmartLink>
           </div>
