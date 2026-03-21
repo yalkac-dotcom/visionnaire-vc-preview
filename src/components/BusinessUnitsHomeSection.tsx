@@ -13,7 +13,7 @@ export function BusinessUnitsHomeSection() {
           <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">{t.businessUnits.label}</p>
         </ScrollReveal>
         <ScrollReveal delay={80}>
-          <h2 className="text-foreground text-[1.5rem] md:text-[2.125rem] font-light mb-5 tracking-[-0.015em]">{t.businessUnits.headline}</h2>
+          <h2 className="text-foreground text-[1.5rem] md:text-[2.125rem] font-normal mb-5 tracking-[-0.02em]">{t.businessUnits.headline}</h2>
         </ScrollReveal>
         <ScrollReveal delay={120}>
           <p className="text-muted-foreground text-[15px] leading-[1.7] max-w-xl mb-14">{t.businessUnits.subline}</p>
