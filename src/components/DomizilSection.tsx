@@ -6,7 +6,7 @@ export function DomizilSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 md:py-24 bg-warm-gray">
+    <section id="business-center" className="py-20 md:py-24 bg-warm-gray">
       <div className="container">
         <ScrollReveal>
           <div className="border border-border bg-background p-8 md:p-12 max-w-3xl mx-auto">
