@@ -6,56 +6,61 @@
 
 @layer base {
   :root {
-    /* Visionnaire CI — light editorial + refined gold accent */
-    --background: 30 15% 98%;
-    --foreground: 220 18% 26%;
+    /* Visionnaire CI — warm white editorial palette */
+    --background: 40 36% 95%;       /* Warm White #F7F4EE */
+    --foreground: 34 8% 17%;        /* Deep Charcoal #2F2C28 */
 
-    --card: 30 12% 99%;
-    --card-foreground: 220 18% 26%;
+    --card: 43 37% 96%;             /* Cloud Neutral #F9F7F2 */
+    --card-foreground: 34 8% 17%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 18% 26%;
+    --popover: 43 37% 96%;
+    --popover-foreground: 34 8% 17%;
 
-    /* Deep navy — used sparingly for hero & footer only */
-    --primary: 218 35% 18%;
-    --primary-foreground: 35 15% 95%;
+    /* Dark surface — used very sparingly for hero overlays & accents */
+    --primary: 30 12% 20%;          /* Dark Surface #3A342E */
+    --primary-foreground: 40 36% 95%;
 
-    --secondary: 30 10% 95%;
-    --secondary-foreground: 220 18% 26%;
+    --secondary: 37 35% 93%;        /* Soft Ivory #F3EEE6 */
+    --secondary-foreground: 34 8% 17%;
 
-    --muted: 30 8% 95%;
-    --muted-foreground: 220 8% 48%;
+    --muted: 37 35% 93%;
+    --muted-foreground: 33 7% 51%;  /* Warm Grey #8A8278 */
 
-    /* Refined gold accent — quiet corporate bronze, no yellow cast */
-    --accent: 32 22% 37%;
-    --accent-foreground: 0 0% 100%;
+    /* Primary Gold accent — refined, warm, never yellow */
+    --accent: 40 39% 55%;           /* Primary Gold #B89A5E */
+    --accent-foreground: 43 37% 96%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 10% 90%;
-    --input: 30 10% 90%;
-    --ring: 32 22% 37%;
+    --border: 37 30% 88%;           /* Light Stone #EAE3D8 */
+    --input: 37 30% 88%;
+    --ring: 40 39% 55%;
 
     --radius: 0.125rem;
 
     /* Custom tokens */
-    --navy: 218 35% 18%;
-    --navy-light: 218 28% 24%;
-    --navy-dark: 218 40% 12%;
-    --gold: 32 22% 37%;
-    --gold-muted: 32 12% 72%;
-    --warm-gray: 30 10% 96%;
-    --warm-gray-dark: 30 8% 93%;
+    --dark-surface: 30 12% 20%;     /* #3A342E */
+    --deep-taupe: 32 10% 38%;       /* #6B6258 */
+    --gold: 40 39% 55%;             /* Primary Gold #B89A5E */
+    --gold-soft: 40 42% 63%;        /* Soft Gold #C8AE78 */
+    --gold-deep: 39 33% 47%;        /* Deep Gold #9E8350 */
+    --gold-tint: 40 42% 85%;        /* Gold Tint #E8DDC7 */
+    --warm-white: 40 36% 95%;       /* #F7F4EE */
+    --soft-ivory: 37 35% 93%;       /* #F3EEE6 */
+    --light-stone: 37 30% 88%;      /* #EAE3D8 */
+    --cloud-neutral: 43 37% 96%;    /* #F9F7F2 */
+    --soft-charcoal: 34 8% 33%;     /* #5A544C */
+    --warm-grey: 33 7% 51%;         /* #8A8278 */
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 43 37% 96%;
+    --sidebar-foreground: 34 8% 17%;
+    --sidebar-primary: 34 8% 17%;
+    --sidebar-primary-foreground: 43 37% 96%;
+    --sidebar-accent: 37 35% 93%;
+    --sidebar-accent-foreground: 34 8% 17%;
+    --sidebar-border: 37 30% 88%;
+    --sidebar-ring: 40 39% 55%;
   }
 }
 
