@@ -38,7 +38,7 @@ export default function BusinessUnits() {
                         {t.cta.consultationCta} <ArrowUpRight size={12} />
                       </Link>
                     ) : (
-                      <a href={unit.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--gold-deep))] hover:text-foreground transition-colors duration-200">
+                      <a href={unit.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
                         {t.cta.contactCta} <ArrowUpRight size={12} />
                       </a>
                     )}
