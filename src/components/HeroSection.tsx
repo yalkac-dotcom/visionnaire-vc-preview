@@ -1,5 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
-import heroImage from "@/assets/hero-consulting.jpg";
+import heroImage from "@/assets/hero-strategy.jpg";
 
 export function HeroSection() {
   const { t } = useLanguage();
