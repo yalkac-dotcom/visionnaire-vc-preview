@@ -13,7 +13,7 @@ interface WhyUsItem {
 }
 
 export interface Translations {
-  nav: { expertise: string; services: string; whyUs: string; contact: string; projectCta: string };
+  nav: { services: string; servicesDropdown: string[]; industries: string; whyUs: string; businessCenter: string; contact: string; projectCta: string };
   hero: { tagline: string; headline: string; subline: string; cta: string; ctaSecondary: string };
   expertise: { label: string; headline: string; text: string };
   services: { label: string; headline: string; requestCta: string; items: ServiceItem[] };
@@ -26,16 +26,18 @@ export interface Translations {
 export const translations: Record<Locale, Translations> = {
   de: {
     nav: {
-      expertise: "Expertise",
       services: "Leistungen",
-      whyUs: "Warum wir",
+      servicesDropdown: ["Consulting", "Sourcing", "Produktentwicklung", "Marken & Konzeptentwicklung"],
+      industries: "Branchen",
+      whyUs: "Warum Visionnaire",
+      businessCenter: "Business Center",
       contact: "Kontakt",
       projectCta: "Projekt besprechen",
     },
     hero: {
       tagline: "Strategische Beratung · Operative Umsetzung · Internationale Netzwerke",
-      headline: "Von der Idee bis zur Umsetzung",
-      subline: "Visionnaire Consulting begleitet Unternehmen strategisch und operativ — von der ersten Idee bis zur erfolgreichen Markteinführung.",
+      headline: "Strategie, Produkte und Marken. International gedacht. Präzise umgesetzt.",
+      subline: "Visionnaire Consulting unterstützt Unternehmen bei der Entwicklung von Strategien, Produkten und Marken sowie bei der Umsetzung internationaler Geschäftslösungen.",
       cta: "Projekt besprechen",
       ctaSecondary: "Kontakt aufnehmen",
     },
@@ -147,16 +149,18 @@ export const translations: Record<Locale, Translations> = {
   },
   en: {
     nav: {
-      expertise: "Expertise",
       services: "Services",
-      whyUs: "Why us",
+      servicesDropdown: ["Consulting", "Sourcing", "Product Development", "Brand & Concept Development"],
+      industries: "Industries",
+      whyUs: "Why Visionnaire",
+      businessCenter: "Business Center",
       contact: "Contact",
       projectCta: "Discuss project",
     },
     hero: {
       tagline: "Strategic Consulting · Operational Implementation · International Networks",
-      headline: "From vision to execution",
-      subline: "Visionnaire Consulting supports companies strategically and operationally — from the initial idea to successful market launch.",
+      headline: "Strategy, products and brands. Internationally conceived. Precisely executed.",
+      subline: "Visionnaire Consulting supports companies in developing strategies, products and brands as well as implementing international business solutions.",
       cta: "Discuss project",
       ctaSecondary: "Get in touch",
     },

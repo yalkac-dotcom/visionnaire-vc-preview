@@ -12,35 +12,29 @@ export function HeroSection() {
         <img
           src={heroImage}
           alt="Premium corporate architecture"
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover opacity-35"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-primary/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-primary/50" />
       </div>
 
       {/* Content */}
       <div className="container relative z-10 pt-32 pb-24 md:pt-40 md:pb-32">
         <div className="max-w-2xl">
-          <p
-            className="text-primary-foreground/50 text-xs md:text-sm tracking-widest uppercase mb-6 animate-reveal-up"
-            style={{ animationDelay: "200ms" }}
-          >
-            {t.hero.tagline}
-          </p>
           <h1
-            className="text-primary-foreground text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] mb-6 animate-reveal-up"
-            style={{ animationDelay: "400ms" }}
+            className="text-primary-foreground text-3xl md:text-4xl lg:text-[3.25rem] font-light leading-[1.15] mb-6 animate-reveal-up"
+            style={{ animationDelay: "200ms" }}
           >
             {t.hero.headline}
           </h1>
           <p
-            className="text-primary-foreground/65 text-base md:text-lg leading-relaxed max-w-xl mb-10 animate-reveal-up"
-            style={{ animationDelay: "600ms" }}
+            className="text-primary-foreground/60 text-base md:text-lg leading-relaxed max-w-xl mb-10 animate-reveal-up"
+            style={{ animationDelay: "400ms" }}
           >
             {t.hero.subline}
           </p>
           <div
-            className="flex flex-wrap gap-4 animate-reveal-up"
-            style={{ animationDelay: "800ms" }}
+            className="flex flex-wrap gap-4 mb-10 animate-reveal-up"
+            style={{ animationDelay: "600ms" }}
           >
             <Button variant="hero" size="lg" asChild>
               <a href="#contact">{t.hero.cta}</a>
@@ -49,6 +43,12 @@ export function HeroSection() {
               <a href="#contact">{t.hero.ctaSecondary}</a>
             </Button>
           </div>
+          <p
+            className="text-primary-foreground/35 text-xs tracking-widest uppercase animate-reveal-up"
+            style={{ animationDelay: "800ms" }}
+          >
+            {t.hero.tagline}
+          </p>
         </div>
       </div>
 
