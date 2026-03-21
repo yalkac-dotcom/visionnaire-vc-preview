@@ -26,16 +26,18 @@ export interface Translations {
 export const translations: Record<Locale, Translations> = {
   de: {
     nav: {
-      expertise: "Expertise",
       services: "Leistungen",
-      whyUs: "Warum wir",
+      servicesDropdown: ["Consulting", "Sourcing", "Produktentwicklung", "Marken & Konzeptentwicklung"],
+      industries: "Branchen",
+      whyUs: "Warum Visionnaire",
+      businessCenter: "Business Center",
       contact: "Kontakt",
       projectCta: "Projekt besprechen",
     },
     hero: {
       tagline: "Strategische Beratung · Operative Umsetzung · Internationale Netzwerke",
-      headline: "Von der Idee bis zur Umsetzung",
-      subline: "Visionnaire Consulting begleitet Unternehmen strategisch und operativ — von der ersten Idee bis zur erfolgreichen Markteinführung.",
+      headline: "Strategie, Produkte und Marken. International gedacht. Präzise umgesetzt.",
+      subline: "Visionnaire Consulting unterstützt Unternehmen bei der Entwicklung von Strategien, Produkten und Marken sowie bei der Umsetzung internationaler Geschäftslösungen.",
       cta: "Projekt besprechen",
       ctaSecondary: "Kontakt aufnehmen",
     },
