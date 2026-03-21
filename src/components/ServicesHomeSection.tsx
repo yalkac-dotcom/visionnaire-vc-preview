@@ -10,7 +10,7 @@ export function ServicesHomeSection() {
     <section id="services" className="py-28 md:py-36 bg-soft-ivory">
       <div className="container">
         <ScrollReveal>
-          <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5">{t.services.label}</p>
+          <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">{t.services.label}</p>
         </ScrollReveal>
         <ScrollReveal delay={80}>
           <h2 className="text-foreground text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-light leading-[1.2] tracking-[-0.01em] max-w-lg mb-6">{t.services.headline}</h2>

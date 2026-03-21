@@ -10,7 +10,7 @@ export function BusinessUnitsHomeSection() {
     <section id="business-units" className="py-24 md:py-28 bg-cloud-neutral">
       <div className="container">
         <ScrollReveal>
-          <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] mb-5">{t.businessUnits.label}</p>
+          <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">{t.businessUnits.label}</p>
         </ScrollReveal>
         <ScrollReveal delay={80}>
           <h2 className="text-foreground text-xl md:text-2xl font-light mb-5 tracking-[-0.01em]">{t.businessUnits.headline}</h2>
