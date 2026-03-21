@@ -13,7 +13,7 @@ interface WhyUsItem {
 }
 
 export interface Translations {
-  nav: { expertise: string; services: string; whyUs: string; contact: string; projectCta: string };
+  nav: { services: string; servicesDropdown: string[]; industries: string; whyUs: string; businessCenter: string; contact: string; projectCta: string };
   hero: { tagline: string; headline: string; subline: string; cta: string; ctaSecondary: string };
   expertise: { label: string; headline: string; text: string };
   services: { label: string; headline: string; requestCta: string; items: ServiceItem[] };
