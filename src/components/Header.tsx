@@ -36,13 +36,13 @@ export function Header() {
   useEffect(() => { setMobileOpen(false); }, [location.pathname]);
 
   const headerBg = scrolled
-    ? "bg-[hsl(40_36%_95%/0.88)] backdrop-blur-md shadow-[0_1px_0_0_hsl(var(--border))]"
+    ? "bg-[hsl(40_30%_96%/0.92)] backdrop-blur-md shadow-[0_1px_0_0_hsl(var(--border))]"
     : "bg-background";
 
-  const linkClass = "text-foreground/50 hover:text-[hsl(var(--brand-blue))] text-[11px] uppercase tracking-[0.18em] transition-colors duration-200";
+  const linkClass = "text-foreground/60 hover:text-[hsl(var(--brand-blue))] text-[11px] uppercase tracking-[0.18em] transition-colors duration-200";
 
   const dropdownBg = "bg-card border border-border";
-  const dropdownTextClass = "text-foreground/50 hover:text-[hsl(var(--brand-blue))] hover:bg-secondary";
+  const dropdownTextClass = "text-foreground/60 hover:text-[hsl(var(--brand-blue))] hover:bg-secondary";
   const dropdownItemClass = `block px-6 py-3.5 ${dropdownTextClass} text-[11px] uppercase tracking-[0.18em] transition-colors duration-200`;
 
   const SmartLink = ({ to, children, className }: { to: string; children: React.ReactNode; className?: string }) => {

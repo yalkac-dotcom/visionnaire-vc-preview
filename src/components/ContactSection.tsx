@@ -7,21 +7,22 @@ export function ContactSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="contact" className="py-32 md:py-40 bg-cloud-neutral">
+    <section id="contact" className="py-32 md:py-40 bg-background">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <ScrollReveal>
+            <div className="w-10 h-[2px] bg-[hsl(var(--gold))] mx-auto mb-6" />
             <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">
               {t.contact.label}
             </p>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-light leading-[1.2] tracking-[-0.01em] mb-6">
+            <h2 className="text-foreground text-[1.5rem] md:text-[2.125rem] lg:text-[2.625rem] font-light leading-[1.18] tracking-[-0.015em] mb-6">
               {t.contact.headline}
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={160}>
-            <p className="text-muted-foreground text-[15px] md:text-base leading-[1.7] mb-14 max-w-lg mx-auto">
+            <p className="text-muted-foreground text-[15px] md:text-[16px] leading-[1.7] mb-14 max-w-lg mx-auto">
               {t.contact.text}
             </p>
           </ScrollReveal>
@@ -30,13 +31,13 @@ export function ContactSection() {
             <div className="flex flex-wrap justify-center gap-4 mb-16">
               <Link
                 to="/kontakt"
-                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]"
               >
                 {t.contact.cta}
               </Link>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-[hsl(var(--brand-blue))]/25 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-foreground/20 text-foreground/70 hover:text-foreground px-8 py-3.5 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
               >
                 {t.contact.ctaSecondary}
               </Link>

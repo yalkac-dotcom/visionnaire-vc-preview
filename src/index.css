@@ -7,58 +7,58 @@
 @layer base {
   :root {
     /* Visionnaire CI — warm white editorial palette */
-    --background: 40 36% 95%;       /* Warm White #F7F4EE */
-    --foreground: 34 8% 17%;        /* Deep Charcoal #2F2C28 */
+    --background: 40 30% 96%;       /* Warm White #F8F5F0 */
+    --foreground: 30 12% 14%;        /* Rich Charcoal #2A2622 */
 
-    --card: 43 37% 96%;             /* Cloud Neutral #F9F7F2 */
-    --card-foreground: 34 8% 17%;
+    --card: 38 25% 94%;             /* Warm card #F4F0EA */
+    --card-foreground: 30 12% 14%;
 
-    --popover: 43 37% 96%;
-    --popover-foreground: 34 8% 17%;
+    --popover: 38 25% 94%;
+    --popover-foreground: 30 12% 14%;
 
     /* Primary — Blue brand (used for buttons) */
-    --primary: 215 40% 28%;          /* Deep corporate blue #2B3F5C */
-    --primary-foreground: 40 36% 97%; /* Light text on blue #FAF8F4 */
+    --primary: 215 42% 26%;          /* Deep corporate blue #283D58 */
+    --primary-foreground: 40 30% 97%;
 
-    --secondary: 37 35% 93%;        /* Soft Ivory #F3EEE6 */
-    --secondary-foreground: 34 8% 17%;
+    --secondary: 35 28% 90%;        /* Warmer Ivory #EDE7DD */
+    --secondary-foreground: 30 12% 14%;
 
-    --muted: 37 35% 93%;
-    --muted-foreground: 33 7% 51%;  /* Warm Grey #8A8278 */
+    --muted: 35 28% 90%;
+    --muted-foreground: 30 8% 42%;  /* Stronger warm grey #706860 */
 
-    /* Accent — Slightly lighter blue for hover */
-    --accent: 215 35% 22%;           /* Darker blue for hover #2A3750 */
-    --accent-foreground: 40 36% 97%; /* Light text */
+    /* Accent — Blue hover */
+    --accent: 215 38% 20%;           /* Darker blue for hover */
+    --accent-foreground: 40 30% 97%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 34 25% 85%;           /* #E5DCCF */
-    --input: 35 22% 82%;            /* #DDD3C4 */
-    --ring: 215 40% 28%;             /* Blue focus ring */
+    --border: 32 20% 82%;           /* Slightly stronger border #DDD4C6 */
+    --input: 33 18% 78%;            /* Stronger input border #D4C9BA */
+    --ring: 215 42% 26%;
 
     --radius: 0.125rem;
 
     /* Custom tokens */
-    --dark-surface: 30 12% 20%;     /* #3A342E */
-    --deep-taupe: 32 10% 38%;       /* #6B6258 */
-    --gold: 40 39% 55%;             /* Primary Gold #B89A5E */
-    --gold-soft: 40 42% 63%;        /* Soft Gold #C8AE78 */
-    --gold-deep: 39 33% 47%;        /* Deep Gold #9E8350 */
-    --gold-tint: 40 42% 85%;        /* Gold Tint #E8DDC7 */
-    --warm-white: 40 36% 95%;       /* #F7F4EE */
-    --soft-ivory: 37 35% 93%;       /* #F3EEE6 */
-    --light-stone: 37 30% 88%;      /* #EAE3D8 */
-    --cloud-neutral: 43 37% 96%;    /* #F9F7F2 */
-    --soft-charcoal: 34 8% 33%;     /* #5A544C */
-    --warm-grey: 33 7% 51%;         /* #8A8278 */
-    --footer-bg: 215 35% 18%;       /* Elegant dark blue #1E2A3D */
+    --dark-surface: 30 12% 18%;     /* #352F2A */
+    --deep-taupe: 30 10% 34%;       /* #5E5549 */
+    --gold: 40 45% 52%;             /* Richer Gold #BF9B52 */
+    --gold-soft: 40 38% 58%;        /* Soft Gold #C4A568 */
+    --gold-deep: 39 40% 42%;        /* Deep Gold #967A3C */
+    --gold-tint: 38 35% 83%;        /* Gold Tint #E2D5BD */
+    --warm-white: 40 30% 96%;       /* #F8F5F0 */
+    --soft-ivory: 35 28% 90%;       /* #EDE7DD */
+    --light-stone: 34 22% 84%;      /* #DFD6C9 */
+    --cloud-neutral: 38 25% 94%;    /* #F4F0EA */
+    --soft-charcoal: 30 10% 28%;    /* #4D4540 — stronger */
+    --warm-grey: 30 8% 42%;         /* #706860 — stronger */
+    --footer-bg: 215 40% 15%;       /* Deeper elegant blue #162238 */
 
     /* Blue brand tokens */
-    --brand-blue: 215 40% 28%;      /* Deep corporate blue #2B3F5C */
-    --brand-blue-light: 215 30% 38%; /* Mid blue #44567A */
-    --brand-blue-muted: 215 20% 50%; /* Muted blue for text */
-    --brand-blue-tint: 215 25% 92%; /* Very light blue tint #E4E9F0 */
+    --brand-blue: 215 42% 26%;      /* Deep corporate blue #283D58 */
+    --brand-blue-light: 215 32% 35%; /* Mid blue #3E526E */
+    --brand-blue-muted: 215 22% 45%; /* Muted blue */
+    --brand-blue-tint: 215 20% 90%; /* Light blue tint #DFE4EB */
 
     --sidebar-background: 43 37% 96%;
     --sidebar-foreground: 34 8% 17%;

@@ -7,25 +7,25 @@ export function BusinessUnitsHomeSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="business-units" className="py-24 md:py-28 bg-cloud-neutral">
+    <section id="business-units" className="py-24 md:py-28 bg-soft-ivory">
       <div className="container">
         <ScrollReveal>
           <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">{t.businessUnits.label}</p>
         </ScrollReveal>
         <ScrollReveal delay={80}>
-          <h2 className="text-foreground text-xl md:text-2xl font-light mb-5 tracking-[-0.01em]">{t.businessUnits.headline}</h2>
+          <h2 className="text-foreground text-[1.5rem] md:text-[2.125rem] font-light mb-5 tracking-[-0.015em]">{t.businessUnits.headline}</h2>
         </ScrollReveal>
         <ScrollReveal delay={120}>
-          <p className="text-muted-foreground text-sm leading-[1.7] max-w-xl mb-14">{t.businessUnits.subline}</p>
+          <p className="text-muted-foreground text-[15px] leading-[1.7] max-w-xl mb-14">{t.businessUnits.subline}</p>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-px bg-border">
+        <div className="grid md:grid-cols-2 gap-6">
           {t.businessUnits.items.map((unit, i) => (
             <ScrollReveal key={unit.name} delay={i * 100}>
-              <div className="bg-background p-7 md:p-9 h-full flex flex-col">
-                <div className="w-6 h-px bg-border mb-5" />
-                <span className="text-muted-foreground text-[10px] uppercase tracking-[0.18em] mb-2 block">{unit.role}</span>
-                <h3 className="text-foreground text-sm font-medium mb-3 tracking-[-0.01em]">{unit.name}</h3>
+              <div className="bg-background border border-border p-8 md:p-10 h-full flex flex-col">
+                <div className="w-8 h-[2px] bg-[hsl(var(--gold))] mb-6" />
+                <span className="text-brand-blue text-[10px] uppercase tracking-[0.18em] mb-2 block">{unit.role}</span>
+                <h3 className="text-foreground text-base font-medium mb-3 tracking-[-0.01em]">{unit.name}</h3>
                 <p className="text-muted-foreground text-sm leading-[1.7] mb-6 flex-1">{unit.desc.length > 160 ? unit.desc.substring(0, 160) + "…" : unit.desc}</p>
                 {i === 0 ? (
                   <Link to="/leistungen" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
