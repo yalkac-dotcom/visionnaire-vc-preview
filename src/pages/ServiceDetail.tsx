@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { serviceImages } from "@/lib/service-images";
 
 export default function ServiceDetail() {
   const { slug } = useParams<{ slug: string }>();
@@ -14,10 +15,18 @@ export default function ServiceDetail() {
     service.relevantIndustries.includes(ind.slug)
   );
 
+  const heroImg = slug ? serviceImages[slug] : undefined;
+
   return (
     <>
-      <section className="bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32">
-        <div className="container">
+      <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
+        {heroImg && (
+          <div className="absolute inset-0">
+            <img src={heroImg} alt={service.title} className="w-full h-full object-cover opacity-[0.15]" loading="eager" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/50 via-transparent to-[hsl(var(--soft-ivory))]/70" />
+          </div>
+        )}
+        <div className="container relative z-10">
           <Link to="/leistungen" className="inline-flex items-center gap-2 text-muted-foreground hover:text-[hsl(var(--brand-blue))] text-[11px] uppercase tracking-[0.18em] mb-10 transition-colors duration-200">
             <ArrowLeft size={12} />{t.servicePage.backToOverview}
           </Link>
