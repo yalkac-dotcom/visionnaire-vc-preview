@@ -266,6 +266,6 @@ export const translations: Record<Locale, Translations> = {
       datenschutz: "Privacy Policy",
     },
   },
-} as const;
+};
 
 
