@@ -8,7 +8,12 @@ import { PageLayout } from "@/components/PageLayout";
 import Index from "./pages/Index";
 import IndustriesOverview from "./pages/IndustriesOverview";
 import IndustryDetail from "./pages/IndustryDetail";
+import ServicesOverview from "./pages/ServicesOverview";
+import ServiceDetail from "./pages/ServiceDetail";
 import BusinessUnits from "./pages/BusinessUnits";
+import About from "./pages/About";
+import Insights from "./pages/Insights";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,9 +28,14 @@ const App = () => (
           <PageLayout>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/leistungen" element={<ServicesOverview />} />
+              <Route path="/leistungen/:slug" element={<ServiceDetail />} />
               <Route path="/branchen" element={<IndustriesOverview />} />
               <Route path="/branchen/:slug" element={<IndustryDetail />} />
               <Route path="/unternehmensbereiche" element={<BusinessUnits />} />
+              <Route path="/ueber-uns" element={<About />} />
+              <Route path="/insights" element={<Insights />} />
+              <Route path="/kontakt" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </PageLayout>
