@@ -85,12 +85,14 @@
 
   body {
     @apply bg-background text-foreground font-sans;
+    font-weight: 400;
     overflow-wrap: break-word;
   }
 
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
     color: hsl(var(--foreground));
+    font-weight: 450;
   }
 
   p {
