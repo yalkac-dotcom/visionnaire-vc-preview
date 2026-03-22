@@ -24,10 +24,10 @@ export default function IndustriesOverview() {
 
       <section className="py-28 md:py-36 bg-background">
         <div className="container">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {t.industries.items.map((item, i) => (
               <ScrollReveal key={item.slug} delay={i * 70}>
-                <Link to={`/branchen/${item.slug}`} className="block bg-background h-full group hover:bg-card transition-colors duration-300">
+                <Link to={`/branchen/${item.slug}`} className="block bg-background border border-border h-full group hover:bg-card transition-colors duration-300">
                   {industryImages[item.slug] && (
                     <div className="h-44 overflow-hidden">
                       <img src={industryImages[item.slug]} alt={item.name} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
