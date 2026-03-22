@@ -132,6 +132,14 @@ export interface Translations {
       headline: string;
       text: string;
     };
+    attitude?: {
+      headline: string;
+      text: string;
+    };
+    leadership?: {
+      headline: string;
+      text: string;
+    };
   };
   insights: {
     label: string;

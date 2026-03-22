@@ -97,6 +97,30 @@ export default function About() {
         </section>
       )}
 
+      {/* Unsere Haltung & Unsere Führung */}
+      {t.about.attitude && t.about.leadership && (
+        <section className="py-32 md:py-40 bg-cloud-neutral">
+          <div className="container">
+            <div className="grid md:grid-cols-12 gap-16 md:gap-20">
+              <div className="md:col-span-5">
+                <ScrollReveal>
+                  <div className="w-10 h-[2px] bg-[hsl(var(--gold))]/40 mb-7" />
+                  <h2 className="text-foreground text-[1.35rem] md:text-[1.65rem] font-normal leading-[1.25] tracking-[-0.01em] mb-6">{t.about.attitude.headline}</h2>
+                  <p className="text-foreground/60 text-[14.5px] md:text-[15px] leading-[1.85]">{t.about.attitude.text}</p>
+                </ScrollReveal>
+              </div>
+              <div className="md:col-span-5 md:col-start-7">
+                <ScrollReveal delay={140}>
+                  <div className="w-10 h-[2px] bg-[hsl(var(--gold))]/40 mb-7" />
+                  <h2 className="text-foreground text-[1.35rem] md:text-[1.65rem] font-normal leading-[1.25] tracking-[-0.01em] mb-6">{t.about.leadership.headline}</h2>
+                  <p className="text-foreground/60 text-[14.5px] md:text-[15px] leading-[1.85]">{t.about.leadership.text}</p>
+                </ScrollReveal>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* International perspective */}
       <section className="py-32 md:py-40 bg-soft-ivory">
         <div className="container">

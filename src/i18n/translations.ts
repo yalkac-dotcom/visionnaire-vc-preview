@@ -125,6 +125,14 @@ export const translations: Record<Locale, Translations> = {
         headline: "Ein verbundenes Markenuniversum",
         text: "Visionnaire Consulting ist Teil einer zusammenhängenden Markenwelt. Unterschiedliche Geschäftsbereiche können dabei verschiedene Schwerpunkte setzen — verbunden bleiben sie durch dieselbe Haltung: Klarheit, Qualität, kultivierte Wirkung und ein präzises Verständnis für anspruchsvolle Kontexte.",
       },
+      attitude: {
+        headline: "Unsere Haltung",
+        text: "Visionnaire Consulting versteht Beratung nicht als abstrakte Empfehlung, sondern als unternehmerische Aufgabe. Unser Anspruch ist es, Unternehmen mit Klarheit, Präzision und einem belastbaren Blick für Entwicklung, Marke und Umsetzung zu begleiten. Dabei geht es uns nicht um Lautstärke, sondern um Richtung; nicht um kurzfristige Effekte, sondern um tragfähige Lösungen mit Substanz.",
+      },
+      leadership: {
+        headline: "Unsere Führung",
+        text: "Hinter Visionnaire steht eine junge, unternehmerisch geprägte Führung mit einem klaren Gespür für Entwicklung, Markenwirkung und tragfähige Geschäftslösungen. Diese Haltung ist nicht theoretisch, sondern durch praktische Verantwortung, internationale Perspektive und unternehmerische Erfahrung gewachsen. Sie prägt auch unser Selbstverständnis als Team: fokussiert, verbindlich und mit dem Anspruch, Vorhaben nicht nur zu begleiten, sondern mit Klarheit und Substanz voranzubringen.",
+      },
     },
     insights: {
       label: "Insights",
@@ -386,6 +394,14 @@ export const translations: Record<Locale, Translations> = {
         label: "The Brand Universe",
         headline: "A connected brand universe",
         text: "Visionnaire Consulting is part of a cohesive brand world. Different business units may set different priorities — but they remain connected through the same conviction: clarity, quality, cultivated impact and a precise understanding of discerning contexts.",
+      },
+      attitude: {
+        headline: "Our Conviction",
+        text: "Visionnaire Consulting does not view advisory as abstract recommendation, but as an entrepreneurial responsibility. Our ambition is to accompany companies with clarity, precision and a resilient perspective on development, brand and execution. What matters to us is not volume, but direction; not short-term effects, but viable solutions with substance.",
+      },
+      leadership: {
+        headline: "Our Leadership",
+        text: "Behind Visionnaire stands a young, entrepreneurially shaped leadership with a clear sense for development, brand impact and viable business solutions. This conviction is not theoretical — it has grown through practical responsibility, international perspective and entrepreneurial experience. It also shapes our self-understanding as a team: focused, committed and with the ambition not merely to accompany ventures, but to advance them with clarity and substance.",
       },
     },
     insights: {
