@@ -56,7 +56,7 @@ export function HeroSection() {
             </Link>
           </div>
           <p
-            className="text-foreground/50 text-[11px] tracking-[0.2em] uppercase animate-reveal-up"
+            className="text-foreground/65 text-[11px] tracking-[0.2em] uppercase animate-reveal-up"
             style={{ animationDelay: "800ms" }}
           >
             {t.hero.tagline}

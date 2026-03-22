@@ -31,12 +31,12 @@ export function Footer() {
             <p className="text-white/85 tracking-[0.3em] text-[13px] font-normal mb-2">
               {t.footer.brand}<span className="text-white/35 ml-1.5 tracking-normal text-[11px]">{t.footer.consulting}</span>
             </p>
-            <p className="text-white/25 text-[11px]">© {year} Visionnaire Consulting GmbH. {t.footer.rights}</p>
+            <p className="text-white/40 text-[11px]">© {year} Visionnaire Consulting GmbH. {t.footer.rights}</p>
           </div>
-          <div className="flex flex-wrap gap-8 text-[11px] text-white/40">
+          <div className="flex flex-wrap gap-8 text-[11px] text-white/55">
             <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="hover:text-[hsl(var(--gold-soft))] transition-colors duration-200">{t.footer.domizilLink}</a>
-            <Link to="/impressum" className="hover:text-white/65 transition-colors duration-200">{t.footer.impressum}</Link>
-            <Link to="/datenschutz" className="hover:text-white/65 transition-colors duration-200">{t.footer.datenschutz}</Link>
+            <Link to="/impressum" className="hover:text-white/75 transition-colors duration-200">{t.footer.impressum}</Link>
+            <Link to="/datenschutz" className="hover:text-white/75 transition-colors duration-200">{t.footer.datenschutz}</Link>
           </div>
         </div>
       </div>

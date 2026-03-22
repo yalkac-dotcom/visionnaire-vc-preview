@@ -44,9 +44,9 @@ export function Header() {
     ? "bg-[hsl(40_30%_96%/0.92)] backdrop-blur-md shadow-[0_1px_0_0_hsl(var(--border))]"
     : "bg-background";
 
-  const linkClass = "text-foreground/60 hover:text-[hsl(var(--brand-blue))] text-[11px] uppercase tracking-[0.18em] transition-colors duration-200";
+  const linkClass = "text-foreground/80 hover:text-[hsl(var(--brand-blue))] text-[11px] uppercase tracking-[0.18em] font-[450] transition-colors duration-200";
 
-  const dropdownItemClass = "block px-5 py-3 text-foreground/55 hover:text-[hsl(var(--brand-blue))] text-[10.5px] uppercase tracking-[0.16em] transition-colors duration-200 rounded-sm";
+  const dropdownItemClass = "block px-5 py-3 text-foreground/70 hover:text-[hsl(var(--brand-blue))] text-[10.5px] uppercase tracking-[0.16em] font-[430] transition-colors duration-200 rounded-sm";
 
   const SmartLink = ({ to, children, className }: { to: string; children: React.ReactNode; className?: string }) => {
     if (to.startsWith("/#")) {
