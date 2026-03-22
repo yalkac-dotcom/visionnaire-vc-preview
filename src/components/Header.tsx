@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import type { Locale } from "@/i18n/types";
+import { getLocalizedPath } from "@/lib/route-localization";
 
 const localeOptions: { code: Locale; label: string }[] = [
   { code: "de", label: "DE" },
@@ -29,6 +30,7 @@ export function Header() {
   const langRef = useRef<HTMLDivElement>(null);
   const langRefMobile = useRef<HTMLDivElement>(null);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -50,6 +52,16 @@ export function Header() {
   useEffect(() => {
     setMobileOpen(false);
   }, [location.pathname]);
+
+  const handleLocaleChange = (nextLocale: Locale) => {
+    setLocale(nextLocale);
+    setLangOpen(false);
+    navigate({
+      pathname: getLocalizedPath(location.pathname, nextLocale),
+      search: location.search,
+      hash: location.hash,
+    });
+  };
 
   const headerBg = scrolled
     ? "bg-[hsl(40_30%_96%/0.92)] backdrop-blur-md shadow-[0_1px_0_0_hsl(var(--border))]"
@@ -103,7 +115,7 @@ export function Header() {
                 {localeOptions.filter(l => l.code !== locale).map(l => (
                   <button
                     key={l.code}
-                    onClick={() => { setLocale(l.code); setLangOpen(false); }}
+                    onClick={() => handleLocaleChange(l.code)}
                     className="block w-full px-4 py-2 text-foreground/60 hover:text-foreground text-[10.5px] uppercase tracking-[0.16em] font-[450] transition-colors duration-200 text-center"
                   >
                     {l.label}
@@ -133,7 +145,7 @@ export function Header() {
                 {localeOptions.filter(l => l.code !== locale).map(l => (
                   <button
                     key={l.code}
-                    onClick={() => { setLocale(l.code); setLangOpen(false); }}
+                    onClick={() => handleLocaleChange(l.code)}
                     className="block w-full px-3 py-1.5 text-foreground/60 hover:text-foreground text-[10.5px] uppercase tracking-[0.16em] font-[450] transition-colors duration-200 text-center"
                   >
                     {l.label}
@@ -243,3 +255,4 @@ export function Header() {
     </header>
   );
 }
+
