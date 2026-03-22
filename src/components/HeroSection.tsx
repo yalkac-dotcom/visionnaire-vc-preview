@@ -6,16 +6,16 @@ export function HeroSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-[92vh] flex items-center bg-soft-ivory overflow-hidden">
-      {/* Background image — present but refined */}
+    <section className="relative min-h-[92vh] flex items-center bg-[hsl(20,10%,12%)] overflow-hidden">
+      {/* Background image */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Premium corporate architecture"
-          className="w-full h-full object-cover opacity-[0.48]"
+          className="w-full h-full object-cover opacity-[0.55]"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/15 via-transparent to-[hsl(var(--soft-ivory))]/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(20,10%,12%)]/40 via-transparent to-[hsl(20,10%,12%)]/50" />
       </div>
 
       {/* Content */}
@@ -27,13 +27,13 @@ export function HeroSection() {
             style={{ animationDelay: "100ms" }}
           />
           <h1
-            className="text-foreground text-[1.85rem] md:text-[2.5rem] lg:text-[3.25rem] font-normal leading-[1.12] tracking-[-0.02em] mb-7 animate-reveal-up"
+            className="text-white text-[1.85rem] md:text-[2.5rem] lg:text-[3.25rem] font-normal leading-[1.12] tracking-[-0.02em] mb-7 animate-reveal-up"
             style={{ animationDelay: "200ms", lineHeight: "1.12" }}
           >
             {t.hero.headline}
           </h1>
           <p
-            className="text-foreground/85 text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-12 animate-reveal-up"
+            className="text-white/80 text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-12 animate-reveal-up"
             style={{ animationDelay: "400ms" }}
           >
             {t.hero.subline}
@@ -44,19 +44,19 @@ export function HeroSection() {
           >
             <Link
               to="/kontakt"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-white text-[hsl(20,10%,12%)] px-8 py-3.5 hover:bg-white/90 transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.cta}
             </Link>
             <Link
               to="/kontakt"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-8 py-3.5 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-white/30 text-white/70 hover:text-white px-8 py-3.5 hover:border-white/50 transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.ctaSecondary}
             </Link>
           </div>
           <p
-            className="text-foreground text-[11px] tracking-[0.2em] uppercase font-[470] mt-6 animate-reveal-up"
+            className="text-white/70 text-[11px] tracking-[0.2em] uppercase font-[470] mt-6 animate-reveal-up"
             style={{ animationDelay: "800ms" }}
           >
             {t.hero.tagline}
@@ -71,8 +71,8 @@ export function HeroSection() {
           aria-label="Scroll down"
           className="group"
         >
-          <div className="w-[28px] h-[44px] rounded-full border-2 border-primary flex items-start justify-center pt-[9px] transition-all duration-300 group-hover:border-[hsl(var(--accent))] group-active:scale-[0.95]">
-            <div className="w-[3.5px] h-[10px] rounded-full bg-primary animate-scroll-dot" />
+          <div className="w-[28px] h-[44px] rounded-full border-2 border-white/50 flex items-start justify-center pt-[9px] transition-all duration-300 group-hover:border-white/80 group-active:scale-[0.95]">
+            <div className="w-[3.5px] h-[10px] rounded-full bg-white/60 animate-scroll-dot" />
           </div>
         </a>
       </div>
