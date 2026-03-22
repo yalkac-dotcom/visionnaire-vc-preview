@@ -25,9 +25,9 @@ export const translations: Record<Locale, Translations> = {
       contactCta: "Kontakt aufnehmen",
     },
     hero: {
-      tagline: "Strategische Beratung · Operative Umsetzung · Internationale Netzwerke",
-      headline: "Strategie, Produkte und Marken. International gedacht. Präzise umgesetzt.",
-      subline: "Visionnaire Consulting unterstützt Unternehmen bei der Entwicklung von Strategien, Produkten und Marken sowie bei der Umsetzung internationaler Geschäftslösungen.",
+      tagline: "Consulting · Strategie · Marke · Internationale Entwicklung",
+      headline: "Strategische Beratung für Marken, Produkte und internationale Entwicklung.",
+      subline: "Visionnaire Consulting begleitet Unternehmen bei der Entwicklung von Strategien, Produkten und Marken sowie bei der Umsetzung internationaler Geschäftslösungen.",
       cta: "Projekt besprechen",
       ctaSecondary: "Kontakt aufnehmen",
     },
