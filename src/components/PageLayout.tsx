@@ -7,15 +7,57 @@ export function PageLayout({ children }: { children: React.ReactNode }) {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
+    const handleInternalPageLinkClick = (event: MouseEvent) => {
+      if (
+        event.defaultPrevented ||
+        event.button !== 0 ||
+        event.metaKey ||
+        event.ctrlKey ||
+        event.shiftKey ||
+        event.altKey
+      ) {
+        return;
+      }
+
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+
+      const anchor = target.closest("a[href]") as HTMLAnchorElement | null;
+      if (!anchor || anchor.target === "_blank" || anchor.hasAttribute("download")) return;
+
+      const href = anchor.getAttribute("href");
+      if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) return;
+
+      const nextUrl = new URL(anchor.href, window.location.origin);
+      const currentUrl = new URL(window.location.href);
+
+      if (nextUrl.origin !== currentUrl.origin) return;
+
+      const isSamePageRoute =
+        nextUrl.pathname === currentUrl.pathname &&
+        nextUrl.search === currentUrl.search &&
+        !nextUrl.hash;
+
+      if (isSamePageRoute) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    };
+
+    document.addEventListener("click", handleInternalPageLinkClick);
+    return () => document.removeEventListener("click", handleInternalPageLinkClick);
+  }, []);
+
+  useEffect(() => {
     if (hash) {
-      // Allow time for DOM to render then scroll to hash
-      setTimeout(() => {
+      const timeoutId = window.setTimeout(() => {
         const el = document.querySelector(hash);
         if (el) el.scrollIntoView({ behavior: "smooth" });
       }, 100);
-    } else {
-      window.scrollTo(0, 0);
+
+      return () => window.clearTimeout(timeoutId);
     }
+
+    window.scrollTo(0, 0);
   }, [pathname, hash]);
 
   return (
