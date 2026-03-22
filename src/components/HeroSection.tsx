@@ -6,16 +6,16 @@ export function HeroSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-[92vh] flex items-center bg-[hsl(20,10%,12%)] overflow-hidden">
+    <section className="relative min-h-[92vh] flex items-center bg-[hsl(30,20%,18%)] overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Premium corporate architecture"
-          className="w-full h-full object-cover opacity-[0.55]"
+          className="w-full h-full object-cover opacity-[0.65]"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(20,10%,12%)]/40 via-transparent to-[hsl(20,10%,12%)]/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(30,20%,18%)]/30 via-transparent to-[hsl(30,20%,18%)]/45" />
       </div>
 
       {/* Content */}
@@ -44,7 +44,7 @@ export function HeroSection() {
           >
             <Link
               to="/kontakt"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-white text-[hsl(20,10%,12%)] px-8 py-3.5 hover:bg-white/90 transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-white text-[hsl(var(--brand-blue))] px-8 py-3.5 hover:bg-white/90 transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.cta}
             </Link>
