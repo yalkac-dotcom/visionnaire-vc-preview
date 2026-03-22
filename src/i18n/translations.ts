@@ -26,8 +26,8 @@ export const translations: Record<Locale, Translations> = {
     },
     hero: {
       tagline: "Consulting · Strategie · Marke · Internationale Entwicklung",
-      headline: "Strategische Beratung mit Klarheit und Substanz.",
-      subline: "Visionnaire Consulting steht für Positionierung, Marke, Produktstrategie und internationale Geschäftsentwicklung – mit unternehmerischer Stärke und präziser Umsetzung.",
+      headline: "Unternehmerische Beratung. Präzise gedacht. Klar umgesetzt.",
+      subline: "Visionnaire Consulting verbindet strategische Klarheit mit operativer Substanz — in Positionierung, Marke, Produktstrategie und internationaler Geschäftsentwicklung.",
       cta: "Projekt besprechen",
       ctaSecondary: "Kontakt aufnehmen",
     },
@@ -288,8 +288,8 @@ export const translations: Record<Locale, Translations> = {
     },
     hero: {
       tagline: "Consulting · Strategy · Brand · International Development",
-      headline: "Strategic consulting with clarity and substance.",
-      subline: "Visionnaire Consulting stands for positioning, brand, product strategy and international business development — with entrepreneurial strength and precise execution.",
+      headline: "Entrepreneurial consulting. Precisely conceived. Clearly executed.",
+      subline: "Visionnaire Consulting combines strategic clarity with operational substance — in positioning, brand, product strategy and international business development.",
       cta: "Discuss project",
       ctaSecondary: "Get in touch",
     },

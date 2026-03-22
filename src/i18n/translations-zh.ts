@@ -123,8 +123,8 @@ export const translationsZh: Translations = {
   },
   hero: {
     tagline: "咨询 · 战略 · 品牌 · 国际发展",
-    headline: "以清晰与实力为基础的战略咨询。",
-    subline: "Visionnaire Consulting代表着定位、品牌、产品战略与国际业务拓展——以企业实力和精准执行为依托。",
+    headline: "植根企业的咨询。精准构思，清晰执行。",
+    subline: "Visionnaire Consulting将战略清晰与运营实力相结合——涵盖定位、品牌、产品战略与国际业务拓展。",
     cta: "洽谈项目", ctaSecondary: "联系我们",
   },
   expertise: {
