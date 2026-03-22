@@ -26,6 +26,7 @@ export default function About() {
             <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]">{t.cta.contactCta}</Link>
           </div>
         </div>
+        <HeroScrollIndicator />
       </section>
 
       {/* Approach */}
