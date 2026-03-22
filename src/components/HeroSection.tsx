@@ -19,7 +19,7 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 pt-32 pb-28 md:pt-44 md:pb-36">
+      <div className="container relative z-10 pt-44 pb-24 md:pt-60 md:pb-32">
         <div className="max-w-[660px]">
           {/* Gold accent line */}
           <div

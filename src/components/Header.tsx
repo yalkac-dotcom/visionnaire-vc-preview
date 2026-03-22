@@ -2,6 +2,17 @@ import { useState, useRef, useEffect } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import type { Locale } from "@/i18n/types";
+
+const localeOptions: { code: Locale; label: string }[] = [
+  { code: "de", label: "DE" },
+  { code: "en", label: "EN" },
+  { code: "it", label: "IT" },
+  { code: "es", label: "ES" },
+  { code: "ja", label: "JA" },
+  { code: "zh", label: "ZH" },
+  { code: "ar", label: "AR" },
+];
 
 export function Header() {
   const { locale, setLocale, t } = useLanguage();
@@ -11,21 +22,19 @@ export function Header() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
   const servicesRef = useRef<HTMLDivElement>(null);
   const industriesRef = useRef<HTMLDivElement>(null);
   const dropdownPanelRef = useRef<HTMLDivElement>(null);
+  const langRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
-
-  const toggleLocale = () => setLocale(locale === "de" ? "en" : "de");
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       const target = e.target as Node;
-      const inServices = servicesRef.current?.contains(target);
-      const inIndustries = industriesRef.current?.contains(target);
-      const inPanel = dropdownPanelRef.current?.contains(target);
-      if (!inServices && !inPanel) setServicesOpen(false);
-      if (!inIndustries && !inPanel) setIndustriesOpen(false);
+      if (!servicesRef.current?.contains(target) && !dropdownPanelRef.current?.contains(target)) setServicesOpen(false);
+      if (!industriesRef.current?.contains(target) && !dropdownPanelRef.current?.contains(target)) setIndustriesOpen(false);
+      if (!langRef.current?.contains(target)) setLangOpen(false);
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
@@ -79,9 +88,29 @@ export function Header() {
           <Link to="/insights" className={linkClass}>{t.nav.insights}</Link>
           <Link to="/kontakt" className={linkClass}>{t.nav.contact}</Link>
 
-          <button onClick={toggleLocale} className="text-foreground/70 hover:text-foreground text-[11px] uppercase tracking-[0.18em] font-[470] transition-colors duration-200 ml-1">
-            {locale === "de" ? "EN" : "DE"}
-          </button>
+          {/* Language dropdown */}
+          <div ref={langRef} className="relative">
+            <button
+              onClick={() => setLangOpen(!langOpen)}
+              className="text-foreground/90 hover:text-foreground text-[11px] uppercase tracking-[0.18em] font-[500] transition-colors duration-200 ml-1 inline-flex items-center gap-0.5"
+            >
+              {locale.toUpperCase()}
+              <ChevronDown size={10} className={`transition-transform duration-200 ${langOpen ? "rotate-180" : ""}`} />
+            </button>
+            {langOpen && (
+              <div className="absolute top-full right-0 mt-3 bg-[hsl(var(--soft-ivory))]/[0.97] backdrop-blur-xl border border-border/50 shadow-[0_8px_24px_-4px_rgba(0,0,0,0.08)] py-1.5 min-w-[52px]">
+                {localeOptions.filter(l => l.code !== locale).map(l => (
+                  <button
+                    key={l.code}
+                    onClick={() => { setLocale(l.code); setLangOpen(false); }}
+                    className="block w-full px-4 py-2 text-foreground/60 hover:text-foreground text-[10.5px] uppercase tracking-[0.16em] font-[450] transition-colors duration-200 text-center"
+                  >
+                    {l.label}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
 
           <Link to="/kontakt" className="ml-1 text-[11px] uppercase tracking-[0.18em] border border-[hsl(var(--brand-blue))]/25 text-primary hover:bg-primary hover:text-primary-foreground px-6 py-2.5 transition-all duration-200 active:scale-[0.97]">
             {t.nav.projectCta}
@@ -90,7 +119,28 @@ export function Header() {
 
         {/* Mobile controls */}
         <div className="flex lg:hidden items-center gap-3">
-          <button onClick={toggleLocale} className="text-foreground/70 text-[11px] uppercase tracking-[0.18em] font-[470]">{locale === "de" ? "EN" : "DE"}</button>
+          <div ref={langRef} className="relative">
+            <button
+              onClick={() => setLangOpen(!langOpen)}
+              className="text-foreground/90 text-[11px] uppercase tracking-[0.18em] font-[500] inline-flex items-center gap-0.5"
+            >
+              {locale.toUpperCase()}
+              <ChevronDown size={9} className={`transition-transform duration-200 ${langOpen ? "rotate-180" : ""}`} />
+            </button>
+            {langOpen && (
+              <div className="absolute top-full right-0 mt-2 bg-background border border-border/50 shadow-[0_8px_24px_-4px_rgba(0,0,0,0.08)] py-1.5 min-w-[48px] z-50">
+                {localeOptions.filter(l => l.code !== locale).map(l => (
+                  <button
+                    key={l.code}
+                    onClick={() => { setLocale(l.code); setLangOpen(false); }}
+                    className="block w-full px-3 py-1.5 text-foreground/60 hover:text-foreground text-[10.5px] uppercase tracking-[0.16em] font-[450] transition-colors duration-200 text-center"
+                  >
+                    {l.label}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
           <button onClick={() => setMobileOpen(!mobileOpen)} className="text-foreground/60 p-1">{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
         </div>
       </div>
@@ -102,7 +152,7 @@ export function Header() {
             {servicesOpen && (
               <div className="flex items-center gap-8">
                 <Link to="/leistungen" onClick={() => setServicesOpen(false)} className="block px-4 py-2.5 text-foreground/80 text-[10.5px] uppercase tracking-[0.16em] font-medium hover:text-[hsl(var(--brand-blue))] transition-colors duration-200">
-                  {locale === "de" ? "Alle Leistungen" : "All Services"}
+                  {locale === "de" ? "Alle Leistungen" : t.servicePage.backToOverview}
                 </Link>
                 <div className="w-px h-5 bg-border/80" />
                 {t.nav.servicesDropdown.map((item) => (
@@ -115,7 +165,7 @@ export function Header() {
             {industriesOpen && (
               <div className="flex items-center gap-8">
                 <Link to="/branchen" onClick={() => setIndustriesOpen(false)} className="block px-4 py-2.5 text-foreground/80 text-[10.5px] uppercase tracking-[0.16em] font-medium hover:text-[hsl(var(--brand-blue))] transition-colors duration-200">
-                  {locale === "de" ? "Alle Branchen" : "All Industries"}
+                  {locale === "de" ? "Alle Branchen" : t.industryPage.backToOverview}
                 </Link>
                 <div className="w-px h-5 bg-border/80" />
                 {t.nav.industriesDropdown.map((item) => (
@@ -139,7 +189,7 @@ export function Header() {
           {mobileServicesOpen && (
             <div className="pl-14 pb-2">
               <Link to="/leistungen" onClick={() => setMobileOpen(false)} className="block py-2.5 text-foreground/35 text-[11px] uppercase tracking-[0.18em]">
-                {locale === "de" ? "Alle Leistungen" : "All Services"}
+                {locale === "de" ? "Alle Leistungen" : t.servicePage.backToOverview}
               </Link>
               {t.nav.servicesDropdown.map((item) => (
                 <Link key={item.slug} to={`/leistungen/${item.slug}`} onClick={() => setMobileOpen(false)} className="block py-2.5 text-foreground/35 text-[11px] uppercase tracking-[0.18em]">
@@ -156,7 +206,7 @@ export function Header() {
           {mobileIndustriesOpen && (
             <div className="pl-14 pb-2">
               <Link to="/branchen" onClick={() => setMobileOpen(false)} className="block py-2.5 text-foreground/35 text-[11px] uppercase tracking-[0.18em]">
-                {locale === "de" ? "Alle Branchen" : "All Industries"}
+                {locale === "de" ? "Alle Branchen" : t.industryPage.backToOverview}
               </Link>
               {t.nav.industriesDropdown.map((item) => (
                 <Link key={item.slug} to={`/branchen/${item.slug}`} onClick={() => setMobileOpen(false)} className="block py-2.5 text-foreground/35 text-[11px] uppercase tracking-[0.18em]">

@@ -535,4 +535,9 @@ export const translations: Record<Locale, Translations> = {
       ],
     },
   },
+  it: translationsIt,
+  es: translationsEs,
+  ja: translationsJa,
+  zh: translationsZh,
+  ar: translationsAr,
 };
