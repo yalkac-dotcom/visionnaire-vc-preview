@@ -6,16 +6,16 @@ export function HeroSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-[92vh] flex items-center bg-soft-ivory overflow-hidden">
-      {/* Background image — present but refined */}
+    <section className="relative min-h-[92vh] flex items-center bg-[hsl(20,10%,12%)] overflow-hidden">
+      {/* Background image */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Premium corporate architecture"
-          className="w-full h-full object-cover opacity-[0.48]"
+          className="w-full h-full object-cover opacity-[0.55]"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/15 via-transparent to-[hsl(var(--soft-ivory))]/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(20,10%,12%)]/40 via-transparent to-[hsl(20,10%,12%)]/50" />
       </div>
 
       {/* Content */}
