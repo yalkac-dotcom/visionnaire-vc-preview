@@ -27,13 +27,13 @@ export function HeroSection() {
             style={{ animationDelay: "100ms" }}
           />
           <h1
-            className="text-foreground text-[1.85rem] md:text-[2.5rem] lg:text-[3.25rem] font-normal leading-[1.12] tracking-[-0.02em] mb-7 animate-reveal-up"
+            className="text-white text-[1.85rem] md:text-[2.5rem] lg:text-[3.25rem] font-normal leading-[1.12] tracking-[-0.02em] mb-7 animate-reveal-up"
             style={{ animationDelay: "200ms", lineHeight: "1.12" }}
           >
             {t.hero.headline}
           </h1>
           <p
-            className="text-foreground/85 text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-12 animate-reveal-up"
+            className="text-white/80 text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-12 animate-reveal-up"
             style={{ animationDelay: "400ms" }}
           >
             {t.hero.subline}
