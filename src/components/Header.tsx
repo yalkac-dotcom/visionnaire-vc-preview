@@ -27,6 +27,7 @@ export function Header() {
   const industriesRef = useRef<HTMLDivElement>(null);
   const dropdownPanelRef = useRef<HTMLDivElement>(null);
   const langRef = useRef<HTMLDivElement>(null);
+  const langRefMobile = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -34,7 +35,7 @@ export function Header() {
       const target = e.target as Node;
       if (!servicesRef.current?.contains(target) && !dropdownPanelRef.current?.contains(target)) setServicesOpen(false);
       if (!industriesRef.current?.contains(target) && !dropdownPanelRef.current?.contains(target)) setIndustriesOpen(false);
-      if (!langRef.current?.contains(target)) setLangOpen(false);
+      if (!langRef.current?.contains(target) && !langRefMobile.current?.contains(target)) setLangOpen(false);
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
@@ -119,7 +120,7 @@ export function Header() {
 
         {/* Mobile controls */}
         <div className="flex lg:hidden items-center gap-3">
-          <div ref={langRef} className="relative">
+          <div ref={langRefMobile} className="relative">
             <button
               onClick={() => setLangOpen(!langOpen)}
               className="text-foreground/90 text-[11px] uppercase tracking-[0.18em] font-[500] inline-flex items-center gap-0.5"
