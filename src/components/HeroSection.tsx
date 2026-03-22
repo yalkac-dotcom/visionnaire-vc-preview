@@ -44,19 +44,19 @@ export function HeroSection() {
           >
             <Link
               to="/kontakt"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-white text-[hsl(20,10%,12%)] px-8 py-3.5 hover:bg-white/90 transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.cta}
             </Link>
             <Link
               to="/kontakt"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-8 py-3.5 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-white/30 text-white/70 hover:text-white px-8 py-3.5 hover:border-white/50 transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.ctaSecondary}
             </Link>
           </div>
           <p
-            className="text-foreground text-[11px] tracking-[0.2em] uppercase font-[470] mt-6 animate-reveal-up"
+            className="text-white/70 text-[11px] tracking-[0.2em] uppercase font-[470] mt-6 animate-reveal-up"
             style={{ animationDelay: "800ms" }}
           >
             {t.hero.tagline}
