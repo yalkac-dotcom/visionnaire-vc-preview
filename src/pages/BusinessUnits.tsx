@@ -30,27 +30,27 @@ export default function BusinessUnits() {
       </section>
 
       {/* Unit panels */}
-      <section className="py-32 md:py-40 bg-background">
+      <section className="py-36 md:py-44 bg-background">
         <div className="container">
-          <div className="space-y-0 divide-y divide-border">
+          <div className="space-y-0">
             {t.businessUnits.items.map((unit, i) => (
               <ScrollReveal key={unit.name} delay={i * 100}>
-                <div className="py-14 md:py-18 first:pt-0 last:pb-0 grid md:grid-cols-12 gap-8 md:gap-16">
+                <div className={`py-20 md:py-24 grid md:grid-cols-12 gap-10 md:gap-20 ${i > 0 ? "border-t border-border" : ""}`}>
                   <div className="md:col-span-4">
-                    <div className="w-10 h-[2px] bg-[hsl(var(--gold))]/50 mb-6" />
+                    <div className="w-10 h-[2px] bg-[hsl(var(--gold))]/50 mb-8" />
                     {unit.role && (
-                      <span className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium block mb-3">{unit.role}</span>
+                      <span className="text-[hsl(var(--brand-blue-muted))] text-[10.5px] uppercase tracking-[0.22em] font-[440] block mb-5">{unit.role}</span>
                     )}
-                    <h3 className="text-foreground text-lg md:text-xl font-normal tracking-[-0.01em]">{unit.name}</h3>
+                    <h3 className="text-foreground text-xl md:text-2xl font-normal tracking-[-0.015em] leading-[1.2]">{unit.name}</h3>
                   </div>
                   <div className="md:col-span-7 md:col-start-6">
-                    <p className="text-foreground/65 text-[15px] leading-[1.8] mb-8">{unit.desc}</p>
+                    <p className="text-foreground/65 text-[15px] leading-[1.85] mb-12">{unit.desc}</p>
                     {i === 0 ? (
-                      <Link to="/leistungen" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
+                      <Link to="/leistungen" className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
                         {t.cta.consultationCta} <ArrowUpRight size={12} />
                       </Link>
                     ) : (
-                      <a href={unit.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
+                      <a href={unit.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
                         {t.cta.contactCta} <ArrowUpRight size={12} />
                       </a>
                     )}
