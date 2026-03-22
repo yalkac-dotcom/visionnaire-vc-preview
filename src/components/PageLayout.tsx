@@ -10,7 +10,6 @@ export function PageLayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const handleInternalPageLinkClick = (event: MouseEvent) => {
       if (
-        event.defaultPrevented ||
         event.button !== 0 ||
         event.metaKey ||
         event.ctrlKey ||
