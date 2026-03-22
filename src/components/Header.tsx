@@ -79,7 +79,7 @@ export function Header() {
           <Link to="/insights" className={linkClass}>{t.nav.insights}</Link>
           <Link to="/kontakt" className={linkClass}>{t.nav.contact}</Link>
 
-          <button onClick={toggleLocale} className="text-foreground/50 hover:text-foreground/80 text-[11px] uppercase tracking-[0.18em] font-[450] transition-colors duration-200 ml-1">
+          <button onClick={toggleLocale} className="text-foreground/70 hover:text-foreground text-[11px] uppercase tracking-[0.18em] font-[470] transition-colors duration-200 ml-1">
             {locale === "de" ? "EN" : "DE"}
           </button>
 
