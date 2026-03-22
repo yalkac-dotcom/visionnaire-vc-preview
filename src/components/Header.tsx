@@ -79,7 +79,7 @@ export function Header() {
           <Link to="/insights" className={linkClass}>{t.nav.insights}</Link>
           <Link to="/kontakt" className={linkClass}>{t.nav.contact}</Link>
 
-          <button onClick={toggleLocale} className="text-foreground/20 hover:text-foreground/50 text-[11px] uppercase tracking-[0.18em] transition-colors duration-200 ml-1">
+          <button onClick={toggleLocale} className="text-foreground/50 hover:text-foreground/80 text-[11px] uppercase tracking-[0.18em] font-[450] transition-colors duration-200 ml-1">
             {locale === "de" ? "EN" : "DE"}
           </button>
 
@@ -90,7 +90,7 @@ export function Header() {
 
         {/* Mobile controls */}
         <div className="flex lg:hidden items-center gap-3">
-          <button onClick={toggleLocale} className="text-foreground/25 text-[11px] uppercase tracking-[0.18em]">{locale === "de" ? "EN" : "DE"}</button>
+          <button onClick={toggleLocale} className="text-foreground/50 text-[11px] uppercase tracking-[0.18em] font-[450]">{locale === "de" ? "EN" : "DE"}</button>
           <button onClick={() => setMobileOpen(!mobileOpen)} className="text-foreground/60 p-1">{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
         </div>
       </div>
