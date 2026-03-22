@@ -90,7 +90,7 @@ export function Header() {
 
         {/* Mobile controls */}
         <div className="flex lg:hidden items-center gap-3">
-          <button onClick={toggleLocale} className="text-foreground/25 text-[11px] uppercase tracking-[0.18em]">{locale === "de" ? "EN" : "DE"}</button>
+          <button onClick={toggleLocale} className="text-foreground/50 text-[11px] uppercase tracking-[0.18em] font-[450]">{locale === "de" ? "EN" : "DE"}</button>
           <button onClick={() => setMobileOpen(!mobileOpen)} className="text-foreground/60 p-1">{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
         </div>
       </div>
