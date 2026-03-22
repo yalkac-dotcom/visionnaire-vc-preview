@@ -23,10 +23,10 @@ export default function ServicesOverview() {
 
       <section className="py-28 md:py-36 bg-background">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-px bg-border">
+          <div className="grid md:grid-cols-2 gap-4">
             {t.services.items.map((item, i) => (
               <ScrollReveal key={item.slug} delay={i * 70}>
-                <Link to={`/leistungen/${item.slug}`} className="block bg-background p-8 md:p-10 lg:p-14 h-full group hover:bg-card transition-colors duration-300">
+                <Link to={`/leistungen/${item.slug}`} className="block bg-background border border-border p-8 md:p-10 lg:p-14 h-full group hover:bg-card transition-colors duration-300">
                   <span className="text-[hsl(var(--gold))] text-[11px] tracking-[0.2em] font-medium mb-5 block">{item.number}</span>
                   <h3 className="text-foreground text-lg md:text-xl font-normal mb-4 tracking-[-0.01em] group-hover:text-brand-blue transition-colors duration-200">{item.title}</h3>
                   <p className="text-foreground/60 text-sm leading-[1.7] mb-7">{item.desc}</p>
