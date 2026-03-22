@@ -13,8 +13,8 @@ export default function About() {
       {/* Hero */}
       <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroAbout} alt="Visionnaire Consulting" className="w-full h-full object-cover opacity-[0.35]" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/25 via-transparent to-[hsl(var(--soft-ivory))]/45" />
+          <img src={heroAbout} alt="Visionnaire Consulting" className="w-full h-full object-cover opacity-[0.45]" loading="eager" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/15 via-transparent to-[hsl(var(--soft-ivory))]/35" />
         </div>
         <div className="container relative z-10">
           <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{t.about.label}</p>
@@ -141,8 +141,8 @@ export default function About() {
       {/* CTA */}
       <section className="relative py-28 md:py-36 bg-cloud-neutral overflow-hidden">
         <div className="absolute inset-0">
-          <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.18]" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--cloud-neutral))]/35 via-transparent to-[hsl(var(--cloud-neutral))]/50" />
+          <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.22]" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--cloud-neutral))]/25 via-transparent to-[hsl(var(--cloud-neutral))]/40" />
         </div>
         <div className="container text-center relative z-10">
           <ScrollReveal>
