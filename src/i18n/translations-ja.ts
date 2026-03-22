@@ -123,8 +123,8 @@ export const translationsJa: Translations = {
   },
   hero: {
     tagline: "コンサルティング · 戦略 · ブランド · 国際展開",
-    headline: "経営の実体を備えた戦略コンサルティング。",
-    subline: "Visionnaire Consultingは、ポジショニング、ブランド開発、プロダクト戦略、国際事業の推進を、明確な視点と確かな実行力で支援します。",
+    headline: "明確さと実体を備えた戦略コンサルティング。",
+    subline: "Visionnaire Consultingは、ポジショニング、ブランド、プロダクト戦略、国際事業開発において、経営の力と精緻な実行力で確かな成果を実現します。",
     cta: "プロジェクトのご相談", ctaSecondary: "お問い合わせ",
   },
   expertise: {
