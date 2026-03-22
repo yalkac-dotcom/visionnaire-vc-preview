@@ -42,18 +42,18 @@ export function HeroSection() {
             className="flex flex-wrap gap-4 mb-14 animate-reveal-up"
             style={{ animationDelay: "600ms" }}
           >
-            <a
-              href="#contact"
+            <Link
+              to="/kontakt"
               className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.cta}
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="/kontakt"
               className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-8 py-3.5 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.ctaSecondary}
-            </a>
+            </Link>
           </div>
           <p
             className="text-foreground/50 text-[11px] tracking-[0.2em] uppercase animate-reveal-up"

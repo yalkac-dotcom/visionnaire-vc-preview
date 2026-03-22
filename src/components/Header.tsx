@@ -171,7 +171,7 @@ export function Header() {
           <div className="px-8 pt-4">
             <Link to="/kontakt" className="inline-block text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-6 py-2.5 active:scale-[0.97]">
               {t.nav.projectCta}
-            </SmartLink>
+            </Link>
           </div>
         </nav>
       )}
