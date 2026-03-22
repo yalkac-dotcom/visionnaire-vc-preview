@@ -396,8 +396,8 @@ export const translations: Record<Locale, Translations> = {
         text: "Visionnaire Consulting is part of a cohesive brand world. Different business units may set different priorities — but they remain connected through the same conviction: clarity, quality, cultivated impact and a precise understanding of discerning contexts.",
       },
       attitude: {
-        headline: "Our Conviction",
-        text: "Visionnaire Consulting does not view advisory as abstract recommendation, but as an entrepreneurial responsibility. Our ambition is to accompany companies with clarity, precision and a resilient perspective on development, brand and execution. What matters to us is not volume, but direction; not short-term effects, but viable solutions with substance.",
+        headline: "What drives us",
+        text: "Visionnaire Consulting views advisory as an entrepreneurial responsibility. Our focus is on accompanying companies with clarity, precision and a resilient perspective on development, brand and execution. Not volume is at the centre, but direction. Not short-term impact, but solutions that carry substance and endure.",
       },
       leadership: {
         headline: "Our Leadership",
