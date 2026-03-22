@@ -213,8 +213,8 @@ export const translationsIt: Translations = {
   },
   hero: {
     tagline: "Consulting · Strategia · Brand · Sviluppo Internazionale",
-    headline: "Consulenza strategica con solidità imprenditoriale.",
-    subline: "Visionnaire Consulting accompagna le imprese nel posizionamento, nello sviluppo del marchio, nella strategia di prodotto e nei progetti internazionali — con chiarezza, precisione e comprovata capacità esecutiva.",
+    headline: "Consulenza strategica con chiarezza e sostanza.",
+    subline: "Visionnaire Consulting rappresenta posizionamento, marca, strategia di prodotto e sviluppo internazionale — con solidità imprenditoriale ed esecuzione precisa.",
     cta: "Discutere un progetto",
     ctaSecondary: "Contattarci",
   },

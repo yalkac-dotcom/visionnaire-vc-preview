@@ -288,8 +288,8 @@ export const translations: Record<Locale, Translations> = {
     },
     hero: {
       tagline: "Consulting · Strategy · Brand · International Development",
-      headline: "Strategic consulting with entrepreneurial substance.",
-      subline: "Visionnaire Consulting guides companies in positioning, brand development, product strategy and international business ventures — with clarity, precision and proven execution capability.",
+      headline: "Strategic consulting with clarity and substance.",
+      subline: "Visionnaire Consulting stands for positioning, brand, product strategy and international business development — with entrepreneurial strength and precise execution.",
       cta: "Discuss project",
       ctaSecondary: "Get in touch",
     },
