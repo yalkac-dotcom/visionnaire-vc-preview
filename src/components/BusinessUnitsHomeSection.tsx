@@ -26,10 +26,10 @@ export function BusinessUnitsHomeSection() {
         <div className="grid md:grid-cols-2 gap-6">
           {t.businessUnits.items.map((unit, i) => (
             <ScrollReveal key={unit.name} delay={i * 100}>
-              <div className="bg-background border border-border h-full flex flex-col overflow-hidden">
+              <div className="bg-background border border-border/60 h-full flex flex-col overflow-hidden">
                 {unitImages[i] && (
-                  <div className="h-48 overflow-hidden">
-                    <img src={unitImages[i]} alt={unit.name} className="w-full h-full object-cover opacity-[0.78] group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+                  <div className="h-44 overflow-hidden">
+                    <img src={unitImages[i]} alt={unit.name} className="w-full h-full object-cover opacity-[0.68] group-hover:opacity-[0.78] transition-all duration-500" loading="lazy" />
                   </div>
                 )}
                 <div className="p-8 md:p-10 flex flex-col flex-1">
