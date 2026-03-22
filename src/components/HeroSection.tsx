@@ -39,7 +39,7 @@ export function HeroSection() {
             {t.hero.subline}
           </p>
           <div
-            className="flex flex-wrap gap-4 mb-14 animate-reveal-up"
+            className="flex flex-wrap gap-4 mb-16 animate-reveal-up"
             style={{ animationDelay: "600ms" }}
           >
             <Link
