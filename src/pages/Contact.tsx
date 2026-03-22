@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
 import { Mail, Phone, MapPin } from "lucide-react";
 import heroContact from "@/assets/hero-contact.jpg";
 
@@ -21,6 +22,7 @@ export default function Contact() {
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-normal leading-[1.15] tracking-[-0.015em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "250ms" }}>{t.contact.headline}</h1>
           <p className="text-foreground/70 text-[15px] md:text-base leading-[1.7] max-w-xl animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.contact.text}</p>
         </div>
+        <HeroScrollIndicator />
       </section>
 
       {/* Intro + Subject options */}

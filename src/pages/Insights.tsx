@@ -1,5 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
 import { ArrowRight } from "lucide-react";
 import heroInsights from "@/assets/hero-insights.jpg";
 
@@ -18,6 +19,7 @@ export default function Insights() {
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-normal leading-[1.15] tracking-[-0.015em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "250ms" }}>{t.insights.headline}</h1>
           <p className="text-foreground/70 text-[15px] md:text-base leading-[1.7] max-w-xl animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.insights.subline}</p>
         </div>
+        <HeroScrollIndicator />
       </section>
 
       <section className="py-28 md:py-36 bg-background">
