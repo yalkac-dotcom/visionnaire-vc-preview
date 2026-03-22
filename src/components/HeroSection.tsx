@@ -11,10 +11,10 @@ export function HeroSection() {
         <img
           src={heroImage}
           alt="Premium corporate architecture"
-          className="w-full h-full object-cover opacity-[0.22]"
+          className="w-full h-full object-cover opacity-[0.25]"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--warm-white))]/40 via-transparent to-[hsl(var(--soft-ivory))]/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/30 via-transparent to-[hsl(var(--soft-ivory))]/50" />
       </div>
 
       {/* Content */}
@@ -32,7 +32,7 @@ export function HeroSection() {
             {t.hero.headline}
           </h1>
           <p
-            className="text-[hsl(var(--soft-charcoal))] text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-12 animate-reveal-up"
+            className="text-foreground/75 text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-12 animate-reveal-up"
             style={{ animationDelay: "400ms" }}
           >
             {t.hero.subline}
@@ -43,19 +43,19 @@ export function HeroSection() {
           >
             <a
               href="#contact"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.cta}
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/80 hover:text-foreground px-8 py-3.5 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-8 py-3.5 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.ctaSecondary}
             </a>
           </div>
           <p
-            className="text-[hsl(var(--soft-charcoal))]/70 text-[11px] tracking-[0.2em] uppercase animate-reveal-up"
+            className="text-foreground/50 text-[11px] tracking-[0.2em] uppercase animate-reveal-up"
             style={{ animationDelay: "800ms" }}
           >
             {t.hero.tagline}

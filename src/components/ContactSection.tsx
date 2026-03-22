@@ -12,7 +12,7 @@ export function ContactSection() {
         <div className="max-w-2xl mx-auto text-center">
           <ScrollReveal>
             <div className="w-12 h-[2px] bg-[hsl(var(--gold))] mx-auto mb-6" />
-            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">
+            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">
               {t.contact.label}
             </p>
           </ScrollReveal>
@@ -22,7 +22,7 @@ export function ContactSection() {
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={160}>
-            <p className="text-muted-foreground text-[15px] md:text-[16px] leading-[1.7] mb-14 max-w-lg mx-auto">
+            <p className="text-foreground/65 text-[15px] md:text-[16px] leading-[1.7] mb-14 max-w-lg mx-auto">
               {t.contact.text}
             </p>
           </ScrollReveal>
@@ -37,7 +37,7 @@ export function ContactSection() {
               </Link>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/25 text-foreground/70 hover:text-foreground px-8 py-3.5 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
+                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-8 py-3.5 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
               >
                 {t.contact.ctaSecondary}
               </Link>
@@ -45,7 +45,7 @@ export function ContactSection() {
           </ScrollReveal>
 
           <ScrollReveal delay={320}>
-            <div className="flex flex-col sm:flex-row justify-center gap-8 text-sm text-muted-foreground">
+            <div className="flex flex-col sm:flex-row justify-center gap-8 text-sm text-foreground/60">
               <a
                 href={`mailto:${t.contact.email}`}
                 className="inline-flex items-center gap-2.5 hover:text-[hsl(var(--brand-blue))] transition-colors duration-200"
