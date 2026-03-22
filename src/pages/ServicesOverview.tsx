@@ -32,7 +32,7 @@ export default function ServicesOverview() {
                   <p className="text-foreground/60 text-sm leading-[1.7] mb-7">{item.desc}</p>
                   <ul className="space-y-2.5 mb-8">
                     {item.details.slice(0, 3).map((d) => (
-                      <li key={d} className="text-foreground/55 text-sm flex items-start gap-3">
+                      <li key={d} className="text-foreground/65 text-sm flex items-start gap-3">
                         <span className="w-1 h-1 rounded-full bg-[hsl(var(--gold))]/50 mt-[7px] shrink-0" />{d}
                       </li>
                     ))}
