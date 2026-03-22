@@ -66,9 +66,13 @@ export function HeroSection() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-12 left-0 right-0 z-10 flex justify-center">
-        <a href="#expertise" aria-label="Scroll down">
-          <div className="w-[20px] h-[32px] rounded-full border border-foreground/25 flex items-start justify-center pt-[6px] animate-scroll-indicator">
-            <div className="w-[2.5px] h-[6px] rounded-full bg-foreground/35 animate-scroll-dot" />
+        <a
+          href="#expertise"
+          aria-label="Scroll down"
+          className="group"
+        >
+          <div className="w-[22px] h-[36px] rounded-full border-[1.5px] border-[hsl(var(--brand-blue))]/50 flex items-start justify-center pt-[7px] transition-all duration-300 group-hover:border-[hsl(var(--brand-blue))]/80 group-active:scale-[0.95]">
+            <div className="w-[3px] h-[7px] rounded-full bg-[hsl(var(--brand-blue))]/60 animate-scroll-dot" />
           </div>
         </a>
       </div>
