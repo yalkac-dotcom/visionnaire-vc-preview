@@ -122,9 +122,9 @@ export const translationsJa: Translations = {
     projectCta: "プロジェクトのご相談", contactCta: "お問い合わせ",
   },
   hero: {
-    tagline: "戦略コンサルティング · オペレーション実行 · 国際ネットワーク",
-    headline: "戦略、プロダクト、ブランド。国際的な視座で構想し、精緻に実行する。",
-    subline: "Visionnaire Consultingは、戦略・プロダクト・ブランドの開発、そして国際的なビジネスソリューションの実行において企業を支援します。",
+    tagline: "コンサルティング · 戦略 · ブランド · 国際展開",
+    headline: "ブランド、プロダクト、国際展開のための戦略コンサルティング。",
+    subline: "Visionnaire Consultingは、戦略・プロダクト・ブランドの開発から国際的なビジネスソリューションの実行まで、企業を一貫して支援します。",
     cta: "プロジェクトのご相談", ctaSecondary: "お問い合わせ",
   },
   expertise: {

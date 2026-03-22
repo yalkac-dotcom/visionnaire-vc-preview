@@ -212,9 +212,9 @@ export const translationsIt: Translations = {
     contactCta: "Contattarci",
   },
   hero: {
-    tagline: "Consulenza Strategica · Implementazione Operativa · Network Internazionali",
-    headline: "Strategia, prodotti e marchi. Pensati a livello internazionale. Realizzati con precisione.",
-    subline: "Visionnaire Consulting supporta le imprese nello sviluppo di strategie, prodotti e marchi nonché nell'implementazione di soluzioni di business internazionali.",
+    tagline: "Consulting · Strategia · Brand · Sviluppo Internazionale",
+    headline: "Consulenza strategica per marchi, prodotti e sviluppo internazionale.",
+    subline: "Visionnaire Consulting accompagna le imprese nello sviluppo di strategie, prodotti e marchi nonché nella realizzazione di soluzioni di business internazionali.",
     cta: "Discutere un progetto",
     ctaSecondary: "Contattarci",
   },

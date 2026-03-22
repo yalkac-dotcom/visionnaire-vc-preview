@@ -122,9 +122,9 @@ export const translationsZh: Translations = {
     projectCta: "洽谈项目", contactCta: "联系我们",
   },
   hero: {
-    tagline: "战略咨询 · 运营实施 · 国际网络",
-    headline: "战略、产品与品牌。以国际视野构想，以精准方式执行。",
-    subline: "Visionnaire Consulting支持企业在战略、产品和品牌开发以及国际商业解决方案实施方面取得成功。",
+    tagline: "咨询 · 战略 · 品牌 · 国际发展",
+    headline: "为品牌、产品与国际发展提供战略咨询。",
+    subline: "Visionnaire Consulting陪伴企业完成战略、产品与品牌的开发，并推动国际商业解决方案的落地实施。",
     cta: "洽谈项目", ctaSecondary: "联系我们",
   },
   expertise: {
