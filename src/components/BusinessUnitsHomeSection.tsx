@@ -14,13 +14,13 @@ export function BusinessUnitsHomeSection() {
     <section id="business-units" className="py-24 md:py-28 bg-soft-ivory">
       <div className="container">
         <ScrollReveal>
-          <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">{t.businessUnits.label}</p>
+          <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.businessUnits.label}</p>
         </ScrollReveal>
         <ScrollReveal delay={80}>
           <h2 className="text-foreground text-[1.5rem] md:text-[2.125rem] font-normal mb-5 tracking-[-0.02em]">{t.businessUnits.headline}</h2>
         </ScrollReveal>
         <ScrollReveal delay={120}>
-          <p className="text-muted-foreground text-[15px] leading-[1.7] max-w-xl mb-14">{t.businessUnits.subline}</p>
+          <p className="text-foreground/65 text-[15px] leading-[1.7] max-w-xl mb-14">{t.businessUnits.subline}</p>
         </ScrollReveal>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -34,9 +34,9 @@ export function BusinessUnitsHomeSection() {
                 )}
                 <div className="p-8 md:p-10 flex flex-col flex-1">
                 <div className="w-8 h-[2px] bg-[hsl(var(--gold))] mb-6" />
-                <span className="text-brand-blue text-[10px] uppercase tracking-[0.18em] mb-2 block">{unit.role}</span>
+                <span className="text-brand-blue text-[10px] uppercase tracking-[0.18em] font-medium mb-2 block">{unit.role}</span>
                 <h3 className="text-foreground text-base font-medium mb-3 tracking-[-0.01em]">{unit.name}</h3>
-                <p className="text-muted-foreground text-sm leading-[1.7] mb-6 flex-1">{unit.desc.length > 160 ? unit.desc.substring(0, 160) + "…" : unit.desc}</p>
+                <p className="text-foreground/60 text-sm leading-[1.7] mb-6 flex-1">{unit.desc.length > 160 ? unit.desc.substring(0, 160) + "…" : unit.desc}</p>
                 {i === 0 ? (
                   <Link to="/leistungen" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
                     {t.cta.consultationCta} <ArrowUpRight size={11} />
