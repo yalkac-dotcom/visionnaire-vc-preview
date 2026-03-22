@@ -31,23 +31,25 @@ export default function About() {
 
       {/* Führung & Antrieb – persönlicher Einstieg */}
       {t.about.leadership && t.about.attitude && (
-        <section className="py-32 md:py-40 bg-background">
+        <section className="py-28 md:py-36 bg-background">
           <div className="container">
-            <div className="grid md:grid-cols-12 gap-16 md:gap-20">
-              <div className="md:col-span-5">
-                <ScrollReveal>
-                  <div className="w-10 h-[2px] bg-[hsl(var(--gold))]/40 mb-7" />
-                  <h2 className="text-foreground text-[1.35rem] md:text-[1.65rem] font-normal leading-[1.25] tracking-[-0.01em] mb-6">{t.about.leadership.headline}</h2>
-                  <p className="text-foreground/60 text-[14.5px] md:text-[15px] leading-[1.85]">{t.about.leadership.text}</p>
-                </ScrollReveal>
-              </div>
-              <div className="md:col-span-5 md:col-start-7">
-                <ScrollReveal delay={140}>
-                  <div className="w-10 h-[2px] bg-[hsl(var(--gold))]/40 mb-7" />
-                  <h2 className="text-foreground text-[1.35rem] md:text-[1.65rem] font-normal leading-[1.25] tracking-[-0.01em] mb-6">{t.about.attitude.headline}</h2>
-                  <p className="text-foreground/60 text-[14.5px] md:text-[15px] leading-[1.85]">{t.about.attitude.text}</p>
-                </ScrollReveal>
-              </div>
+            <div className="grid md:grid-cols-2 gap-5">
+              {/* Unsere Führung */}
+              <ScrollReveal>
+                <div className="bg-[hsl(var(--cloud-neutral))] p-10 md:p-12 lg:p-14 h-full">
+                  <div className="w-8 h-[1.5px] bg-[hsl(var(--gold))]/50 mb-8" />
+                  <h2 className="text-foreground text-[1.2rem] md:text-[1.4rem] font-normal leading-[1.3] tracking-[-0.01em] mb-5">{t.about.leadership.headline}</h2>
+                  <p className="text-foreground/55 text-[14px] md:text-[14.5px] leading-[1.85]">{t.about.leadership.text}</p>
+                </div>
+              </ScrollReveal>
+              {/* Was uns treibt */}
+              <ScrollReveal delay={100}>
+                <div className="bg-[hsl(var(--cloud-neutral))] p-10 md:p-12 lg:p-14 h-full">
+                  <div className="w-8 h-[1.5px] bg-[hsl(var(--gold))]/50 mb-8" />
+                  <h2 className="text-foreground text-[1.2rem] md:text-[1.4rem] font-normal leading-[1.3] tracking-[-0.01em] mb-5">{t.about.attitude.headline}</h2>
+                  <p className="text-foreground/55 text-[14px] md:text-[14.5px] leading-[1.85]">{t.about.attitude.text}</p>
+                </div>
+              </ScrollReveal>
             </div>
           </div>
         </section>
