@@ -35,7 +35,7 @@ export default function ServiceDetail() {
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-normal leading-[1.15] tracking-[-0.015em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "200ms" }}>{service.title}</h1>
           <p className="text-foreground/70 text-[15px] md:text-base leading-[1.7] max-w-xl mb-12 animate-reveal-up" style={{ animationDelay: "350ms" }}>{service.desc}</p>
           <div className="flex flex-wrap gap-4 animate-reveal-up" style={{ animationDelay: "500ms" }}>
-            <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.servicePage.ctaPrimary}</Link>
+            <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.servicePage.ctaPrimary}</Link>
           </div>
         </div>
       </section>
