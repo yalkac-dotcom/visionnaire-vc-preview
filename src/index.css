@@ -85,7 +85,7 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-    font-weight: 420;
+    font-weight: 430;
     overflow-wrap: break-word;
   }
 
