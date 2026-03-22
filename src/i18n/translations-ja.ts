@@ -158,6 +158,14 @@ export const translationsJa: Translations = {
     subline: "戦略アドバイザリーとプレミアムビジネス環境 — 同じ信念で結ばれ、品質への共通のコミットメントで支えられています。",
     architectureLabel: "ブランドアーキテクチャ", architectureHeadline: "二つの表現、一つのブランドワールド",
     architectureText: "Visionnaire ConsultingとVisionnaire Domizilは品質への共通のコミットメントと同じ穏やかで戦略的な姿勢を共有しています。それぞれの焦点が異なります — 一方は戦略アドバイザリー、他方はプレミアムビジネススペースと格式ある環境。ともに、異なるフィールドで同じ厳格な基準をもって活動する一貫したブランドワールドを形成しています。",
+    galleryLabel: "空間品質",
+    galleryHeadline: "最高水準のレプレゼンタティブな職場環境",
+    galleryItems: [
+      { label: "レセプション", alt: "エレガントな受付エリア" },
+      { label: "オフィス", alt: "プレミアムオフィススペース" },
+      { label: "会議室", alt: "スタイリッシュなミーティングルーム" },
+      { label: "ワークスペース", alt: "静かな作業エリア" },
+    ],
     items: [
       { name: "Visionnaire Consulting", desc: "要求の高い事業、企業、開発のための戦略アドバイザリー。Visionnaire Consultingは母体ブランドであり、ポジショニング、トランスフォーメーション、ブランド、成長において戦略的深度とオペレーション実行力を結合します。", href: "/", role: "母体ブランド" },
       { name: "Visionnaire Domizil", desc: "格式ある環境におけるプレミアムオフィス・ビジネススペースソリューション。Visionnaire Domizilはプレミアムオフィス、プロフェッショナルなビジネスルーム、ビジネスセンターサービス、そして品質への明確なコミットメントを持つ洗練された職場環境を提供します。", href: "https://visionnaire.de", role: "連携事業領域" },
