@@ -102,15 +102,15 @@ export function Header() {
           <Link to="/unternehmensbereiche" className={linkClass}>{t.nav.businessUnits}</Link>
           <Link to="/ueber-uns" className={linkClass}>{t.nav.about}</Link>
           <Link to="/insights" className={linkClass}>{t.nav.insights}</Link>
-          <SmartLink to="/#contact" className={linkClass}>{t.nav.contact}</SmartLink>
+          <Link to="/kontakt" className={linkClass}>{t.nav.contact}</Link>
 
           <button onClick={toggleLocale} className="text-foreground/20 hover:text-foreground/50 text-[11px] uppercase tracking-[0.18em] transition-colors duration-200 ml-1">
             {locale === "de" ? "EN" : "DE"}
           </button>
 
-          <SmartLink to="/#contact" className="ml-1 text-[11px] uppercase tracking-[0.18em] border border-[hsl(var(--brand-blue))]/25 text-primary hover:bg-primary hover:text-primary-foreground px-6 py-2.5 transition-all duration-200 active:scale-[0.97]">
+          <Link to="/kontakt" className="ml-1 text-[11px] uppercase tracking-[0.18em] border border-[hsl(var(--brand-blue))]/25 text-primary hover:bg-primary hover:text-primary-foreground px-6 py-2.5 transition-all duration-200 active:scale-[0.97]">
             {t.nav.projectCta}
-          </SmartLink>
+          </Link>
         </nav>
 
         {/* Mobile controls */}
@@ -161,7 +161,7 @@ export function Header() {
             { to: "/unternehmensbereiche", label: t.nav.businessUnits },
             { to: "/ueber-uns", label: t.nav.about },
             { to: "/insights", label: t.nav.insights },
-            { to: "/#contact", label: t.nav.contact },
+            { to: "/kontakt", label: t.nav.contact },
           ].map((link) => (
             <SmartLink key={link.to} to={link.to} className="block px-8 py-4 text-foreground/60 text-xs uppercase tracking-[0.18em]">
               {link.label}
@@ -169,9 +169,9 @@ export function Header() {
           ))}
 
           <div className="px-8 pt-4">
-            <SmartLink to="/#contact" className="inline-block text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-6 py-2.5 active:scale-[0.97]">
+            <Link to="/kontakt" className="inline-block text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-6 py-2.5 active:scale-[0.97]">
               {t.nav.projectCta}
-            </SmartLink>
+            </Link>
           </div>
         </nav>
       )}

@@ -23,8 +23,8 @@ export default function ServiceDetail() {
       <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
         {heroImg && (
           <div className="absolute inset-0">
-            <img src={heroImg} alt={service.title} className="w-full h-full object-cover opacity-[0.22]" loading="eager" />
-            <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/40 via-transparent to-[hsl(var(--soft-ivory))]/60" />
+            <img src={heroImg} alt={service.title} className="w-full h-full object-cover opacity-[0.38]" loading="eager" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/20 via-transparent to-[hsl(var(--soft-ivory))]/45" />
           </div>
         )}
         <div className="container relative z-10">
@@ -35,7 +35,7 @@ export default function ServiceDetail() {
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-normal leading-[1.15] tracking-[-0.015em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "200ms" }}>{service.title}</h1>
           <p className="text-foreground/70 text-[15px] md:text-base leading-[1.7] max-w-xl mb-12 animate-reveal-up" style={{ animationDelay: "350ms" }}>{service.desc}</p>
           <div className="flex flex-wrap gap-4 animate-reveal-up" style={{ animationDelay: "500ms" }}>
-            <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.servicePage.ctaPrimary}</Link>
+            <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.servicePage.ctaPrimary}</Link>
           </div>
         </div>
       </section>
@@ -101,8 +101,8 @@ export default function ServiceDetail() {
 
       <section className="relative py-28 md:py-36 bg-soft-ivory overflow-hidden">
         <div className="absolute inset-0">
-          <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.14]" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/50 via-transparent to-[hsl(var(--soft-ivory))]/60" />
+          <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.20]" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/35 via-transparent to-[hsl(var(--soft-ivory))]/50" />
         </div>
         <div className="container text-center relative z-10">
           <ScrollReveal>
@@ -110,8 +110,8 @@ export default function ServiceDetail() {
           </ScrollReveal>
           <ScrollReveal delay={100}>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.cta.projectCta}</Link>
-              <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]">{t.cta.contactCta}</Link>
+              <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.cta.projectCta}</Link>
+              <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]">{t.cta.contactCta}</Link>
             </div>
           </ScrollReveal>
         </div>
