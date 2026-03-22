@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 
 export function PageLayout({ children }: { children: React.ReactNode }) {
   const { pathname, hash } = useLocation();
@@ -65,6 +66,7 @@ export function PageLayout({ children }: { children: React.ReactNode }) {
       <Header />
       {children}
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 }
