@@ -24,7 +24,7 @@
     --secondary-foreground: 212 18% 18%;
 
     --muted: 33 26% 85%;
-    --muted-foreground: 211 17% 24%;    /* Secondary Text #333E49 */
+    --muted-foreground: 212 20% 20%;    /* Secondary Text — noticeably darker */
 
     /* Accent — Rich Blue */
     --accent: 209 35% 29%;              /* Rich Blue #304A63 */
