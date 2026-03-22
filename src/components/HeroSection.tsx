@@ -11,7 +11,7 @@ export function HeroSection() {
         <img
           src={heroImage}
           alt="Premium corporate architecture"
-          className="w-full h-full object-cover opacity-[0.28]"
+          className="w-full h-full object-cover opacity-[0.22]"
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--warm-white))]/40 via-transparent to-[hsl(var(--soft-ivory))]/60" />

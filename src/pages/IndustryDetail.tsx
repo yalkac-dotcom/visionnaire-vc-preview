@@ -23,7 +23,7 @@ export default function IndustryDetail() {
       <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
         {heroImg && (
           <div className="absolute inset-0">
-            <img src={heroImg} alt={industry.heroHeadline} className="w-full h-full object-cover opacity-[0.18]" loading="eager" />
+            <img src={heroImg} alt={industry.heroHeadline} className="w-full h-full object-cover opacity-[0.2]" loading="eager" />
             <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/50 via-[hsl(var(--soft-ivory))]/30 to-[hsl(var(--soft-ivory))]/80" />
           </div>
         )}
