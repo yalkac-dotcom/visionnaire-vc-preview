@@ -51,8 +51,8 @@
     --light-stone: 30 28% 79%;          /* Soft Stone #DCCCB8 */
     --cloud-neutral: 32 26% 90%;        /* Between warm-white and ivory — more distinct */
     --sand-tone: 30 26% 74%;            /* Sand Tone #D1BEA7 */
-    --soft-charcoal: 211 15% 33%;       /* Secondary Text #4B5662 */
-    --warm-grey: 215 9% 48%;            /* Muted Text #707986 */
+    --soft-charcoal: 211 16% 28%;       /* Secondary Text #3F4A55 */
+    --warm-grey: 215 10% 42%;            /* Muted Text #616B76 — stronger */
     --footer-bg: 210 33% 17%;           /* Deep Footer Blue #1E2D3E */
 
     /* Blue brand tokens */
