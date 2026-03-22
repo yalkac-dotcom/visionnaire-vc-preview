@@ -108,9 +108,9 @@ export function Header() {
             {locale === "de" ? "EN" : "DE"}
           </button>
 
-          <SmartLink to="/#contact" className="ml-1 text-[11px] uppercase tracking-[0.18em] border border-[hsl(var(--brand-blue))]/25 text-primary hover:bg-primary hover:text-primary-foreground px-6 py-2.5 transition-all duration-200 active:scale-[0.97]">
+          <Link to="/kontakt" className="ml-1 text-[11px] uppercase tracking-[0.18em] border border-[hsl(var(--brand-blue))]/25 text-primary hover:bg-primary hover:text-primary-foreground px-6 py-2.5 transition-all duration-200 active:scale-[0.97]">
             {t.nav.projectCta}
-          </SmartLink>
+          </Link>
         </nav>
 
         {/* Mobile controls */}
