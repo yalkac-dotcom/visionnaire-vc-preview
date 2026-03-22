@@ -261,6 +261,14 @@ export const translationsIt: Translations = {
     architectureLabel: "Architettura del Marchio",
     architectureHeadline: "Due espressioni, un mondo di marca",
     architectureText: "Visionnaire Consulting e Visionnaire Domizil condividono un impegno comune verso la qualità e la stessa disposizione calma e strategica. Ciò che li distingue è il rispettivo focus — consulenza strategica da un lato, spazi commerciali premium e ambienti distinguiti dall'altro. Insieme formano un mondo di marca coerente che opera in campi diversi con gli stessi standard elevati.",
+    galleryLabel: "Qualità degli Spazi",
+    galleryHeadline: "Ambienti di lavoro rappresentativi al più alto livello",
+    galleryItems: [
+      { label: "Reception", alt: "Area reception elegante" },
+      { label: "Uffici", alt: "Spazi ufficio premium" },
+      { label: "Conferenze", alt: "Sala riunioni di stile" },
+      { label: "Postazioni", alt: "Area di lavoro tranquilla" },
+    ],
     items: [
       {
         name: "Visionnaire Consulting",
