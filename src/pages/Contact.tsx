@@ -115,25 +115,31 @@ export default function Contact() {
           <div className="grid md:grid-cols-12 gap-16 md:gap-20 max-w-5xl mx-auto">
             <div className="md:col-span-7">
               <ScrollReveal>
-                <form className="space-y-10" onSubmit={(e) => e.preventDefault()}>
+                {status === "success" ? (
+                  <div className="flex items-start gap-4 bg-emerald-50 border border-emerald-200 rounded p-6">
+                    <CheckCircle size={20} className="text-emerald-600 mt-0.5 shrink-0" />
+                    <p className="text-emerald-800 text-sm leading-[1.6]">{successMessages[locale] ?? successMessages.de}</p>
+                  </div>
+                ) : (
+                <form className="space-y-10" onSubmit={handleSubmit}>
                   <div>
                     <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">{t.contact.formName}</label>
-                    <input type="text" className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200 placeholder:text-foreground/20" />
+                    <input type="text" required value={name} onChange={(e) => setName(e.target.value)} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200 placeholder:text-foreground/20" />
                   </div>
                   {t.contact.formCompany && (
                     <div>
                       <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">{t.contact.formCompany}</label>
-                      <input type="text" className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200" />
+                      <input type="text" value={company} onChange={(e) => setCompany(e.target.value)} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200" />
                     </div>
                   )}
                   <div>
                     <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">{t.contact.formEmail}</label>
-                    <input type="email" className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200" />
+                    <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200" />
                   </div>
                   {t.contact.formPhone && (
                     <div>
                       <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">{locale === "de" ? "Telefon" : locale === "en" ? "Phone" : locale === "it" ? "Telefono" : locale === "es" ? "Teléfono" : locale === "ja" ? "電話" : locale === "zh" ? "电话" : locale === "ar" ? "هاتف" : "Phone"}</label>
-                      <input type="tel" placeholder={t.contact.formPhone} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200 placeholder:text-foreground/30" />
+                      <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder={t.contact.formPhone} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200 placeholder:text-foreground/30" />
                     </div>
                   )}
                   <div>
@@ -146,10 +152,22 @@ export default function Contact() {
                   </div>
                   <div>
                     <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">{t.contact.formMessage}</label>
-                    <textarea rows={5} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] transition-all duration-200 resize-none" />
+                    <textarea rows={5} required value={message} onChange={(e) => setMessage(e.target.value)} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] transition-all duration-200 resize-none" />
                   </div>
-                  <button type="submit" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97] mt-2">{t.contact.formSend}</button>
+
+                  {status === "error" && (
+                    <div className="flex items-start gap-3 text-red-700 text-sm">
+                      <AlertCircle size={16} className="mt-0.5 shrink-0" />
+                      <p>{errorMessages[locale] ?? errorMessages.de}</p>
+                    </div>
+                  )}
+
+                  <button type="submit" disabled={status === "loading"} className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97] mt-2 disabled:opacity-60 disabled:pointer-events-none">
+                    {status === "loading" && <Loader2 size={14} className="animate-spin" />}
+                    {t.contact.formSend}
+                  </button>
                 </form>
+                )}
               </ScrollReveal>
             </div>
 
