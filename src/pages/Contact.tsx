@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
 import { Mail, Phone, MapPin } from "lucide-react";
 import heroContact from "@/assets/hero-contact.jpg";
 
