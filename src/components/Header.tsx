@@ -46,9 +46,7 @@ export function Header() {
 
   const linkClass = "text-foreground/60 hover:text-[hsl(var(--brand-blue))] text-[11px] uppercase tracking-[0.18em] transition-colors duration-200";
 
-  const dropdownBg = "bg-card border border-border";
-  const dropdownTextClass = "text-foreground/60 hover:text-[hsl(var(--brand-blue))] hover:bg-secondary";
-  const dropdownItemClass = `block px-6 py-3.5 ${dropdownTextClass} text-[11px] uppercase tracking-[0.18em] transition-colors duration-200`;
+  const dropdownItemClass = "block px-5 py-3 text-foreground/55 hover:text-[hsl(var(--brand-blue))] text-[10.5px] uppercase tracking-[0.16em] transition-colors duration-200 rounded-sm";
 
   const SmartLink = ({ to, children, className }: { to: string; children: React.ReactNode; className?: string }) => {
     if (to.startsWith("/#")) {
@@ -105,14 +103,14 @@ export function Header() {
 
       {/* Full-width dropdown panel */}
       {anyDropdownOpen && (
-        <div ref={dropdownPanelRef} className="hidden lg:block absolute left-0 right-0 top-full bg-[hsl(40_30%_96%/0.97)] backdrop-blur-md border-t border-border shadow-[0_8px_24px_-4px_rgba(0,0,0,0.06)]">
-          <div className="container py-6">
+        <div ref={dropdownPanelRef} className="hidden lg:block absolute left-0 right-0 top-full bg-[hsl(var(--soft-ivory))]/[0.97] backdrop-blur-xl border-t border-border/60 shadow-[0_4px_16px_-2px_rgba(0,0,0,0.04)]">
+          <div className="container py-5">
             {servicesOpen && (
-              <div className="flex flex-wrap gap-x-10 gap-y-1">
-                <Link to="/leistungen" onClick={() => setServicesOpen(false)} className={`${dropdownItemClass} text-foreground/80 font-medium`}>
+              <div className="flex items-center gap-8">
+                <Link to="/leistungen" onClick={() => setServicesOpen(false)} className="block px-4 py-2.5 text-foreground/80 text-[10.5px] uppercase tracking-[0.16em] font-medium hover:text-[hsl(var(--brand-blue))] transition-colors duration-200">
                   {locale === "de" ? "Alle Leistungen" : "All Services"}
                 </Link>
-                <div className="w-px bg-border self-stretch mx-2" />
+                <div className="w-px h-5 bg-border/80" />
                 {t.nav.servicesDropdown.map((item) => (
                   <Link key={item.slug} to={`/leistungen/${item.slug}`} onClick={() => setServicesOpen(false)} className={dropdownItemClass}>
                     {item.label}
@@ -121,11 +119,11 @@ export function Header() {
               </div>
             )}
             {industriesOpen && (
-              <div className="flex flex-wrap gap-x-10 gap-y-1">
-                <Link to="/branchen" onClick={() => setIndustriesOpen(false)} className={`${dropdownItemClass} text-foreground/80 font-medium`}>
+              <div className="flex items-center gap-8">
+                <Link to="/branchen" onClick={() => setIndustriesOpen(false)} className="block px-4 py-2.5 text-foreground/80 text-[10.5px] uppercase tracking-[0.16em] font-medium hover:text-[hsl(var(--brand-blue))] transition-colors duration-200">
                   {locale === "de" ? "Alle Branchen" : "All Industries"}
                 </Link>
-                <div className="w-px bg-border self-stretch mx-2" />
+                <div className="w-px h-5 bg-border/80" />
                 {t.nav.industriesDropdown.map((item) => (
                   <Link key={item.slug} to={`/branchen/${item.slug}`} onClick={() => setIndustriesOpen(false)} className={dropdownItemClass}>
                     {item.label}
