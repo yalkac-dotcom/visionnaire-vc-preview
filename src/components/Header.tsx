@@ -17,7 +17,6 @@ export function Header() {
   const location = useLocation();
 
   const toggleLocale = () => setLocale(locale === "de" ? "en" : "de");
-  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -38,7 +37,9 @@ export function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => { setMobileOpen(false); }, [location.pathname]);
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [location.pathname]);
 
   const headerBg = scrolled
     ? "bg-[hsl(40_30%_96%/0.92)] backdrop-blur-md shadow-[0_1px_0_0_hsl(var(--border))]"
@@ -47,13 +48,6 @@ export function Header() {
   const linkClass = "text-foreground/80 hover:text-[hsl(var(--brand-blue))] text-[11px] uppercase tracking-[0.18em] font-[450] transition-colors duration-200";
 
   const dropdownItemClass = "block px-5 py-3 text-foreground/70 hover:text-[hsl(var(--brand-blue))] text-[10.5px] uppercase tracking-[0.16em] font-[430] transition-colors duration-200 rounded-sm";
-
-  const SmartLink = ({ to, children, className }: { to: string; children: React.ReactNode; className?: string }) => {
-    if (to.startsWith("/#")) {
-      return <a href={isHome ? to.replace("/", "") : to} className={className} onClick={() => setMobileOpen(false)}>{children}</a>;
-    }
-    return <Link to={to} className={className} onClick={() => setMobileOpen(false)}>{children}</Link>;
-  };
 
   const anyDropdownOpen = servicesOpen || industriesOpen;
 
