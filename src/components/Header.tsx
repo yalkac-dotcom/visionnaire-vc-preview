@@ -161,7 +161,7 @@ export function Header() {
             { to: "/unternehmensbereiche", label: t.nav.businessUnits },
             { to: "/ueber-uns", label: t.nav.about },
             { to: "/insights", label: t.nav.insights },
-            { to: "/#contact", label: t.nav.contact },
+            { to: "/kontakt", label: t.nav.contact },
           ].map((link) => (
             <SmartLink key={link.to} to={link.to} className="block px-8 py-4 text-foreground/60 text-xs uppercase tracking-[0.18em]">
               {link.label}
