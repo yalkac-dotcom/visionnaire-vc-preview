@@ -13,6 +13,7 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const servicesRef = useRef<HTMLDivElement>(null);
   const industriesRef = useRef<HTMLDivElement>(null);
+  const dropdownPanelRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   const toggleLocale = () => setLocale(locale === "de" ? "en" : "de");
