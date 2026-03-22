@@ -174,10 +174,10 @@ export default function About() {
         </div>
         <div className="container text-center relative z-10">
           <ScrollReveal>
-            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] mb-5">Wir freuen uns auf den Austausch</h2>
+            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] mb-5">{t.contact.closingHeadline}</h2>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <p className="text-foreground/60 text-[15px] leading-[1.7] max-w-lg mx-auto mb-12">Wenn Sie ein Vorhaben mit strategischer Tiefe, diskreter Beratung und hochwertiger Positionierung begleiten lassen möchten, kommen wir gerne mit Ihnen ins Gespräch.</p>
+            <p className="text-foreground/60 text-[15px] leading-[1.7] max-w-lg mx-auto mb-12">{t.contact.closingText}</p>
           </ScrollReveal>
           <ScrollReveal delay={160}>
             <div className="flex flex-wrap justify-center gap-4">
