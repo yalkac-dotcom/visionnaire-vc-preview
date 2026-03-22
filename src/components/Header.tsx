@@ -27,6 +27,7 @@ export function Header() {
   const industriesRef = useRef<HTMLDivElement>(null);
   const dropdownPanelRef = useRef<HTMLDivElement>(null);
   const langRef = useRef<HTMLDivElement>(null);
+  const langRefMobile = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   useEffect(() => {
