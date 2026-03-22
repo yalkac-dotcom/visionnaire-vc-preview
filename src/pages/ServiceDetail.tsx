@@ -3,6 +3,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { serviceImages } from "@/lib/service-images";
+import ctaAmbient from "@/assets/cta-ambient.jpg";
 
 export default function ServiceDetail() {
   const { slug } = useParams<{ slug: string }>();
