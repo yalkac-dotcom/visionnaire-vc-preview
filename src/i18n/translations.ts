@@ -26,8 +26,8 @@ export const translations: Record<Locale, Translations> = {
     },
     hero: {
       tagline: "Consulting · Strategie · Marke · Internationale Entwicklung",
-      headline: "Strategische Beratung für Marken, Produkte und internationale Entwicklung.",
-      subline: "Visionnaire Consulting begleitet Unternehmen bei der Entwicklung von Strategien, Produkten und Marken sowie bei der Umsetzung internationaler Geschäftslösungen.",
+      headline: "Strategische Beratung mit unternehmerischer Substanz.",
+      subline: "Visionnaire Consulting begleitet Unternehmen bei Positionierung, Markenentwicklung, Produktstrategie und internationalen Geschäftsvorhaben – mit Klarheit, Präzision und belastbarer Umsetzungskompetenz.",
       cta: "Projekt besprechen",
       ctaSecondary: "Kontakt aufnehmen",
     },
