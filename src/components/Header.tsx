@@ -105,7 +105,7 @@ export function Header() {
 
       {/* Full-width dropdown panel */}
       {anyDropdownOpen && (
-        <div className="hidden lg:block absolute left-0 right-0 top-full bg-[hsl(40_30%_96%/0.97)] backdrop-blur-md border-t border-border shadow-[0_8px_24px_-4px_rgba(0,0,0,0.06)]">
+        <div ref={dropdownPanelRef} className="hidden lg:block absolute left-0 right-0 top-full bg-[hsl(40_30%_96%/0.97)] backdrop-blur-md border-t border-border shadow-[0_8px_24px_-4px_rgba(0,0,0,0.06)]">
           <div className="container py-6">
             {servicesOpen && (
               <div className="flex flex-wrap gap-x-10 gap-y-1">
