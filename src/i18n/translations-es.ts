@@ -227,6 +227,14 @@ export const translationsEs: Translations = {
     },
     position: { label: "Perspectiva Internacional", headline: "Perspectiva internacional, orientación clara", text: "Visionnaire combina precisión estratégica con una perspectiva abierta sobre diferentes mercados, contextos y caminos de desarrollo. La experiencia internacional no es un fin en sí misma, sino parte de una comprensión diferenciada de crecimiento, posicionamiento e impacto." },
     connection: { label: "El Universo de Marca", headline: "Un universo de marca conectado", text: "Visionnaire Consulting forma parte de un mundo de marca cohesivo. Diferentes unidades de negocio pueden establecer diferentes prioridades — pero permanecen conectadas por la misma convicción: claridad, calidad, impacto cultivado y una comprensión precisa de contextos exigentes." },
+    attitude: {
+      headline: "Lo que nos impulsa",
+      text: "Visionnaire Consulting entiende la consultoría como responsabilidad empresarial. Nuestro objetivo es acompañar a las empresas con claridad, análisis, comprensión del mercado y un apoyo sólido en la dirección correcta. No es el volumen lo que nos guía, sino la dirección, la fiabilidad y soluciones con sustancia.",
+    },
+    leadership: {
+      headline: "Nuestro liderazgo",
+      text: "Detrás de Visionnaire hay un liderazgo joven y emprendedor con un claro sentido del desarrollo, el impacto de marca y las soluciones empresariales viables. Esta convicción ha crecido a través de la responsabilidad práctica, la perspectiva internacional y un espíritu emprendedor arraigado. También moldea nuestro equipo: comprometido, enfocado y con la ambición de impulsar proyectos con claridad y sustancia.",
+    },
   },
   insights: {
     label: "Insights",

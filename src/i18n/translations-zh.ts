@@ -185,6 +185,14 @@ export const translationsZh: Translations = {
     ]},
     position: { label: "国际视野", headline: "国际视野，清晰导向", text: "Visionnaire将战略精准与对不同市场、情境和发展路径的开放视野相结合。" },
     connection: { label: "品牌宇宙", headline: "互联的品牌宇宙", text: "Visionnaire Consulting是统一品牌世界的一部分。不同的业务部门可以设定不同的优先级——但它们通过相同的信念保持连接：清晰、质量、精致的影响和对高要求情境的精准理解。" },
+    attitude: {
+      headline: "驱动我们的力量",
+      text: "Visionnaire Consulting将咨询视为企业家的责任。我们致力于以清晰的方向、分析能力、市场理解和扎实的支持引导企业走向正确的方向。我们注重的不是声量，而是方向、可靠性和有实质的解决方案。",
+    },
+    leadership: {
+      headline: "我们的领导层",
+      text: "Visionnaire的背后是一支年轻而富有企业家精神的领导团队，对发展、品牌影响力和可持续的商业解决方案有着敏锐的感知。这种信念源于实际的责任承担、国际视野和根植于家族的企业家精神。这也塑造了我们的团队：专注、负责，并以清晰和实质推动每一个项目。",
+    },
   },
   insights: {
     label: "洞察", headline: "视角与立场", subline: "关于战略、品牌和企业发展的精选思考。",

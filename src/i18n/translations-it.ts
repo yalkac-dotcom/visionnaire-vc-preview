@@ -320,6 +320,14 @@ export const translationsIt: Translations = {
       headline: "Un universo di marca connesso",
       text: "Visionnaire Consulting fa parte di un mondo di marca coeso. Diverse unità di business possono stabilire priorità diverse — ma restano connesse dalla stessa convinzione: chiarezza, qualità, impatto coltivato e una comprensione precisa di contesti esigenti.",
     },
+    attitude: {
+      headline: "Cosa ci guida",
+      text: "Visionnaire Consulting intende la consulenza come responsabilità imprenditoriale. Il nostro obiettivo è guidare le imprese con chiarezza, analisi, comprensione del mercato e un supporto solido nella giusta direzione. Non il volume, ma la direzione, l'affidabilità e soluzioni con sostanza sono al centro del nostro lavoro.",
+    },
+    leadership: {
+      headline: "La nostra leadership",
+      text: "Dietro Visionnaire c'è una leadership giovane e imprenditoriale con un chiaro senso per lo sviluppo, l'impatto del marchio e soluzioni aziendali sostenibili. Questa convinzione è cresciuta attraverso responsabilità pratica, prospettiva internazionale e un radicato spirito imprenditoriale familiare. Plasma anche il nostro team: affidabile, focalizzato e con l'ambizione di portare avanti i progetti con chiarezza e sostanza.",
+    },
   },
   insights: {
     label: "Insights",
