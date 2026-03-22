@@ -23,8 +23,8 @@ export default function ServiceDetail() {
       <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
         {heroImg && (
           <div className="absolute inset-0">
-            <img src={heroImg} alt={service.title} className="w-full h-full object-cover opacity-[0.38]" loading="eager" />
-            <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/20 via-transparent to-[hsl(var(--soft-ivory))]/45" />
+            <img src={heroImg} alt={service.title} className="w-full h-full object-cover opacity-[0.48]" loading="eager" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/12 via-transparent to-[hsl(var(--soft-ivory))]/35" />
           </div>
         )}
         <div className="container relative z-10">

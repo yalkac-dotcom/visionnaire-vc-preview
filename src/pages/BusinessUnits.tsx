@@ -114,8 +114,8 @@ export default function BusinessUnits() {
       {/* CTA */}
       <section className="relative py-28 md:py-36 bg-soft-ivory overflow-hidden">
         <div className="absolute inset-0">
-          <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.20]" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/35 via-transparent to-[hsl(var(--soft-ivory))]/50" />
+          <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.24]" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/25 via-transparent to-[hsl(var(--soft-ivory))]/40" />
         </div>
         <div className="container text-center relative z-10">
           <ScrollReveal>
