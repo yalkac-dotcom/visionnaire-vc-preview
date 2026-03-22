@@ -102,7 +102,7 @@ export function Header() {
           <Link to="/unternehmensbereiche" className={linkClass}>{t.nav.businessUnits}</Link>
           <Link to="/ueber-uns" className={linkClass}>{t.nav.about}</Link>
           <Link to="/insights" className={linkClass}>{t.nav.insights}</Link>
-          <SmartLink to="/#contact" className={linkClass}>{t.nav.contact}</SmartLink>
+          <Link to="/kontakt" className={linkClass}>{t.nav.contact}</Link>
 
           <button onClick={toggleLocale} className="text-foreground/20 hover:text-foreground/50 text-[11px] uppercase tracking-[0.18em] transition-colors duration-200 ml-1">
             {locale === "de" ? "EN" : "DE"}
