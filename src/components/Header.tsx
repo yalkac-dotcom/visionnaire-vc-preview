@@ -13,6 +13,7 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const servicesRef = useRef<HTMLDivElement>(null);
   const industriesRef = useRef<HTMLDivElement>(null);
+  const dropdownPanelRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   const toggleLocale = () => setLocale(locale === "de" ? "en" : "de");
@@ -20,8 +21,12 @@ export function Header() {
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
-      if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) setServicesOpen(false);
-      if (industriesRef.current && !industriesRef.current.contains(e.target as Node)) setIndustriesOpen(false);
+      const target = e.target as Node;
+      const inServices = servicesRef.current?.contains(target);
+      const inIndustries = industriesRef.current?.contains(target);
+      const inPanel = dropdownPanelRef.current?.contains(target);
+      if (!inServices && !inPanel) setServicesOpen(false);
+      if (!inIndustries && !inPanel) setIndustriesOpen(false);
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
@@ -52,6 +57,8 @@ export function Header() {
     return <Link to={to} className={className} onClick={() => setMobileOpen(false)}>{children}</Link>;
   };
 
+  const anyDropdownOpen = servicesOpen || industriesOpen;
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}>
       <div className="container flex items-center justify-between h-16 md:h-20">
@@ -66,18 +73,6 @@ export function Header() {
               {t.nav.services}
               <ChevronDown size={11} className={`transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`} />
             </button>
-            {servicesOpen && (
-              <div className={`absolute top-full left-0 mt-3 min-w-[280px] ${dropdownBg} shadow-lg`}>
-                <Link to="/leistungen" onClick={() => setServicesOpen(false)} className={`${dropdownItemClass} border-b border-border`}>
-                  {locale === "de" ? "Alle Leistungen" : "All Services"}
-                </Link>
-                {t.nav.servicesDropdown.map((item) => (
-                  <Link key={item.slug} to={`/leistungen/${item.slug}`} onClick={() => setServicesOpen(false)} className={dropdownItemClass}>
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
           </div>
 
           <div ref={industriesRef} className="relative">
@@ -85,18 +80,6 @@ export function Header() {
               {t.nav.industries}
               <ChevronDown size={11} className={`transition-transform duration-200 ${industriesOpen ? "rotate-180" : ""}`} />
             </button>
-            {industriesOpen && (
-              <div className={`absolute top-full left-0 mt-3 min-w-[300px] ${dropdownBg} shadow-lg`}>
-                <Link to="/branchen" onClick={() => setIndustriesOpen(false)} className={`${dropdownItemClass} border-b border-border`}>
-                  {locale === "de" ? "Alle Branchen" : "All Industries"}
-                </Link>
-                {t.nav.industriesDropdown.map((item) => (
-                  <Link key={item.slug} to={`/branchen/${item.slug}`} onClick={() => setIndustriesOpen(false)} className={dropdownItemClass}>
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
           </div>
 
           <Link to="/unternehmensbereiche" className={linkClass}>{t.nav.businessUnits}</Link>
@@ -119,6 +102,40 @@ export function Header() {
           <button onClick={() => setMobileOpen(!mobileOpen)} className="text-foreground/60 p-1">{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
         </div>
       </div>
+
+      {/* Full-width dropdown panel */}
+      {anyDropdownOpen && (
+        <div ref={dropdownPanelRef} className="hidden lg:block absolute left-0 right-0 top-full bg-[hsl(40_30%_96%/0.97)] backdrop-blur-md border-t border-border shadow-[0_8px_24px_-4px_rgba(0,0,0,0.06)]">
+          <div className="container py-6">
+            {servicesOpen && (
+              <div className="flex flex-wrap gap-x-10 gap-y-1">
+                <Link to="/leistungen" onClick={() => setServicesOpen(false)} className={`${dropdownItemClass} text-foreground/80 font-medium`}>
+                  {locale === "de" ? "Alle Leistungen" : "All Services"}
+                </Link>
+                <div className="w-px bg-border self-stretch mx-2" />
+                {t.nav.servicesDropdown.map((item) => (
+                  <Link key={item.slug} to={`/leistungen/${item.slug}`} onClick={() => setServicesOpen(false)} className={dropdownItemClass}>
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+            {industriesOpen && (
+              <div className="flex flex-wrap gap-x-10 gap-y-1">
+                <Link to="/branchen" onClick={() => setIndustriesOpen(false)} className={`${dropdownItemClass} text-foreground/80 font-medium`}>
+                  {locale === "de" ? "Alle Branchen" : "All Industries"}
+                </Link>
+                <div className="w-px bg-border self-stretch mx-2" />
+                {t.nav.industriesDropdown.map((item) => (
+                  <Link key={item.slug} to={`/branchen/${item.slug}`} onClick={() => setIndustriesOpen(false)} className={dropdownItemClass}>
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Mobile menu */}
       {mobileOpen && (
