@@ -44,7 +44,7 @@ export function HeroSection() {
           >
             <Link
               to="/kontakt"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-white text-[hsl(20,10%,12%)] px-8 py-3.5 hover:bg-white/90 transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-white text-[hsl(var(--brand-blue))] px-8 py-3.5 hover:bg-white/90 transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.cta}
             </Link>

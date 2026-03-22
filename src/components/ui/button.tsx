@@ -8,17 +8,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+        outline: "border border-primary/30 bg-transparent text-primary hover:bg-[hsl(var(--brand-blue-tint))] hover:text-primary",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // Visionnaire premium variants
         hero: "bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground tracking-wide uppercase text-xs font-medium",
-        "hero-outline": "border border-primary/30 text-foreground/70 hover:bg-[hsl(var(--gold-tint))] tracking-wide uppercase text-xs font-medium",
+        "hero-outline": "border border-primary/30 text-primary hover:bg-[hsl(var(--brand-blue-tint))] tracking-wide uppercase text-xs font-medium",
         premium: "bg-primary text-primary-foreground hover:bg-accent hover:text-accent-foreground tracking-wide uppercase text-xs font-medium",
-        "premium-outline": "border border-primary/30 text-foreground/70 hover:bg-[hsl(var(--gold-tint))] tracking-wide uppercase text-xs font-medium",
+        "premium-outline": "border border-primary/30 text-primary hover:bg-[hsl(var(--brand-blue-tint))] tracking-wide uppercase text-xs font-medium",
       },
       size: {
         default: "h-10 px-4 py-2",
