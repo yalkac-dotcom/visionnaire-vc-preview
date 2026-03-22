@@ -19,8 +19,8 @@ export function Footer() {
         </div>
 
         {/* Domizil note */}
-        <div className="mb-12 pb-12 border-b border-white/8">
-          <p className="text-white/30 text-[11px] tracking-[0.15em] uppercase">
+        <div className="mb-12 pb-12 border-b border-white/10">
+          <p className="text-white/45 text-[11px] tracking-[0.15em] uppercase">
             {t.footer.domizilNote}:{" "}
             <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="text-[hsl(var(--gold-soft))] hover:text-[hsl(var(--gold))] transition-colors duration-200">{t.footer.domizilLink}</a>
           </p>
