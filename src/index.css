@@ -7,68 +7,68 @@
 @layer base {
   :root {
     /* Visionnaire CI — Refined Premium Editorial palette */
-    --background: 34 28% 93%;           /* Warm White #F2ECE3 */
-    --foreground: 215 28% 10%;          /* Primary Text — darker, more authoritative */
+    --background: 33 30% 91%;           /* Warm White — more cream body */
+    --foreground: 215 30% 9%;           /* Primary Text — slightly richer */
 
-    --card: 33 30% 87%;                 /* Refined Ivory #E8DDCD */
-    --card-foreground: 212 18% 18%;
+    --card: 32 32% 85%;                 /* Refined Ivory — more warmth */
+    --card-foreground: 212 20% 16%;
 
-    --popover: 33 30% 87%;
-    --popover-foreground: 212 18% 18%;
+    --popover: 32 32% 85%;
+    --popover-foreground: 212 20% 16%;
 
     /* Primary — Visionnaire Blue */
-    --primary: 210 35% 22%;             /* Primary Blue #24364A */
-    --primary-foreground: 34 30% 95%;   /* Warm light #F7F3EC */
+    --primary: 210 38% 21%;             /* Primary Blue — deeper saturation */
+    --primary-foreground: 34 32% 95%;   /* Warm light */
 
-    --secondary: 33 30% 87%;
-    --secondary-foreground: 212 18% 18%;
+    --secondary: 32 32% 85%;
+    --secondary-foreground: 212 20% 16%;
 
-    --muted: 33 26% 85%;
-    --muted-foreground: 212 20% 20%;    /* Secondary Text — noticeably darker */
+    --muted: 32 28% 83%;
+    --muted-foreground: 212 22% 18%;    /* Secondary Text — richer */
 
     /* Accent — Rich Blue */
-    --accent: 209 35% 29%;              /* Rich Blue #304A63 */
-    --accent-foreground: 34 30% 95%;
+    --accent: 209 38% 27%;              /* Rich Blue — more saturated */
+    --accent-foreground: 34 32% 95%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 22% 74%;               /* Warm border with more definition */
-    --input: 30 20% 68%;
-    --ring: 210 35% 22%;
+    --border: 30 24% 72%;               /* Warm border — more definition */
+    --input: 30 22% 66%;
+    --ring: 210 38% 21%;
 
     --radius: 0.125rem;
 
     /* Custom tokens */
-    --dark-surface: 210 20% 18%;
-    --deep-taupe: 211 15% 33%;
+    --dark-surface: 210 22% 16%;
+    --deep-taupe: 211 17% 31%;
     --gold: 38 38% 52%;                 /* Primary Gold #B39156 */
-    --gold-soft: 38 34% 59%;            /* Soft Gold #C4A56B */
-    --gold-deep: 37 32% 42%;            /* Deep Gold #947643 */
-    --gold-tint: 37 40% 81%;            /* Gold Tint #E6D7BA */
-    --warm-white: 34 28% 93%;           /* #F2ECE3 */
-    --soft-ivory: 33 30% 87%;           /* #E8DDCD */
-    --light-stone: 30 28% 79%;          /* Soft Stone #DCCCB8 */
-    --cloud-neutral: 32 26% 90%;        /* Between warm-white and ivory — more distinct */
-    --sand-tone: 30 26% 74%;            /* Sand Tone #D1BEA7 */
-    --soft-charcoal: 212 20% 18%;       /* Secondary Text — stronger */
-    --warm-grey: 213 14% 32%;            /* Muted Text — noticeably darker */
-    --footer-bg: 210 33% 17%;           /* Deep Footer Blue #1E2D3E */
+    --gold-soft: 38 34% 59%;            /* Soft Gold */
+    --gold-deep: 37 32% 42%;
+    --gold-tint: 37 40% 81%;
+    --warm-white: 33 30% 91%;           /* matches background */
+    --soft-ivory: 32 32% 85%;           /* matches card */
+    --light-stone: 30 30% 77%;          /* Soft Stone — richer */
+    --cloud-neutral: 32 28% 88%;        /* Between warm-white and ivory */
+    --sand-tone: 30 28% 72%;            /* Sand Tone — more body */
+    --soft-charcoal: 212 22% 16%;
+    --warm-grey: 213 16% 30%;
+    --footer-bg: 210 36% 15%;           /* Deep Footer Blue — deeper */
 
     /* Blue brand tokens */
-    --brand-blue: 210 35% 22%;          /* Primary Blue #24364A */
-    --brand-blue-light: 209 35% 29%;    /* Rich Blue #304A63 */
-    --brand-blue-muted: 211 16% 50%;    /* Soft Blue-Grey #6C8095 */
-    --brand-blue-tint: 210 18% 90%;
+    --brand-blue: 210 38% 21%;          /* matches primary */
+    --brand-blue-light: 209 38% 27%;    /* matches accent */
+    --brand-blue-muted: 211 18% 48%;    /* Soft Blue-Grey — richer */
+    --brand-blue-tint: 210 20% 88%;
 
-    --sidebar-background: 34 28% 93%;
-    --sidebar-foreground: 212 18% 18%;
-    --sidebar-primary: 212 18% 18%;
-    --sidebar-primary-foreground: 34 28% 93%;
-    --sidebar-accent: 33 30% 87%;
-    --sidebar-accent-foreground: 212 18% 18%;
-    --sidebar-border: 30 22% 74%;
-    --sidebar-ring: 210 35% 22%;
+    --sidebar-background: 33 30% 91%;
+    --sidebar-foreground: 212 20% 16%;
+    --sidebar-primary: 212 20% 16%;
+    --sidebar-primary-foreground: 33 30% 91%;
+    --sidebar-accent: 32 32% 85%;
+    --sidebar-accent-foreground: 212 20% 16%;
+    --sidebar-border: 30 24% 72%;
+    --sidebar-ring: 210 38% 21%;
   }
 }
 
@@ -85,14 +85,14 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-    font-weight: 420;
+    font-weight: 430;
     overflow-wrap: break-word;
   }
 
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
     color: hsl(var(--foreground));
-    font-weight: 480;
+    font-weight: 490;
   }
 
   p {
