@@ -17,13 +17,13 @@ export default function BusinessUnits() {
       {/* Hero */}
       <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroDomizil} alt="Premium business environment" className="w-full h-full object-cover opacity-[0.18]" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/50 via-transparent to-[hsl(var(--soft-ivory))]/70" />
+          <img src={heroDomizil} alt="Premium business environment" className="w-full h-full object-cover opacity-[0.22]" loading="eager" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/40 via-transparent to-[hsl(var(--soft-ivory))]/60" />
         </div>
         <div className="container relative z-10">
-          <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{t.businessUnits.label}</p>
+          <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{t.businessUnits.label}</p>
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-normal leading-[1.15] tracking-[-0.015em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "250ms" }}>{t.businessUnits.headline}</h1>
-          <p className="text-muted-foreground text-[15px] md:text-base leading-[1.7] max-w-xl animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.businessUnits.subline}</p>
+          <p className="text-foreground/70 text-[15px] md:text-base leading-[1.7] max-w-xl animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.businessUnits.subline}</p>
         </div>
       </section>
 
@@ -37,12 +37,12 @@ export default function BusinessUnits() {
                   <div className="md:col-span-4">
                     <div className="w-10 h-[2px] bg-[hsl(var(--gold))]/50 mb-6" />
                     {unit.role && (
-                      <span className="text-brand-blue text-[11px] uppercase tracking-[0.2em] block mb-3">{unit.role}</span>
+                      <span className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium block mb-3">{unit.role}</span>
                     )}
                     <h3 className="text-foreground text-lg md:text-xl font-normal tracking-[-0.01em]">{unit.name}</h3>
                   </div>
                   <div className="md:col-span-7 md:col-start-6">
-                    <p className="text-muted-foreground text-[15px] leading-[1.8] mb-8">{unit.desc}</p>
+                    <p className="text-foreground/65 text-[15px] leading-[1.8] mb-8">{unit.desc}</p>
                     {i === 0 ? (
                       <Link to="/leistungen" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
                         {t.cta.consultationCta} <ArrowUpRight size={12} />
@@ -64,7 +64,7 @@ export default function BusinessUnits() {
       <section className="py-24 md:py-32 bg-soft-ivory">
         <div className="container">
           <ScrollReveal>
-            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">Raumqualität</p>
+            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">Raumqualität</p>
             <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] max-w-lg mb-16">Repräsentative Arbeitsumgebungen auf höchstem Niveau</h2>
           </ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
@@ -91,20 +91,19 @@ export default function BusinessUnits() {
         </div>
       </section>
 
-
       {t.businessUnits.architectureLabel && (
         <section className="py-32 md:py-40 bg-cloud-neutral">
           <div className="container">
             <div className="grid md:grid-cols-12 gap-12 md:gap-16">
               <div className="md:col-span-4">
                 <ScrollReveal>
-                  <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">{t.businessUnits.architectureLabel}</p>
+                  <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.businessUnits.architectureLabel}</p>
                   <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em]">{t.businessUnits.architectureHeadline}</h2>
                 </ScrollReveal>
               </div>
               <div className="md:col-span-7 md:col-start-6">
                 <ScrollReveal delay={120}>
-                  <p className="text-muted-foreground text-[15px] md:text-base leading-[1.9]">{t.businessUnits.architectureText}</p>
+                  <p className="text-foreground/65 text-[15px] md:text-base leading-[1.9]">{t.businessUnits.architectureText}</p>
                 </ScrollReveal>
               </div>
             </div>
@@ -115,20 +114,20 @@ export default function BusinessUnits() {
       {/* CTA */}
       <section className="relative py-28 md:py-36 bg-soft-ivory overflow-hidden">
         <div className="absolute inset-0">
-          <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.12]" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/60 via-transparent to-[hsl(var(--soft-ivory))]/70" />
+          <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.14]" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/50 via-transparent to-[hsl(var(--soft-ivory))]/60" />
         </div>
         <div className="container text-center relative z-10">
           <ScrollReveal>
             <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] mb-5">{t.contact.headline}</h2>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <p className="text-muted-foreground text-[15px] leading-[1.7] max-w-md mx-auto mb-12">{t.contact.text}</p>
+            <p className="text-foreground/60 text-[15px] leading-[1.7] max-w-md mx-auto mb-12">{t.contact.text}</p>
           </ScrollReveal>
           <ScrollReveal delay={160}>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent transition-all duration-200 active:scale-[0.97]">{t.cta.projectCta}</Link>
-              <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/25 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]">{t.cta.contactCta}</Link>
+              <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.cta.projectCta}</Link>
+              <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]">{t.cta.contactCta}</Link>
             </div>
           </ScrollReveal>
         </div>

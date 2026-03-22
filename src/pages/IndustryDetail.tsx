@@ -23,18 +23,18 @@ export default function IndustryDetail() {
       <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
         {heroImg && (
           <div className="absolute inset-0">
-            <img src={heroImg} alt={industry.heroHeadline} className="w-full h-full object-cover opacity-[0.2]" loading="eager" />
-            <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/50 via-[hsl(var(--soft-ivory))]/30 to-[hsl(var(--soft-ivory))]/80" />
+            <img src={heroImg} alt={industry.heroHeadline} className="w-full h-full object-cover opacity-[0.24]" loading="eager" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/40 via-[hsl(var(--soft-ivory))]/20 to-[hsl(var(--soft-ivory))]/70" />
           </div>
         )}
         <div className="container relative z-10">
-          <Link to="/branchen" className="inline-flex items-center gap-2 text-muted-foreground hover:text-[hsl(var(--brand-blue))] text-[11px] uppercase tracking-[0.18em] mb-10 transition-colors duration-200">
+          <Link to="/branchen" className="inline-flex items-center gap-2 text-foreground/50 hover:text-[hsl(var(--brand-blue))] text-[11px] uppercase tracking-[0.18em] mb-10 transition-colors duration-200">
             <ArrowLeft size={12} />{t.industryPage.backToOverview}
           </Link>
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-normal leading-[1.15] tracking-[-0.015em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "150ms" }}>{industry.heroHeadline}</h1>
-          <p className="text-[hsl(var(--soft-charcoal))] text-[15px] md:text-base leading-[1.7] max-w-xl mb-12 animate-reveal-up" style={{ animationDelay: "300ms" }}>{industry.heroSubline}</p>
+          <p className="text-foreground/70 text-[15px] md:text-base leading-[1.7] max-w-xl mb-12 animate-reveal-up" style={{ animationDelay: "300ms" }}>{industry.heroSubline}</p>
           <div className="flex flex-wrap gap-4 animate-reveal-up" style={{ animationDelay: "450ms" }}>
-            <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent transition-all duration-200 active:scale-[0.97]">{t.industryPage.ctaPrimary}</Link>
+            <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.industryPage.ctaPrimary}</Link>
           </div>
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function IndustryDetail() {
         <div className="container">
           <div className="max-w-3xl">
             <ScrollReveal>
-              <p className="text-muted-foreground text-[15px] md:text-base leading-[1.8]">{industry.intro}</p>
+              <p className="text-foreground/65 text-[15px] md:text-base leading-[1.8]">{industry.intro}</p>
             </ScrollReveal>
           </div>
         </div>
@@ -52,7 +52,7 @@ export default function IndustryDetail() {
       <section className="py-24 md:py-32 bg-cloud-neutral">
         <div className="container">
           <ScrollReveal>
-            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">{t.industryPage.consultingFields}</p>
+            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.industryPage.consultingFields}</p>
           </ScrollReveal>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {industry.consultingFields.map((field, i) => (
@@ -70,14 +70,14 @@ export default function IndustryDetail() {
       <section className="py-24 md:py-32 bg-background">
         <div className="container">
           <ScrollReveal>
-            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">{t.industryPage.challengesLabel}</p>
+            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.industryPage.challengesLabel}</p>
           </ScrollReveal>
           <div className="max-w-2xl mt-10">
             {industry.challenges.map((challenge, i) => (
               <ScrollReveal key={challenge} delay={i * 60}>
                 <div className="flex items-start gap-4 py-5 border-b border-border last:border-b-0">
                   <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--gold))]/50 mt-[7px] shrink-0" />
-                  <p className="text-muted-foreground text-sm leading-[1.7]">{challenge}</p>
+                  <p className="text-foreground/65 text-sm leading-[1.7]">{challenge}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -89,14 +89,14 @@ export default function IndustryDetail() {
         <section className="py-24 md:py-32 bg-cloud-neutral">
           <div className="container">
             <ScrollReveal>
-              <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-12">{t.industryPage.projectsLabel}</p>
+              <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-12">{t.industryPage.projectsLabel}</p>
             </ScrollReveal>
             <div className="grid md:grid-cols-2 gap-6">
               {industry.caseStudies.map((cs, i) => (
                 <ScrollReveal key={cs.title} delay={i * 80}>
                   <div className="bg-background border border-border p-8 md:p-10">
                     <h3 className="text-foreground text-base font-normal mb-3 tracking-[-0.01em]">{cs.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-[1.7]">{cs.desc}</p>
+                    <p className="text-foreground/60 text-sm leading-[1.7]">{cs.desc}</p>
                   </div>
                 </ScrollReveal>
               ))}
@@ -109,7 +109,7 @@ export default function IndustryDetail() {
         <section className="py-24 md:py-32 bg-background">
           <div className="container">
             <ScrollReveal>
-              <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5">{t.industryPage.matchingServices}</p>
+              <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.industryPage.matchingServices}</p>
             </ScrollReveal>
             <div className="grid md:grid-cols-2 gap-6 mt-12">
               {matchingServices.map((service, i) => (
@@ -117,7 +117,7 @@ export default function IndustryDetail() {
                   <Link to={`/leistungen/${service.slug}`} className="block bg-card border border-border p-8 md:p-10 group hover:bg-soft-ivory transition-colors duration-300">
                     <span className="text-[hsl(var(--gold))] text-[11px] tracking-[0.2em] font-medium mb-3 block">{service.number}</span>
                     <h3 className="text-foreground text-base font-normal mb-3 tracking-[-0.01em] group-hover:text-brand-blue transition-colors duration-200">{service.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-[1.7]">{service.desc}</p>
+                    <p className="text-foreground/60 text-sm leading-[1.7]">{service.desc}</p>
                   </Link>
                 </ScrollReveal>
               ))}
@@ -128,8 +128,8 @@ export default function IndustryDetail() {
 
       <section className="relative py-28 md:py-36 bg-soft-ivory overflow-hidden">
         <div className="absolute inset-0">
-          <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.12]" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/60 via-transparent to-[hsl(var(--soft-ivory))]/70" />
+          <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.14]" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/50 via-transparent to-[hsl(var(--soft-ivory))]/60" />
         </div>
         <div className="container text-center relative z-10">
           <ScrollReveal>
@@ -137,8 +137,8 @@ export default function IndustryDetail() {
           </ScrollReveal>
           <ScrollReveal delay={100}>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent transition-all duration-200 active:scale-[0.97]">{t.cta.projectCta}</Link>
-              <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/25 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]">{t.cta.contactCta}</Link>
+              <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.cta.projectCta}</Link>
+              <Link to="/#contact" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]">{t.cta.contactCta}</Link>
             </div>
           </ScrollReveal>
         </div>
