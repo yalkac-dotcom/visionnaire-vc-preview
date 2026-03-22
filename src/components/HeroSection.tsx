@@ -71,8 +71,8 @@ export function HeroSection() {
           aria-label="Scroll down"
           className="group"
         >
-          <div className="w-[24px] h-[38px] rounded-full border-2 border-[hsl(var(--brand-blue))]/70 flex items-start justify-center pt-[8px] transition-all duration-300 group-hover:border-[hsl(var(--brand-blue))] group-active:scale-[0.95]">
-            <div className="w-[3px] h-[8px] rounded-full bg-[hsl(var(--brand-blue))]/80 animate-scroll-dot" />
+          <div className="w-[28px] h-[44px] rounded-full border-2 border-primary flex items-start justify-center pt-[9px] transition-all duration-300 group-hover:border-[hsl(var(--accent))] group-active:scale-[0.95]">
+            <div className="w-[3.5px] h-[10px] rounded-full bg-primary animate-scroll-dot" />
           </div>
         </a>
       </div>
