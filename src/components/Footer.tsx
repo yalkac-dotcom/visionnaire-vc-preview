@@ -9,13 +9,13 @@ export function Footer() {
     <footer className="bg-footer py-16 md:py-20">
       <div className="container">
         {/* Nav links */}
-        <div className="mb-12 pb-12 border-b border-white/8 flex flex-wrap gap-x-8 gap-y-3 text-[11px] uppercase tracking-[0.18em]">
-          <Link to="/leistungen" className="text-white/45 hover:text-white/75 transition-colors duration-200">{t.footer.navServices}</Link>
-          <Link to="/branchen" className="text-white/45 hover:text-white/75 transition-colors duration-200">{t.footer.navIndustries}</Link>
-          <Link to="/unternehmensbereiche" className="text-white/45 hover:text-white/75 transition-colors duration-200">{t.footer.navBusinessUnits}</Link>
-          <Link to="/ueber-uns" className="text-white/45 hover:text-white/75 transition-colors duration-200">{t.footer.navAbout}</Link>
-          <Link to="/insights" className="text-white/45 hover:text-white/75 transition-colors duration-200">{t.footer.navInsights}</Link>
-          <Link to="/kontakt" className="text-white/45 hover:text-white/75 transition-colors duration-200">{t.footer.navContact}</Link>
+        <div className="mb-12 pb-12 border-b border-white/10 flex flex-wrap gap-x-8 gap-y-3 text-[11px] uppercase tracking-[0.18em]">
+          <Link to="/leistungen" className="text-white/60 hover:text-white/85 transition-colors duration-200">{t.footer.navServices}</Link>
+          <Link to="/branchen" className="text-white/60 hover:text-white/85 transition-colors duration-200">{t.footer.navIndustries}</Link>
+          <Link to="/unternehmensbereiche" className="text-white/60 hover:text-white/85 transition-colors duration-200">{t.footer.navBusinessUnits}</Link>
+          <Link to="/ueber-uns" className="text-white/60 hover:text-white/85 transition-colors duration-200">{t.footer.navAbout}</Link>
+          <Link to="/insights" className="text-white/60 hover:text-white/85 transition-colors duration-200">{t.footer.navInsights}</Link>
+          <Link to="/kontakt" className="text-white/60 hover:text-white/85 transition-colors duration-200">{t.footer.navContact}</Link>
         </div>
 
         {/* Domizil note */}
