@@ -1,4 +1,4 @@
-export type Locale = "de" | "en";
+export type Locale = "de" | "en" | "it" | "es" | "ja" | "zh" | "ar";
 
 export interface ServiceItem {
   slug: string;
