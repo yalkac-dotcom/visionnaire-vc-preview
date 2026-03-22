@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import heroContact from "@/assets/hero-contact.jpg";
 
 export default function Contact() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const [subject, setSubject] = useState(t.contact.subjects[0]);
 
   return (
