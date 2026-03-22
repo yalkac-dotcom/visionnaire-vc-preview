@@ -127,11 +127,11 @@ export const translations: Record<Locale, Translations> = {
       },
       attitude: {
         headline: "Was uns treibt",
-        text: "Visionnaire Consulting versteht Beratung als unternehmerische Verantwortung. Uns geht es darum, Unternehmen nicht nur konzeptionell zu begleiten, sondern mit Klarheit, Analyse, Marktverständnis und tragfähiger Unterstützung in die richtige Richtung zu führen. Dabei verbinden wir strategisches Denken mit internationalem Blick, präziser Umsetzung und einem Verständnis für die Netzwerke und Kontexte, in denen nachhaltige Geschäftsentwicklung entsteht. Nicht Lautstärke steht für uns im Mittelpunkt, sondern Richtung, Verlässlichkeit und Lösungen mit Substanz.",
+        text: "Visionnaire Consulting versteht Beratung als unternehmerische Verantwortung. Uns geht es darum, Unternehmen mit Klarheit, Analyse, Marktverständnis und tragfähiger Unterstützung in die richtige Richtung zu führen. Nicht Lautstärke steht für uns im Mittelpunkt, sondern Richtung, Verlässlichkeit und Lösungen mit Substanz.",
       },
       leadership: {
         headline: "Unsere Führung",
-        text: "Hinter Visionnaire steht eine junge, unternehmerisch geprägte Führung mit einem klaren Gespür für Entwicklung, Markenwirkung und tragfähige Geschäftslösungen. Ihre Haltung ist aus praktischer Verantwortung, internationaler Perspektive und einem familiär geprägten unternehmerischen Selbstverständnis gewachsen. Sie verbindet analytische Stärke mit einem belastbaren Verständnis für Märkte, Strukturen und unternehmerische Zusammenhänge – und kann dabei auf gewachsene Erfahrung, ein starkes Umfeld und tragfähige Netzwerke zurückgreifen. So entsteht ein Führungsverständnis, das Klarheit, Substanz und Unterstützung zusammenführt und Vorhaben mit Ruhe, Präzision und Verbindlichkeit voranbringt.",
+        text: "Hinter Visionnaire steht eine junge, unternehmerisch geprägte Führung mit einem klaren Gespür für Entwicklung, Markenwirkung und tragfähige Geschäftslösungen. Diese Haltung ist durch praktische Verantwortung, internationale Perspektive und ein familiär geprägtes unternehmerisches Selbstverständnis gewachsen. Sie prägt auch unser Team: verbindlich, fokussiert und mit dem Anspruch, Vorhaben mit Klarheit und Substanz voranzubringen.",
       },
     },
     insights: {
