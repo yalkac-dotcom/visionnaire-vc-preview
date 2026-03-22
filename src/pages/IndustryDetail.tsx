@@ -38,6 +38,7 @@ export default function IndustryDetail() {
             <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.industryPage.ctaPrimary}</Link>
           </div>
         </div>
+        <HeroScrollIndicator />
       </section>
 
       <section className="py-28 md:py-36 bg-background">

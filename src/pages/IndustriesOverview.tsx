@@ -21,6 +21,7 @@ export default function IndustriesOverview() {
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-normal leading-[1.15] tracking-[-0.015em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "250ms" }}>{t.industries.headline}</h1>
           <p className="text-foreground/70 text-[15px] md:text-base leading-[1.7] max-w-xl animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.industries.subline}</p>
         </div>
+        <HeroScrollIndicator />
       </section>
 
       <section className="py-28 md:py-36 bg-background">
