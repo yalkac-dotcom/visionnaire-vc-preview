@@ -21,8 +21,12 @@ export function Header() {
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
-      if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) setServicesOpen(false);
-      if (industriesRef.current && !industriesRef.current.contains(e.target as Node)) setIndustriesOpen(false);
+      const target = e.target as Node;
+      const inServices = servicesRef.current?.contains(target);
+      const inIndustries = industriesRef.current?.contains(target);
+      const inPanel = dropdownPanelRef.current?.contains(target);
+      if (!inServices && !inPanel) setServicesOpen(false);
+      if (!inIndustries && !inPanel) setIndustriesOpen(false);
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
