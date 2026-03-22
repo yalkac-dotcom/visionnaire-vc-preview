@@ -2,12 +2,67 @@ import { useState } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import heroContact from "@/assets/hero-contact.jpg";
+import { supabase } from "@/integrations/supabase/client";
+
+const successMessages: Record<string, string> = {
+  de: "Vielen Dank für Ihre Nachricht. Wir melden uns zeitnah bei Ihnen.",
+  en: "Thank you for your message. We will get back to you shortly.",
+  it: "Grazie per il Suo messaggio. La ricontatteremo al più presto.",
+  es: "Gracias por su mensaje. Nos pondremos en contacto con usted en breve.",
+  ja: "メッセージをありがとうございます。近日中にご連絡いたします。",
+  zh: "感谢您的留言。我们会尽快回复。",
+  ar: "شكراً لرسالتكم. سنعود إليكم قريباً.",
+};
+
+const errorMessages: Record<string, string> = {
+  de: "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+  en: "An error occurred while sending. Please try again.",
+  it: "Si è verificato un errore durante l'invio. Riprovi.",
+  es: "Se produjo un error al enviar. Por favor, inténtelo de nuevo.",
+  ja: "送信中にエラーが発生しました。もう一度お試しください。",
+  zh: "发送时出现错误。请重试。",
+  ar: "حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.",
+};
 
 export default function Contact() {
   const { t, locale } = useLanguage();
   const [subject, setSubject] = useState(t.contact.subjects[0]);
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!name.trim() || !email.trim() || !message.trim()) return;
+
+    setStatus("loading");
+    const { error } = await supabase.from("contact_submissions").insert({
+      name: name.trim(),
+      company: company.trim() || null,
+      email: email.trim(),
+      phone: phone.trim() || null,
+      subject,
+      message: message.trim(),
+      locale,
+    });
+
+    if (error) {
+      console.error("Contact form error:", error);
+      setStatus("error");
+    } else {
+      setStatus("success");
+      setName("");
+      setCompany("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+    }
+  };
 
   return (
     <>
