@@ -39,7 +39,7 @@ export function HeroSection() {
             {t.hero.subline}
           </p>
           <div
-            className="flex flex-wrap gap-4 mb-14 animate-reveal-up"
+            className="flex flex-wrap gap-4 mb-16 animate-reveal-up"
             style={{ animationDelay: "600ms" }}
           >
             <Link
@@ -56,7 +56,7 @@ export function HeroSection() {
             </Link>
           </div>
           <p
-            className="text-foreground/80 text-[11px] tracking-[0.2em] uppercase font-[450] mt-4 animate-reveal-up"
+            className="text-foreground text-[11px] tracking-[0.2em] uppercase font-[470] mt-6 animate-reveal-up"
             style={{ animationDelay: "800ms" }}
           >
             {t.hero.tagline}
