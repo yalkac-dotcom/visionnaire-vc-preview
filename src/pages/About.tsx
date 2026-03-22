@@ -3,6 +3,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import heroAbout from "@/assets/hero-about.jpg";
+import ctaAmbient from "@/assets/cta-ambient.jpg";
 
 export default function About() {
   const { t } = useLanguage();
