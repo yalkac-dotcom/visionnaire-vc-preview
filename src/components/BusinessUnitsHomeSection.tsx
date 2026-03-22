@@ -29,7 +29,7 @@ export function BusinessUnitsHomeSection() {
               <div className="bg-background border border-border h-full flex flex-col overflow-hidden">
                 {unitImages[i] && (
                   <div className="h-48 overflow-hidden">
-                    <img src={unitImages[i]} alt={unit.name} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+                    <img src={unitImages[i]} alt={unit.name} className="w-full h-full object-cover opacity-[0.78] group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
                   </div>
                 )}
                 <div className="p-8 md:p-10 flex flex-col flex-1">

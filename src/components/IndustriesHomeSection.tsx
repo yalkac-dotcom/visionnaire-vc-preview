@@ -21,13 +21,13 @@ export function IndustriesHomeSection() {
           <p className="text-foreground/65 text-[15px] leading-[1.7] max-w-xl mb-16">{t.industries.subline}</p>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {items.map((item, i) => (
             <ScrollReveal key={item.slug} delay={i * 70}>
-              <Link to={`/branchen/${item.slug}`} className="block bg-background h-full group hover:bg-soft-ivory transition-colors duration-300">
+              <Link to={`/branchen/${item.slug}`} className="block bg-background border border-border h-full group hover:bg-soft-ivory transition-colors duration-300">
                 {industryImages[item.slug] && (
                   <div className="h-40 overflow-hidden">
-                    <img src={industryImages[item.slug]} alt={item.name} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+                    <img src={industryImages[item.slug]} alt={item.name} className="w-full h-full object-cover opacity-[0.82] group-hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
                   </div>
                 )}
                 <div className="p-7 md:p-9">
