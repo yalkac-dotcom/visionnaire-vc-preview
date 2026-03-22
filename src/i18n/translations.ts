@@ -287,9 +287,9 @@ export const translations: Record<Locale, Translations> = {
       contactCta: "Get in touch",
     },
     hero: {
-      tagline: "Strategic Consulting · Operational Implementation · International Networks",
-      headline: "Strategy, products and brands. Internationally conceived. Precisely executed.",
-      subline: "Visionnaire Consulting supports companies in developing strategies, products and brands as well as implementing international business solutions.",
+      tagline: "Consulting · Strategy · Brand · International Development",
+      headline: "Strategic consulting for brands, products and international development.",
+      subline: "Visionnaire Consulting guides companies in developing strategies, products and brands as well as implementing international business solutions.",
       cta: "Discuss project",
       ctaSecondary: "Get in touch",
     },
