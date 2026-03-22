@@ -172,9 +172,14 @@ export function Header() {
             { to: "/insights", label: t.nav.insights },
             { to: "/kontakt", label: t.nav.contact },
           ].map((link) => (
-            <SmartLink key={link.to} to={link.to} className="block px-8 py-4 text-foreground/60 text-xs uppercase tracking-[0.18em]">
+            <Link
+              key={link.to}
+              to={link.to}
+              onClick={() => setMobileOpen(false)}
+              className="block px-8 py-4 text-foreground/60 text-xs uppercase tracking-[0.18em]"
+            >
               {link.label}
-            </SmartLink>
+            </Link>
           ))}
 
           <div className="px-8 pt-4">
