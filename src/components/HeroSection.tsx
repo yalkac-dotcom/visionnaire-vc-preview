@@ -33,7 +33,7 @@ export function HeroSection() {
             {t.hero.headline}
           </h1>
           <p
-            className="text-foreground/75 text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-12 animate-reveal-up"
+            className="text-foreground/85 text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-12 animate-reveal-up"
             style={{ animationDelay: "400ms" }}
           >
             {t.hero.subline}
