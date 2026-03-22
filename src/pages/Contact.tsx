@@ -77,7 +77,7 @@ export default function Contact() {
                   </div>
                   {t.contact.formPhone && (
                     <div>
-                      <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">Telefon</label>
+                      <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">{locale === "de" ? "Telefon" : locale === "en" ? "Phone" : locale === "it" ? "Telefono" : locale === "es" ? "Teléfono" : locale === "ja" ? "電話" : locale === "zh" ? "电话" : locale === "ar" ? "هاتف" : "Phone"}</label>
                       <input type="tel" placeholder={t.contact.formPhone} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200 placeholder:text-foreground/30" />
                     </div>
                   )}

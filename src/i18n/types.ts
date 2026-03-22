@@ -100,6 +100,9 @@ export interface Translations {
     architectureLabel?: string;
     architectureHeadline?: string;
     architectureText?: string;
+    galleryLabel?: string;
+    galleryHeadline?: string;
+    galleryItems?: { label: string; alt: string }[];
     items: BusinessUnit[];
   };
   about: {

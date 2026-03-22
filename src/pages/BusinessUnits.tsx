@@ -64,15 +64,15 @@ export default function BusinessUnits() {
       <section className="py-24 md:py-32 bg-soft-ivory">
         <div className="container">
           <ScrollReveal>
-            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">Raumqualität</p>
-            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] max-w-lg mb-16">Repräsentative Arbeitsumgebungen auf höchstem Niveau</h2>
+            <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.businessUnits.galleryLabel ?? "Raumqualität"}</p>
+            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] max-w-lg mb-16">{t.businessUnits.galleryHeadline ?? "Repräsentative Arbeitsumgebungen auf höchstem Niveau"}</h2>
           </ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
             {[
-              { src: domizilLobby, alt: "Eleganter Empfangsbereich", label: "Empfang" },
-              { src: domizilOffice, alt: "Hochwertige Büroflächen", label: "Büroflächen" },
-              { src: domizilMeeting, alt: "Stilvoller Meetingraum", label: "Konferenz" },
-              { src: domizilWorkspace, alt: "Ruhiger Arbeitsbereich", label: "Arbeitsplatz" },
+              { src: domizilLobby, alt: t.businessUnits.galleryItems?.[0]?.alt ?? "Eleganter Empfangsbereich", label: t.businessUnits.galleryItems?.[0]?.label ?? "Empfang" },
+              { src: domizilOffice, alt: t.businessUnits.galleryItems?.[1]?.alt ?? "Hochwertige Büroflächen", label: t.businessUnits.galleryItems?.[1]?.label ?? "Büroflächen" },
+              { src: domizilMeeting, alt: t.businessUnits.galleryItems?.[2]?.alt ?? "Stilvoller Meetingraum", label: t.businessUnits.galleryItems?.[2]?.label ?? "Konferenz" },
+              { src: domizilWorkspace, alt: t.businessUnits.galleryItems?.[3]?.alt ?? "Ruhiger Arbeitsbereich", label: t.businessUnits.galleryItems?.[3]?.label ?? "Arbeitsplatz" },
             ].map((img, i) => (
               <ScrollReveal key={img.label} delay={i * 80}>
                 <div className="group relative overflow-hidden aspect-[4/5]">
