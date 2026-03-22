@@ -1,4 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-strategy.jpg";
 
 export function HeroSection() {
