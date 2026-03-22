@@ -126,7 +126,7 @@ export const translations: Record<Locale, Translations> = {
         text: "Visionnaire Consulting ist Teil einer zusammenhängenden Markenwelt. Unterschiedliche Geschäftsbereiche können dabei verschiedene Schwerpunkte setzen — verbunden bleiben sie durch dieselbe Haltung: Klarheit, Qualität, kultivierte Wirkung und ein präzises Verständnis für anspruchsvolle Kontexte.",
       },
       attitude: {
-        headline: "Was uns antreibt",
+        headline: "Was uns treibt",
         text: "Visionnaire Consulting versteht Beratung als unternehmerische Verantwortung. Uns geht es darum, Unternehmen mit Klarheit, Präzision und einem belastbaren Blick für Entwicklung, Marke und Umsetzung zu begleiten. Nicht Lautstärke steht dabei im Mittelpunkt, sondern Richtung. Nicht kurzfristige Wirkung, sondern Lösungen, die Substanz haben und langfristig tragen.",
       },
       leadership: {
