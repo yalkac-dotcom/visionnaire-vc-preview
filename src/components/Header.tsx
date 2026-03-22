@@ -35,7 +35,7 @@ export function Header() {
       const target = e.target as Node;
       if (!servicesRef.current?.contains(target) && !dropdownPanelRef.current?.contains(target)) setServicesOpen(false);
       if (!industriesRef.current?.contains(target) && !dropdownPanelRef.current?.contains(target)) setIndustriesOpen(false);
-      if (!langRef.current?.contains(target)) setLangOpen(false);
+      if (!langRef.current?.contains(target) && !langRefMobile.current?.contains(target)) setLangOpen(false);
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
