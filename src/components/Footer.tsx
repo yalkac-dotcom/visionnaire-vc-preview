@@ -29,11 +29,11 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div>
             <p className="text-white/90 tracking-[0.3em] text-[13px] font-[450] mb-2">
-              {t.footer.brand}<span className="text-white/50 ml-1.5 tracking-normal text-[11px] font-[400]">{t.footer.consulting}</span>
+              {t.footer.brand}<span className="text-white/60 ml-1.5 tracking-normal text-[11px] font-[420]">{t.footer.consulting}</span>
             </p>
-            <p className="text-white/50 text-[11px] font-[420]">© {year} Visionnaire Consulting GmbH. {t.footer.rights}</p>
+            <p className="text-white/60 text-[11px] font-[430]">© {year} Visionnaire Consulting GmbH. {t.footer.rights}</p>
           </div>
-          <div className="flex flex-wrap gap-8 text-[11px] text-white/65 font-[420]">
+          <div className="flex flex-wrap gap-8 text-[11px] text-white/75 font-[430]">
             <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="hover:text-[hsl(var(--gold-soft))] transition-colors duration-200">{t.footer.domizilLink}</a>
             <Link to="/impressum" className="hover:text-white/85 transition-colors duration-200">{t.footer.impressum}</Link>
             <Link to="/datenschutz" className="hover:text-white/85 transition-colors duration-200">{t.footer.datenschutz}</Link>
