@@ -147,8 +147,8 @@ export const translationsEs: Translations = {
   },
   hero: {
     tagline: "Consulting · Estrategia · Marca · Desarrollo Internacional",
-    headline: "Consultoría estratégica para marcas, productos y desarrollo internacional.",
-    subline: "Visionnaire Consulting acompaña a las empresas en el desarrollo de estrategias, productos y marcas así como en la implementación de soluciones de negocio internacionales.",
+    headline: "Consultoría estratégica con solidez empresarial.",
+    subline: "Visionnaire Consulting acompaña a las empresas en posicionamiento, desarrollo de marca, estrategia de producto y proyectos internacionales — con claridad, precisión y capacidad de ejecución comprobada.",
     cta: "Hablar de un proyecto",
     ctaSecondary: "Contactarnos",
   },
