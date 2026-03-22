@@ -158,6 +158,14 @@ export const translationsZh: Translations = {
     subline: "战略咨询与高端商务环境——以相同的信念连接，以共同的质量承诺支撑。",
     architectureLabel: "品牌架构", architectureHeadline: "两种表达，一个品牌世界",
     architectureText: "Visionnaire Consulting和Visionnaire Domizil共享对质量的共同承诺和同样沉稳、战略性的气质。它们的区别在于各自的焦点——一方是战略咨询，另一方是高端商务空间和高品位环境。二者共同构成了一个在不同领域以同样严格标准运营的统一品牌世界。",
+    galleryLabel: "空间品质",
+    galleryHeadline: "最高水准的代表性工作环境",
+    galleryItems: [
+      { label: "前台", alt: "优雅的接待区" },
+      { label: "办公室", alt: "高端办公空间" },
+      { label: "会议室", alt: "精致的会议室" },
+      { label: "工位", alt: "静谧的工作区域" },
+    ],
     items: [
       { name: "Visionnaire Consulting", desc: "为高要求的项目、企业和发展提供战略咨询。Visionnaire Consulting是母品牌，在定位、转型、品牌和增长领域将战略深度与运营执行力相结合。", href: "/", role: "母品牌" },
       { name: "Visionnaire Domizil", desc: "在高品位环境中提供高端办公和商务空间解决方案。Visionnaire Domizil代表高端办公室、专业商务空间、商务中心服务和具有明确质量承诺的精致工作环境。", href: "https://visionnaire.de", role: "关联业务领域" },
