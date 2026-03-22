@@ -395,6 +395,14 @@ export const translations: Record<Locale, Translations> = {
         headline: "A connected brand universe",
         text: "Visionnaire Consulting is part of a cohesive brand world. Different business units may set different priorities — but they remain connected through the same conviction: clarity, quality, cultivated impact and a precise understanding of discerning contexts.",
       },
+      attitude: {
+        headline: "Our Conviction",
+        text: "Visionnaire Consulting does not view advisory as abstract recommendation, but as an entrepreneurial responsibility. Our ambition is to accompany companies with clarity, precision and a resilient perspective on development, brand and execution. What matters to us is not volume, but direction; not short-term effects, but viable solutions with substance.",
+      },
+      leadership: {
+        headline: "Our Leadership",
+        text: "Behind Visionnaire stands a young, entrepreneurially shaped leadership with a clear sense for development, brand impact and viable business solutions. This conviction is not theoretical — it has grown through practical responsibility, international perspective and entrepreneurial experience. It also shapes our self-understanding as a team: focused, committed and with the ambition not merely to accompany ventures, but to advance them with clarity and substance.",
+      },
     },
     insights: {
       label: "Insights",
