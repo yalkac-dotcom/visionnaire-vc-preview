@@ -1,6 +1,11 @@
 import type { Locale, Translations } from "./types";
 import { servicesDe, servicesEn } from "./services";
 import { industriesDe, industriesEn } from "./industries";
+import { translationsIt } from "./translations-it";
+import { translationsEs } from "./translations-es";
+import { translationsJa } from "./translations-ja";
+import { translationsZh } from "./translations-zh";
+import { translationsAr } from "./translations-ar";
 
 export type { Locale, Translations };
 export type { ServiceItem, IndustryItem, WhyUsItem, BusinessUnit, InsightItem } from "./types";
