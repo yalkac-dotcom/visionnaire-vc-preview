@@ -120,7 +120,7 @@ export function Header() {
 
         {/* Mobile controls */}
         <div className="flex lg:hidden items-center gap-3">
-          <div ref={langRef} className="relative">
+          <div ref={langRefMobile} className="relative">
             <button
               onClick={() => setLangOpen(!langOpen)}
               className="text-foreground/90 text-[11px] uppercase tracking-[0.18em] font-[500] inline-flex items-center gap-0.5"
