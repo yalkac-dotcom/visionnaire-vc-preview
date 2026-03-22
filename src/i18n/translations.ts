@@ -74,6 +74,14 @@ export const translations: Record<Locale, Translations> = {
       architectureLabel: "Markenarchitektur",
       architectureHeadline: "Zwei Ausdrucksformen, eine Markenwelt",
       architectureText: "Visionnaire Consulting und Visionnaire Domizil verbindet ein gemeinsamer Qualitätsanspruch und dieselbe ruhige, strategische Grundhaltung. Was sie unterscheidet, ist ihr jeweiliger Fokus — strategische Beratung auf der einen, hochwertige Geschäftsräume und repräsentative Umfelder auf der anderen Seite. Gemeinsam bilden sie eine kohärente Markenwelt, die in unterschiedlichen Feldern mit demselben Anspruch agiert.",
+      galleryLabel: "Raumqualität",
+      galleryHeadline: "Repräsentative Arbeitsumgebungen auf höchstem Niveau",
+      galleryItems: [
+        { label: "Empfang", alt: "Eleganter Empfangsbereich" },
+        { label: "Büroflächen", alt: "Hochwertige Büroflächen" },
+        { label: "Konferenz", alt: "Stilvoller Meetingraum" },
+        { label: "Arbeitsplatz", alt: "Ruhiger Arbeitsbereich" },
+      ],
       items: [
         {
           name: "Visionnaire Consulting",
@@ -344,6 +352,14 @@ export const translations: Record<Locale, Translations> = {
       architectureLabel: "Brand Architecture",
       architectureHeadline: "Two expressions, one brand world",
       architectureText: "Visionnaire Consulting and Visionnaire Domizil share a common commitment to quality and the same calm, strategic disposition. What distinguishes them is their respective focus — strategic advisory on one side, premium business spaces and distinguished environments on the other. Together, they form a coherent brand world that operates across different fields with the same exacting standards.",
+      galleryLabel: "Spatial Quality",
+      galleryHeadline: "Distinguished working environments at the highest level",
+      galleryItems: [
+        { label: "Reception", alt: "Elegant reception area" },
+        { label: "Offices", alt: "Premium office spaces" },
+        { label: "Conference", alt: "Stylish meeting room" },
+        { label: "Workspace", alt: "Quiet working area" },
+      ],
       items: [
         {
           name: "Visionnaire Consulting",

@@ -261,6 +261,14 @@ export const translationsIt: Translations = {
     architectureLabel: "Architettura del Marchio",
     architectureHeadline: "Due espressioni, un mondo di marca",
     architectureText: "Visionnaire Consulting e Visionnaire Domizil condividono un impegno comune verso la qualità e la stessa disposizione calma e strategica. Ciò che li distingue è il rispettivo focus — consulenza strategica da un lato, spazi commerciali premium e ambienti distinguiti dall'altro. Insieme formano un mondo di marca coerente che opera in campi diversi con gli stessi standard elevati.",
+    galleryLabel: "Qualità degli Spazi",
+    galleryHeadline: "Ambienti di lavoro rappresentativi al più alto livello",
+    galleryItems: [
+      { label: "Reception", alt: "Area reception elegante" },
+      { label: "Uffici", alt: "Spazi ufficio premium" },
+      { label: "Conferenze", alt: "Sala riunioni di stile" },
+      { label: "Postazioni", alt: "Area di lavoro tranquilla" },
+    ],
     items: [
       {
         name: "Visionnaire Consulting",
@@ -311,6 +319,14 @@ export const translationsIt: Translations = {
       label: "L'Universo del Marchio",
       headline: "Un universo di marca connesso",
       text: "Visionnaire Consulting fa parte di un mondo di marca coeso. Diverse unità di business possono stabilire priorità diverse — ma restano connesse dalla stessa convinzione: chiarezza, qualità, impatto coltivato e una comprensione precisa di contesti esigenti.",
+    },
+    attitude: {
+      headline: "Cosa ci guida",
+      text: "Visionnaire Consulting intende la consulenza come responsabilità imprenditoriale. Il nostro obiettivo è guidare le imprese con chiarezza, analisi, comprensione del mercato e un supporto solido nella giusta direzione. Non il volume, ma la direzione, l'affidabilità e soluzioni con sostanza sono al centro del nostro lavoro.",
+    },
+    leadership: {
+      headline: "La nostra leadership",
+      text: "Dietro Visionnaire c'è una leadership giovane e imprenditoriale con un chiaro senso per lo sviluppo, l'impatto del marchio e soluzioni aziendali sostenibili. Questa convinzione è cresciuta attraverso responsabilità pratica, prospettiva internazionale e un radicato spirito imprenditoriale familiare. Plasma anche il nostro team: affidabile, focalizzato e con l'ambizione di portare avanti i progetti con chiarezza e sostanza.",
     },
   },
   insights: {

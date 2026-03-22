@@ -195,6 +195,14 @@ export const translationsEs: Translations = {
     architectureLabel: "Arquitectura de Marca",
     architectureHeadline: "Dos expresiones, un mundo de marca",
     architectureText: "Visionnaire Consulting y Visionnaire Domizil comparten un compromiso común con la calidad y la misma disposición serena y estratégica. Lo que los distingue es su enfoque respectivo — consultoría estratégica por un lado, espacios comerciales premium y entornos distinguidos por el otro. Juntos forman un mundo de marca coherente que opera en diferentes campos con los mismos estándares exigentes.",
+    galleryLabel: "Calidad Espacial",
+    galleryHeadline: "Entornos de trabajo representativos al más alto nivel",
+    galleryItems: [
+      { label: "Recepción", alt: "Área de recepción elegante" },
+      { label: "Oficinas", alt: "Espacios de oficina premium" },
+      { label: "Conferencias", alt: "Sala de reuniones con estilo" },
+      { label: "Puestos", alt: "Área de trabajo tranquila" },
+    ],
     items: [
       { name: "Visionnaire Consulting", desc: "Consultoría estratégica para proyectos, empresas y desarrollos exigentes. Visionnaire Consulting es la marca madre y conecta profundidad estratégica con competencia de ejecución operativa — en posicionamiento, transformación, marca y crecimiento.", href: "/", role: "Marca Madre" },
       { name: "Visionnaire Domizil", desc: "Soluciones premium de oficinas y espacios comerciales en entornos distinguidos. Visionnaire Domizil representa oficinas premium, espacios comerciales profesionales, servicios de centro de negocios y un entorno de trabajo cultivado con un claro compromiso con la calidad.", href: "https://visionnaire.de", role: "Área de Negocio Conectada" },
@@ -219,6 +227,14 @@ export const translationsEs: Translations = {
     },
     position: { label: "Perspectiva Internacional", headline: "Perspectiva internacional, orientación clara", text: "Visionnaire combina precisión estratégica con una perspectiva abierta sobre diferentes mercados, contextos y caminos de desarrollo. La experiencia internacional no es un fin en sí misma, sino parte de una comprensión diferenciada de crecimiento, posicionamiento e impacto." },
     connection: { label: "El Universo de Marca", headline: "Un universo de marca conectado", text: "Visionnaire Consulting forma parte de un mundo de marca cohesivo. Diferentes unidades de negocio pueden establecer diferentes prioridades — pero permanecen conectadas por la misma convicción: claridad, calidad, impacto cultivado y una comprensión precisa de contextos exigentes." },
+    attitude: {
+      headline: "Lo que nos impulsa",
+      text: "Visionnaire Consulting entiende la consultoría como responsabilidad empresarial. Nuestro objetivo es acompañar a las empresas con claridad, análisis, comprensión del mercado y un apoyo sólido en la dirección correcta. No es el volumen lo que nos guía, sino la dirección, la fiabilidad y soluciones con sustancia.",
+    },
+    leadership: {
+      headline: "Nuestro liderazgo",
+      text: "Detrás de Visionnaire hay un liderazgo joven y emprendedor con un claro sentido del desarrollo, el impacto de marca y las soluciones empresariales viables. Esta convicción ha crecido a través de la responsabilidad práctica, la perspectiva internacional y un espíritu emprendedor arraigado. También moldea nuestro equipo: comprometido, enfocado y con la ambición de impulsar proyectos con claridad y sustancia.",
+    },
   },
   insights: {
     label: "Insights",

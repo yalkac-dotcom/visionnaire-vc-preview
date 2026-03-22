@@ -158,6 +158,14 @@ export const translationsZh: Translations = {
     subline: "战略咨询与高端商务环境——以相同的信念连接，以共同的质量承诺支撑。",
     architectureLabel: "品牌架构", architectureHeadline: "两种表达，一个品牌世界",
     architectureText: "Visionnaire Consulting和Visionnaire Domizil共享对质量的共同承诺和同样沉稳、战略性的气质。它们的区别在于各自的焦点——一方是战略咨询，另一方是高端商务空间和高品位环境。二者共同构成了一个在不同领域以同样严格标准运营的统一品牌世界。",
+    galleryLabel: "空间品质",
+    galleryHeadline: "最高水准的代表性工作环境",
+    galleryItems: [
+      { label: "前台", alt: "优雅的接待区" },
+      { label: "办公室", alt: "高端办公空间" },
+      { label: "会议室", alt: "精致的会议室" },
+      { label: "工位", alt: "静谧的工作区域" },
+    ],
     items: [
       { name: "Visionnaire Consulting", desc: "为高要求的项目、企业和发展提供战略咨询。Visionnaire Consulting是母品牌，在定位、转型、品牌和增长领域将战略深度与运营执行力相结合。", href: "/", role: "母品牌" },
       { name: "Visionnaire Domizil", desc: "在高品位环境中提供高端办公和商务空间解决方案。Visionnaire Domizil代表高端办公室、专业商务空间、商务中心服务和具有明确质量承诺的精致工作环境。", href: "https://visionnaire.de", role: "关联业务领域" },
@@ -177,6 +185,14 @@ export const translationsZh: Translations = {
     ]},
     position: { label: "国际视野", headline: "国际视野，清晰导向", text: "Visionnaire将战略精准与对不同市场、情境和发展路径的开放视野相结合。" },
     connection: { label: "品牌宇宙", headline: "互联的品牌宇宙", text: "Visionnaire Consulting是统一品牌世界的一部分。不同的业务部门可以设定不同的优先级——但它们通过相同的信念保持连接：清晰、质量、精致的影响和对高要求情境的精准理解。" },
+    attitude: {
+      headline: "驱动我们的力量",
+      text: "Visionnaire Consulting将咨询视为企业家的责任。我们致力于以清晰的方向、分析能力、市场理解和扎实的支持引导企业走向正确的方向。我们注重的不是声量，而是方向、可靠性和有实质的解决方案。",
+    },
+    leadership: {
+      headline: "我们的领导层",
+      text: "Visionnaire的背后是一支年轻而富有企业家精神的领导团队，对发展、品牌影响力和可持续的商业解决方案有着敏锐的感知。这种信念源于实际的责任承担、国际视野和根植于家族的企业家精神。这也塑造了我们的团队：专注、负责，并以清晰和实质推动每一个项目。",
+    },
   },
   insights: {
     label: "洞察", headline: "视角与立场", subline: "关于战略、品牌和企业发展的精选思考。",
