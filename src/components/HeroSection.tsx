@@ -15,7 +15,7 @@ export function HeroSection() {
           className="w-full h-full object-cover opacity-[0.38]"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/30 via-transparent to-[hsl(var(--soft-ivory))]/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/20 via-transparent to-[hsl(var(--soft-ivory))]/40" />
       </div>
 
       {/* Content */}
