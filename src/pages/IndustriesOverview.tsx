@@ -3,14 +3,19 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { industryImages } from "@/lib/industry-images";
+import heroInternational from "@/assets/hero-international.jpg";
 
 export default function IndustriesOverview() {
   const { t } = useLanguage();
 
   return (
     <>
-      <section className="bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32">
-        <div className="container">
+      <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={heroInternational} alt="Industries overview" className="w-full h-full object-cover opacity-[0.15]" loading="eager" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/50 via-transparent to-[hsl(var(--soft-ivory))]/70" />
+        </div>
+        <div className="container relative z-10">
           <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{t.industries.label}</p>
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-normal leading-[1.15] tracking-[-0.015em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "250ms" }}>{t.industries.headline}</h1>
           <p className="text-[hsl(var(--soft-charcoal))] text-[15px] md:text-base leading-[1.7] max-w-xl animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.industries.subline}</p>

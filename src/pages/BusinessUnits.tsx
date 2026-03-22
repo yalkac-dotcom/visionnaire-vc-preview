@@ -7,6 +7,7 @@ import domizilOffice from "@/assets/domizil-office.jpg";
 import domizilMeeting from "@/assets/domizil-meeting.jpg";
 import domizilLobby from "@/assets/domizil-lobby.jpg";
 import domizilWorkspace from "@/assets/domizil-workspace.jpg";
+import ctaAmbient from "@/assets/cta-ambient.jpg";
 
 export default function BusinessUnits() {
   const { t } = useLanguage();
@@ -112,8 +113,12 @@ export default function BusinessUnits() {
       )}
 
       {/* CTA */}
-      <section className="py-28 md:py-36 bg-soft-ivory">
-        <div className="container text-center">
+      <section className="relative py-28 md:py-36 bg-soft-ivory overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.12]" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/60 via-transparent to-[hsl(var(--soft-ivory))]/70" />
+        </div>
+        <div className="container text-center relative z-10">
           <ScrollReveal>
             <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] mb-5">{t.contact.headline}</h2>
           </ScrollReveal>

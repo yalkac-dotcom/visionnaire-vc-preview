@@ -3,6 +3,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import heroAbout from "@/assets/hero-about.jpg";
+import ctaAmbient from "@/assets/cta-ambient.jpg";
 
 export default function About() {
   const { t } = useLanguage();
@@ -138,8 +139,12 @@ export default function About() {
       )}
 
       {/* CTA */}
-      <section className="py-28 md:py-36 bg-cloud-neutral">
-        <div className="container text-center">
+      <section className="relative py-28 md:py-36 bg-cloud-neutral overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.1]" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--cloud-neutral))]/60 via-transparent to-[hsl(var(--cloud-neutral))]/70" />
+        </div>
+        <div className="container text-center relative z-10">
           <ScrollReveal>
             <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] mb-5">Wir freuen uns auf den Austausch</h2>
           </ScrollReveal>
