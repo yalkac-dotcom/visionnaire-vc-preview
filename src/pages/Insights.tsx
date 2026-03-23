@@ -22,7 +22,7 @@ export default function Insights() {
         <HeroScrollIndicator />
       </section>
 
-      <section className="py-28 md:py-36 bg-background">
+      <section className="py-20 md:py-28 bg-background">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-px bg-border">
             {t.insights.items.map((item, i) => (

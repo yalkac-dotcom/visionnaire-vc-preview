@@ -26,7 +26,7 @@ export default function Datenschutz() {
       </section>
 
       {/* Content */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-16 md:py-24 bg-background">
         <div className="container">
           <div className="max-w-2xl">
             {ds.sections.map((section, i) => (
