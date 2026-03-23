@@ -154,7 +154,7 @@ export const translationsJa: Translations = {
     ],
   },
   businessUnits: {
-    label: "連携事業領域", headline: "一つのブランド、二つの焦点",
+    label: "連携事業領域", headline: "一つのブランド、つながる専門領域",
     subline: "戦略アドバイザリーとプレミアムビジネス環境 — 同じ信念で結ばれ、品質への共通のコミットメントで支えられています。",
     architectureLabel: "ブランドアーキテクチャ", architectureHeadline: "二つの表現、一つのブランドワールド",
     architectureText: "Visionnaire ConsultingとVisionnaire Domizilは品質への共通のコミットメントと同じ穏やかで戦略的な姿勢を共有しています。それぞれの焦点が異なります — 一方は戦略アドバイザリー、他方はプレミアムビジネススペースと格式ある環境。ともに、異なるフィールドで同じ厳格な基準をもって活動する一貫したブランドワールドを形成しています。",

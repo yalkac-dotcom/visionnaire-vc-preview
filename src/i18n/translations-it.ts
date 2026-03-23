@@ -256,7 +256,7 @@ export const translationsIt: Translations = {
   },
   businessUnits: {
     label: "Aree di Business Connesse",
-    headline: "Un marchio, due punti focali",
+    headline: "Un marchio, competenze connesse",
     subline: "Consulenza strategica e ambienti di business premium — connessi dalla stessa convinzione, sostenuti da un impegno condiviso verso la qualità.",
     architectureLabel: "Architettura del Marchio",
     architectureHeadline: "Due espressioni, un mondo di marca",

@@ -69,7 +69,7 @@ export const translations: Record<Locale, Translations> = {
     },
     businessUnits: {
       label: "Verbundene Geschäftsbereiche",
-      headline: "Eine Marke, zwei Schwerpunkte",
+      headline: "Eine Marke, verbundene Kompetenzfelder",
       subline: "Strategische Beratung und hochwertige Geschäftsumfelder — verbunden durch dieselbe Haltung, getragen von einem gemeinsamen Qualitätsanspruch.",
       architectureLabel: "Markenarchitektur",
       architectureHeadline: "Zwei Ausdrucksformen, eine Markenwelt",
@@ -347,7 +347,7 @@ export const translations: Record<Locale, Translations> = {
     },
     businessUnits: {
       label: "Connected Business Areas",
-      headline: "One brand, two focal points",
+      headline: "One brand, connected fields of expertise",
       subline: "Strategic advisory and premium business environments — connected by the same conviction, carried by a shared commitment to quality.",
       architectureLabel: "Brand Architecture",
       architectureHeadline: "Two expressions, one brand world",

@@ -190,7 +190,7 @@ export const translationsEs: Translations = {
   },
   businessUnits: {
     label: "Áreas de Negocio Conectadas",
-    headline: "Una marca, dos enfoques",
+    headline: "Una marca, campos de competencia conectados",
     subline: "Consultoría estratégica y entornos de negocio premium — conectados por la misma convicción, sostenidos por un compromiso compartido con la calidad.",
     architectureLabel: "Arquitectura de Marca",
     architectureHeadline: "Dos expresiones, un mundo de marca",
