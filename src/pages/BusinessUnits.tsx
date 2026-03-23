@@ -34,7 +34,7 @@ export default function BusinessUnits() {
         <div className="container">
           {t.businessUnits.items.map((unit, i) => (
             <ScrollReveal key={unit.name} delay={i * 100}>
-              <div className={`grid md:grid-cols-12 gap-12 md:gap-24 ${i > 0 ? "mt-24 md:mt-32 pt-24 md:pt-32 border-t border-border/60" : ""}`}>
+              <div className={`grid md:grid-cols-12 gap-10 md:gap-16 ${i > 0 ? "mt-16 md:mt-24 pt-16 md:pt-24 border-t border-border/60" : ""}`}>
                 <div className="md:col-span-4">
                   <div className="w-10 h-[2px] bg-[hsl(var(--gold))]/50 mb-10" />
                   {unit.role && (
