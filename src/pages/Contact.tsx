@@ -110,7 +110,7 @@ export default function Contact() {
       )}
 
       {/* Form + Contact info */}
-      <section className="py-28 md:py-36 bg-cloud-neutral">
+      <section className="py-20 md:py-28 bg-cloud-neutral">
         <div className="container">
           <div className="grid md:grid-cols-12 gap-16 md:gap-20 max-w-5xl mx-auto">
             <div className="md:col-span-7">
