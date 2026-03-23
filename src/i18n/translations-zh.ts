@@ -154,7 +154,7 @@ export const translationsZh: Translations = {
     ],
   },
   businessUnits: {
-    label: "关联业务领域", headline: "一个品牌，两个焦点",
+    label: "关联业务领域", headline: "一个品牌，互联的专业领域",
     subline: "战略咨询与高端商务环境——以相同的信念连接，以共同的质量承诺支撑。",
     architectureLabel: "品牌架构", architectureHeadline: "两种表达，一个品牌世界",
     architectureText: "Visionnaire Consulting和Visionnaire Domizil共享对质量的共同承诺和同样沉稳、战略性的气质。它们的区别在于各自的焦点——一方是战略咨询，另一方是高端商务空间和高品位环境。二者共同构成了一个在不同领域以同样严格标准运营的统一品牌世界。",
