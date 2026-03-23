@@ -42,7 +42,7 @@ export default function ServiceDetail() {
         <HeroScrollIndicator />
       </section>
 
-      <section className="py-28 md:py-36 bg-background">
+      <section className="py-20 md:py-28 bg-background">
         <div className="container">
           <ScrollReveal>
             <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.servicePage.whatWeSupport}</p>
