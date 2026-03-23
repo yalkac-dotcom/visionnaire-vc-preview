@@ -16,7 +16,7 @@ export default function BusinessUnits() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroDomizil} alt="Premium business environment" className="w-full h-full object-cover opacity-[0.35]" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/40 via-[hsl(var(--soft-ivory))]/20 to-[hsl(var(--soft-ivory))]/50" />
