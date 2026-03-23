@@ -51,7 +51,7 @@ export default function IndustryDetail() {
         </div>
       </section>
 
-      <section className="py-24 md:py-32 bg-cloud-neutral">
+       <section className="py-16 md:py-24 bg-cloud-neutral">
         <div className="container">
           <ScrollReveal>
             <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.industryPage.consultingFields}</p>
