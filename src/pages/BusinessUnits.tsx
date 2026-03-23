@@ -65,7 +65,7 @@ export default function BusinessUnits() {
         <div className="container">
           <ScrollReveal>
             <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.businessUnits.galleryLabel ?? "Raumqualität"}</p>
-            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] max-w-lg mb-16">{t.businessUnits.galleryHeadline ?? "Repräsentative Arbeitsumgebungen auf höchstem Niveau"}</h2>
+            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] max-w-lg mb-10">{t.businessUnits.galleryHeadline ?? "Repräsentative Arbeitsumgebungen auf höchstem Niveau"}</h2>
           </ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
             {[
