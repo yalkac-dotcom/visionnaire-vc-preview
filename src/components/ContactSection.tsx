@@ -7,7 +7,7 @@ export function ContactSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="contact" className="py-32 md:py-40 bg-background">
+    <section id="contact" className="py-20 md:py-28 bg-background">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <ScrollReveal>
