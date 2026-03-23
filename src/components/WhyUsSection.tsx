@@ -5,7 +5,7 @@ export function WhyUsSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="why-us" className="py-32 md:py-40 bg-brand-blue">
+    <section id="why-us" className="py-20 md:py-28 bg-brand-blue">
       <div className="container">
         <div className="grid md:grid-cols-12 gap-12 md:gap-16 mb-20">
           <div className="md:col-span-5">
