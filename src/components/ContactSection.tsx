@@ -22,7 +22,7 @@ export function ContactSection() {
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={160}>
-            <p className="text-foreground/65 text-[15px] md:text-[16px] leading-[1.7] mb-14 max-w-lg mx-auto">
+            <p className="text-foreground/65 text-[15px] md:text-[16px] leading-[1.7] mb-10 max-w-lg mx-auto">
               {t.contact.text}
             </p>
           </ScrollReveal>
