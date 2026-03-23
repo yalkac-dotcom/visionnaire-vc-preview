@@ -144,7 +144,7 @@ export default function About() {
 
       {/* Brand universe */}
       {t.about.connection && (
-        <section className="py-32 md:py-40 bg-background">
+        <section className="py-20 md:py-28 bg-background">
           <div className="container">
             <div className="max-w-3xl">
               <ScrollReveal>
