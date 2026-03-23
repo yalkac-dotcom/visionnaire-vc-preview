@@ -69,7 +69,7 @@ export const translations: Record<Locale, Translations> = {
     },
     businessUnits: {
       label: "Verbundene Geschäftsbereiche",
-      headline: "Eine Marke, zwei Schwerpunkte",
+      headline: "Eine Marke, verbundene Kompetenzfelder",
       subline: "Strategische Beratung und hochwertige Geschäftsumfelder — verbunden durch dieselbe Haltung, getragen von einem gemeinsamen Qualitätsanspruch.",
       architectureLabel: "Markenarchitektur",
       architectureHeadline: "Zwei Ausdrucksformen, eine Markenwelt",
