@@ -124,7 +124,7 @@ export default function About() {
       )}
 
       {/* International perspective */}
-      <section className="py-32 md:py-40 bg-soft-ivory">
+      <section className="py-20 md:py-28 bg-soft-ivory">
         <div className="container">
           <div className="grid md:grid-cols-12 gap-12 md:gap-16">
             <div className="md:col-span-4">
