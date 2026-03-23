@@ -92,7 +92,7 @@ export default function BusinessUnits() {
       </section>
 
       {t.businessUnits.architectureLabel && (
-        <section className="py-32 md:py-40 bg-cloud-neutral">
+        <section className="py-20 md:py-28 bg-cloud-neutral">
           <div className="container">
             <div className="grid md:grid-cols-12 gap-12 md:gap-16">
               <div className="md:col-span-4">
