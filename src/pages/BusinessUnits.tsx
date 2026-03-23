@@ -16,7 +16,7 @@ export default function BusinessUnits() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroDomizil} alt="Premium business environment" className="w-full h-full object-cover opacity-[0.35]" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/40 via-[hsl(var(--soft-ivory))]/20 to-[hsl(var(--soft-ivory))]/50" />
@@ -30,11 +30,11 @@ export default function BusinessUnits() {
       </section>
 
       {/* Unit panels */}
-      <section className="py-40 md:py-48 bg-background">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container">
           {t.businessUnits.items.map((unit, i) => (
             <ScrollReveal key={unit.name} delay={i * 100}>
-              <div className={`grid md:grid-cols-12 gap-12 md:gap-24 ${i > 0 ? "mt-24 md:mt-32 pt-24 md:pt-32 border-t border-border/60" : ""}`}>
+              <div className={`grid md:grid-cols-12 gap-10 md:gap-16 ${i > 0 ? "mt-16 md:mt-24 pt-16 md:pt-24 border-t border-border/60" : ""}`}>
                 <div className="md:col-span-4">
                   <div className="w-10 h-[2px] bg-[hsl(var(--gold))]/50 mb-10" />
                   {unit.role && (
@@ -43,7 +43,7 @@ export default function BusinessUnits() {
                   <h3 className="text-foreground text-[1.35rem] md:text-[1.65rem] font-normal tracking-[-0.015em] leading-[1.2]">{unit.name}</h3>
                 </div>
                 <div className="md:col-span-7 md:col-start-6 md:pt-2">
-                  <p className="text-foreground/65 text-[15px] leading-[1.9] mb-14">{unit.desc}</p>
+                  <p className="text-foreground/65 text-[15px] leading-[1.9] mb-10">{unit.desc}</p>
                   {i === 0 ? (
                     <Link to="/leistungen" className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
                       {t.cta.consultationCta} <ArrowUpRight size={12} />
@@ -61,11 +61,11 @@ export default function BusinessUnits() {
       </section>
 
       {/* Domizil Visual Gallery */}
-      <section className="py-24 md:py-32 bg-soft-ivory">
+      <section className="py-16 md:py-24 bg-soft-ivory">
         <div className="container">
           <ScrollReveal>
             <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.businessUnits.galleryLabel ?? "Raumqualität"}</p>
-            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] max-w-lg mb-16">{t.businessUnits.galleryHeadline ?? "Repräsentative Arbeitsumgebungen auf höchstem Niveau"}</h2>
+            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] max-w-lg mb-10">{t.businessUnits.galleryHeadline ?? "Repräsentative Arbeitsumgebungen auf höchstem Niveau"}</h2>
           </ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
             {[
@@ -92,7 +92,7 @@ export default function BusinessUnits() {
       </section>
 
       {t.businessUnits.architectureLabel && (
-        <section className="py-32 md:py-40 bg-cloud-neutral">
+        <section className="py-20 md:py-28 bg-cloud-neutral">
           <div className="container">
             <div className="grid md:grid-cols-12 gap-12 md:gap-16">
               <div className="md:col-span-4">
@@ -112,7 +112,7 @@ export default function BusinessUnits() {
       )}
 
       {/* CTA */}
-      <section className="relative py-28 md:py-36 bg-soft-ivory overflow-hidden">
+      <section className="relative py-20 md:py-28 bg-soft-ivory overflow-hidden">
         <div className="absolute inset-0">
           <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.24]" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/25 via-transparent to-[hsl(var(--soft-ivory))]/40" />
