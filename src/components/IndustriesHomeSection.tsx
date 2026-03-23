@@ -9,7 +9,7 @@ export function IndustriesHomeSection() {
   const items = t.industries.items.slice(0, 6);
 
   return (
-    <section id="industries" className="py-32 md:py-40 bg-cloud-neutral">
+    <section id="industries" className="py-20 md:py-28 bg-cloud-neutral">
       <div className="container">
         <ScrollReveal>
           <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.industries.label}</p>
