@@ -43,7 +43,7 @@ export default function BusinessUnits() {
                   <h3 className="text-foreground text-[1.35rem] md:text-[1.65rem] font-normal tracking-[-0.015em] leading-[1.2]">{unit.name}</h3>
                 </div>
                 <div className="md:col-span-7 md:col-start-6 md:pt-2">
-                  <p className="text-foreground/65 text-[15px] leading-[1.9] mb-14">{unit.desc}</p>
+                  <p className="text-foreground/65 text-[15px] leading-[1.9] mb-10">{unit.desc}</p>
                   {i === 0 ? (
                     <Link to="/leistungen" className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
                       {t.cta.consultationCta} <ArrowUpRight size={12} />
