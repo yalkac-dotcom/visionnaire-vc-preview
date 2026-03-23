@@ -89,7 +89,7 @@ export default function Contact() {
                 <h2 className="text-foreground text-lg md:text-xl font-normal leading-[1.3] tracking-[-0.01em] mb-6">{t.contact.introHeadline}</h2>
               </ScrollReveal>
               <ScrollReveal delay={80}>
-                <p className="text-foreground/65 text-[15px] md:text-base leading-[1.8] mb-20">{t.contact.introText}</p>
+                <p className="text-foreground/65 text-[15px] md:text-base leading-[1.8] mb-14">{t.contact.introText}</p>
               </ScrollReveal>
 
               {t.contact.subjectDescriptions && (
