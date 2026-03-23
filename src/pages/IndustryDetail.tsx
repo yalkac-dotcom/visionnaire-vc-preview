@@ -41,7 +41,7 @@ export default function IndustryDetail() {
         <HeroScrollIndicator />
       </section>
 
-      <section className="py-28 md:py-36 bg-background">
+      <section className="py-20 md:py-28 bg-background">
         <div className="container">
           <div className="max-w-3xl">
             <ScrollReveal>
