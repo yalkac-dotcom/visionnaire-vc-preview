@@ -35,7 +35,7 @@ export function ServicesHomeSection() {
         </div>
 
         <ScrollReveal delay={200}>
-          <div className="mt-16 text-center">
+          <div className="mt-10 text-center">
             <Link to="/leistungen" className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
               {t.servicePage.backToOverview} <ArrowRight size={12} />
             </Link>
