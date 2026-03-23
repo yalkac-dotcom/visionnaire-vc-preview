@@ -61,7 +61,7 @@ export default function BusinessUnits() {
       </section>
 
       {/* Domizil Visual Gallery */}
-      <section className="py-24 md:py-32 bg-soft-ivory">
+      <section className="py-16 md:py-24 bg-soft-ivory">
         <div className="container">
           <ScrollReveal>
             <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.businessUnits.galleryLabel ?? "Raumqualität"}</p>
