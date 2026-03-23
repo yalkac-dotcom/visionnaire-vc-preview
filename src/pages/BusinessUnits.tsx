@@ -30,7 +30,7 @@ export default function BusinessUnits() {
       </section>
 
       {/* Unit panels */}
-      <section className="py-40 md:py-48 bg-background">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container">
           {t.businessUnits.items.map((unit, i) => (
             <ScrollReveal key={unit.name} delay={i * 100}>
