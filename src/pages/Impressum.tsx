@@ -9,7 +9,7 @@ export default function Impressum() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-soft-ivory pt-32 pb-18 md:pt-44 md:pb-24">
+      <section className="bg-soft-ivory pt-36 pb-20 md:pt-44 md:pb-28">
         <div className="container">
           <p
             className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up"
@@ -27,7 +27,7 @@ export default function Impressum() {
       </section>
 
       {/* Content */}
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-28 md:py-36 bg-background">
         <div className="container">
           <div className="max-w-xl">
             <ScrollReveal>

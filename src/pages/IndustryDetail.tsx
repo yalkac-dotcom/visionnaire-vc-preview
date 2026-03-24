@@ -21,7 +21,7 @@ export default function IndustryDetail() {
 
   return (
     <>
-      <section className="relative bg-soft-ivory pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
         {heroImg && (
           <div className="absolute inset-0">
             <img src={heroImg} alt={industry.heroHeadline} className="w-full h-full object-cover opacity-[0.48]" loading="eager" />
@@ -51,7 +51,7 @@ export default function IndustryDetail() {
         </div>
       </section>
 
-       <section className="py-16 md:py-24 bg-cloud-neutral">
+      <section className="py-24 md:py-32 bg-cloud-neutral">
         <div className="container">
           <ScrollReveal>
             <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.industryPage.consultingFields}</p>
@@ -69,7 +69,7 @@ export default function IndustryDetail() {
         </div>
       </section>
 
-       <section className="py-16 md:py-24 bg-background">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container">
           <ScrollReveal>
             <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.industryPage.challengesLabel}</p>
@@ -88,7 +88,7 @@ export default function IndustryDetail() {
       </section>
 
       {industry.caseStudies.length > 0 && (
-        <section className="py-16 md:py-24 bg-cloud-neutral">
+        <section className="py-24 md:py-32 bg-cloud-neutral">
           <div className="container">
             <ScrollReveal>
               <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-12">{t.industryPage.projectsLabel}</p>
@@ -108,7 +108,7 @@ export default function IndustryDetail() {
       )}
 
       {matchingServices.length > 0 && (
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-24 md:py-32 bg-background">
           <div className="container">
             <ScrollReveal>
               <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.industryPage.matchingServices}</p>

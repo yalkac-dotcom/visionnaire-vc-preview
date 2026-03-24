@@ -7,7 +7,7 @@ export function WhyUsSection() {
   return (
     <section id="why-us" className="py-32 md:py-40 bg-brand-blue">
       <div className="container">
-        <div className="grid md:grid-cols-12 gap-10 md:gap-14 mb-14">
+        <div className="grid md:grid-cols-12 gap-12 md:gap-16 mb-20">
           <div className="md:col-span-5">
             <ScrollReveal>
               <div className="w-10 h-[2px] bg-[hsl(var(--gold))] mb-6" />

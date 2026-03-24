@@ -18,7 +18,7 @@ export function IndustriesHomeSection() {
           <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.18] tracking-[-0.02em] max-w-2xl mb-6">{t.industries.headline}</h2>
         </ScrollReveal>
         <ScrollReveal delay={120}>
-          <p className="text-foreground/55 text-[15px] leading-[1.7] max-w-xl mb-12">{t.industries.subline}</p>
+          <p className="text-foreground/55 text-[15px] leading-[1.7] max-w-xl mb-20">{t.industries.subline}</p>
         </ScrollReveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -43,7 +43,7 @@ export function IndustriesHomeSection() {
         </div>
 
         <ScrollReveal delay={200}>
-          <div className="mt-10 text-center">
+          <div className="mt-16 text-center">
             <Link to="/branchen" className="inline-flex items-center gap-2.5 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
               {t.industryPage.backToOverview} <ArrowRight size={12} />
             </Link>

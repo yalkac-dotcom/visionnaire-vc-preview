@@ -12,7 +12,7 @@ export default function About() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-soft-ivory pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroAbout} alt="Visionnaire Consulting" className="w-full h-full object-cover opacity-[0.45]" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/15 via-transparent to-[hsl(var(--soft-ivory))]/35" />
@@ -56,7 +56,7 @@ export default function About() {
       )}
 
       {/* Approach */}
-      <section className="py-28 md:py-36 bg-cloud-neutral">
+      <section className="py-32 md:py-40 bg-cloud-neutral">
         <div className="container">
           <div className="grid md:grid-cols-12 gap-12 md:gap-16">
             <div className="md:col-span-4">
@@ -78,7 +78,7 @@ export default function About() {
       </section>
 
       {/* Thinking */}
-      <section className="py-28 md:py-36 bg-background">
+      <section className="py-32 md:py-40 bg-background">
         <div className="container">
           <div className="max-w-3xl">
             <ScrollReveal>
@@ -100,13 +100,13 @@ export default function About() {
 
       {/* How we work */}
       {t.about.working && (
-        <section className="py-28 md:py-36 bg-cloud-neutral">
+        <section className="py-32 md:py-40 bg-cloud-neutral">
           <div className="container">
             <ScrollReveal>
               <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.about.working.label}</p>
             </ScrollReveal>
             <ScrollReveal delay={80}>
-              <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] max-w-lg mb-14">{t.about.working.headline}</h2>
+              <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] max-w-lg mb-20">{t.about.working.headline}</h2>
             </ScrollReveal>
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-px bg-border">
               {t.about.working.principles.map((p, i) => (
@@ -124,7 +124,7 @@ export default function About() {
       )}
 
       {/* International perspective */}
-      <section className="py-28 md:py-36 bg-soft-ivory">
+      <section className="py-32 md:py-40 bg-soft-ivory">
         <div className="container">
           <div className="grid md:grid-cols-12 gap-12 md:gap-16">
             <div className="md:col-span-4">
@@ -144,7 +144,7 @@ export default function About() {
 
       {/* Brand universe */}
       {t.about.connection && (
-        <section className="py-20 md:py-28 bg-background">
+        <section className="py-32 md:py-40 bg-background">
           <div className="container">
             <div className="max-w-3xl">
               <ScrollReveal>

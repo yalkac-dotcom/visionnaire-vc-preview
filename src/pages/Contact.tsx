@@ -67,7 +67,7 @@ export default function Contact() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-soft-ivory pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroContact} alt="Contact Visionnaire" className="w-full h-full object-cover opacity-[0.45]" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/15 via-transparent to-[hsl(var(--soft-ivory))]/35" />
@@ -82,14 +82,14 @@ export default function Contact() {
 
       {/* Intro + Subject options */}
       {t.contact.introHeadline && (
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-24 md:py-32 bg-background">
           <div className="container">
             <div className="max-w-3xl">
               <ScrollReveal>
                 <h2 className="text-foreground text-lg md:text-xl font-normal leading-[1.3] tracking-[-0.01em] mb-6">{t.contact.introHeadline}</h2>
               </ScrollReveal>
               <ScrollReveal delay={80}>
-                <p className="text-foreground/65 text-[15px] md:text-base leading-[1.8] mb-14">{t.contact.introText}</p>
+                <p className="text-foreground/65 text-[15px] md:text-base leading-[1.8] mb-20">{t.contact.introText}</p>
               </ScrollReveal>
 
               {t.contact.subjectDescriptions && (
@@ -110,7 +110,7 @@ export default function Contact() {
       )}
 
       {/* Form + Contact info */}
-      <section className="py-20 md:py-28 bg-cloud-neutral">
+      <section className="py-28 md:py-36 bg-cloud-neutral">
         <div className="container">
           <div className="grid md:grid-cols-12 gap-16 md:gap-20 max-w-5xl mx-auto">
             <div className="md:col-span-7">
@@ -214,7 +214,7 @@ export default function Contact() {
       </section>
 
       {t.contact.closingHeadline && (
-        <section className="py-16 md:py-24 bg-soft-ivory">
+        <section className="py-24 md:py-32 bg-soft-ivory">
           <div className="container text-center">
             <ScrollReveal>
               <h3 className="text-foreground text-lg md:text-xl font-normal leading-[1.3] tracking-[-0.01em] mb-4">{t.contact.closingHeadline}</h3>
