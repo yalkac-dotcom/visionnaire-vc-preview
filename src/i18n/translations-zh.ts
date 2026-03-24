@@ -41,7 +41,7 @@ const services: ServiceItem[] = [
     desc: "构建战略合作伙伴关系、合资企业和新业务领域，实现可持续价值创造。",
     details: ["战略合作伙伴搜寻与匹配", "合作与合资企业构建", "新业务领域与收入来源开发", "国际网络与关系管理", "谈判支持与交易构建"],
     situations: ["为国际项目寻找合适的合作伙伴", "在没有自身市场专业知识的情况下开拓新业务领域", "市场进入或增长需要战略联盟", "构建国际合作伙伴网络"],
-    relevantIndustries: ["family-offices-private-capital", "corporate-transformation-growth", "real-estate-developments", "hospitality-business-centers"],
+    relevantIndustries: ["corporate-transformation-growth", "hospitality-business-centers"],
   },
 ];
 

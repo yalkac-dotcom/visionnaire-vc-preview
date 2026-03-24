@@ -41,7 +41,7 @@ const services: ServiceItem[] = [
     desc: "持続可能な価値創造を伴う戦略的パートナーシップ、ジョイントベンチャー、新規事業領域の構築。",
     details: ["戦略的パートナー探索とマッチング", "提携・ジョイントベンチャーの構築", "新規事業領域と収益源の開発", "国際ネットワークとリレーションシップマネジメント", "交渉支援とディール構築"],
     situations: ["国際プロジェクトに適したパートナーの探索", "自社の市場専門知識なしでの新規事業領域開拓", "市場参入・成長のための戦略的アライアンスの必要性", "国際パートナーネットワークの構築"],
-    relevantIndustries: ["family-offices-private-capital", "corporate-transformation-growth", "real-estate-developments", "hospitality-business-centers"],
+    relevantIndustries: ["corporate-transformation-growth", "hospitality-business-centers"],
   },
 ];
 

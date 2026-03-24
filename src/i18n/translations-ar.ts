@@ -41,7 +41,7 @@ const services: ServiceItem[] = [
     desc: "بناء شراكات استراتيجية ومشاريع مشتركة ومجالات أعمال جديدة لخلق قيمة مستدامة.",
     details: ["البحث الاستراتيجي عن شركاء والمطابقة", "هيكلة التعاونات والمشاريع المشتركة", "تطوير مجالات أعمال جديدة ومصادر إيرادات", "الشبكات الدولية وإدارة العلاقات", "دعم التفاوض وهيكلة الصفقات"],
     situations: ["البحث عن شركاء مناسبين لمشاريع دولية", "فتح مجالات أعمال جديدة بدون خبرة سوقية ذاتية", "الحاجة إلى تحالفات استراتيجية لدخول السوق أو النمو", "بناء شبكة شركاء دولية"],
-    relevantIndustries: ["family-offices-private-capital", "corporate-transformation-growth", "real-estate-developments", "hospitality-business-centers"],
+    relevantIndustries: ["corporate-transformation-growth", "hospitality-business-centers"],
   },
 ];
 

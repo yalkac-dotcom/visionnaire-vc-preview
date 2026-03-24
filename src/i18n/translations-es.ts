@@ -53,7 +53,7 @@ const services: ServiceItem[] = [
     desc: "Construcción de alianzas estratégicas, joint ventures y nuevas áreas de negocio con creación de valor sostenible.",
     details: ["Búsqueda estratégica de socios y matchmaking", "Estructuración de cooperaciones y joint ventures", "Desarrollo de nuevas áreas de negocio y fuentes de ingresos", "Redes internacionales y gestión de relaciones", "Apoyo en negociaciones y estructuración de acuerdos"],
     situations: ["Búsqueda de socios adecuados para proyectos internacionales", "Apertura de nuevas áreas de negocio sin expertise de mercado propia", "Necesidad de alianzas estratégicas para entrada al mercado o crecimiento", "Construcción de una red internacional de socios"],
-    relevantIndustries: ["family-offices-private-capital", "corporate-transformation-growth", "real-estate-developments", "hospitality-business-centers"],
+    relevantIndustries: ["corporate-transformation-growth", "hospitality-business-centers"],
   },
 ];
 
