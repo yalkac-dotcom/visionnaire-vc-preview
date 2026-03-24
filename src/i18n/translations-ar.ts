@@ -27,7 +27,7 @@ const services: ServiceItem[] = [
     desc: "المرافقة في فتح أسواق ومناطق وشرائح عملاء جديدة باستراتيجية واضحة وعمق تشغيلي.",
     details: ["تحليل السوق والإمكانات", "استراتيجيات الوصول إلى السوق", "التوسع الدولي ونماذج دخول السوق", "تطوير المبيعات وهندسة القنوات", "تقييم المخاطر والتحقق من السوق"],
     situations: ["دخول سوق دولية بخبرة محلية محدودة", "فتح شرائح عملاء جديدة ضمن الأسواق القائمة", "تقييم فرص السوق لمنتجات أو خدمات جديدة", "بناء هياكل مبيعات مستدامة في أسواق نامية"],
-    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth", "real-estate-developments"],
+    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth"],
   },
   {
     slug: "standort-konzeptentwicklung", number: "05", title: "تطوير المواقع والمفاهيم",
