@@ -19,8 +19,8 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 pt-36 pb-16 md:pt-44 md:pb-20">
-        <div className="max-w-[580px]">
+      <div className="container relative z-10 pt-40 pb-20 md:pt-48 md:pb-24">
+        <div className="max-w-[640px]">
           {/* Gold accent line */}
           <div
             className="w-12 h-[2px] bg-[hsl(var(--gold))] mb-6 animate-reveal-up"

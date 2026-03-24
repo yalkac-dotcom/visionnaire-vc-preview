@@ -8,7 +8,7 @@ export default function Datenschutz() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-soft-ivory pt-28 pb-14 md:pt-36 md:pb-20">
+      <section className="bg-soft-ivory pt-32 pb-18 md:pt-44 md:pb-24">
         <div className="container">
           <p
             className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up"

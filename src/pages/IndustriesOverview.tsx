@@ -24,7 +24,7 @@ export default function IndustriesOverview() {
         <HeroScrollIndicator />
       </section>
 
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-28 md:py-36 bg-background">
         <div className="container">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {t.industries.items.map((item, i) => (
