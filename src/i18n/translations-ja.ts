@@ -34,7 +34,7 @@ const services: ServiceItem[] = [
     desc: "ビジネスセンターやホスピタリティ形態から商業スペース、複合施設まで、立地型コンセプトの開発とポジショニング。",
     details: ["立地評価と利用コンセプト", "運営コンセプトとサービスモデル", "空間計画とユーザー分析", "テナント戦略と収益化", "立地型フォーマットのブランドコンセプト"],
     situations: ["高い潜在力を持つ空室・未活用スペース", "新しいホスピタリティ・ビジネスセンターコンセプトの開発", "競争環境における複合施設のポジショニング", "リテール・オフィス・ホスピタリティの統合コンセプト"],
-    relevantIndustries: ["real-estate-developments", "hospitality-business-centers", "retail-consumer-concepts"],
+    relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
   },
   {
     slug: "partnerschaften-geschaeftsentwicklung", number: "06", title: "パートナーシップと事業開発",
