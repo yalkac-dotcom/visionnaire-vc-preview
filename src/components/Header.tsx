@@ -19,13 +19,10 @@ export function Header() {
   const { locale, setLocale, t } = useLanguage();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const [industriesOpen, setIndustriesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
-  const [mobileIndustriesOpen, setMobileIndustriesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const servicesRef = useRef<HTMLDivElement>(null);
-  const industriesRef = useRef<HTMLDivElement>(null);
   const dropdownPanelRef = useRef<HTMLDivElement>(null);
   const langRef = useRef<HTMLDivElement>(null);
   const langRefMobile = useRef<HTMLDivElement>(null);
@@ -36,7 +33,6 @@ export function Header() {
     const handler = (e: MouseEvent) => {
       const target = e.target as Node;
       if (!servicesRef.current?.contains(target) && !dropdownPanelRef.current?.contains(target)) setServicesOpen(false);
-      if (!industriesRef.current?.contains(target) && !dropdownPanelRef.current?.contains(target)) setIndustriesOpen(false);
       if (!langRef.current?.contains(target) && !langRefMobile.current?.contains(target)) setLangOpen(false);
     };
     document.addEventListener("mousedown", handler);
@@ -71,8 +67,6 @@ export function Header() {
 
   const dropdownItemClass = "block px-5 py-3 text-foreground/70 hover:text-[hsl(var(--brand-blue))] text-[10.5px] uppercase tracking-[0.16em] font-[430] transition-colors duration-200 rounded-sm";
 
-  const anyDropdownOpen = servicesOpen || industriesOpen;
-
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}>
       <div className="container flex items-center justify-between h-16 md:h-20">
@@ -83,16 +77,9 @@ export function Header() {
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-7">
           <div ref={servicesRef} className="relative">
-            <button onClick={() => { setServicesOpen(!servicesOpen); setIndustriesOpen(false); }} className={`${linkClass} inline-flex items-center gap-1`}>
+            <button onClick={() => { setServicesOpen(!servicesOpen); }} className={`${linkClass} inline-flex items-center gap-1`}>
               {t.nav.services}
               <ChevronDown size={11} className={`transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`} />
-            </button>
-          </div>
-
-          <div ref={industriesRef} className="relative">
-            <button onClick={() => { setIndustriesOpen(!industriesOpen); setServicesOpen(false); }} className={`${linkClass} inline-flex items-center gap-1`}>
-              {t.nav.industries}
-              <ChevronDown size={11} className={`transition-transform duration-200 ${industriesOpen ? "rotate-180" : ""}`} />
             </button>
           </div>
 
@@ -159,35 +146,20 @@ export function Header() {
       </div>
 
       {/* Full-width dropdown panel */}
-      {anyDropdownOpen && (
+      {servicesOpen && (
         <div ref={dropdownPanelRef} className="hidden lg:block absolute left-0 right-0 top-full bg-[hsl(var(--soft-ivory))]/[0.97] backdrop-blur-xl border-t border-border/60 shadow-[0_4px_16px_-2px_rgba(0,0,0,0.04)]">
           <div className="container py-5">
-            {servicesOpen && (
-              <div className="flex items-center gap-8">
-                <Link to="/leistungen" onClick={() => setServicesOpen(false)} className="block px-4 py-2.5 text-foreground/80 text-[10.5px] uppercase tracking-[0.16em] font-medium hover:text-[hsl(var(--brand-blue))] transition-colors duration-200">
-                  {locale === "de" ? "Alle Leistungen" : t.servicePage.backToOverview}
+            <div className="flex items-center gap-8">
+              <Link to="/leistungen" onClick={() => setServicesOpen(false)} className="block px-4 py-2.5 text-foreground/80 text-[10.5px] uppercase tracking-[0.16em] font-medium hover:text-[hsl(var(--brand-blue))] transition-colors duration-200">
+                {locale === "de" ? "Alle Leistungen" : t.servicePage.backToOverview}
+              </Link>
+              <div className="w-px h-5 bg-border/80" />
+              {t.nav.servicesDropdown.map((item) => (
+                <Link key={item.slug} to={`/leistungen/${item.slug}`} onClick={() => setServicesOpen(false)} className={dropdownItemClass}>
+                  {item.label}
                 </Link>
-                <div className="w-px h-5 bg-border/80" />
-                {t.nav.servicesDropdown.map((item) => (
-                  <Link key={item.slug} to={`/leistungen/${item.slug}`} onClick={() => setServicesOpen(false)} className={dropdownItemClass}>
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-            {industriesOpen && (
-              <div className="flex items-center gap-8">
-                <Link to="/branchen" onClick={() => setIndustriesOpen(false)} className="block px-4 py-2.5 text-foreground/80 text-[10.5px] uppercase tracking-[0.16em] font-medium hover:text-[hsl(var(--brand-blue))] transition-colors duration-200">
-                  {locale === "de" ? "Alle Branchen" : t.industryPage.backToOverview}
-                </Link>
-                <div className="w-px h-5 bg-border/80" />
-                {t.nav.industriesDropdown.map((item) => (
-                  <Link key={item.slug} to={`/branchen/${item.slug}`} onClick={() => setIndustriesOpen(false)} className={dropdownItemClass}>
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            )}
+              ))}
+            </div>
           </div>
         </div>
       )}
@@ -206,23 +178,6 @@ export function Header() {
               </Link>
               {t.nav.servicesDropdown.map((item) => (
                 <Link key={item.slug} to={`/leistungen/${item.slug}`} onClick={() => setMobileOpen(false)} className="block py-2.5 text-foreground/35 text-[11px] uppercase tracking-[0.18em]">
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          )}
-
-          <button onClick={() => setMobileIndustriesOpen(!mobileIndustriesOpen)} className="w-full flex items-center justify-between px-8 py-4 text-foreground/60 text-xs uppercase tracking-[0.18em]">
-            {t.nav.industries}
-            <ChevronDown size={12} className={`transition-transform duration-200 ${mobileIndustriesOpen ? "rotate-180" : ""}`} />
-          </button>
-          {mobileIndustriesOpen && (
-            <div className="pl-14 pb-2">
-              <Link to="/branchen" onClick={() => setMobileOpen(false)} className="block py-2.5 text-foreground/35 text-[11px] uppercase tracking-[0.18em]">
-                {locale === "de" ? "Alle Branchen" : t.industryPage.backToOverview}
-              </Link>
-              {t.nav.industriesDropdown.map((item) => (
-                <Link key={item.slug} to={`/branchen/${item.slug}`} onClick={() => setMobileOpen(false)} className="block py-2.5 text-foreground/35 text-[11px] uppercase tracking-[0.18em]">
                   {item.label}
                 </Link>
               ))}
@@ -255,4 +210,3 @@ export function Header() {
     </header>
   );
 }
-

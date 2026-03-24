@@ -6,8 +6,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/i18n/LanguageContext";
 import { PageLayout } from "@/components/PageLayout";
 import Index from "./pages/Index";
-import IndustriesOverview from "./pages/IndustriesOverview";
-import IndustryDetail from "./pages/IndustryDetail";
 import ServicesOverview from "./pages/ServicesOverview";
 import ServiceDetail from "./pages/ServiceDetail";
 import BusinessUnits from "./pages/BusinessUnits";
@@ -32,8 +30,6 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/leistungen" element={<ServicesOverview />} />
               <Route path="/leistungen/:slug" element={<ServiceDetail />} />
-              <Route path="/branchen" element={<IndustriesOverview />} />
-              <Route path="/branchen/:slug" element={<IndustryDetail />} />
               <Route path="/unternehmensbereiche" element={<BusinessUnits />} />
               <Route path="/ueber-uns" element={<About />} />
               <Route path="/insights" element={<Insights />} />
