@@ -257,7 +257,6 @@ export const servicesEn: ServiceItem[] = [
       "Integration of retail, office and hospitality in one concept",
     ],
     relevantIndustries: [
-      "real-estate-developments",
       "hospitality-business-centers",
       "retail-consumer-concepts",
     ],
