@@ -8,7 +8,7 @@ const services: ServiceItem[] = [
     desc: "Desarrollo de orientaciones estratégicas claras que posicionan a las empresas en mercados complejos y crean una diferenciación sostenible.",
     details: ["Análisis estratégico y evaluación de la situación", "Posicionamiento competitivo y de mercado", "Visión, misión y marco estratégico", "Estrategias de crecimiento y modelos de escalabilidad", "Gobernanza estratégica y apoyo a la implementación"],
     situations: ["Reorientación tras cambio de liderazgo o transición de propiedad", "Posicionamiento poco claro en un entorno de mercado cambiante", "Falta de claridad estratégica a pesar de solidez operativa", "Crecimiento sin dirección o priorización definida"],
-    relevantIndustries: ["real-estate-developments", "family-offices-private-capital", "corporate-transformation-growth", "luxury-design-premium-brands"],
+    relevantIndustries: ["corporate-transformation-growth", "luxury-design-premium-brands"],
   },
   {
     slug: "kommerzielle-transformation",
@@ -26,7 +26,7 @@ const services: ServiceItem[] = [
     desc: "Desarrollo y reposicionamiento de marcas que generan relevancia, confianza y diferenciación.",
     details: ["Estrategia de marca y posicionamiento", "Arquitectura de marca y lógica de portafolio", "Identidad visual y sistemas de diseño", "Gestión y gobernanza de marca", "Re-branding y revitalización de marca"],
     situations: ["La marca ya no refleja la realidad empresarial actual", "Fusión, adquisición o reestructuración requieren nueva lógica de marca", "La expansión internacional requiere gestión de marca adaptada", "Diferenciación insuficiente frente a la competencia"],
-    relevantIndustries: ["luxury-design-premium-brands", "real-estate-developments", "hospitality-business-centers", "family-offices-private-capital"],
+    relevantIndustries: ["luxury-design-premium-brands", "hospitality-business-centers"],
   },
   {
     slug: "markteintritt-wachstumsstrategie",
@@ -35,7 +35,7 @@ const services: ServiceItem[] = [
     desc: "Acompañamiento en la apertura de nuevos mercados, regiones y segmentos de clientes con estrategia clara y profundidad operativa.",
     details: ["Análisis de mercado y de potencial", "Estrategias go-to-market", "Expansión internacional y modelos de entrada al mercado", "Desarrollo comercial y arquitectura de canales", "Evaluación de riesgos y validación de mercado"],
     situations: ["Entrada en un mercado internacional con experiencia local limitada", "Apertura de nuevos segmentos de clientes en mercados existentes", "Evaluación de oportunidades de mercado para nuevos productos o servicios", "Construcción de estructuras de venta sostenibles en mercados en crecimiento"],
-    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth", "real-estate-developments"],
+    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth"],
   },
   {
     slug: "standort-konzeptentwicklung",
@@ -44,7 +44,7 @@ const services: ServiceItem[] = [
     desc: "Desarrollo y posicionamiento de conceptos vinculados a una ubicación — desde centros de negocios y formatos de hospitalidad hasta espacios retail y proyectos de uso mixto.",
     details: ["Evaluación de ubicaciones y conceptos de uso", "Conceptos operativos y modelos de servicio", "Planificación de espacios y análisis de usuarios", "Estrategia de arrendamiento y comercialización", "Conceptos de marca para formatos vinculados a una ubicación"],
     situations: ["Espacios vacantes o infrautilizados con alto potencial", "Desarrollo de nuevos conceptos de hospitalidad o centros de negocios", "Posicionamiento de un proyecto de uso mixto en un entorno competitivo", "Integración de retail, oficinas y hospitalidad en un solo concepto"],
-    relevantIndustries: ["real-estate-developments", "hospitality-business-centers", "retail-consumer-concepts"],
+    relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
   },
   {
     slug: "partnerschaften-geschaeftsentwicklung",
@@ -53,7 +53,7 @@ const services: ServiceItem[] = [
     desc: "Construcción de alianzas estratégicas, joint ventures y nuevas áreas de negocio con creación de valor sostenible.",
     details: ["Búsqueda estratégica de socios y matchmaking", "Estructuración de cooperaciones y joint ventures", "Desarrollo de nuevas áreas de negocio y fuentes de ingresos", "Redes internacionales y gestión de relaciones", "Apoyo en negociaciones y estructuración de acuerdos"],
     situations: ["Búsqueda de socios adecuados para proyectos internacionales", "Apertura de nuevas áreas de negocio sin expertise de mercado propia", "Necesidad de alianzas estratégicas para entrada al mercado o crecimiento", "Construcción de una red internacional de socios"],
-    relevantIndustries: ["family-offices-private-capital", "corporate-transformation-growth", "real-estate-developments", "hospitality-business-centers"],
+    relevantIndustries: ["corporate-transformation-growth", "hospitality-business-centers"],
   },
 ];
 
@@ -245,7 +245,7 @@ export const translationsEs: Translations = {
       { slug: "strategie-vs-taktik", title: "La estrategia no es táctica", excerpt: "Por qué muchas empresas fracasan confundiendo claridad estratégica con activismo operativo.", category: "Estrategia", date: "2025-03" },
       { slug: "marke-als-haltung", title: "La marca como actitud, no como logo", excerpt: "Sobre la diferencia entre identidad visual y gestión estratégica de marca — y por qué ambas son inseparables.", category: "Branding", date: "2025-02" },
       { slug: "internationaler-markteintritt", title: "Entrada internacional: estructura antes que ambición", excerpt: "Qué distingue una expansión internacional exitosa de los intentos fallidos.", category: "Crecimiento", date: "2025-01" },
-      { slug: "family-office-professionalisierung", title: "Family offices: profesionalización sin pérdida de identidad", excerpt: "Cómo las familias empresariales alcanzan calidad institucional sin perder su agilidad.", category: "Family Offices", date: "2024-12" },
+      { slug: "standort-als-strategie", title: "La ubicación como activo estratégico", excerpt: "Por qué elegir la ubicación correcta no es solo una cuestión de accesibilidad, sino de la actitud que una empresa quiere proyectar.", category: "Estrategia", date: "2024-12" },
     ],
   },
   contact: {

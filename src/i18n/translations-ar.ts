@@ -6,7 +6,7 @@ const services: ServiceItem[] = [
     desc: "تطوير توجهات استراتيجية واضحة تُمكّن الشركات من التموضع في أسواق معقدة وتحقيق تمايز مستدام.",
     details: ["التحليل الاستراتيجي وتقييم الوضع الراهن", "التموضع التنافسي والسوقي", "الرؤية والرسالة والإطار الاستراتيجي", "استراتيجيات النمو ونماذج التوسع", "الحوكمة الاستراتيجية ودعم التنفيذ"],
     situations: ["إعادة التوجيه بعد تغيير القيادة أو انتقال الملكية", "تموضع غير واضح في بيئة سوقية متغيرة", "غياب الوضوح الاستراتيجي رغم القوة التشغيلية", "نمو بلا اتجاه واضح أو أولويات محددة"],
-    relevantIndustries: ["real-estate-developments", "family-offices-private-capital", "corporate-transformation-growth", "luxury-design-premium-brands"],
+    relevantIndustries: ["corporate-transformation-growth", "luxury-design-premium-brands"],
   },
   {
     slug: "kommerzielle-transformation", number: "02", title: "التحول التجاري",
@@ -20,28 +20,28 @@ const services: ServiceItem[] = [
     desc: "تطوير وإعادة تموضع العلامات التجارية لخلق الصلة والثقة والتمايز.",
     details: ["استراتيجية العلامة التجارية والتموضع", "هندسة العلامة التجارية ومنطق المحفظة", "الهوية البصرية وأنظمة التصميم", "إدارة وحوكمة العلامة التجارية", "إعادة تشكيل العلامة التجارية وتنشيطها"],
     situations: ["العلامة التجارية لم تعد تعكس واقع الشركة الحالي", "الاندماج أو الاستحواذ يتطلب منطقاً جديداً للعلامة التجارية", "التوسع الدولي يتطلب إدارة علامة تجارية متكيفة", "تمايز غير كافٍ أمام المنافسين"],
-    relevantIndustries: ["luxury-design-premium-brands", "real-estate-developments", "hospitality-business-centers", "family-offices-private-capital"],
+    relevantIndustries: ["luxury-design-premium-brands", "hospitality-business-centers"],
   },
   {
     slug: "markteintritt-wachstumsstrategie", number: "04", title: "دخول الأسواق واستراتيجية النمو",
     desc: "المرافقة في فتح أسواق ومناطق وشرائح عملاء جديدة باستراتيجية واضحة وعمق تشغيلي.",
     details: ["تحليل السوق والإمكانات", "استراتيجيات الوصول إلى السوق", "التوسع الدولي ونماذج دخول السوق", "تطوير المبيعات وهندسة القنوات", "تقييم المخاطر والتحقق من السوق"],
     situations: ["دخول سوق دولية بخبرة محلية محدودة", "فتح شرائح عملاء جديدة ضمن الأسواق القائمة", "تقييم فرص السوق لمنتجات أو خدمات جديدة", "بناء هياكل مبيعات مستدامة في أسواق نامية"],
-    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth", "real-estate-developments"],
+    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth"],
   },
   {
     slug: "standort-konzeptentwicklung", number: "05", title: "تطوير المواقع والمفاهيم",
     desc: "تطوير وتموضع مفاهيم مرتبطة بالموقع — من مراكز الأعمال وصيغ الضيافة إلى مساحات البيع بالتجزئة والمشاريع متعددة الاستخدامات.",
     details: ["تقييم المواقع ومفاهيم الاستخدام", "مفاهيم التشغيل ونماذج الخدمة", "تخطيط المساحات وتحليل المستخدمين", "استراتيجية التأجير والتسويق التجاري", "مفاهيم العلامة التجارية للصيغ المرتبطة بالموقع"],
     situations: ["مساحات شاغرة أو غير مستغلة بشكل كافٍ ذات إمكانات عالية", "تطوير مفاهيم ضيافة أو مراكز أعمال جديدة", "تموضع مشروع متعدد الاستخدامات في بيئة تنافسية", "دمج التجزئة والمكاتب والضيافة في مفهوم واحد"],
-    relevantIndustries: ["real-estate-developments", "hospitality-business-centers", "retail-consumer-concepts"],
+    relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
   },
   {
     slug: "partnerschaften-geschaeftsentwicklung", number: "06", title: "الشراكات وتطوير الأعمال",
     desc: "بناء شراكات استراتيجية ومشاريع مشتركة ومجالات أعمال جديدة لخلق قيمة مستدامة.",
     details: ["البحث الاستراتيجي عن شركاء والمطابقة", "هيكلة التعاونات والمشاريع المشتركة", "تطوير مجالات أعمال جديدة ومصادر إيرادات", "الشبكات الدولية وإدارة العلاقات", "دعم التفاوض وهيكلة الصفقات"],
     situations: ["البحث عن شركاء مناسبين لمشاريع دولية", "فتح مجالات أعمال جديدة بدون خبرة سوقية ذاتية", "الحاجة إلى تحالفات استراتيجية لدخول السوق أو النمو", "بناء شبكة شركاء دولية"],
-    relevantIndustries: ["family-offices-private-capital", "corporate-transformation-growth", "real-estate-developments", "hospitality-business-centers"],
+    relevantIndustries: ["corporate-transformation-growth", "hospitality-business-centers"],
   },
 ];
 
@@ -201,7 +201,7 @@ export const translationsAr: Translations = {
       { slug: "strategie-vs-taktik", title: "الاستراتيجية ليست تكتيكاً", excerpt: "لماذا تفشل العديد من الشركات بسبب الخلط بين الوضوح الاستراتيجي والنشاط التشغيلي.", category: "استراتيجية", date: "2025-03" },
       { slug: "marke-als-haltung", title: "العلامة التجارية كموقف، لا كشعار", excerpt: "حول الفرق بين الهوية البصرية وإدارة العلامة التجارية الاستراتيجية.", category: "بناء العلامة", date: "2025-02" },
       { slug: "internationaler-markteintritt", title: "الدخول الدولي: الهيكل قبل الطموح", excerpt: "ما يميز التوسع الدولي الناجح عن المحاولات الفاشلة.", category: "نمو", date: "2025-01" },
-      { slug: "family-office-professionalisierung", title: "مكاتب العائلات: التطوير المهني دون فقدان الهوية", excerpt: "كيف تحقق العائلات الريادية جودة مؤسسية دون فقدان مرونتها.", category: "مكاتب العائلات", date: "2024-12" },
+      { slug: "standort-als-strategie", title: "الموقع كأصل استراتيجي", excerpt: "لماذا اختيار الموقع المناسب ليس مجرد مسألة وصول، بل يتعلق بالموقف الذي تريد الشركة أن تبثه.", category: "استراتيجية", date: "2024-12" },
     ],
   },
   contact: {

@@ -6,7 +6,7 @@ const services: ServiceItem[] = [
     desc: "为企业在复杂市场中制定清晰的战略方向，实现可持续的差异化定位。",
     details: ["战略分析与现状评估", "竞争与市场定位", "愿景、使命与战略框架", "增长战略与规模化模型", "战略治理与实施支持"],
     situations: ["领导层变更或股权转让后的重新调整", "在变化的市场环境中定位不清", "运营实力强但缺乏战略清晰度", "缺乏明确方向或优先级的增长"],
-    relevantIndustries: ["real-estate-developments", "family-offices-private-capital", "corporate-transformation-growth", "luxury-design-premium-brands"],
+    relevantIndustries: ["corporate-transformation-growth", "luxury-design-premium-brands"],
   },
   {
     slug: "kommerzielle-transformation", number: "02", title: "商业转型",
@@ -20,28 +20,28 @@ const services: ServiceItem[] = [
     desc: "品牌的开发与重新定位，创造相关性、信任和差异化。",
     details: ["品牌战略与定位", "品牌架构与组合逻辑", "视觉识别与设计系统", "品牌管理与治理", "品牌重塑与品牌再活化"],
     situations: ["品牌不再反映当前企业实际", "并购或重组要求新的品牌逻辑", "国际扩张需要适应性品牌管理", "与竞争对手的差异化不足"],
-    relevantIndustries: ["luxury-design-premium-brands", "real-estate-developments", "hospitality-business-centers", "family-offices-private-capital"],
+    relevantIndustries: ["luxury-design-premium-brands", "hospitality-business-centers"],
   },
   {
     slug: "markteintritt-wachstumsstrategie", number: "04", title: "市场进入与增长战略",
     desc: "以清晰的战略和运营深度支持开拓新市场、新区域和新客户群。",
     details: ["市场与潜力分析", "Go-to-Market战略", "国际扩张与市场进入模式", "销售开发与渠道架构", "风险评估与市场验证"],
     situations: ["在本地经验有限的情况下进入国际市场", "在现有市场中开拓新客户群", "评估新产品或服务的市场机会", "在增长市场中建立可持续的销售结构"],
-    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth", "real-estate-developments"],
+    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth"],
   },
   {
     slug: "standort-konzeptentwicklung", number: "05", title: "选址与概念开发",
     desc: "从商务中心和酒店业态到零售空间和综合体项目，开发和定位基于选址的概念。",
     details: ["选址评估与使用概念", "运营概念与服务模式", "空间规划与用户分析", "租户策略与商业化", "基于选址形态的品牌概念"],
     situations: ["具有高潜力的空置或低利用率空间", "开发新的酒店或商务中心概念", "在竞争环境中定位综合体项目", "将零售、办公和酒店整合在一个概念中"],
-    relevantIndustries: ["real-estate-developments", "hospitality-business-centers", "retail-consumer-concepts"],
+    relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
   },
   {
     slug: "partnerschaften-geschaeftsentwicklung", number: "06", title: "合作伙伴关系与业务开发",
     desc: "构建战略合作伙伴关系、合资企业和新业务领域，实现可持续价值创造。",
     details: ["战略合作伙伴搜寻与匹配", "合作与合资企业构建", "新业务领域与收入来源开发", "国际网络与关系管理", "谈判支持与交易构建"],
     situations: ["为国际项目寻找合适的合作伙伴", "在没有自身市场专业知识的情况下开拓新业务领域", "市场进入或增长需要战略联盟", "构建国际合作伙伴网络"],
-    relevantIndustries: ["family-offices-private-capital", "corporate-transformation-growth", "real-estate-developments", "hospitality-business-centers"],
+    relevantIndustries: ["corporate-transformation-growth", "hospitality-business-centers"],
   },
 ];
 
@@ -201,7 +201,7 @@ export const translationsZh: Translations = {
       { slug: "strategie-vs-taktik", title: "战略不是战术", excerpt: "为什么许多企业因混淆战略清晰度与运营忙碌而失败。", category: "战略", date: "2025-03" },
       { slug: "marke-als-haltung", title: "品牌是态度，不是标志", excerpt: "视觉识别与战略品牌管理的区别——以及为什么两者不可分割。", category: "品牌", date: "2025-02" },
       { slug: "internationaler-markteintritt", title: "国际市场进入：结构先于雄心", excerpt: "成功的国际扩张与失败尝试的区别。", category: "增长", date: "2025-01" },
-      { slug: "family-office-professionalisierung", title: "家族办公室：不失身份的专业化", excerpt: "企业家族如何在不失去敏捷性的情况下实现机构级质量。", category: "家族办公室", date: "2024-12" },
+      { slug: "standort-als-strategie", title: "选址作为战略资产", excerpt: "为什么选择正确的地点不仅是可达性的问题，更是企业想要传递的态度。", category: "战略", date: "2024-12" },
     ],
   },
   contact: {

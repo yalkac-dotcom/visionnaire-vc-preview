@@ -6,7 +6,7 @@ const services: ServiceItem[] = [
     desc: "複雑な市場において企業を的確に位置づけ、持続的な差別化を実現する明確な戦略の策定。",
     details: ["戦略分析と現状評価", "競争・市場ポジショニング", "ビジョン・ミッション・戦略フレームワーク", "成長戦略とスケーリングモデル", "戦略ガバナンスと実行支援"],
     situations: ["経営陣交代や株主変動後のリアラインメント", "変化する市場環境における不明確なポジショニング", "オペレーション力はあるが戦略的明確さが欠如", "明確な方向性や優先順位のない成長"],
-    relevantIndustries: ["real-estate-developments", "family-offices-private-capital", "corporate-transformation-growth", "luxury-design-premium-brands"],
+    relevantIndustries: ["corporate-transformation-growth", "luxury-design-premium-brands"],
   },
   {
     slug: "kommerzielle-transformation", number: "02", title: "コマーシャル・トランスフォーメーション",
@@ -20,28 +20,28 @@ const services: ServiceItem[] = [
     desc: "関連性、信頼、差別化を生み出すブランドの開発とリポジショニング。",
     details: ["ブランド戦略とポジショニング", "ブランドアーキテクチャとポートフォリオロジック", "ビジュアルアイデンティティとデザインシステム", "ブランドマネジメントとガバナンス", "リブランディングとブランド再活性化"],
     situations: ["ブランドが現在の企業実態を反映していない", "合併・買収・組織再編が新たなブランドロジックを要求", "国際展開にブランドマネジメントの適応が必要", "競合に対する差別化が不十分"],
-    relevantIndustries: ["luxury-design-premium-brands", "real-estate-developments", "hospitality-business-centers", "family-offices-private-capital"],
+    relevantIndustries: ["luxury-design-premium-brands", "hospitality-business-centers"],
   },
   {
     slug: "markteintritt-wachstumsstrategie", number: "04", title: "市場参入と成長戦略",
     desc: "明確な戦略とオペレーション力による新市場・新地域・新顧客セグメントの開拓支援。",
     details: ["市場・ポテンシャル分析", "Go-to-Market戦略", "国際展開と市場参入モデル", "営業開発とチャネルアーキテクチャ", "リスク評価と市場検証"],
     situations: ["現地経験が限られた状態での国際市場参入", "既存市場における新顧客セグメントの開拓", "新製品・サービスの市場機会評価", "成長市場における持続可能な営業体制の構築"],
-    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth", "real-estate-developments"],
+    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth"],
   },
   {
     slug: "standort-konzeptentwicklung", number: "05", title: "ロケーション＆コンセプト開発",
     desc: "ビジネスセンターやホスピタリティ形態から商業スペース、複合施設まで、立地型コンセプトの開発とポジショニング。",
     details: ["立地評価と利用コンセプト", "運営コンセプトとサービスモデル", "空間計画とユーザー分析", "テナント戦略と収益化", "立地型フォーマットのブランドコンセプト"],
     situations: ["高い潜在力を持つ空室・未活用スペース", "新しいホスピタリティ・ビジネスセンターコンセプトの開発", "競争環境における複合施設のポジショニング", "リテール・オフィス・ホスピタリティの統合コンセプト"],
-    relevantIndustries: ["real-estate-developments", "hospitality-business-centers", "retail-consumer-concepts"],
+    relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
   },
   {
     slug: "partnerschaften-geschaeftsentwicklung", number: "06", title: "パートナーシップと事業開発",
     desc: "持続可能な価値創造を伴う戦略的パートナーシップ、ジョイントベンチャー、新規事業領域の構築。",
     details: ["戦略的パートナー探索とマッチング", "提携・ジョイントベンチャーの構築", "新規事業領域と収益源の開発", "国際ネットワークとリレーションシップマネジメント", "交渉支援とディール構築"],
     situations: ["国際プロジェクトに適したパートナーの探索", "自社の市場専門知識なしでの新規事業領域開拓", "市場参入・成長のための戦略的アライアンスの必要性", "国際パートナーネットワークの構築"],
-    relevantIndustries: ["family-offices-private-capital", "corporate-transformation-growth", "real-estate-developments", "hospitality-business-centers"],
+    relevantIndustries: ["corporate-transformation-growth", "hospitality-business-centers"],
   },
 ];
 
@@ -202,7 +202,7 @@ export const translationsJa: Translations = {
       { slug: "strategie-vs-taktik", title: "戦略は戦術ではない", excerpt: "戦略的明確さとオペレーション上の多忙を混同することで多くの企業が失敗する理由。", category: "戦略", date: "2025-03" },
       { slug: "marke-als-haltung", title: "ロゴではなく姿勢としてのブランド", excerpt: "ビジュアルアイデンティティと戦略的ブランドマネジメントの違い — そしてなぜ両方が不可分なのか。", category: "ブランディング", date: "2025-02" },
       { slug: "internationaler-markteintritt", title: "国際市場参入：野心の前に構造を", excerpt: "成功した国際展開と失敗した試みを分けるもの。", category: "成長", date: "2025-01" },
-      { slug: "family-office-professionalisierung", title: "ファミリーオフィス：アイデンティティを失わない専門化", excerpt: "起業家ファミリーがアジリティを失わずに機関的品質を達成する方法。", category: "ファミリーオフィス", date: "2024-12" },
+      { slug: "standort-als-strategie", title: "戦略的資産としての拠点", excerpt: "適切な拠点選びがアクセスの問題だけでなく、企業が発信したい姿勢の問題である理由。", category: "戦略", date: "2024-12" },
     ],
   },
   contact: {

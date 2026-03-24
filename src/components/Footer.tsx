@@ -11,7 +11,6 @@ export function Footer() {
         {/* Nav links */}
         <div className="mb-12 pb-12 border-b border-white/12 flex flex-wrap gap-x-8 gap-y-3 text-[11.5px] uppercase tracking-[0.17em] font-[440]">
           <Link to="/leistungen" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navServices}</Link>
-          <Link to="/branchen" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navIndustries}</Link>
           <Link to="/unternehmensbereiche" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navBusinessUnits}</Link>
           <Link to="/ueber-uns" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navAbout}</Link>
           <Link to="/insights" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navInsights}</Link>

@@ -20,8 +20,6 @@ export const servicesDe: ServiceItem[] = [
       "Wachstum ohne klare Richtung oder Priorisierung",
     ],
     relevantIndustries: [
-      "real-estate-developments",
-      "family-offices-private-capital",
       "corporate-transformation-growth",
       "luxury-design-premium-brands",
     ],
@@ -70,9 +68,7 @@ export const servicesDe: ServiceItem[] = [
     ],
     relevantIndustries: [
       "luxury-design-premium-brands",
-      "real-estate-developments",
       "hospitality-business-centers",
-      "family-offices-private-capital",
     ],
   },
   {
@@ -97,7 +93,6 @@ export const servicesDe: ServiceItem[] = [
       "luxury-design-premium-brands",
       "retail-consumer-concepts",
       "corporate-transformation-growth",
-      "real-estate-developments",
     ],
   },
   {
@@ -119,7 +114,6 @@ export const servicesDe: ServiceItem[] = [
       "Integration von Retail, Büro und Hospitality in einem Konzept",
     ],
     relevantIndustries: [
-      "real-estate-developments",
       "hospitality-business-centers",
       "retail-consumer-concepts",
     ],
@@ -143,9 +137,7 @@ export const servicesDe: ServiceItem[] = [
       "Aufbau eines internationalen Partnernetzwerks",
     ],
     relevantIndustries: [
-      "family-offices-private-capital",
       "corporate-transformation-growth",
-      "real-estate-developments",
       "hospitality-business-centers",
     ],
   },
@@ -171,8 +163,6 @@ export const servicesEn: ServiceItem[] = [
       "Growth without clear direction or prioritisation",
     ],
     relevantIndustries: [
-      "real-estate-developments",
-      "family-offices-private-capital",
       "corporate-transformation-growth",
       "luxury-design-premium-brands",
     ],
@@ -221,9 +211,7 @@ export const servicesEn: ServiceItem[] = [
     ],
     relevantIndustries: [
       "luxury-design-premium-brands",
-      "real-estate-developments",
       "hospitality-business-centers",
-      "family-offices-private-capital",
     ],
   },
   {
@@ -248,7 +236,6 @@ export const servicesEn: ServiceItem[] = [
       "luxury-design-premium-brands",
       "retail-consumer-concepts",
       "corporate-transformation-growth",
-      "real-estate-developments",
     ],
   },
   {
@@ -270,7 +257,6 @@ export const servicesEn: ServiceItem[] = [
       "Integration of retail, office and hospitality in one concept",
     ],
     relevantIndustries: [
-      "real-estate-developments",
       "hospitality-business-centers",
       "retail-consumer-concepts",
     ],
@@ -294,9 +280,7 @@ export const servicesEn: ServiceItem[] = [
       "Building an international partner network",
     ],
     relevantIndustries: [
-      "family-offices-private-capital",
       "corporate-transformation-growth",
-      "real-estate-developments",
       "hospitality-business-centers",
     ],
   },

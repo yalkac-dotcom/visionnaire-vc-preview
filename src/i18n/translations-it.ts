@@ -19,7 +19,7 @@ const services: ServiceItem[] = [
       "Mancanza di chiarezza strategica nonostante la solidità operativa",
       "Crescita senza una direzione o prioritizzazione definita",
     ],
-    relevantIndustries: ["real-estate-developments", "family-offices-private-capital", "corporate-transformation-growth", "luxury-design-premium-brands"],
+    relevantIndustries: ["corporate-transformation-growth", "luxury-design-premium-brands"],
   },
   {
     slug: "kommerzielle-transformation",
@@ -59,7 +59,7 @@ const services: ServiceItem[] = [
       "L'espansione internazionale richiede una gestione del marchio adattata",
       "Differenziazione insufficiente rispetto alla concorrenza",
     ],
-    relevantIndustries: ["luxury-design-premium-brands", "real-estate-developments", "hospitality-business-centers", "family-offices-private-capital"],
+    relevantIndustries: ["luxury-design-premium-brands", "hospitality-business-centers"],
   },
   {
     slug: "markteintritt-wachstumsstrategie",
@@ -79,7 +79,7 @@ const services: ServiceItem[] = [
       "Valutazione di opportunità di mercato per nuovi prodotti o servizi",
       "Costruzione di strutture di vendita sostenibili in mercati in crescita",
     ],
-    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth", "real-estate-developments"],
+    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth"],
   },
   {
     slug: "standort-konzeptentwicklung",
@@ -99,7 +99,7 @@ const services: ServiceItem[] = [
       "Posizionamento di un progetto mixed-use in un ambiente competitivo",
       "Integrazione di retail, uffici e ospitalità in un unico concept",
     ],
-    relevantIndustries: ["real-estate-developments", "hospitality-business-centers", "retail-consumer-concepts"],
+    relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
   },
   {
     slug: "partnerschaften-geschaeftsentwicklung",
@@ -119,7 +119,7 @@ const services: ServiceItem[] = [
       "Necessità di alleanze strategiche per l'ingresso nel mercato o la crescita",
       "Costruzione di un network internazionale di partner",
     ],
-    relevantIndustries: ["family-offices-private-capital", "corporate-transformation-growth", "real-estate-developments", "hospitality-business-centers"],
+    relevantIndustries: ["corporate-transformation-growth", "hospitality-business-centers"],
   },
 ];
 
@@ -338,7 +338,7 @@ export const translationsIt: Translations = {
       { slug: "strategie-vs-taktik", title: "La strategia non è tattica", excerpt: "Perché molte imprese falliscono confondendo chiarezza strategica con attivismo operativo.", category: "Strategia", date: "2025-03" },
       { slug: "marke-als-haltung", title: "Il marchio come attitudine, non come logo", excerpt: "Sulla differenza tra identità visiva e gestione strategica del marchio — e perché entrambe sono inscindibili.", category: "Branding", date: "2025-02" },
       { slug: "internationaler-markteintritt", title: "Ingresso internazionale: struttura prima dell'ambizione", excerpt: "Cosa distingue un'espansione internazionale di successo dai tentativi falliti.", category: "Crescita", date: "2025-01" },
-      { slug: "family-office-professionalisierung", title: "Family office: professionalizzazione senza perdita di identità", excerpt: "Come le famiglie imprenditoriali raggiungono qualità istituzionale senza perdere la loro agilità.", category: "Family Offices", date: "2024-12" },
+      { slug: "standort-als-strategie", title: "La sede come asset strategico", excerpt: "Perché scegliere la sede giusta non è solo una questione di raggiungibilità, ma dell'attitudine che un'impresa vuole proiettare.", category: "Strategia", date: "2024-12" },
     ],
   },
   contact: {
