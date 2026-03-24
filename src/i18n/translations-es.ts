@@ -8,7 +8,7 @@ const services: ServiceItem[] = [
     desc: "Desarrollo de orientaciones estratégicas claras que posicionan a las empresas en mercados complejos y crean una diferenciación sostenible.",
     details: ["Análisis estratégico y evaluación de la situación", "Posicionamiento competitivo y de mercado", "Visión, misión y marco estratégico", "Estrategias de crecimiento y modelos de escalabilidad", "Gobernanza estratégica y apoyo a la implementación"],
     situations: ["Reorientación tras cambio de liderazgo o transición de propiedad", "Posicionamiento poco claro en un entorno de mercado cambiante", "Falta de claridad estratégica a pesar de solidez operativa", "Crecimiento sin dirección o priorización definida"],
-    relevantIndustries: ["real-estate-developments", "family-offices-private-capital", "corporate-transformation-growth", "luxury-design-premium-brands"],
+    relevantIndustries: ["corporate-transformation-growth", "luxury-design-premium-brands"],
   },
   {
     slug: "kommerzielle-transformation",
