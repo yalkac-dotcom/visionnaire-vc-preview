@@ -6,7 +6,7 @@ const services: ServiceItem[] = [
     desc: "複雑な市場において企業を的確に位置づけ、持続的な差別化を実現する明確な戦略の策定。",
     details: ["戦略分析と現状評価", "競争・市場ポジショニング", "ビジョン・ミッション・戦略フレームワーク", "成長戦略とスケーリングモデル", "戦略ガバナンスと実行支援"],
     situations: ["経営陣交代や株主変動後のリアラインメント", "変化する市場環境における不明確なポジショニング", "オペレーション力はあるが戦略的明確さが欠如", "明確な方向性や優先順位のない成長"],
-    relevantIndustries: ["real-estate-developments", "family-offices-private-capital", "corporate-transformation-growth", "luxury-design-premium-brands"],
+    relevantIndustries: ["corporate-transformation-growth", "luxury-design-premium-brands"],
   },
   {
     slug: "kommerzielle-transformation", number: "02", title: "コマーシャル・トランスフォーメーション",
