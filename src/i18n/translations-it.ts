@@ -79,7 +79,7 @@ const services: ServiceItem[] = [
       "Valutazione di opportunità di mercato per nuovi prodotti o servizi",
       "Costruzione di strutture di vendita sostenibili in mercati in crescita",
     ],
-    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth", "real-estate-developments"],
+    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth"],
   },
   {
     slug: "standort-konzeptentwicklung",
