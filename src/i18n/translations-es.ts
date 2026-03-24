@@ -44,7 +44,7 @@ const services: ServiceItem[] = [
     desc: "Desarrollo y posicionamiento de conceptos vinculados a una ubicación — desde centros de negocios y formatos de hospitalidad hasta espacios retail y proyectos de uso mixto.",
     details: ["Evaluación de ubicaciones y conceptos de uso", "Conceptos operativos y modelos de servicio", "Planificación de espacios y análisis de usuarios", "Estrategia de arrendamiento y comercialización", "Conceptos de marca para formatos vinculados a una ubicación"],
     situations: ["Espacios vacantes o infrautilizados con alto potencial", "Desarrollo de nuevos conceptos de hospitalidad o centros de negocios", "Posicionamiento de un proyecto de uso mixto en un entorno competitivo", "Integración de retail, oficinas y hospitalidad en un solo concepto"],
-    relevantIndustries: ["real-estate-developments", "hospitality-business-centers", "retail-consumer-concepts"],
+    relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
   },
   {
     slug: "partnerschaften-geschaeftsentwicklung",
