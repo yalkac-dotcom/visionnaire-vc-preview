@@ -21,7 +21,7 @@ export default function IndustryDetail() {
 
   return (
     <>
-      <section className="relative bg-soft-ivory pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
         {heroImg && (
           <div className="absolute inset-0">
             <img src={heroImg} alt={industry.heroHeadline} className="w-full h-full object-cover opacity-[0.48]" loading="eager" />
