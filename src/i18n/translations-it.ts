@@ -59,7 +59,7 @@ const services: ServiceItem[] = [
       "L'espansione internazionale richiede una gestione del marchio adattata",
       "Differenziazione insufficiente rispetto alla concorrenza",
     ],
-    relevantIndustries: ["luxury-design-premium-brands", "real-estate-developments", "hospitality-business-centers", "family-offices-private-capital"],
+    relevantIndustries: ["luxury-design-premium-brands", "hospitality-business-centers"],
   },
   {
     slug: "markteintritt-wachstumsstrategie",
