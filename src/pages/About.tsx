@@ -100,7 +100,7 @@ export default function About() {
 
       {/* How we work */}
       {t.about.working && (
-        <section className="py-20 md:py-28 bg-cloud-neutral">
+        <section className="py-28 md:py-36 bg-cloud-neutral">
           <div className="container">
             <ScrollReveal>
               <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.about.working.label}</p>
