@@ -6,7 +6,7 @@ const services: ServiceItem[] = [
     desc: "为企业在复杂市场中制定清晰的战略方向，实现可持续的差异化定位。",
     details: ["战略分析与现状评估", "竞争与市场定位", "愿景、使命与战略框架", "增长战略与规模化模型", "战略治理与实施支持"],
     situations: ["领导层变更或股权转让后的重新调整", "在变化的市场环境中定位不清", "运营实力强但缺乏战略清晰度", "缺乏明确方向或优先级的增长"],
-    relevantIndustries: ["real-estate-developments", "family-offices-private-capital", "corporate-transformation-growth", "luxury-design-premium-brands"],
+    relevantIndustries: ["corporate-transformation-growth", "luxury-design-premium-brands"],
   },
   {
     slug: "kommerzielle-transformation", number: "02", title: "商业转型",
