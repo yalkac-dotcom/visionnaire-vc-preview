@@ -35,7 +35,7 @@ const services: ServiceItem[] = [
     desc: "Acompañamiento en la apertura de nuevos mercados, regiones y segmentos de clientes con estrategia clara y profundidad operativa.",
     details: ["Análisis de mercado y de potencial", "Estrategias go-to-market", "Expansión internacional y modelos de entrada al mercado", "Desarrollo comercial y arquitectura de canales", "Evaluación de riesgos y validación de mercado"],
     situations: ["Entrada en un mercado internacional con experiencia local limitada", "Apertura de nuevos segmentos de clientes en mercados existentes", "Evaluación de oportunidades de mercado para nuevos productos o servicios", "Construcción de estructuras de venta sostenibles en mercados en crecimiento"],
-    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth", "real-estate-developments"],
+    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth"],
   },
   {
     slug: "standort-konzeptentwicklung",
