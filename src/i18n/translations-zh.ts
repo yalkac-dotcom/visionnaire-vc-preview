@@ -34,7 +34,7 @@ const services: ServiceItem[] = [
     desc: "从商务中心和酒店业态到零售空间和综合体项目，开发和定位基于选址的概念。",
     details: ["选址评估与使用概念", "运营概念与服务模式", "空间规划与用户分析", "租户策略与商业化", "基于选址形态的品牌概念"],
     situations: ["具有高潜力的空置或低利用率空间", "开发新的酒店或商务中心概念", "在竞争环境中定位综合体项目", "将零售、办公和酒店整合在一个概念中"],
-    relevantIndustries: ["real-estate-developments", "hospitality-business-centers", "retail-consumer-concepts"],
+    relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
   },
   {
     slug: "partnerschaften-geschaeftsentwicklung", number: "06", title: "合作伙伴关系与业务开发",
