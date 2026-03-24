@@ -151,7 +151,7 @@ export const translations: Record<Locale, Translations> = {
         { slug: "strategie-vs-taktik", title: "Strategie ist keine Taktik", excerpt: "Warum viele Unternehmen an der Verwechslung von strategischer Klarheit und operativer Geschäftigkeit scheitern.", category: "Strategie", date: "2025-03" },
         { slug: "marke-als-haltung", title: "Marke als Haltung, nicht als Logo", excerpt: "Über den Unterschied zwischen visueller Identität und strategischer Markenführung — und warum beides zusammengehört.", category: "Branding", date: "2025-02" },
         { slug: "internationaler-markteintritt", title: "Internationaler Markteintritt: Struktur vor Ambition", excerpt: "Was erfolgreiche internationale Expansion von gescheiterten Versuchen unterscheidet.", category: "Wachstum", date: "2025-01" },
-        { slug: "family-office-professionalisierung", title: "Family Offices: Professionalisierung ohne Identitätsverlust", excerpt: "Wie unternehmerische Familien institutionelle Qualität erreichen, ohne ihre Agilität zu verlieren.", category: "Family Offices", date: "2024-12" },
+        { slug: "standort-als-strategie", title: "Standort als strategisches Asset", excerpt: "Warum die Wahl des richtigen Standorts nicht nur eine Frage der Erreichbarkeit ist, sondern der Haltung, die ein Unternehmen ausstrahlen will.", category: "Strategie", date: "2024-12" },
       ],
     },
     contact: {
