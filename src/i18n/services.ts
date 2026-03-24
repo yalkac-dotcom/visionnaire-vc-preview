@@ -20,8 +20,6 @@ export const servicesDe: ServiceItem[] = [
       "Wachstum ohne klare Richtung oder Priorisierung",
     ],
     relevantIndustries: [
-      "real-estate-developments",
-      "family-offices-private-capital",
       "corporate-transformation-growth",
       "luxury-design-premium-brands",
     ],
