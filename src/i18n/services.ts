@@ -68,9 +68,7 @@ export const servicesDe: ServiceItem[] = [
     ],
     relevantIndustries: [
       "luxury-design-premium-brands",
-      "real-estate-developments",
       "hospitality-business-centers",
-      "family-offices-private-capital",
     ],
   },
   {
