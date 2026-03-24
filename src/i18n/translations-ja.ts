@@ -20,7 +20,7 @@ const services: ServiceItem[] = [
     desc: "関連性、信頼、差別化を生み出すブランドの開発とリポジショニング。",
     details: ["ブランド戦略とポジショニング", "ブランドアーキテクチャとポートフォリオロジック", "ビジュアルアイデンティティとデザインシステム", "ブランドマネジメントとガバナンス", "リブランディングとブランド再活性化"],
     situations: ["ブランドが現在の企業実態を反映していない", "合併・買収・組織再編が新たなブランドロジックを要求", "国際展開にブランドマネジメントの適応が必要", "競合に対する差別化が不十分"],
-    relevantIndustries: ["luxury-design-premium-brands", "real-estate-developments", "hospitality-business-centers", "family-offices-private-capital"],
+    relevantIndustries: ["luxury-design-premium-brands", "hospitality-business-centers"],
   },
   {
     slug: "markteintritt-wachstumsstrategie", number: "04", title: "市場参入と成長戦略",
