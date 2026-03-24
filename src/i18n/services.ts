@@ -236,7 +236,6 @@ export const servicesEn: ServiceItem[] = [
       "luxury-design-premium-brands",
       "retail-consumer-concepts",
       "corporate-transformation-growth",
-      "real-estate-developments",
     ],
   },
   {
