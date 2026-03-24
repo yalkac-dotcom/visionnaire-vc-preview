@@ -27,7 +27,7 @@ const services: ServiceItem[] = [
     desc: "以清晰的战略和运营深度支持开拓新市场、新区域和新客户群。",
     details: ["市场与潜力分析", "Go-to-Market战略", "国际扩张与市场进入模式", "销售开发与渠道架构", "风险评估与市场验证"],
     situations: ["在本地经验有限的情况下进入国际市场", "在现有市场中开拓新客户群", "评估新产品或服务的市场机会", "在增长市场中建立可持续的销售结构"],
-    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth", "real-estate-developments"],
+    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth"],
   },
   {
     slug: "standort-konzeptentwicklung", number: "05", title: "选址与概念开发",
