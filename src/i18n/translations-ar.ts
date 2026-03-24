@@ -34,7 +34,7 @@ const services: ServiceItem[] = [
     desc: "تطوير وتموضع مفاهيم مرتبطة بالموقع — من مراكز الأعمال وصيغ الضيافة إلى مساحات البيع بالتجزئة والمشاريع متعددة الاستخدامات.",
     details: ["تقييم المواقع ومفاهيم الاستخدام", "مفاهيم التشغيل ونماذج الخدمة", "تخطيط المساحات وتحليل المستخدمين", "استراتيجية التأجير والتسويق التجاري", "مفاهيم العلامة التجارية للصيغ المرتبطة بالموقع"],
     situations: ["مساحات شاغرة أو غير مستغلة بشكل كافٍ ذات إمكانات عالية", "تطوير مفاهيم ضيافة أو مراكز أعمال جديدة", "تموضع مشروع متعدد الاستخدامات في بيئة تنافسية", "دمج التجزئة والمكاتب والضيافة في مفهوم واحد"],
-    relevantIndustries: ["real-estate-developments", "hospitality-business-centers", "retail-consumer-concepts"],
+    relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
   },
   {
     slug: "partnerschaften-geschaeftsentwicklung", number: "06", title: "الشراكات وتطوير الأعمال",
