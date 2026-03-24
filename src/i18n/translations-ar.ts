@@ -6,7 +6,7 @@ const services: ServiceItem[] = [
     desc: "تطوير توجهات استراتيجية واضحة تُمكّن الشركات من التموضع في أسواق معقدة وتحقيق تمايز مستدام.",
     details: ["التحليل الاستراتيجي وتقييم الوضع الراهن", "التموضع التنافسي والسوقي", "الرؤية والرسالة والإطار الاستراتيجي", "استراتيجيات النمو ونماذج التوسع", "الحوكمة الاستراتيجية ودعم التنفيذ"],
     situations: ["إعادة التوجيه بعد تغيير القيادة أو انتقال الملكية", "تموضع غير واضح في بيئة سوقية متغيرة", "غياب الوضوح الاستراتيجي رغم القوة التشغيلية", "نمو بلا اتجاه واضح أو أولويات محددة"],
-    relevantIndustries: ["real-estate-developments", "family-offices-private-capital", "corporate-transformation-growth", "luxury-design-premium-brands"],
+    relevantIndustries: ["corporate-transformation-growth", "luxury-design-premium-brands"],
   },
   {
     slug: "kommerzielle-transformation", number: "02", title: "التحول التجاري",
