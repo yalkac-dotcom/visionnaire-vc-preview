@@ -19,7 +19,7 @@ const services: ServiceItem[] = [
       "Mancanza di chiarezza strategica nonostante la solidità operativa",
       "Crescita senza una direzione o prioritizzazione definita",
     ],
-    relevantIndustries: ["real-estate-developments", "family-offices-private-capital", "corporate-transformation-growth", "luxury-design-premium-brands"],
+    relevantIndustries: ["corporate-transformation-growth", "luxury-design-premium-brands"],
   },
   {
     slug: "kommerzielle-transformation",
