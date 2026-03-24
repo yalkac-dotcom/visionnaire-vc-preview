@@ -202,7 +202,7 @@ export const translationsJa: Translations = {
       { slug: "strategie-vs-taktik", title: "戦略は戦術ではない", excerpt: "戦略的明確さとオペレーション上の多忙を混同することで多くの企業が失敗する理由。", category: "戦略", date: "2025-03" },
       { slug: "marke-als-haltung", title: "ロゴではなく姿勢としてのブランド", excerpt: "ビジュアルアイデンティティと戦略的ブランドマネジメントの違い — そしてなぜ両方が不可分なのか。", category: "ブランディング", date: "2025-02" },
       { slug: "internationaler-markteintritt", title: "国際市場参入：野心の前に構造を", excerpt: "成功した国際展開と失敗した試みを分けるもの。", category: "成長", date: "2025-01" },
-      { slug: "family-office-professionalisierung", title: "ファミリーオフィス：アイデンティティを失わない専門化", excerpt: "起業家ファミリーがアジリティを失わずに機関的品質を達成する方法。", category: "ファミリーオフィス", date: "2024-12" },
+      { slug: "standort-als-strategie", title: "戦略的資産としての拠点", excerpt: "適切な拠点選びがアクセスの問題だけでなく、企業が発信したい姿勢の問題である理由。", category: "戦略", date: "2024-12" },
     ],
   },
   contact: {

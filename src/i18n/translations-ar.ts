@@ -201,7 +201,7 @@ export const translationsAr: Translations = {
       { slug: "strategie-vs-taktik", title: "الاستراتيجية ليست تكتيكاً", excerpt: "لماذا تفشل العديد من الشركات بسبب الخلط بين الوضوح الاستراتيجي والنشاط التشغيلي.", category: "استراتيجية", date: "2025-03" },
       { slug: "marke-als-haltung", title: "العلامة التجارية كموقف، لا كشعار", excerpt: "حول الفرق بين الهوية البصرية وإدارة العلامة التجارية الاستراتيجية.", category: "بناء العلامة", date: "2025-02" },
       { slug: "internationaler-markteintritt", title: "الدخول الدولي: الهيكل قبل الطموح", excerpt: "ما يميز التوسع الدولي الناجح عن المحاولات الفاشلة.", category: "نمو", date: "2025-01" },
-      { slug: "family-office-professionalisierung", title: "مكاتب العائلات: التطوير المهني دون فقدان الهوية", excerpt: "كيف تحقق العائلات الريادية جودة مؤسسية دون فقدان مرونتها.", category: "مكاتب العائلات", date: "2024-12" },
+      { slug: "standort-als-strategie", title: "الموقع كأصل استراتيجي", excerpt: "لماذا اختيار الموقع المناسب ليس مجرد مسألة وصول، بل يتعلق بالموقف الذي تريد الشركة أن تبثه.", category: "استراتيجية", date: "2024-12" },
     ],
   },
   contact: {

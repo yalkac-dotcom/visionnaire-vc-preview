@@ -429,7 +429,7 @@ export const translations: Record<Locale, Translations> = {
         { slug: "strategy-vs-tactics", title: "Strategy is not tactics", excerpt: "Why many companies fail by confusing strategic clarity with operational busyness.", category: "Strategy", date: "2025-03" },
         { slug: "brand-as-attitude", title: "Brand as attitude, not as logo", excerpt: "On the difference between visual identity and strategic brand management — and why both belong together.", category: "Branding", date: "2025-02" },
         { slug: "international-market-entry", title: "International market entry: Structure before ambition", excerpt: "What distinguishes successful international expansion from failed attempts.", category: "Growth", date: "2025-01" },
-        { slug: "family-office-professionalisation", title: "Family offices: Professionalisation without identity loss", excerpt: "How entrepreneurial families achieve institutional quality without losing their agility.", category: "Family Offices", date: "2024-12" },
+        { slug: "location-as-strategy", title: "Location as a strategic asset", excerpt: "Why choosing the right location is not just a question of accessibility, but of the attitude a company wants to project.", category: "Strategy", date: "2024-12" },
       ],
     },
     contact: {

@@ -201,7 +201,7 @@ export const translationsZh: Translations = {
       { slug: "strategie-vs-taktik", title: "战略不是战术", excerpt: "为什么许多企业因混淆战略清晰度与运营忙碌而失败。", category: "战略", date: "2025-03" },
       { slug: "marke-als-haltung", title: "品牌是态度，不是标志", excerpt: "视觉识别与战略品牌管理的区别——以及为什么两者不可分割。", category: "品牌", date: "2025-02" },
       { slug: "internationaler-markteintritt", title: "国际市场进入：结构先于雄心", excerpt: "成功的国际扩张与失败尝试的区别。", category: "增长", date: "2025-01" },
-      { slug: "family-office-professionalisierung", title: "家族办公室：不失身份的专业化", excerpt: "企业家族如何在不失去敏捷性的情况下实现机构级质量。", category: "家族办公室", date: "2024-12" },
+      { slug: "standort-als-strategie", title: "选址作为战略资产", excerpt: "为什么选择正确的地点不仅是可达性的问题，更是企业想要传递的态度。", category: "战略", date: "2024-12" },
     ],
   },
   contact: {

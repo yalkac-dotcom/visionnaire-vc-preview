@@ -245,7 +245,7 @@ export const translationsEs: Translations = {
       { slug: "strategie-vs-taktik", title: "La estrategia no es táctica", excerpt: "Por qué muchas empresas fracasan confundiendo claridad estratégica con activismo operativo.", category: "Estrategia", date: "2025-03" },
       { slug: "marke-als-haltung", title: "La marca como actitud, no como logo", excerpt: "Sobre la diferencia entre identidad visual y gestión estratégica de marca — y por qué ambas son inseparables.", category: "Branding", date: "2025-02" },
       { slug: "internationaler-markteintritt", title: "Entrada internacional: estructura antes que ambición", excerpt: "Qué distingue una expansión internacional exitosa de los intentos fallidos.", category: "Crecimiento", date: "2025-01" },
-      { slug: "family-office-professionalisierung", title: "Family offices: profesionalización sin pérdida de identidad", excerpt: "Cómo las familias empresariales alcanzan calidad institucional sin perder su agilidad.", category: "Family Offices", date: "2024-12" },
+      { slug: "standort-als-strategie", title: "La ubicación como activo estratégico", excerpt: "Por qué elegir la ubicación correcta no es solo una cuestión de accesibilidad, sino de la actitud que una empresa quiere proyectar.", category: "Estrategia", date: "2024-12" },
     ],
   },
   contact: {
