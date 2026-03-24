@@ -20,7 +20,7 @@ const services: ServiceItem[] = [
     desc: "تطوير وإعادة تموضع العلامات التجارية لخلق الصلة والثقة والتمايز.",
     details: ["استراتيجية العلامة التجارية والتموضع", "هندسة العلامة التجارية ومنطق المحفظة", "الهوية البصرية وأنظمة التصميم", "إدارة وحوكمة العلامة التجارية", "إعادة تشكيل العلامة التجارية وتنشيطها"],
     situations: ["العلامة التجارية لم تعد تعكس واقع الشركة الحالي", "الاندماج أو الاستحواذ يتطلب منطقاً جديداً للعلامة التجارية", "التوسع الدولي يتطلب إدارة علامة تجارية متكيفة", "تمايز غير كافٍ أمام المنافسين"],
-    relevantIndustries: ["luxury-design-premium-brands", "real-estate-developments", "hospitality-business-centers", "family-offices-private-capital"],
+    relevantIndustries: ["luxury-design-premium-brands", "hospitality-business-centers"],
   },
   {
     slug: "markteintritt-wachstumsstrategie", number: "04", title: "دخول الأسواق واستراتيجية النمو",
