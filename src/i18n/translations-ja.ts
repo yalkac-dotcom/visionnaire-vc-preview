@@ -27,7 +27,7 @@ const services: ServiceItem[] = [
     desc: "明確な戦略とオペレーション力による新市場・新地域・新顧客セグメントの開拓支援。",
     details: ["市場・ポテンシャル分析", "Go-to-Market戦略", "国際展開と市場参入モデル", "営業開発とチャネルアーキテクチャ", "リスク評価と市場検証"],
     situations: ["現地経験が限られた状態での国際市場参入", "既存市場における新顧客セグメントの開拓", "新製品・サービスの市場機会評価", "成長市場における持続可能な営業体制の構築"],
-    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth", "real-estate-developments"],
+    relevantIndustries: ["luxury-design-premium-brands", "retail-consumer-concepts", "corporate-transformation-growth"],
   },
   {
     slug: "standort-konzeptentwicklung", number: "05", title: "ロケーション＆コンセプト開発",
