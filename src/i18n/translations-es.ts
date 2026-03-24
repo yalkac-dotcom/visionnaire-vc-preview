@@ -26,7 +26,7 @@ const services: ServiceItem[] = [
     desc: "Desarrollo y reposicionamiento de marcas que generan relevancia, confianza y diferenciación.",
     details: ["Estrategia de marca y posicionamiento", "Arquitectura de marca y lógica de portafolio", "Identidad visual y sistemas de diseño", "Gestión y gobernanza de marca", "Re-branding y revitalización de marca"],
     situations: ["La marca ya no refleja la realidad empresarial actual", "Fusión, adquisición o reestructuración requieren nueva lógica de marca", "La expansión internacional requiere gestión de marca adaptada", "Diferenciación insuficiente frente a la competencia"],
-    relevantIndustries: ["luxury-design-premium-brands", "real-estate-developments", "hospitality-business-centers", "family-offices-private-capital"],
+    relevantIndustries: ["luxury-design-premium-brands", "hospitality-business-centers"],
   },
   {
     slug: "markteintritt-wachstumsstrategie",
