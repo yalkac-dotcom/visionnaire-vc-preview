@@ -137,9 +137,7 @@ export const servicesDe: ServiceItem[] = [
       "Aufbau eines internationalen Partnernetzwerks",
     ],
     relevantIndustries: [
-      "family-offices-private-capital",
       "corporate-transformation-growth",
-      "real-estate-developments",
       "hospitality-business-centers",
     ],
   },
