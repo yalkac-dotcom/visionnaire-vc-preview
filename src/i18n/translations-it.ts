@@ -119,7 +119,7 @@ const services: ServiceItem[] = [
       "Necessità di alleanze strategiche per l'ingresso nel mercato o la crescita",
       "Costruzione di un network internazionale di partner",
     ],
-    relevantIndustries: ["family-offices-private-capital", "corporate-transformation-growth", "real-estate-developments", "hospitality-business-centers"],
+    relevantIndustries: ["corporate-transformation-growth", "hospitality-business-centers"],
   },
 ];
 
