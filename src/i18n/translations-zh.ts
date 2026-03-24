@@ -20,7 +20,7 @@ const services: ServiceItem[] = [
     desc: "品牌的开发与重新定位，创造相关性、信任和差异化。",
     details: ["品牌战略与定位", "品牌架构与组合逻辑", "视觉识别与设计系统", "品牌管理与治理", "品牌重塑与品牌再活化"],
     situations: ["品牌不再反映当前企业实际", "并购或重组要求新的品牌逻辑", "国际扩张需要适应性品牌管理", "与竞争对手的差异化不足"],
-    relevantIndustries: ["luxury-design-premium-brands", "real-estate-developments", "hospitality-business-centers", "family-offices-private-capital"],
+    relevantIndustries: ["luxury-design-premium-brands", "hospitality-business-centers"],
   },
   {
     slug: "markteintritt-wachstumsstrategie", number: "04", title: "市场进入与增长战略",
