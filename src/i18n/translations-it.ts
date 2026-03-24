@@ -99,7 +99,7 @@ const services: ServiceItem[] = [
       "Posizionamento di un progetto mixed-use in un ambiente competitivo",
       "Integrazione di retail, uffici e ospitalità in un unico concept",
     ],
-    relevantIndustries: ["real-estate-developments", "hospitality-business-centers", "retail-consumer-concepts"],
+    relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
   },
   {
     slug: "partnerschaften-geschaeftsentwicklung",
