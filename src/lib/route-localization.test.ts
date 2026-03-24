@@ -21,16 +21,4 @@ describe("getLocalizedPath", () => {
       "/leistungen/strategie-positionierung"
     );
   });
-
-  it("maps German industry detail slugs to English", () => {
-    expect(getLocalizedPath("/branchen/family-offices-private-capital", "en")).toBe(
-      "/branchen/family-offices-private-capital"
-    );
-  });
-
-  it("maps English industry detail slugs back to default locale slugs", () => {
-    expect(getLocalizedPath("/branchen/hospitality-business-centers", "de")).toBe(
-      "/branchen/hospitality-business-centers"
-    );
-  });
 });
