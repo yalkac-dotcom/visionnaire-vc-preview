@@ -280,9 +280,7 @@ export const servicesEn: ServiceItem[] = [
       "Building an international partner network",
     ],
     relevantIndustries: [
-      "family-offices-private-capital",
       "corporate-transformation-growth",
-      "real-estate-developments",
       "hospitality-business-centers",
     ],
   },
