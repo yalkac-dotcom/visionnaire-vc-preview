@@ -7,7 +7,7 @@ export function ServicesHomeSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="services" className="py-20 md:py-28 bg-soft-ivory">
+    <section id="services" className="py-32 md:py-40 bg-soft-ivory">
       <div className="container">
         <ScrollReveal>
           <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.services.label}</p>

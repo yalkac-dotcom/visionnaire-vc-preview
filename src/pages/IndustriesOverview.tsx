@@ -11,7 +11,7 @@ export default function IndustriesOverview() {
 
   return (
     <>
-      <section className="relative bg-soft-ivory pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroInternational} alt="Industries overview" className="w-full h-full object-cover opacity-[0.45]" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/15 via-transparent to-[hsl(var(--soft-ivory))]/35" />
@@ -24,7 +24,7 @@ export default function IndustriesOverview() {
         <HeroScrollIndicator />
       </section>
 
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-28 md:py-36 bg-background">
         <div className="container">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {t.industries.items.map((item, i) => (

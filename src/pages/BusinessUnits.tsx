@@ -16,7 +16,7 @@ export default function BusinessUnits() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-soft-ivory pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroDomizil} alt="Premium business environment" className="w-full h-full object-cover opacity-[0.35]" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/40 via-[hsl(var(--soft-ivory))]/20 to-[hsl(var(--soft-ivory))]/50" />
@@ -92,7 +92,7 @@ export default function BusinessUnits() {
       </section>
 
       {t.businessUnits.architectureLabel && (
-        <section className="py-20 md:py-28 bg-cloud-neutral">
+        <section className="py-28 md:py-36 bg-cloud-neutral">
           <div className="container">
             <div className="grid md:grid-cols-12 gap-12 md:gap-16">
               <div className="md:col-span-4">
@@ -112,7 +112,7 @@ export default function BusinessUnits() {
       )}
 
       {/* CTA */}
-      <section className="relative py-20 md:py-28 bg-soft-ivory overflow-hidden">
+      <section className="relative py-28 md:py-36 bg-soft-ivory overflow-hidden">
         <div className="absolute inset-0">
           <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.24]" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/25 via-transparent to-[hsl(var(--soft-ivory))]/40" />

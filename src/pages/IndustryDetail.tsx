@@ -21,7 +21,7 @@ export default function IndustryDetail() {
 
   return (
     <>
-      <section className="relative bg-soft-ivory pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-32 pb-20 md:pt-44 md:pb-28 overflow-hidden">
         {heroImg && (
           <div className="absolute inset-0">
             <img src={heroImg} alt={industry.heroHeadline} className="w-full h-full object-cover opacity-[0.48]" loading="eager" />
@@ -41,7 +41,7 @@ export default function IndustryDetail() {
         <HeroScrollIndicator />
       </section>
 
-      <section className="py-20 md:py-28 bg-background">
+      <section className="py-28 md:py-36 bg-background">
         <div className="container">
           <div className="max-w-3xl">
             <ScrollReveal>
@@ -128,7 +128,7 @@ export default function IndustryDetail() {
         </section>
       )}
 
-      <section className="relative py-20 md:py-28 bg-soft-ivory overflow-hidden">
+      <section className="relative py-28 md:py-36 bg-soft-ivory overflow-hidden">
         <div className="absolute inset-0">
           <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.20]" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/35 via-transparent to-[hsl(var(--soft-ivory))]/50" />
