@@ -67,7 +67,7 @@ export default function Contact() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-soft-ivory pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroContact} alt="Contact Visionnaire" className="w-full h-full object-cover opacity-[0.45]" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/15 via-transparent to-[hsl(var(--soft-ivory))]/35" />
@@ -82,14 +82,14 @@ export default function Contact() {
 
       {/* Intro + Subject options */}
       {t.contact.introHeadline && (
-        <section className="py-24 md:py-32 bg-background">
+        <section className="py-18 md:py-24 bg-background">
           <div className="container">
             <div className="max-w-3xl">
               <ScrollReveal>
                 <h2 className="text-foreground text-lg md:text-xl font-normal leading-[1.3] tracking-[-0.01em] mb-6">{t.contact.introHeadline}</h2>
               </ScrollReveal>
               <ScrollReveal delay={80}>
-                <p className="text-foreground/65 text-[15px] md:text-base leading-[1.8] mb-20">{t.contact.introText}</p>
+                <p className="text-foreground/65 text-[15px] md:text-base leading-[1.8] mb-10">{t.contact.introText}</p>
               </ScrollReveal>
 
               {t.contact.subjectDescriptions && (
@@ -174,7 +174,7 @@ export default function Contact() {
             <div className="md:col-span-4 md:col-start-9">
               <ScrollReveal delay={150}>
                 <div className="md:pt-4">
-                  <div className="mb-14">
+                  <div className="mb-10">
                     <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-7">{t.contact.label}</p>
                     {t.contact.address && (
                       <div className="flex items-start gap-3 text-foreground text-sm mb-5">
@@ -189,7 +189,7 @@ export default function Contact() {
                     )}
                   </div>
 
-                  <div className="mb-14 pb-14 border-b border-border">
+                  <div className="mb-10 pb-14 border-b border-border">
                     <a href={`tel:${t.contact.phone.replace(/\s/g, "")}`} className="flex items-center gap-3 text-foreground text-sm hover:text-[hsl(var(--brand-blue))] transition-colors duration-200 mb-4">
                       <Phone size={14} strokeWidth={1.5} className="text-foreground/40" />
                       {t.contact.phone}
@@ -214,7 +214,7 @@ export default function Contact() {
       </section>
 
       {t.contact.closingHeadline && (
-        <section className="py-24 md:py-32 bg-soft-ivory">
+        <section className="py-18 md:py-24 bg-soft-ivory">
           <div className="container text-center">
             <ScrollReveal>
               <h3 className="text-foreground text-lg md:text-xl font-normal leading-[1.3] tracking-[-0.01em] mb-4">{t.contact.closingHeadline}</h3>

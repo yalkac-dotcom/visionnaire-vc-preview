@@ -26,12 +26,12 @@ export default function Datenschutz() {
       </section>
 
       {/* Content */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-18 md:py-24 bg-background">
         <div className="container">
           <div className="max-w-2xl">
             {ds.sections.map((section, i) => (
               <ScrollReveal key={section.title} delay={i * 40}>
-                <div className="mb-16 last:mb-0">
+                <div className="mb-12 last:mb-0">
                   <div className="flex items-start gap-4 mb-6">
                     <div className="w-8 h-px bg-border mt-[0.6em] shrink-0" />
                     <h2 className="text-foreground text-base font-medium tracking-[-0.01em] leading-[1.4]">

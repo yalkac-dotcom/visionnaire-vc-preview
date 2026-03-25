@@ -7,7 +7,7 @@ export function ServicesHomeSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="services" className="py-32 md:py-40 bg-soft-ivory">
+    <section id="services" className="py-20 md:py-24 bg-soft-ivory">
       <div className="container">
         <ScrollReveal>
           <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.services.label}</p>
@@ -16,7 +16,7 @@ export function ServicesHomeSection() {
           <h2 className="text-foreground text-[1.5rem] md:text-[2.125rem] lg:text-[2.625rem] font-normal leading-[1.18] tracking-[-0.02em] max-w-lg mb-6">{t.services.headline}</h2>
         </ScrollReveal>
         <ScrollReveal delay={120}>
-          <p className="text-foreground/55 text-[15px] leading-[1.7] max-w-xl mb-20">{t.services.subline}</p>
+          <p className="text-foreground/55 text-[15px] leading-[1.7] max-w-xl mb-10">{t.services.subline}</p>
         </ScrollReveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">

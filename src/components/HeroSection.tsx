@@ -19,7 +19,7 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 pt-44 pb-24 md:pt-60 md:pb-32">
+      <div className="container relative z-10 pt-32 pb-16 md:pt-44 md:pb-20">
         <div className="max-w-[660px]">
           {/* Gold accent line */}
           <div
@@ -39,7 +39,7 @@ export function HeroSection() {
             {t.hero.subline}
           </p>
           <div
-            className="mb-16 animate-reveal-up"
+            className="mb-12 animate-reveal-up"
             style={{ animationDelay: "600ms" }}
           >
             <Link

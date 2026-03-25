@@ -34,7 +34,7 @@ export default function Impressum() {
               <h2 className="text-foreground text-base font-medium mb-6 tracking-[-0.01em]">
                 {im.company}
               </h2>
-              <div className="text-muted-foreground text-sm leading-[1.8] mb-14">
+              <div className="text-muted-foreground text-sm leading-[1.8] mb-10">
                 {im.address.map((line) => (
                   <p key={line}>{line}</p>
                 ))}
@@ -42,7 +42,7 @@ export default function Impressum() {
             </ScrollReveal>
 
             <ScrollReveal delay={80}>
-              <div className="grid sm:grid-cols-2 gap-10 mb-14 pb-14 border-b border-border">
+              <div className="grid sm:grid-cols-2 gap-10 mb-10 pb-14 border-b border-border">
                 <div>
                   <p className="text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">Telefon</p>
                   <a
@@ -61,7 +61,7 @@ export default function Impressum() {
             </ScrollReveal>
 
             <ScrollReveal delay={120}>
-              <div className="mb-14 pb-14 border-b border-border">
+              <div className="mb-10 pb-14 border-b border-border">
                 <p className="text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">E-Mail</p>
                 <a
                   href={`mailto:${im.email}`}
@@ -74,7 +74,7 @@ export default function Impressum() {
             </ScrollReveal>
 
             <ScrollReveal delay={160}>
-              <div className="mb-14 pb-14 border-b border-border">
+              <div className="mb-10 pb-14 border-b border-border">
                 <p className="text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">
                   {im.representedBy}
                 </p>
@@ -83,7 +83,7 @@ export default function Impressum() {
             </ScrollReveal>
 
             <ScrollReveal delay={200}>
-              <div className="grid sm:grid-cols-2 gap-10 mb-14 pb-14 border-b border-border">
+              <div className="grid sm:grid-cols-2 gap-10 mb-10 pb-14 border-b border-border">
                 <div>
                   <p className="text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">
                     {im.registerLabel}
