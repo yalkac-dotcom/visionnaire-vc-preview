@@ -9,7 +9,7 @@ export default function Impressum() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-soft-ivory pt-36 pb-20 md:pt-44 md:pb-28">
+      <section className="bg-soft-ivory pt-20 pb-10 md:pt-28 md:pb-14">
         <div className="container">
           <p
             className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up"

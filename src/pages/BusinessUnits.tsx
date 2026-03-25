@@ -30,11 +30,11 @@ export default function BusinessUnits() {
       </section>
 
       {/* Unit panels */}
-      <section className="py-24 md:py-28 bg-background">
+      <section className="py-12 md:py-14 bg-background">
         <div className="container">
           {t.businessUnits.items.map((unit, i) => (
             <ScrollReveal key={unit.name} delay={i * 100}>
-              <div className={`grid md:grid-cols-12 gap-12 md:gap-24 ${i > 0 ? "mt-24 md:mt-32 pt-24 md:pt-32 border-t border-border/60" : ""}`}>
+              <div className={`grid md:grid-cols-12 gap-12 md:gap-24 ${i > 0 ? "mt-12 md:mt-16 pt-12 md:pt-16 border-t border-border/60" : ""}`}>
                 <div className="md:col-span-4">
                   <div className="w-10 h-[2px] bg-[hsl(var(--gold))]/50 mb-10" />
                   {unit.role && (
@@ -61,7 +61,7 @@ export default function BusinessUnits() {
       </section>
 
       {/* Domizil Visual Gallery */}
-      <section className="py-18 md:py-24 bg-soft-ivory">
+      <section className="py-10 md:py-12 bg-soft-ivory">
         <div className="container">
           <ScrollReveal>
             <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.businessUnits.galleryLabel ?? "Raumqualität"}</p>

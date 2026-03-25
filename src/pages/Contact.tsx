@@ -82,7 +82,7 @@ export default function Contact() {
 
       {/* Intro + Subject options */}
       {t.contact.introHeadline && (
-        <section className="py-18 md:py-24 bg-background">
+        <section className="py-10 md:py-12 bg-background">
           <div className="container">
             <div className="max-w-3xl">
               <ScrollReveal>
@@ -214,7 +214,7 @@ export default function Contact() {
       </section>
 
       {t.contact.closingHeadline && (
-        <section className="py-18 md:py-24 bg-soft-ivory">
+        <section className="py-10 md:py-12 bg-soft-ivory">
           <div className="container text-center">
             <ScrollReveal>
               <h3 className="text-foreground text-lg md:text-xl font-normal leading-[1.3] tracking-[-0.01em] mb-4">{t.contact.closingHeadline}</h3>

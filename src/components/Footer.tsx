@@ -6,7 +6,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-footer py-16 md:py-20">
+    <footer className="bg-footer py-10 md:py-12">
       <div className="container">
         {/* Nav links */}
         <div className="mb-6 pb-12 border-b border-white/12 flex flex-wrap gap-x-8 gap-y-3 text-[11.5px] uppercase tracking-[0.17em] font-[440]">

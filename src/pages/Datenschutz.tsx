@@ -8,7 +8,7 @@ export default function Datenschutz() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-soft-ivory pt-36 pb-20 md:pt-44 md:pb-28">
+      <section className="bg-soft-ivory pt-20 pb-10 md:pt-28 md:pb-14">
         <div className="container">
           <p
             className="text-brand-blue text-[11px] uppercase tracking-[0.2em] mb-5 animate-reveal-up"
@@ -26,7 +26,7 @@ export default function Datenschutz() {
       </section>
 
       {/* Content */}
-      <section className="py-18 md:py-24 bg-background">
+      <section className="py-10 md:py-12 bg-background">
         <div className="container">
           <div className="max-w-2xl">
             {ds.sections.map((section, i) => (
