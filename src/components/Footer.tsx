@@ -6,10 +6,10 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-footer py-10 md:py-12">
+    <footer className="bg-footer py-6 md:py-7">
       <div className="container">
         {/* Nav links */}
-        <div className="mb-6 pb-12 border-b border-white/12 flex flex-wrap gap-x-8 gap-y-3 text-[11.5px] uppercase tracking-[0.17em] font-[440]">
+        <div className="mb-4 pb-6 border-b border-white/12 flex flex-wrap gap-x-8 gap-y-3 text-[11.5px] uppercase tracking-[0.17em] font-[440]">
           <Link to="/leistungen" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navServices}</Link>
           <Link to="/unternehmensbereiche" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navBusinessUnits}</Link>
           <Link to="/ueber-uns" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navAbout}</Link>
@@ -18,14 +18,14 @@ export function Footer() {
         </div>
 
         {/* Domizil note */}
-        <div className="mb-6 pb-12 border-b border-white/10">
+        <div className="mb-4 pb-6 border-b border-white/10">
           <p className="text-white/55 text-[11px] tracking-[0.15em] uppercase font-[430]">
             {t.footer.domizilNote}:{" "}
             <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="text-[hsl(var(--gold-soft))] hover:text-[hsl(var(--gold))] transition-colors duration-200">{t.footer.domizilLink}</a>
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
             <p className="text-white/90 tracking-[0.3em] text-[13px] font-[450] mb-2">
               {t.footer.brand}<span className="text-white/50 ml-1.5 tracking-normal text-[11px] font-[420]">{t.footer.consulting}</span>
