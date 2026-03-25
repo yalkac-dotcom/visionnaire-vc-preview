@@ -67,7 +67,7 @@ export default function Contact() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-soft-ivory pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroContact} alt="Contact Visionnaire" className="w-full h-full object-cover opacity-[0.45]" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/15 via-transparent to-[hsl(var(--soft-ivory))]/35" />
@@ -110,7 +110,7 @@ export default function Contact() {
       )}
 
       {/* Form + Contact info */}
-      <section className="py-28 md:py-36 bg-cloud-neutral">
+      <section className="py-14 md:py-18 bg-cloud-neutral">
         <div className="container">
           <div className="grid md:grid-cols-12 gap-16 md:gap-20 max-w-5xl mx-auto">
             <div className="md:col-span-7">

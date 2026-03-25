@@ -17,7 +17,7 @@ export default function ServiceDetail() {
 
   return (
     <>
-      <section className="relative bg-soft-ivory pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         {heroImg && (
           <div className="absolute inset-0">
             <img src={heroImg} alt={service.title} className="w-full h-full object-cover opacity-[0.48]" loading="eager" />
@@ -30,7 +30,7 @@ export default function ServiceDetail() {
           </Link>
           <p className="text-[hsl(var(--gold))] text-[11px] uppercase tracking-[0.2em] font-medium mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{service.number}</p>
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-normal leading-[1.15] tracking-[-0.015em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "200ms" }}>{service.title}</h1>
-          <p className="text-foreground/70 text-[15px] md:text-base leading-[1.7] max-w-xl mb-12 animate-reveal-up" style={{ animationDelay: "350ms" }}>{service.desc}</p>
+          <p className="text-foreground/70 text-[15px] md:text-base leading-[1.7] max-w-xl mb-6 animate-reveal-up" style={{ animationDelay: "350ms" }}>{service.desc}</p>
           <div className="flex flex-wrap gap-4 animate-reveal-up" style={{ animationDelay: "500ms" }}>
             <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.servicePage.ctaPrimary}</Link>
           </div>
@@ -38,7 +38,7 @@ export default function ServiceDetail() {
         <HeroScrollIndicator />
       </section>
 
-      <section className="py-28 md:py-36 bg-background">
+      <section className="py-14 md:py-18 bg-background">
         <div className="container">
           <ScrollReveal>
             <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.servicePage.whatWeSupport}</p>
@@ -74,14 +74,14 @@ export default function ServiceDetail() {
         </div>
       </section>
 
-      <section className="relative py-28 md:py-36 bg-soft-ivory overflow-hidden">
+      <section className="relative py-14 md:py-18 bg-soft-ivory overflow-hidden">
         <div className="absolute inset-0">
           <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.20]" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/35 via-transparent to-[hsl(var(--soft-ivory))]/50" />
         </div>
         <div className="container text-center relative z-10">
           <ScrollReveal>
-            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] mb-12">{t.contact.headline}</h2>
+            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] mb-6">{t.contact.headline}</h2>
           </ScrollReveal>
           <ScrollReveal delay={100}>
             <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.cta.projectCta}</Link>

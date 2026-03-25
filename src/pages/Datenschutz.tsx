@@ -31,7 +31,7 @@ export default function Datenschutz() {
           <div className="max-w-2xl">
             {ds.sections.map((section, i) => (
               <ScrollReveal key={section.title} delay={i * 40}>
-                <div className="mb-12 last:mb-0">
+                <div className="mb-6 last:mb-0">
                   <div className="flex items-start gap-4 mb-6">
                     <div className="w-8 h-px bg-border mt-[0.6em] shrink-0" />
                     <h2 className="text-foreground text-base font-medium tracking-[-0.01em] leading-[1.4]">

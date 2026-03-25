@@ -27,7 +27,7 @@ export default function Impressum() {
       </section>
 
       {/* Content */}
-      <section className="py-28 md:py-36 bg-background">
+      <section className="py-14 md:py-18 bg-background">
         <div className="container">
           <div className="max-w-xl">
             <ScrollReveal>
