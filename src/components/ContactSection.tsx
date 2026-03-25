@@ -7,7 +7,7 @@ export function ContactSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="contact" className="py-20 md:py-24 bg-background">
+    <section id="contact" className="py-10 md:py-12 bg-background">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <ScrollReveal>
@@ -28,7 +28,7 @@ export function ContactSection() {
           </ScrollReveal>
 
           <ScrollReveal delay={240}>
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <div className="flex flex-wrap justify-center gap-4 mb-6">
               <Link
                 to="/kontakt"
                 className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]"

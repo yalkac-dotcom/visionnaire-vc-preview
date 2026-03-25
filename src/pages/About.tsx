@@ -12,7 +12,7 @@ export default function About() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-soft-ivory pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroAbout} alt="Visionnaire Consulting" className="w-full h-full object-cover opacity-[0.45]" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/15 via-transparent to-[hsl(var(--soft-ivory))]/35" />
@@ -20,7 +20,7 @@ export default function About() {
         <div className="container relative z-10">
           <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{t.about.label}</p>
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-normal leading-[1.15] tracking-[-0.015em] max-w-3xl mb-7 animate-reveal-up" style={{ animationDelay: "250ms" }}>{t.about.headline}</h1>
-          <p className="text-foreground/70 text-[15px] md:text-base leading-[1.7] max-w-xl mb-12 animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.about.subline}</p>
+          <p className="text-foreground/70 text-[15px] md:text-base leading-[1.7] max-w-xl mb-6 animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.about.subline}</p>
           <div className="flex flex-wrap gap-4 animate-reveal-up" style={{ animationDelay: "550ms" }}>
             <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-7 py-3 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]">{t.cta.projectCta}</Link>
             <Link to="/kontakt" className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-7 py-3 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]">{t.cta.contactCta}</Link>
@@ -31,7 +31,7 @@ export default function About() {
 
       {/* Führung & Antrieb – persönlicher Einstieg */}
       {t.about.leadership && t.about.attitude && (
-        <section className="py-28 md:py-36 bg-background">
+        <section className="py-14 md:py-18 bg-background">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-5">
               {/* Unsere Führung */}
@@ -56,7 +56,7 @@ export default function About() {
       )}
 
       {/* Approach */}
-      <section className="py-20 md:py-24 bg-cloud-neutral">
+      <section className="py-10 md:py-12 bg-cloud-neutral">
         <div className="container">
           <div className="grid md:grid-cols-12 gap-12 md:gap-16">
             <div className="md:col-span-4">
@@ -78,7 +78,7 @@ export default function About() {
       </section>
 
       {/* Thinking */}
-      <section className="py-20 md:py-24 bg-background">
+      <section className="py-10 md:py-12 bg-background">
         <div className="container">
           <div className="max-w-3xl">
             <ScrollReveal>
@@ -100,7 +100,7 @@ export default function About() {
 
       {/* How we work */}
       {t.about.working && (
-        <section className="py-20 md:py-24 bg-cloud-neutral">
+        <section className="py-10 md:py-12 bg-cloud-neutral">
           <div className="container">
             <ScrollReveal>
               <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.about.working.label}</p>
@@ -124,7 +124,7 @@ export default function About() {
       )}
 
       {/* International perspective */}
-      <section className="py-20 md:py-24 bg-soft-ivory">
+      <section className="py-10 md:py-12 bg-soft-ivory">
         <div className="container">
           <div className="grid md:grid-cols-12 gap-12 md:gap-16">
             <div className="md:col-span-4">
@@ -144,7 +144,7 @@ export default function About() {
 
       {/* Brand universe */}
       {t.about.connection && (
-        <section className="py-20 md:py-24 bg-background">
+        <section className="py-10 md:py-12 bg-background">
           <div className="container">
             <div className="max-w-3xl">
               <ScrollReveal>
@@ -154,7 +154,7 @@ export default function About() {
                 <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] mb-8">{t.about.connection.headline}</h2>
               </ScrollReveal>
               <ScrollReveal delay={160}>
-                <p className="text-foreground/65 text-[15px] md:text-base leading-[1.8] mb-12">{t.about.connection.text}</p>
+                <p className="text-foreground/65 text-[15px] md:text-base leading-[1.8] mb-6">{t.about.connection.text}</p>
               </ScrollReveal>
               <ScrollReveal delay={220}>
                 <Link to="/unternehmensbereiche" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
@@ -167,7 +167,7 @@ export default function About() {
       )}
 
       {/* CTA */}
-      <section className="relative py-28 md:py-36 bg-cloud-neutral overflow-hidden">
+      <section className="relative py-14 md:py-18 bg-cloud-neutral overflow-hidden">
         <div className="absolute inset-0">
           <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.22]" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--cloud-neutral))]/25 via-transparent to-[hsl(var(--cloud-neutral))]/40" />
@@ -177,7 +177,7 @@ export default function About() {
             <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] mb-5">{t.contact.closingHeadline}</h2>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <p className="text-foreground/60 text-[15px] leading-[1.7] max-w-lg mx-auto mb-12">{t.contact.closingText}</p>
+            <p className="text-foreground/60 text-[15px] leading-[1.7] max-w-lg mx-auto mb-6">{t.contact.closingText}</p>
           </ScrollReveal>
           <ScrollReveal delay={160}>
             <div className="flex flex-wrap justify-center gap-4">

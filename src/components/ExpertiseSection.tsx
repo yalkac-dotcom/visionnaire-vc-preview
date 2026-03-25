@@ -5,7 +5,7 @@ export function ExpertiseSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="expertise" className="py-20 md:py-24 bg-background">
+    <section id="expertise" className="py-10 md:py-12 bg-background">
       <div className="container">
         <div className="max-w-3xl mx-auto">
           <ScrollReveal>

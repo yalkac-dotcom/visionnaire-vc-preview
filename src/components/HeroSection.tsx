@@ -19,7 +19,7 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 pt-32 pb-16 md:pt-44 md:pb-20">
+      <div className="container relative z-10 pt-24 pb-12 md:pt-32 md:pb-16">
         <div className="max-w-[660px]">
           {/* Gold accent line */}
           <div
@@ -33,13 +33,13 @@ export function HeroSection() {
             {t.hero.headline}
           </h1>
           <p
-            className="text-white/80 text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-12 animate-reveal-up"
+            className="text-white/80 text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-6 animate-reveal-up"
             style={{ animationDelay: "400ms" }}
           >
             {t.hero.subline}
           </p>
           <div
-            className="mb-12 animate-reveal-up"
+            className="mb-6 animate-reveal-up"
             style={{ animationDelay: "600ms" }}
           >
             <Link

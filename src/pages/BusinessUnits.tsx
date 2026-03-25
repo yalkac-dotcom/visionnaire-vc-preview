@@ -16,7 +16,7 @@ export default function BusinessUnits() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-soft-ivory pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
+      <section className="relative bg-soft-ivory pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroDomizil} alt="Premium business environment" className="w-full h-full object-cover opacity-[0.45]" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/15 via-transparent to-[hsl(var(--soft-ivory))]/35" />
@@ -30,11 +30,11 @@ export default function BusinessUnits() {
       </section>
 
       {/* Unit panels */}
-      <section className="py-24 md:py-28 bg-background">
+      <section className="py-12 md:py-14 bg-background">
         <div className="container">
           {t.businessUnits.items.map((unit, i) => (
             <ScrollReveal key={unit.name} delay={i * 100}>
-              <div className={`grid md:grid-cols-12 gap-12 md:gap-24 ${i > 0 ? "mt-24 md:mt-32 pt-24 md:pt-32 border-t border-border/60" : ""}`}>
+              <div className={`grid md:grid-cols-12 gap-12 md:gap-24 ${i > 0 ? "mt-12 md:mt-16 pt-12 md:pt-16 border-t border-border/60" : ""}`}>
                 <div className="md:col-span-4">
                   <div className="w-10 h-[2px] bg-[hsl(var(--gold))]/50 mb-10" />
                   {unit.role && (
@@ -61,11 +61,11 @@ export default function BusinessUnits() {
       </section>
 
       {/* Domizil Visual Gallery */}
-      <section className="py-18 md:py-24 bg-soft-ivory">
+      <section className="py-10 md:py-12 bg-soft-ivory">
         <div className="container">
           <ScrollReveal>
             <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.businessUnits.galleryLabel ?? "Raumqualität"}</p>
-            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] max-w-lg mb-12">{t.businessUnits.galleryHeadline ?? "Repräsentative Arbeitsumgebungen auf höchstem Niveau"}</h2>
+            <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] max-w-lg mb-6">{t.businessUnits.galleryHeadline ?? "Repräsentative Arbeitsumgebungen auf höchstem Niveau"}</h2>
           </ScrollReveal>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
             {[
@@ -92,7 +92,7 @@ export default function BusinessUnits() {
       </section>
 
       {t.businessUnits.architectureLabel && (
-        <section className="py-20 md:py-24 bg-cloud-neutral">
+        <section className="py-10 md:py-12 bg-cloud-neutral">
           <div className="container">
             <div className="grid md:grid-cols-12 gap-12 md:gap-16">
               <div className="md:col-span-4">
@@ -112,7 +112,7 @@ export default function BusinessUnits() {
       )}
 
       {/* CTA */}
-      <section className="relative py-28 md:py-36 bg-soft-ivory overflow-hidden">
+      <section className="relative py-14 md:py-18 bg-soft-ivory overflow-hidden">
         <div className="absolute inset-0">
           <img src={ctaAmbient} alt="" className="w-full h-full object-cover opacity-[0.24]" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/25 via-transparent to-[hsl(var(--soft-ivory))]/40" />
@@ -122,7 +122,7 @@ export default function BusinessUnits() {
             <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] mb-5">{t.contact.headline}</h2>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <p className="text-foreground/60 text-[15px] leading-[1.7] max-w-md mx-auto mb-12">{t.contact.text}</p>
+            <p className="text-foreground/60 text-[15px] leading-[1.7] max-w-md mx-auto mb-6">{t.contact.text}</p>
           </ScrollReveal>
           <ScrollReveal delay={160}>
             <div className="flex flex-wrap justify-center gap-4">
