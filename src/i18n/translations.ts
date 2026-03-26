@@ -290,6 +290,35 @@ export const translations: Record<Locale, Translations> = {
         ]},
       ],
     },
+    notFound: {
+      headline: "Seite nicht gefunden",
+      text: "Die angeforderte Seite existiert nicht oder wurde verschoben. Bitte prüfen Sie die URL oder kehren Sie zur Startseite zurück.",
+      ctaHome: "Zur Startseite",
+      ctaServices: "Unsere Leistungen",
+    },
+    a11y: {
+      scrollDown: "Nach unten scrollen",
+      backToTop: "Zurück nach oben",
+      scrollPage: "Seite scrollen",
+      openMenu: "Menü öffnen",
+      closeMenu: "Menü schließen",
+      changeLanguage: "Sprache wechseln",
+    },
+    process: {
+      label: "So arbeiten wir",
+      headline: "Vom Erstgespräch zur Umsetzung",
+      steps: [
+        { title: "Erstgespräch", desc: "Wir lernen Ihr Vorhaben kennen, ordnen die Ausgangslage ein und identifizieren die entscheidenden Fragestellungen." },
+        { title: "Analyse & Einordnung", desc: "Wir analysieren Markt, Wettbewerb und interne Strukturen — und schaffen eine belastbare Grundlage für strategische Entscheidungen." },
+        { title: "Strategieentwicklung", desc: "Wir erarbeiten eine klare Richtung mit konkreten Handlungsfeldern, Prioritäten und einem realistischen Umsetzungsrahmen." },
+        { title: "Begleitung & Umsetzung", desc: "Wir begleiten die Umsetzung mit operativer Substanz — von der Markteinführung bis zur organisatorischen Verankerung." },
+      ],
+    },
+    seo: {
+      defaultTitle: "Visionnaire Consulting — Strategie, Marke & Internationale Entwicklung",
+      defaultDescription: "Visionnaire Consulting verbindet strategische Beratung, Markenentwicklung und internationale Geschäftslösungen für anspruchsvolle Unternehmen und Vorhaben.",
+      titleSuffix: "Visionnaire Consulting",
+    },
   },
   en: {
     nav: {
