@@ -274,6 +274,8 @@ export const translationsEs: Translations = {
     note: "Acogemos con especial interés consultas sobre proyectos estratégicos, temas de marca y posicionamiento, cuestiones de transformación y desarrollos empresariales premium.",
     closingHeadline: "Tratamos las consultas con cuidado y discreción",
     closingText: "Cada consulta se revisa con la debida atención. Esperamos con interés el intercambio.",
+    formConsent: "Consiento que mis datos sean tratados para gestionar mi consulta. Más información en la",
+    formConsentLink: "Política de Privacidad",
   },
   impressum: {
     label: "Aviso Legal",
