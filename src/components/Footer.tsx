@@ -1,5 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Link } from "react-router-dom";
+import visionnaireLogoSrc from "@/assets/visionnaire-logo.png";
 
 export function Footer() {
   const { t } = useLanguage();
