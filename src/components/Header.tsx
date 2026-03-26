@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import type { Locale } from "@/i18n/types";
 import { getLocalizedPath } from "@/lib/route-localization";
+import visionnaireLogoSrc from "@/assets/visionnaire-logo.png";
 
 const localeOptions: { code: Locale; label: string }[] = [
   { code: "de", label: "DE" },
