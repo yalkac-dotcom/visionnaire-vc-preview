@@ -1,4 +1,8 @@
+import { useLanguage } from "@/i18n/LanguageContext";
+
 export function HeroScrollIndicator() {
+  const { t } = useLanguage();
+
   const scrollDown = () => {
     window.scrollBy({ top: window.innerHeight * 0.85, behavior: "smooth" });
   };
@@ -7,7 +11,7 @@ export function HeroScrollIndicator() {
     <div className="absolute bottom-8 left-0 right-0 z-10 flex justify-center">
       <button
         onClick={scrollDown}
-        aria-label="Scroll down"
+        aria-label={t.a11y.scrollDown}
         className="group"
         type="button"
       >

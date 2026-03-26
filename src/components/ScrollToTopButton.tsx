@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export function ScrollToTopButton() {
+  const { t } = useLanguage();
   const [visible, setVisible] = useState(false);
   const [atBottom, setAtBottom] = useState(false);
 
@@ -29,7 +31,7 @@ export function ScrollToTopButton() {
   return (
     <button
       onClick={handleClick}
-      aria-label={atBottom ? "Back to top" : "Scroll down"}
+      aria-label={atBottom ? t.a11y.backToTop : t.a11y.scrollPage}
       className={`fixed bottom-20 right-4 md:bottom-8 md:right-8 z-40 w-11 h-11 md:w-12 md:h-12 flex items-center justify-center bg-primary text-primary-foreground rounded-full shadow-[0_4px_16px_-3px_rgba(0,0,0,0.25)] transition-all duration-300 active:scale-[0.93] hover:bg-accent hover:shadow-[0_6px_24px_-4px_rgba(0,0,0,0.3)] ${
         visible
           ? "opacity-100 translate-y-0"

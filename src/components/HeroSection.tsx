@@ -11,7 +11,7 @@ export function HeroSection() {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Premium corporate architecture"
+          alt={t.hero.headline}
           className="w-full h-full object-cover opacity-[0.65]"
           loading="eager"
         />
@@ -33,13 +33,13 @@ export function HeroSection() {
             {t.hero.headline}
           </h1>
           <p
-            className="text-white/80 text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-6 animate-reveal-up"
+            className="text-white/80 text-[15px] md:text-[16px] leading-[1.75] max-w-[520px] mb-8 animate-reveal-up"
             style={{ animationDelay: "400ms" }}
           >
             {t.hero.subline}
           </p>
           <div
-            className="mb-6 animate-reveal-up"
+            className="flex flex-wrap gap-4 mb-6 animate-reveal-up"
             style={{ animationDelay: "600ms" }}
           >
             <Link
@@ -48,9 +48,15 @@ export function HeroSection() {
             >
               {t.hero.cta}
             </Link>
+            <Link
+              to="/leistungen"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-white/30 text-white/85 hover:text-white hover:border-white/50 px-8 py-3.5 transition-all duration-200 active:scale-[0.97]"
+            >
+              {t.hero.ctaSecondary}
+            </Link>
           </div>
           <p
-            className="text-white/70 text-[11px] tracking-[0.2em] uppercase font-[470] mt-6 animate-reveal-up"
+            className="text-white/70 text-[12px] tracking-[0.2em] uppercase font-[470] mt-6 animate-reveal-up"
             style={{ animationDelay: "800ms" }}
           >
             {t.hero.tagline}
@@ -62,7 +68,7 @@ export function HeroSection() {
       <div className="absolute bottom-12 left-0 right-0 z-10 flex justify-center">
         <a
           href="#expertise"
-          aria-label="Scroll down"
+          aria-label={t.a11y.scrollDown}
           className="group"
         >
           <div className="w-[28px] h-[44px] rounded-full border-2 border-white/50 flex items-start justify-center pt-[9px] transition-all duration-300 group-hover:border-white/80 group-active:scale-[0.95]">
