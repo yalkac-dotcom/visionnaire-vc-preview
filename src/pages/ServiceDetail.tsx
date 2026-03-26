@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
+import { SEOHead } from "@/components/SEOHead";
 import { ArrowLeft } from "lucide-react";
 import { serviceImages } from "@/lib/service-images";
 import ctaAmbient from "@/assets/cta-ambient.jpg";
