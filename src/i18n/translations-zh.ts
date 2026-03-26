@@ -125,7 +125,7 @@ export const translationsZh: Translations = {
     tagline: "咨询 · 战略 · 品牌 · 国际发展",
     headline: "植根企业的咨询。精准构思，清晰执行。",
     subline: "Visionnaire Consulting将战略清晰与运营实力相结合——涵盖定位、品牌、产品战略与国际业务拓展。",
-    cta: "洽谈项目", ctaSecondary: "联系我们",
+    cta: "洽谈项目", ctaSecondary: "探索服务",
   },
   expertise: {
     label: "我们的专长",
@@ -217,6 +217,8 @@ export const translationsZh: Translations = {
     subjectDescriptions: ["针对需要战略精炼、结构发展或高端定位的项目。", "针对战略、转型、品牌、增长或关联业务领域的具体咨询需求。", "针对初步评估、进一步信息或综合主题。"],
     noteHeadline: "精选主题与高要求情境", note: "我们特别欢迎有关战略项目、品牌与定位主题、转型问题和高端企业发展的咨询。",
     closingHeadline: "我们以审慎和保密态度处理每一项咨询", closingText: "每项咨询都将得到应有的关注。期待与您交流。",
+    formConsent: "我同意为处理我的咨询而使用我的数据。更多信息请参阅",
+    formConsentLink: "隐私政策",
   },
   impressum: {
     label: "法律声明", headline: "法律声明", company: "Visionnaire Consulting GmbH",
@@ -243,4 +245,13 @@ export const translationsZh: Translations = {
       { title: "3. 您的权利", content: ["根据适用法律，您享有访问权、更正权、删除权、限制处理权、数据可携带权以及对个人数据处理的异议权。"] },
     ],
   },
+  notFound: { headline: "页面未找到", text: "请求的页面不存在或已移动。请检查URL或返回首页。", ctaHome: "返回首页", ctaServices: "我们的服务" },
+  a11y: { scrollDown: "向下滚动", backToTop: "返回顶部", scrollPage: "滚动页面", openMenu: "打开菜单", closeMenu: "关闭菜单", changeLanguage: "切换语言" },
+  process: { label: "我们的工作方式", headline: "从初次会谈到落地实施", steps: [
+    { title: "初次会谈", desc: "了解您的项目，评估现状，识别关键问题。" },
+    { title: "分析与定向", desc: "分析市场、竞争和内部结构——为战略决策创建坚实基础。" },
+    { title: "战略制定", desc: "制定明确方向，包含具体行动领域、优先事项和切实可行的实施框架。" },
+    { title: "陪伴与执行", desc: "以实质性的运营支持陪伴执行——从市场推出到组织落地。" },
+  ]},
+  seo: { defaultTitle: "Visionnaire Consulting — 战略、品牌与国际发展", defaultDescription: "Visionnaire Consulting将战略咨询、品牌发展和国际商业解决方案相结合。", titleSuffix: "Visionnaire Consulting" },
 };

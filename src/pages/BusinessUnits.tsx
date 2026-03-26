@@ -1,6 +1,7 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
+import { SEOHead } from "@/components/SEOHead";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroDomizil from "@/assets/hero-domizil.jpg";
@@ -15,6 +16,7 @@ export default function BusinessUnits() {
 
   return (
     <>
+      <SEOHead title={t.businessUnits.headline} description={t.businessUnits.subline} />
       {/* Hero */}
       <section className="relative bg-soft-ivory pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         <div className="absolute inset-0">

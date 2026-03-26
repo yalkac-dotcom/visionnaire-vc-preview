@@ -29,7 +29,7 @@ export const translations: Record<Locale, Translations> = {
       headline: "Unternehmerische Beratung. Präzise gedacht. Klar umgesetzt.",
       subline: "Visionnaire Consulting verbindet strategische Klarheit mit operativer Substanz — in Positionierung, Marke, Produktstrategie und internationaler Geschäftsentwicklung.",
       cta: "Projekt besprechen",
-      ctaSecondary: "Kontakt aufnehmen",
+      ctaSecondary: "Leistungen entdecken",
     },
     expertise: {
       label: "Unsere Expertise",
@@ -184,6 +184,8 @@ export const translations: Record<Locale, Translations> = {
       note: "Wir freuen uns insbesondere über Anfragen zu strategischen Vorhaben, Marken- und Positionierungsthemen, Transformationsfragen sowie hochwertigen unternehmerischen Entwicklungen.",
       closingHeadline: "Wir behandeln Anfragen mit Sorgfalt und Diskretion",
       closingText: "Jede Anfrage wird mit der gebotenen Aufmerksamkeit geprüft. Wir freuen uns auf den Austausch.",
+      formConsent: "Ich willige ein, dass meine Angaben zur Bearbeitung meiner Anfrage verarbeitet werden. Weitere Informationen finde ich in der",
+      formConsentLink: "Datenschutzerklärung",
     },
     impressum: {
       label: "Impressum",
@@ -288,6 +290,35 @@ export const translations: Record<Locale, Translations> = {
         ]},
       ],
     },
+    notFound: {
+      headline: "Seite nicht gefunden",
+      text: "Die angeforderte Seite existiert nicht oder wurde verschoben. Bitte prüfen Sie die URL oder kehren Sie zur Startseite zurück.",
+      ctaHome: "Zur Startseite",
+      ctaServices: "Unsere Leistungen",
+    },
+    a11y: {
+      scrollDown: "Nach unten scrollen",
+      backToTop: "Zurück nach oben",
+      scrollPage: "Seite scrollen",
+      openMenu: "Menü öffnen",
+      closeMenu: "Menü schließen",
+      changeLanguage: "Sprache wechseln",
+    },
+    process: {
+      label: "So arbeiten wir",
+      headline: "Vom Erstgespräch zur Umsetzung",
+      steps: [
+        { title: "Erstgespräch", desc: "Wir lernen Ihr Vorhaben kennen, ordnen die Ausgangslage ein und identifizieren die entscheidenden Fragestellungen." },
+        { title: "Analyse & Einordnung", desc: "Wir analysieren Markt, Wettbewerb und interne Strukturen — und schaffen eine belastbare Grundlage für strategische Entscheidungen." },
+        { title: "Strategieentwicklung", desc: "Wir erarbeiten eine klare Richtung mit konkreten Handlungsfeldern, Prioritäten und einem realistischen Umsetzungsrahmen." },
+        { title: "Begleitung & Umsetzung", desc: "Wir begleiten die Umsetzung mit operativer Substanz — von der Markteinführung bis zur organisatorischen Verankerung." },
+      ],
+    },
+    seo: {
+      defaultTitle: "Visionnaire Consulting — Strategie, Marke & Internationale Entwicklung",
+      defaultDescription: "Visionnaire Consulting verbindet strategische Beratung, Markenentwicklung und internationale Geschäftslösungen für anspruchsvolle Unternehmen und Vorhaben.",
+      titleSuffix: "Visionnaire Consulting",
+    },
   },
   en: {
     nav: {
@@ -307,7 +338,7 @@ export const translations: Record<Locale, Translations> = {
       headline: "Entrepreneurial consulting. Precisely conceived. Clearly executed.",
       subline: "Visionnaire Consulting combines strategic clarity with operational substance — in positioning, brand, product strategy and international business development.",
       cta: "Discuss project",
-      ctaSecondary: "Get in touch",
+      ctaSecondary: "Explore services",
     },
     expertise: {
       label: "Our Expertise",
@@ -462,6 +493,8 @@ export const translations: Record<Locale, Translations> = {
       note: "We particularly welcome enquiries regarding strategic ventures, brand and positioning topics, transformation questions and premium entrepreneurial developments.",
       closingHeadline: "We treat enquiries with care and discretion",
       closingText: "Every enquiry is reviewed with due attention. We look forward to the exchange.",
+      formConsent: "I consent to my data being processed to handle my enquiry. Further information can be found in the",
+      formConsentLink: "Privacy Policy",
     },
     impressum: {
       label: "Legal Notice",
@@ -565,6 +598,35 @@ export const translations: Record<Locale, Translations> = {
           "We reserve the right to amend this privacy policy where necessary due to changes in legal, technical or organisational conditions. The version published on this website shall apply at all times.",
         ]},
       ],
+    },
+    notFound: {
+      headline: "Page not found",
+      text: "The requested page does not exist or has been moved. Please check the URL or return to the homepage.",
+      ctaHome: "Return to homepage",
+      ctaServices: "Our services",
+    },
+    a11y: {
+      scrollDown: "Scroll down",
+      backToTop: "Back to top",
+      scrollPage: "Scroll page",
+      openMenu: "Open menu",
+      closeMenu: "Close menu",
+      changeLanguage: "Change language",
+    },
+    process: {
+      label: "How we work",
+      headline: "From initial conversation to implementation",
+      steps: [
+        { title: "Initial conversation", desc: "We learn about your venture, assess the starting position and identify the decisive questions." },
+        { title: "Analysis & orientation", desc: "We analyse markets, competition and internal structures — creating a resilient foundation for strategic decisions." },
+        { title: "Strategy development", desc: "We develop a clear direction with concrete action areas, priorities and a realistic implementation framework." },
+        { title: "Guidance & execution", desc: "We accompany execution with operational substance — from market launch to organisational anchoring." },
+      ],
+    },
+    seo: {
+      defaultTitle: "Visionnaire Consulting — Strategy, Brand & International Development",
+      defaultDescription: "Visionnaire Consulting combines strategic advisory, brand development and international business solutions for discerning companies and ventures.",
+      titleSuffix: "Visionnaire Consulting",
     },
   },
   it: translationsIt,

@@ -1,5 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { SEOHead } from "@/components/SEOHead";
 
 export default function Datenschutz() {
   const { t } = useLanguage();
@@ -7,6 +8,7 @@ export default function Datenschutz() {
 
   return (
     <>
+      <SEOHead title={ds.headline} />
       {/* Hero */}
       <section className="bg-soft-ivory pt-20 pb-10 md:pt-28 md:pb-14">
         <div className="container">

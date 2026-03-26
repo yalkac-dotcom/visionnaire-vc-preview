@@ -150,7 +150,7 @@ export const translationsEs: Translations = {
     headline: "Consultoría empresarial. Pensada con precisión. Ejecutada con claridad.",
     subline: "Visionnaire Consulting combina claridad estratégica con sustancia operativa — en posicionamiento, marca, estrategia de producto y desarrollo empresarial internacional.",
     cta: "Hablar de un proyecto",
-    ctaSecondary: "Contactarnos",
+    ctaSecondary: "Descubrir servicios",
   },
   expertise: {
     label: "Nuestra Expertise",
@@ -274,6 +274,8 @@ export const translationsEs: Translations = {
     note: "Acogemos con especial interés consultas sobre proyectos estratégicos, temas de marca y posicionamiento, cuestiones de transformación y desarrollos empresariales premium.",
     closingHeadline: "Tratamos las consultas con cuidado y discreción",
     closingText: "Cada consulta se revisa con la debida atención. Esperamos con interés el intercambio.",
+    formConsent: "Consiento que mis datos sean tratados para gestionar mi consulta. Más información en la",
+    formConsentLink: "Política de Privacidad",
   },
   impressum: {
     label: "Aviso Legal",
@@ -308,4 +310,13 @@ export const translationsEs: Translations = {
       { title: "3. Sus derechos", content: ["De acuerdo con la normativa vigente, usted tiene derecho de acceso, rectificación, supresión, limitación del tratamiento, portabilidad de datos y oposición al tratamiento de sus datos personales."] },
     ],
   },
+  notFound: { headline: "Página no encontrada", text: "La página solicitada no existe o ha sido movida. Por favor, compruebe la URL o vuelva a la página principal.", ctaHome: "Página principal", ctaServices: "Nuestros servicios" },
+  a11y: { scrollDown: "Desplazar hacia abajo", backToTop: "Volver arriba", scrollPage: "Desplazar página", openMenu: "Abrir menú", closeMenu: "Cerrar menú", changeLanguage: "Cambiar idioma" },
+  process: { label: "Cómo trabajamos", headline: "De la primera conversación a la ejecución", steps: [
+    { title: "Conversación inicial", desc: "Conocemos su proyecto, evaluamos la situación inicial e identificamos las cuestiones decisivas." },
+    { title: "Análisis y orientación", desc: "Analizamos mercado, competencia y estructuras internas — creando una base sólida para decisiones estratégicas." },
+    { title: "Desarrollo estratégico", desc: "Desarrollamos una dirección clara con campos de acción concretos, prioridades y un marco de ejecución realista." },
+    { title: "Acompañamiento y ejecución", desc: "Acompañamos la ejecución con sustancia operativa — del lanzamiento al anclaje organizativo." },
+  ]},
+  seo: { defaultTitle: "Visionnaire Consulting — Estrategia, Marca y Desarrollo Internacional", defaultDescription: "Visionnaire Consulting combina consultoría estratégica, desarrollo de marca y soluciones empresariales internacionales para empresas y proyectos exigentes.", titleSuffix: "Visionnaire Consulting" },
 };

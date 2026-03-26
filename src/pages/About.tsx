@@ -1,6 +1,7 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
+import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import heroAbout from "@/assets/hero-about.jpg";
@@ -11,6 +12,7 @@ export default function About() {
 
   return (
     <>
+      <SEOHead title={t.about.headline} description={t.about.subline} />
       {/* Hero */}
       <section className="relative bg-soft-ivory pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         <div className="absolute inset-0">

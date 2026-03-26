@@ -141,7 +141,7 @@ export function Header() {
               </div>
             )}
           </div>
-          <button onClick={() => setMobileOpen(!mobileOpen)} className="text-foreground/60 p-1">{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
+          <button onClick={() => setMobileOpen(!mobileOpen)} aria-label={mobileOpen ? t.a11y.closeMenu : t.a11y.openMenu} className="text-foreground/60 p-1">{mobileOpen ? <X size={20} /> : <Menu size={20} />}</button>
         </div>
       </div>
 

@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
+import { SEOHead } from "@/components/SEOHead";
 import { ArrowLeft } from "lucide-react";
 import { serviceImages } from "@/lib/service-images";
 import ctaAmbient from "@/assets/cta-ambient.jpg";
@@ -17,6 +18,7 @@ export default function ServiceDetail() {
 
   return (
     <>
+      <SEOHead title={service.title} description={service.desc} />
       <section className="relative bg-soft-ivory pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         {heroImg && (
           <div className="absolute inset-0">

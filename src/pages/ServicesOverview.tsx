@@ -1,6 +1,7 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
+import { SEOHead } from "@/components/SEOHead";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroServices from "@/assets/hero-services.jpg";
@@ -10,6 +11,7 @@ export default function ServicesOverview() {
 
   return (
     <>
+      <SEOHead title={t.services.headline} description={t.services.subline} />
       <section className="relative bg-soft-ivory pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroServices} alt="Strategic consulting environment" className="w-full h-full object-cover opacity-[0.45]" loading="eager" />

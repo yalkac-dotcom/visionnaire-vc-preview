@@ -125,7 +125,7 @@ export const translationsJa: Translations = {
     tagline: "コンサルティング · 戦略 · ブランド · 国際展開",
     headline: "経営に根ざしたコンサルティング。精緻に構想し、明確に実行する。",
     subline: "Visionnaire Consultingは、戦略的明晰さと実務的基盤を統合し、ポジショニング、ブランド、プロダクト戦略、国際事業開発を支援します。",
-    cta: "プロジェクトのご相談", ctaSecondary: "お問い合わせ",
+    cta: "プロジェクトのご相談", ctaSecondary: "サービスを見る",
   },
   expertise: {
     label: "私たちの専門性",
@@ -222,6 +222,8 @@ export const translationsJa: Translations = {
     note: "戦略的事業、ブランド・ポジショニングテーマ、トランスフォーメーション課題、プレミアムな起業家的発展に関するお問い合わせを特に歓迎します。",
     closingHeadline: "お問い合わせは慎重かつディスクリートに対応します",
     closingText: "すべてのお問い合わせは適切な注意をもって検討されます。対話を楽しみにしています。",
+    formConsent: "お問い合わせの処理のためにデータが使用されることに同意します。詳細は",
+    formConsentLink: "プライバシーポリシー",
   },
   impressum: {
     label: "法的情報", headline: "法的情報", company: "Visionnaire Consulting GmbH",
@@ -249,4 +251,13 @@ export const translationsJa: Translations = {
       { title: "3. お客様の権利", content: ["適用法に基づき、お客様にはアクセス権、訂正権、削除権、処理制限権、データポータビリティ権、および個人データの処理に対する異議申立権があります。"] },
     ],
   },
+  notFound: { headline: "ページが見つかりません", text: "リクエストされたページは存在しないか、移動されました。URLをご確認いただくか、ホームページにお戻りください。", ctaHome: "ホームページへ", ctaServices: "サービス一覧" },
+  a11y: { scrollDown: "下にスクロール", backToTop: "トップに戻る", scrollPage: "ページをスクロール", openMenu: "メニューを開く", closeMenu: "メニューを閉じる", changeLanguage: "言語を変更" },
+  process: { label: "私たちの進め方", headline: "初回面談から実行まで", steps: [
+    { title: "初回面談", desc: "プロジェクトを把握し、現状を評価し、重要な課題を特定します。" },
+    { title: "分析と方向づけ", desc: "市場、競合、内部構造を分析し、戦略的意思決定のための確かな基盤を構築します。" },
+    { title: "戦略策定", desc: "具体的なアクション領域、優先事項、現実的な実行フレームワークを備えた明確な方向性を策定します。" },
+    { title: "伴走と実行", desc: "市場投入から組織への定着まで、実質的なオペレーション支援で実行を伴走します。" },
+  ]},
+  seo: { defaultTitle: "Visionnaire Consulting — 戦略、ブランド、国際展開", defaultDescription: "Visionnaire Consultingは戦略コンサルティング、ブランド開発、国際ビジネスソリューションを提供します。", titleSuffix: "Visionnaire Consulting" },
 };

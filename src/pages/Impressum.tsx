@@ -1,5 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { SEOHead } from "@/components/SEOHead";
 import { Mail, Phone } from "lucide-react";
 
 export default function Impressum() {
@@ -8,6 +9,7 @@ export default function Impressum() {
 
   return (
     <>
+      <SEOHead title={im.headline} />
       {/* Hero */}
       <section className="bg-soft-ivory pt-20 pb-10 md:pt-28 md:pb-14">
         <div className="container">

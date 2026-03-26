@@ -1,7 +1,7 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
-
+import { SEOHead } from "@/components/SEOHead";
 import heroInsights from "@/assets/hero-insights.jpg";
 
 export default function Insights() {
@@ -9,6 +9,7 @@ export default function Insights() {
 
   return (
     <>
+      <SEOHead title={t.insights.headline} description={t.insights.subline} />
       <section className="relative bg-soft-ivory pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroInsights} alt="Insights" className="w-full h-full object-cover opacity-[0.45]" loading="eager" />
