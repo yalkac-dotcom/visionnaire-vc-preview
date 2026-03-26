@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import type { Locale } from "@/i18n/types";
 import { getLocalizedPath } from "@/lib/route-localization";
+import visionnaireLogoSrc from "@/assets/visionnaire-logo.png";
 
 const localeOptions: { code: Locale; label: string }[] = [
   { code: "de", label: "DE" },
@@ -70,8 +71,8 @@ export function Header() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}>
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="text-foreground tracking-[0.3em] text-[13px] font-light select-none transition-colors duration-300">
-          VISIONNAIRE
+        <Link to="/" className="select-none transition-opacity duration-300 hover:opacity-80">
+          <img src={visionnaireLogoSrc} alt="Visionnaire" className="h-6 md:h-7 w-auto" />
         </Link>
 
         {/* Desktop nav */}

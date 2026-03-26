@@ -1,5 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Link } from "react-router-dom";
+import visionnaireLogoSrc from "@/assets/visionnaire-logo.png";
 
 export function Footer() {
   const { t } = useLanguage();
@@ -27,9 +28,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
-            <p className="text-white/90 tracking-[0.3em] text-[13px] font-[450] mb-2">
-              {t.footer.brand}<span className="text-white/50 ml-1.5 tracking-normal text-[11px] font-[420]">{t.footer.consulting}</span>
-            </p>
+            <img src={visionnaireLogoSrc} alt="Visionnaire" className="h-5 w-auto mb-2 brightness-0 invert opacity-90" />
             <p className="text-white/50 text-[11.5px] font-[430]">© {year} Visionnaire Consulting GmbH. {t.footer.rights}</p>
           </div>
           <div className="flex flex-wrap gap-8 text-[11.5px] text-white/65 font-[430]">
