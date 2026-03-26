@@ -371,6 +371,8 @@ export const translationsIt: Translations = {
     note: "Accogliamo con particolare interesse richieste riguardanti progetti strategici, temi di marca e posizionamento, questioni di trasformazione e sviluppi imprenditoriali premium.",
     closingHeadline: "Trattiamo le richieste con cura e discrezione",
     closingText: "Ogni richiesta viene esaminata con la dovuta attenzione. Non vediamo l'ora di confrontarci.",
+    formConsent: "Acconsento al trattamento dei miei dati per la gestione della mia richiesta. Ulteriori informazioni nella",
+    formConsentLink: "Informativa sulla Privacy",
   },
   impressum: {
     label: "Note Legali",
