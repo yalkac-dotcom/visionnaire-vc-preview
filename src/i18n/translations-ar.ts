@@ -125,7 +125,7 @@ export const translationsAr: Translations = {
     tagline: "استشارات · استراتيجية · علامة تجارية · تطوير دولي",
     headline: "استشارات ريادية. مُصاغة بدقة. مُنفذة بوضوح.",
     subline: "تجمع Visionnaire Consulting بين الوضوح الاستراتيجي والجوهر التشغيلي — في التموضع والعلامة التجارية واستراتيجية المنتجات والتطوير الدولي.",
-    cta: "مناقشة مشروع", ctaSecondary: "تواصل معنا",
+    cta: "مناقشة مشروع", ctaSecondary: "استكشف خدماتنا",
   },
   expertise: {
     label: "خبرتنا",

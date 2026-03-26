@@ -125,7 +125,7 @@ export const translationsJa: Translations = {
     tagline: "コンサルティング · 戦略 · ブランド · 国際展開",
     headline: "経営に根ざしたコンサルティング。精緻に構想し、明確に実行する。",
     subline: "Visionnaire Consultingは、戦略的明晰さと実務的基盤を統合し、ポジショニング、ブランド、プロダクト戦略、国際事業開発を支援します。",
-    cta: "プロジェクトのご相談", ctaSecondary: "お問い合わせ",
+    cta: "プロジェクトのご相談", ctaSecondary: "サービスを見る",
   },
   expertise: {
     label: "私たちの専門性",
