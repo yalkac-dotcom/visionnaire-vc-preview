@@ -310,4 +310,13 @@ export const translationsEs: Translations = {
       { title: "3. Sus derechos", content: ["De acuerdo con la normativa vigente, usted tiene derecho de acceso, rectificación, supresión, limitación del tratamiento, portabilidad de datos y oposición al tratamiento de sus datos personales."] },
     ],
   },
+  notFound: { headline: "Página no encontrada", text: "La página solicitada no existe o ha sido movida. Por favor, compruebe la URL o vuelva a la página principal.", ctaHome: "Página principal", ctaServices: "Nuestros servicios" },
+  a11y: { scrollDown: "Desplazar hacia abajo", backToTop: "Volver arriba", scrollPage: "Desplazar página", openMenu: "Abrir menú", closeMenu: "Cerrar menú", changeLanguage: "Cambiar idioma" },
+  process: { label: "Cómo trabajamos", headline: "De la primera conversación a la ejecución", steps: [
+    { title: "Conversación inicial", desc: "Conocemos su proyecto, evaluamos la situación inicial e identificamos las cuestiones decisivas." },
+    { title: "Análisis y orientación", desc: "Analizamos mercado, competencia y estructuras internas — creando una base sólida para decisiones estratégicas." },
+    { title: "Desarrollo estratégico", desc: "Desarrollamos una dirección clara con campos de acción concretos, prioridades y un marco de ejecución realista." },
+    { title: "Acompañamiento y ejecución", desc: "Acompañamos la ejecución con sustancia operativa — del lanzamiento al anclaje organizativo." },
+  ]},
+  seo: { defaultTitle: "Visionnaire Consulting — Estrategia, Marca y Desarrollo Internacional", defaultDescription: "Visionnaire Consulting combina consultoría estratégica, desarrollo de marca y soluciones empresariales internacionales para empresas y proyectos exigentes.", titleSuffix: "Visionnaire Consulting" },
 };
