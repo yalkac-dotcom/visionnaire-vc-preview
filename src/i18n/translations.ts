@@ -493,6 +493,8 @@ export const translations: Record<Locale, Translations> = {
       note: "We particularly welcome enquiries regarding strategic ventures, brand and positioning topics, transformation questions and premium entrepreneurial developments.",
       closingHeadline: "We treat enquiries with care and discretion",
       closingText: "Every enquiry is reviewed with due attention. We look forward to the exchange.",
+      formConsent: "I consent to my data being processed to handle my enquiry. Further information can be found in the",
+      formConsentLink: "Privacy Policy",
     },
     impressum: {
       label: "Legal Notice",
