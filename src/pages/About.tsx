@@ -12,6 +12,7 @@ export default function About() {
 
   return (
     <>
+      <SEOHead title={t.about.headline} description={t.about.subline} />
       {/* Hero */}
       <section className="relative bg-soft-ivory pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         <div className="absolute inset-0">
