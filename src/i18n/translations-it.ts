@@ -216,7 +216,7 @@ export const translationsIt: Translations = {
     headline: "Consulenza imprenditoriale. Pensata con precisione. Realizzata con chiarezza.",
     subline: "Visionnaire Consulting unisce chiarezza strategica e sostanza operativa — nel posizionamento, nel brand, nella strategia di prodotto e nello sviluppo internazionale.",
     cta: "Discutere un progetto",
-    ctaSecondary: "Contattarci",
+    ctaSecondary: "Scopri i servizi",
   },
   expertise: {
     label: "La Nostra Expertise",

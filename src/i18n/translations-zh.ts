@@ -125,7 +125,7 @@ export const translationsZh: Translations = {
     tagline: "咨询 · 战略 · 品牌 · 国际发展",
     headline: "植根企业的咨询。精准构思，清晰执行。",
     subline: "Visionnaire Consulting将战略清晰与运营实力相结合——涵盖定位、品牌、产品战略与国际业务拓展。",
-    cta: "洽谈项目", ctaSecondary: "联系我们",
+    cta: "洽谈项目", ctaSecondary: "探索服务",
   },
   expertise: {
     label: "我们的专长",
