@@ -222,6 +222,8 @@ export const translationsJa: Translations = {
     note: "戦略的事業、ブランド・ポジショニングテーマ、トランスフォーメーション課題、プレミアムな起業家的発展に関するお問い合わせを特に歓迎します。",
     closingHeadline: "お問い合わせは慎重かつディスクリートに対応します",
     closingText: "すべてのお問い合わせは適切な注意をもって検討されます。対話を楽しみにしています。",
+    formConsent: "お問い合わせの処理のためにデータが使用されることに同意します。詳細は",
+    formConsentLink: "プライバシーポリシー",
   },
   impressum: {
     label: "法的情報", headline: "法的情報", company: "Visionnaire Consulting GmbH",
