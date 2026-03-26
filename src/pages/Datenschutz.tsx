@@ -1,5 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { SEOHead } from "@/components/SEOHead";
 
 export default function Datenschutz() {
   const { t } = useLanguage();
