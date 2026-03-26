@@ -71,9 +71,9 @@ export function Header() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}>
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="select-none transition-opacity duration-300 hover:opacity-80 flex flex-col items-start">
+        <Link to="/" className="select-none transition-opacity duration-300 hover:opacity-80 flex flex-col items-center">
           <img src={visionnaireLogoSrc} alt="Visionnaire" className="h-4 md:h-5 w-auto" />
-          <span className="text-foreground/50 text-[7px] md:text-[8px] uppercase tracking-[0.35em] font-[400] mt-0.5 ml-px">Consulting</span>
+          <span className="text-foreground/50 text-[7px] md:text-[8px] uppercase tracking-[0.35em] font-[500] mt-0.5">Consulting</span>
         </Link>
 
         {/* Desktop nav */}
