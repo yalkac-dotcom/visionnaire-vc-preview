@@ -217,6 +217,8 @@ export const translationsZh: Translations = {
     subjectDescriptions: ["针对需要战略精炼、结构发展或高端定位的项目。", "针对战略、转型、品牌、增长或关联业务领域的具体咨询需求。", "针对初步评估、进一步信息或综合主题。"],
     noteHeadline: "精选主题与高要求情境", note: "我们特别欢迎有关战略项目、品牌与定位主题、转型问题和高端企业发展的咨询。",
     closingHeadline: "我们以审慎和保密态度处理每一项咨询", closingText: "每项咨询都将得到应有的关注。期待与您交流。",
+    formConsent: "我同意为处理我的咨询而使用我的数据。更多信息请参阅",
+    formConsentLink: "隐私政策",
   },
   impressum: {
     label: "法律声明", headline: "法律声明", company: "Visionnaire Consulting GmbH",
