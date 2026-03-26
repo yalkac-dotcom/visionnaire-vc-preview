@@ -172,6 +172,8 @@ export interface Translations {
     formSubject: string;
     formMessage: string;
     formSend: string;
+    formConsent: string;
+    formConsentLink: string;
     subjects: string[];
     subjectDescriptions?: string[];
     note?: string;
@@ -236,5 +238,29 @@ export interface Translations {
     label: string;
     headline: string;
     sections: { title: string; content: string[] }[];
+  };
+  notFound: {
+    headline: string;
+    text: string;
+    ctaHome: string;
+    ctaServices: string;
+  };
+  a11y: {
+    scrollDown: string;
+    backToTop: string;
+    scrollPage: string;
+    openMenu: string;
+    closeMenu: string;
+    changeLanguage: string;
+  };
+  process: {
+    label: string;
+    headline: string;
+    steps: { title: string; desc: string }[];
+  };
+  seo: {
+    defaultTitle: string;
+    defaultDescription: string;
+    titleSuffix: string;
   };
 }
