@@ -2,7 +2,9 @@ import { useState } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
+import { SEOHead } from "@/components/SEOHead";
 import { Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroContact from "@/assets/hero-contact.jpg";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -34,11 +36,12 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name.trim() || !email.trim() || !message.trim()) return;
+    if (!name.trim() || !email.trim() || !message.trim() || !consent) return;
 
     setStatus("loading");
     const { error } = await supabase.from("contact_submissions").insert({
@@ -61,19 +64,24 @@ export default function Contact() {
       setEmail("");
       setPhone("");
       setMessage("");
+      setConsent(false);
     }
   };
 
+  const inputClass = "w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200";
+
   return (
     <>
+      <SEOHead title={t.contact.headline} description={t.contact.text} />
+
       {/* Hero */}
       <section className="relative bg-soft-ivory pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroContact} alt="Contact Visionnaire" className="w-full h-full object-cover opacity-[0.45]" loading="eager" />
+          <img src={heroContact} alt={t.contact.headline} className="w-full h-full object-cover opacity-[0.45]" loading="eager" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--soft-ivory))]/15 via-transparent to-[hsl(var(--soft-ivory))]/35" />
         </div>
         <div className="container relative z-10">
-          <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{t.contact.label}</p>
+          <p className="text-brand-blue text-[12px] uppercase tracking-[0.2em] font-medium mb-5 animate-reveal-up" style={{ animationDelay: "100ms" }}>{t.contact.label}</p>
           <h1 className="text-foreground text-[1.75rem] md:text-[2.25rem] lg:text-[3rem] font-normal leading-[1.15] tracking-[-0.015em] max-w-2xl mb-7 animate-reveal-up" style={{ animationDelay: "250ms" }}>{t.contact.headline}</h1>
           <p className="text-foreground/70 text-[15px] md:text-base leading-[1.7] max-w-xl animate-reveal-up" style={{ animationDelay: "400ms" }}>{t.contact.text}</p>
         </div>
@@ -98,7 +106,7 @@ export default function Contact() {
                     <ScrollReveal key={s} delay={120 + i * 70}>
                       <div className="bg-card p-7 md:p-8 h-full">
                         <h3 className="text-foreground text-sm font-medium mb-3 tracking-[-0.01em]">{s}</h3>
-                        <p className="text-foreground/70 text-[13px] leading-[1.7]">{t.contact.subjectDescriptions![i]}</p>
+                        <p className="text-foreground/70 text-[13.5px] leading-[1.7]">{t.contact.subjectDescriptions![i]}</p>
                       </div>
                     </ScrollReveal>
                   ))}
@@ -123,37 +131,56 @@ export default function Contact() {
                 ) : (
                 <form className="space-y-10" onSubmit={handleSubmit}>
                   <div>
-                    <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">{t.contact.formName}</label>
-                    <input type="text" required value={name} onChange={(e) => setName(e.target.value)} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200 placeholder:text-foreground/20" />
+                    <label className="block text-foreground/65 text-[12px] uppercase tracking-[0.18em] mb-3">{t.contact.formName}</label>
+                    <input type="text" required value={name} onChange={(e) => setName(e.target.value)} className={inputClass} />
                   </div>
                   {t.contact.formCompany && (
                     <div>
-                      <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">{t.contact.formCompany}</label>
-                      <input type="text" value={company} onChange={(e) => setCompany(e.target.value)} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200" />
+                      <label className="block text-foreground/65 text-[12px] uppercase tracking-[0.18em] mb-3">{t.contact.formCompany}</label>
+                      <input type="text" value={company} onChange={(e) => setCompany(e.target.value)} className={inputClass} />
                     </div>
                   )}
                   <div>
-                    <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">{t.contact.formEmail}</label>
-                    <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200" />
+                    <label className="block text-foreground/65 text-[12px] uppercase tracking-[0.18em] mb-3">{t.contact.formEmail}</label>
+                    <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className={inputClass} />
                   </div>
                   {t.contact.formPhone && (
                     <div>
-                      <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">{locale === "de" ? "Telefon" : locale === "en" ? "Phone" : locale === "it" ? "Telefono" : locale === "es" ? "Teléfono" : locale === "ja" ? "電話" : locale === "zh" ? "电话" : locale === "ar" ? "هاتف" : "Phone"}</label>
-                      <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder={t.contact.formPhone} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] focus:shadow-[0_1px_0_0_hsl(var(--gold))] transition-all duration-200 placeholder:text-foreground/30" />
+                      <label className="block text-foreground/65 text-[12px] uppercase tracking-[0.18em] mb-3">
+                        {locale === "de" ? "Telefon" : locale === "en" ? "Phone" : locale === "it" ? "Telefono" : locale === "es" ? "Teléfono" : locale === "ja" ? "電話" : locale === "zh" ? "电话" : locale === "ar" ? "هاتف" : "Phone"}
+                      </label>
+                      <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder={t.contact.formPhone} className={`${inputClass} placeholder:text-foreground/30`} />
                     </div>
                   )}
                   <div>
-                    <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">{t.contact.formSubject}</label>
-                    <select value={subject} onChange={(e) => setSubject(e.target.value)} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] transition-all duration-200 appearance-none cursor-pointer">
+                    <label className="block text-foreground/65 text-[12px] uppercase tracking-[0.18em] mb-3">{t.contact.formSubject}</label>
+                    <select value={subject} onChange={(e) => setSubject(e.target.value)} className={`${inputClass} appearance-none cursor-pointer`}>
                       {t.contact.subjects.map((s) => (
                         <option key={s} value={s}>{s}</option>
                       ))}
                     </select>
                   </div>
                   <div>
-                    <label className="block text-foreground/65 text-[11px] uppercase tracking-[0.18em] mb-3">{t.contact.formMessage}</label>
-                    <textarea rows={5} required value={message} onChange={(e) => setMessage(e.target.value)} className="w-full bg-background border-b border-input py-3.5 text-foreground text-sm focus:outline-none focus:border-[hsl(var(--gold))] transition-all duration-200 resize-none" />
+                    <label className="block text-foreground/65 text-[12px] uppercase tracking-[0.18em] mb-3">{t.contact.formMessage}</label>
+                    <textarea rows={5} required value={message} onChange={(e) => setMessage(e.target.value)} className={`${inputClass} resize-none`} />
                   </div>
+
+                  {/* DSGVO consent checkbox */}
+                  <label className="flex items-start gap-3 cursor-pointer group">
+                    <input
+                      type="checkbox"
+                      checked={consent}
+                      onChange={(e) => setConsent(e.target.checked)}
+                      required
+                      className="mt-0.5 w-4 h-4 shrink-0 accent-[hsl(var(--brand-blue))] cursor-pointer"
+                    />
+                    <span className="text-foreground/60 text-[13px] leading-[1.6] group-hover:text-foreground/75 transition-colors duration-200">
+                      {t.contact.formConsent}{" "}
+                      <Link to="/datenschutz" className="text-[hsl(var(--brand-blue))] hover:underline" target="_blank">
+                        {t.contact.formConsentLink}
+                      </Link>.
+                    </span>
+                  </label>
 
                   {status === "error" && (
                     <div className="flex items-start gap-3 text-red-700 text-sm">
@@ -162,7 +189,11 @@ export default function Contact() {
                     </div>
                   )}
 
-                  <button type="submit" disabled={status === "loading"} className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97] mt-2 disabled:opacity-60 disabled:pointer-events-none">
+                  <button
+                    type="submit"
+                    disabled={status === "loading" || !consent}
+                    className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97] mt-2 disabled:opacity-60 disabled:pointer-events-none"
+                  >
                     {status === "loading" && <Loader2 size={14} className="animate-spin" />}
                     {t.contact.formSend}
                   </button>
@@ -175,7 +206,7 @@ export default function Contact() {
               <ScrollReveal delay={150}>
                 <div className="md:pt-4">
                   <div className="mb-10">
-                    <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-7">{t.contact.label}</p>
+                    <p className="text-brand-blue text-[12px] uppercase tracking-[0.2em] font-medium mb-7">{t.contact.label}</p>
                     {t.contact.address && (
                       <div className="flex items-start gap-3 text-foreground text-sm mb-5">
                         <MapPin size={14} strokeWidth={1.5} className="text-foreground/40 mt-0.5 shrink-0" />
@@ -203,7 +234,7 @@ export default function Contact() {
                   {t.contact.noteHeadline && (
                     <div>
                       <p className="text-foreground text-sm font-medium mb-3">{t.contact.noteHeadline}</p>
-                      <p className="text-foreground/70 text-[13px] leading-[1.8]">{t.contact.note}</p>
+                      <p className="text-foreground/70 text-[13.5px] leading-[1.8]">{t.contact.note}</p>
                     </div>
                   )}
                 </div>
