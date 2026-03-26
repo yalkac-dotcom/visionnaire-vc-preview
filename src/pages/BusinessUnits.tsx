@@ -1,6 +1,7 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
+import { SEOHead } from "@/components/SEOHead";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroDomizil from "@/assets/hero-domizil.jpg";
