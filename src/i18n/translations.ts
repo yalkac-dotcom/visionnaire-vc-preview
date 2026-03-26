@@ -29,7 +29,7 @@ export const translations: Record<Locale, Translations> = {
       headline: "Unternehmerische Beratung. Präzise gedacht. Klar umgesetzt.",
       subline: "Visionnaire Consulting verbindet strategische Klarheit mit operativer Substanz — in Positionierung, Marke, Produktstrategie und internationaler Geschäftsentwicklung.",
       cta: "Projekt besprechen",
-      ctaSecondary: "Kontakt aufnehmen",
+      ctaSecondary: "Leistungen entdecken",
     },
     expertise: {
       label: "Unsere Expertise",
