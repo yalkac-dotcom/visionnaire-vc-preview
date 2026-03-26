@@ -18,6 +18,7 @@ export default function ServiceDetail() {
 
   return (
     <>
+      <SEOHead title={service.title} description={service.desc} />
       <section className="relative bg-soft-ivory pt-20 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         {heroImg && (
           <div className="absolute inset-0">

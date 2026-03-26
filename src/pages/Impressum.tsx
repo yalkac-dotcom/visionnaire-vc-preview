@@ -9,6 +9,7 @@ export default function Impressum() {
 
   return (
     <>
+      <SEOHead title={im.headline} />
       {/* Hero */}
       <section className="bg-soft-ivory pt-20 pb-10 md:pt-28 md:pb-14">
         <div className="container">

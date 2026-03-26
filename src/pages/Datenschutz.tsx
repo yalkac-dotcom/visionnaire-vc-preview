@@ -8,6 +8,7 @@ export default function Datenschutz() {
 
   return (
     <>
+      <SEOHead title={ds.headline} />
       {/* Hero */}
       <section className="bg-soft-ivory pt-20 pb-10 md:pt-28 md:pb-14">
         <div className="container">
