@@ -184,6 +184,8 @@ export const translations: Record<Locale, Translations> = {
       note: "Wir freuen uns insbesondere über Anfragen zu strategischen Vorhaben, Marken- und Positionierungsthemen, Transformationsfragen sowie hochwertigen unternehmerischen Entwicklungen.",
       closingHeadline: "Wir behandeln Anfragen mit Sorgfalt und Diskretion",
       closingText: "Jede Anfrage wird mit der gebotenen Aufmerksamkeit geprüft. Wir freuen uns auf den Austausch.",
+      formConsent: "Ich willige ein, dass meine Angaben zur Bearbeitung meiner Anfrage verarbeitet werden. Weitere Informationen finde ich in der",
+      formConsentLink: "Datenschutzerklärung",
     },
     impressum: {
       label: "Impressum",
