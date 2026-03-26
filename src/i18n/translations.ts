@@ -338,7 +338,7 @@ export const translations: Record<Locale, Translations> = {
       headline: "Entrepreneurial consulting. Precisely conceived. Clearly executed.",
       subline: "Visionnaire Consulting combines strategic clarity with operational substance — in positioning, brand, product strategy and international business development.",
       cta: "Discuss project",
-      ctaSecondary: "Get in touch",
+      ctaSecondary: "Explore services",
     },
     expertise: {
       label: "Our Expertise",
