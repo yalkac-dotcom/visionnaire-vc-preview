@@ -28,8 +28,8 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
-            <img src={visionnaireLogoSrc} alt="Visionnaire" className="h-3.5 w-auto mb-0.5 brightness-0 invert opacity-90" />
-            <span className="block text-white/45 text-[7px] uppercase tracking-[0.35em] font-[400] ml-px">Consulting</span>
+            <img src={visionnaireLogoSrc} alt="Visionnaire" className="h-3.5 w-auto mb-0.5 brightness-0 invert opacity-90 mx-auto md:mx-0" />
+            <span className="block text-white/45 text-[7px] uppercase tracking-[0.35em] font-[500] text-center md:text-left">Consulting</span>
             <p className="text-white/50 text-[11.5px] font-[430]">© {year} Visionnaire Consulting GmbH. {t.footer.rights}</p>
           </div>
           <div className="flex flex-wrap gap-8 text-[11.5px] text-white/65 font-[430]">
