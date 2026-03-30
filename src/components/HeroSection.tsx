@@ -39,20 +39,14 @@ export function HeroSection() {
             {t.hero.subline}
           </p>
           <div
-            className="flex flex-wrap gap-4 mb-6 animate-reveal-up"
+            className="flex justify-start mb-6 animate-reveal-up"
             style={{ animationDelay: "600ms" }}
           >
             <Link
               to="/kontakt"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-white text-[hsl(var(--brand-blue))] px-8 py-3.5 hover:bg-white/90 transition-all duration-200 active:scale-[0.97]"
+              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.cta}
-            </Link>
-            <Link
-              to="/ueber-uns"
-              className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-white/30 text-white/85 hover:text-white hover:border-white/50 px-8 py-3.5 transition-all duration-200 active:scale-[0.97]"
-            >
-              {t.hero.ctaSecondary}
             </Link>
           </div>
           <p

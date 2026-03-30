@@ -28,18 +28,12 @@ export function ContactSection() {
           </ScrollReveal>
 
           <ScrollReveal delay={240}>
-            <div className="flex flex-wrap justify-center gap-4 mb-6">
+            <div className="flex justify-center mb-6">
               <Link
                 to="/kontakt"
                 className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] bg-primary text-primary-foreground px-8 py-3.5 hover:bg-accent hover:text-accent-foreground transition-all duration-200 active:scale-[0.97]"
               >
                 {t.contact.cta}
-              </Link>
-              <Link
-                to="/ueber-uns"
-                className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-primary/30 text-foreground/70 hover:text-foreground px-8 py-3.5 hover:bg-[hsl(var(--brand-blue-tint))] transition-all duration-200 active:scale-[0.97]"
-              >
-                {t.contact.ctaSecondary}
               </Link>
             </div>
           </ScrollReveal>

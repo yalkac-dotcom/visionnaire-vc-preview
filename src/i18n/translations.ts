@@ -519,7 +519,7 @@ export const translations: Record<Locale, Translations> = {
       tagline: "Strategy. Brand. Impact.",
       rights: "All rights reserved.",
       domizilLink: "Visionnaire Domizil",
-      domizilNote: "A connected business area of the Visionnaire world",
+      domizilNote: "A connected business area of the Visionnaire Group",
       impressum: "Legal Notice",
       datenschutz: "Privacy Policy",
       navServices: "Services",
