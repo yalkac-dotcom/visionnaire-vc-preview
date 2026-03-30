@@ -30,6 +30,9 @@ export function Footer() {
           <div>
             <img src={visionnaireLogoSrc} alt="Visionnaire" className="h-3.5 w-auto mb-0.5 brightness-0 invert opacity-90 mx-auto md:mx-0" />
             <span className="block text-white/45 text-[7px] uppercase tracking-[0.35em] font-[600] text-center md:text-left">Consulting</span>
+            {t.footer.tagline && (
+              <span className="block text-white/40 text-[10px] tracking-[0.15em] font-[430] mt-1 mb-1">{t.footer.tagline}</span>
+            )}
             <p className="text-white/50 text-[11.5px] font-[430]">© {year} Visionnaire Consulting GmbH. {t.footer.rights}</p>
           </div>
           <div className="flex flex-wrap gap-8 text-[11.5px] text-white/65 font-[430]">

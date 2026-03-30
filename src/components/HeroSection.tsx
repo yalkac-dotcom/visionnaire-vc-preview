@@ -49,7 +49,7 @@ export function HeroSection() {
               {t.hero.cta}
             </Link>
             <Link
-              to="/leistungen"
+              to="/ueber-uns"
               className="inline-flex items-center text-[11px] uppercase tracking-[0.18em] border border-white/30 text-white/85 hover:text-white hover:border-white/50 px-8 py-3.5 transition-all duration-200 active:scale-[0.97]"
             >
               {t.hero.ctaSecondary}
