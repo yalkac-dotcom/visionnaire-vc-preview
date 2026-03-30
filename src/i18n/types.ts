@@ -200,6 +200,7 @@ export interface Translations {
   footer: {
     brand: string;
     consulting: string;
+    tagline?: string;
     rights: string;
     domizilLink: string;
     domizilNote: string;
