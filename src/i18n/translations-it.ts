@@ -393,6 +393,7 @@ export const translationsIt: Translations = {
   footer: {
     brand: "VISIONNAIRE",
     consulting: "Consulting",
+    tagline: "Strategia. Marca. Impatto.",
     rights: "Tutti i diritti riservati.",
     domizilLink: "Visionnaire Domizil",
     domizilNote: "Un'area di business connessa del mondo Visionnaire",
@@ -410,8 +411,8 @@ export const translationsIt: Translations = {
     consultingFields: "Campi di consulenza rilevanti",
     challengesLabel: "Sfide principali",
     projectsLabel: "Progetti selezionati",
-    ctaPrimary: "Discutere un progetto",
-    ctaSecondary: "Richiedere consulenza",
+    ctaPrimary: "Richiedere un colloquio strategico",
+    ctaSecondary: "Scopri il nostro metodo",
     matchingServices: "Servizi correlati",
   },
   servicePage: {
@@ -419,13 +420,13 @@ export const translationsIt: Translations = {
     whatWeSupport: "In cosa supportiamo",
     typicalSituations: "Situazioni tipiche",
     relevantIndustries: "Settori rilevanti",
-    ctaPrimary: "Discutere un progetto",
-    ctaSecondary: "Richiedere consulenza",
+    ctaPrimary: "Richiedere un colloquio strategico",
+    ctaSecondary: "Scopri il nostro metodo",
   },
   cta: {
-    projectCta: "Discutere un progetto",
-    consultationCta: "Richiedere consulenza",
-    contactCta: "Contattarci",
+    projectCta: "Richiedere un colloquio strategico",
+    consultationCta: "Scopri il nostro metodo",
+    contactCta: "Richiedere un colloquio strategico",
   },
   datenschutz: {
     label: "Privacy",
