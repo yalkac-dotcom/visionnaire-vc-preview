@@ -209,7 +209,7 @@ export const translations: Record<Locale, Translations> = {
       tagline: "Strategie. Marke. Wirkung.",
       rights: "Alle Rechte vorbehalten.",
       domizilLink: "Visionnaire Domizil",
-      domizilNote: "Ein verbundener Geschäftsbereich der Visionnaire-Welt",
+      domizilNote: "Ein verbundener Geschäftsbereich der Visionnaire-Gruppe",
       impressum: "Impressum",
       datenschutz: "Datenschutz",
       navServices: "Leistungen",
