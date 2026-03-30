@@ -30,7 +30,7 @@ export function Footer() {
           <div>
             <div className="inline-flex flex-col items-center">
               <img src={visionnaireLogoSrc} alt="Visionnaire" className="h-3.5 w-auto mb-0.5 brightness-0 invert opacity-90" />
-              <span className="text-white/45 text-[7px] uppercase tracking-[0.35em] font-[600]">Consulting</span>
+              <span className="text-white/45 text-[7px] uppercase tracking-[0.35em] font-[600] mr-[-0.35em]">Consulting</span>
             </div>
             {t.footer.tagline && (
               <span className="block text-white/40 text-[10px] tracking-[0.15em] font-[430] mt-1 mb-1">{t.footer.tagline}</span>
