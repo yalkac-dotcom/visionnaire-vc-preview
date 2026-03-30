@@ -235,7 +235,7 @@ export const translationsJa: Translations = {
   },
   footer: {
     brand: "VISIONNAIRE", consulting: "Consulting", tagline: "戦略。ブランド。インパクト。", rights: "All rights reserved.",
-    domizilLink: "Visionnaire Domizil", domizilNote: "Visionnaireワールドの連携事業領域",
+    domizilLink: "Visionnaire Domizil", domizilNote: "Visionnaireグループの連携事業領域",
     impressum: "法的情報", datenschutz: "プライバシー",
     navServices: "サービス", navIndustries: "業界", navAbout: "私たちについて",
     navInsights: "インサイト", navContact: "お問い合わせ", navBusinessUnits: "事業領域",

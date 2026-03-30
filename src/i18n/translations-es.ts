@@ -295,7 +295,7 @@ export const translationsEs: Translations = {
   },
   footer: {
     brand: "VISIONNAIRE", consulting: "Consulting", tagline: "Estrategia. Marca. Impacto.", rights: "Todos los derechos reservados.",
-    domizilLink: "Visionnaire Domizil", domizilNote: "Un área de negocio conectada del mundo Visionnaire",
+    domizilLink: "Visionnaire Domizil", domizilNote: "Un área de negocio conectada del Grupo Visionnaire",
     impressum: "Aviso Legal", datenschutz: "Privacidad",
     navServices: "Servicios", navIndustries: "Sectores", navAbout: "Nosotros", navInsights: "Insights", navContact: "Contacto", navBusinessUnits: "Áreas de Negocio",
   },

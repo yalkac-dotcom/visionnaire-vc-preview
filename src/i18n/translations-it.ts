@@ -396,7 +396,7 @@ export const translationsIt: Translations = {
     tagline: "Strategia. Marca. Impatto.",
     rights: "Tutti i diritti riservati.",
     domizilLink: "Visionnaire Domizil",
-    domizilNote: "Un'area di business connessa del mondo Visionnaire",
+    domizilNote: "Un'area di business connessa del Gruppo Visionnaire",
     impressum: "Note Legali",
     datenschutz: "Privacy",
     navServices: "Servizi",

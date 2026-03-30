@@ -229,7 +229,7 @@ export const translationsZh: Translations = {
   },
   footer: {
     brand: "VISIONNAIRE", consulting: "Consulting", tagline: "战略。品牌。影响力。", rights: "版权所有。",
-    domizilLink: "Visionnaire Domizil", domizilNote: "Visionnaire世界的关联业务领域",
+    domizilLink: "Visionnaire Domizil", domizilNote: "Visionnaire集团的关联业务领域",
     impressum: "法律声明", datenschutz: "隐私政策",
     navServices: "服务", navIndustries: "行业", navAbout: "关于我们", navInsights: "洞察", navContact: "联系我们", navBusinessUnits: "业务领域",
   },
