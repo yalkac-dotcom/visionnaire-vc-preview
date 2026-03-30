@@ -470,8 +470,8 @@ export const translationsIt: Translations = {
     ],
   },
   seo: {
-    defaultTitle: "Visionnaire Consulting — Strategia, Marca e Sviluppo Internazionale",
-    defaultDescription: "Visionnaire Consulting combina consulenza strategica, sviluppo del marchio e soluzioni aziendali internazionali per imprese e progetti esigenti.",
+    defaultTitle: "Visionnaire Consulting – Consulenza strategica per imprese in crescita",
+    defaultDescription: "Consulenza strategica per imprese ambiziose. Aiutiamo nel riallineamento, riposizionamento del marchio e crescita internazionale. Con autentico pensiero strategico invece di soluzioni standard.",
     titleSuffix: "Visionnaire Consulting",
   },
 };
