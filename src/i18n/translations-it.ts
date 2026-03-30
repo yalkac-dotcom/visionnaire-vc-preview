@@ -245,13 +245,13 @@ export const translationsIt: Translations = {
     projects: "Progetti di riferimento",
   },
   whyUs: {
-    label: "Perché Visionnaire Consulting",
-    headline: "Cosa ci distingue",
+    label: "Cosa ci distingue",
+    headline: "Non pensiamo in processi — pensiamo in risultati aziendali",
     items: [
-      { title: "Approccio olistico", desc: "Non pensiamo in misure isolate, ma in soluzioni complete — dalla strategia all'esecuzione." },
-      { title: "Network internazionali", desc: "Un network consolidato di partner, produttori e specialisti a livello internazionale." },
-      { title: "Specializzazione settoriale", desc: "Profonda comprensione delle dinamiche e delle esigenze di settori e mercati specifici." },
-      { title: "Implementazione orientata alla pratica", desc: "Nessuna teoria senza implementazione. La nostra consulenza è orientata a risultati concreti e misurabili." },
+      { title: "Orientati ai risultati", desc: "Non lavoriamo con modelli standard — ma con autentico pensiero strategico. Ogni progetto è unico." },
+      { title: "Imprenditori, non teorici", desc: "I nostri consulenti sono imprenditori — non teorici. Comprendiamo cosa è in gioco." },
+      { title: "Network internazionali", desc: "Un network consolidato di partner e specialisti a livello internazionale. Con partner sul campo." },
+      { title: "Risultati misurabili", desc: "Nessuna teoria senza implementazione. Misuriamo il nostro successo dal vostro successo aziendale." },
     ],
   },
   businessUnits: {
