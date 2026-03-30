@@ -28,8 +28,10 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
-            <img src={visionnaireLogoSrc} alt="Visionnaire" className="h-3.5 w-auto mb-0.5 brightness-0 invert opacity-90 mx-auto md:mx-0" />
-            <span className="block text-white/45 text-[7px] uppercase tracking-[0.35em] font-[600] text-center md:text-center">Consulting</span>
+            <div className="flex flex-col items-center md:items-start w-full md:w-auto">
+              <img src={visionnaireLogoSrc} alt="Visionnaire" className="h-3.5 w-auto mb-0.5 brightness-0 invert opacity-90 mx-auto md:mx-0" />
+              <span className="block w-full text-white/45 text-[7px] uppercase tracking-[0.35em] font-[600] text-center">Consulting</span>
+            </div>
             {t.footer.tagline && (
               <span className="block text-white/40 text-[10px] tracking-[0.15em] font-[430] mt-1 mb-1">{t.footer.tagline}</span>
             )}
