@@ -146,10 +146,10 @@ export default function Contact() {
                   </div>
                   {t.contact.formPhone && (
                     <div>
-                      <label className="block text-foreground/65 text-[12px] uppercase tracking-[0.18em] mb-3">
-                        {locale === "de" ? "Telefon" : locale === "en" ? "Phone" : locale === "it" ? "Telefono" : locale === "es" ? "Teléfono" : locale === "ja" ? "電話" : locale === "zh" ? "电话" : locale === "ar" ? "هاتف" : "Phone"}
+                    <label className="block text-foreground/65 text-[12px] uppercase tracking-[0.18em] mb-3">
+                        {t.contact.formPhone}
                       </label>
-                      <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder={t.contact.formPhone} className={`${inputClass} placeholder:text-foreground/30`} />
+                      <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} className={inputClass} />
                     </div>
                   )}
                   <div>
