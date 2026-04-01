@@ -99,8 +99,8 @@ export const translations: Record<Locale, Translations> = {
     },
     about: {
       label: "Über Visionnaire",
-      headline: "Beratung mit Klarheit, Haltung und hochwertigem Anspruch",
-      subline: "Visionnaire Consulting begleitet ausgewählte Unternehmen, Marken und Vorhaben mit strategischer Präzision, internationalem Blick und einem klaren Verständnis für Positionierung, Entwicklung und langfristige Wirkung.",
+      headline: "Wir entwickeln Perspektiven. Wir schaffen klare Positionierung.",
+      subline: "Wir begleiten Unternehmen bei wichtigen strategischen Entscheidungen mit einem klaren Blick für Markt, Marke und unternehmerische Entwicklung. Dabei verbinden wir analytisches Denken mit einem hohen Anspruch an Qualität, Klarheit und Umsetzbarkeit.\n\nOb Neuausrichtung, Markenprofil oder Wachstum im internationalen Umfeld: Wir arbeiten strukturiert, partnerschaftlich und mit dem Ziel, tragfähige Lösungen zu entwickeln, die Substanz haben und langfristig wirken.",
       approach: {
         label: "Strategische Beratung, neu gefasst",
         headline: "Klarheit vor Lautstärke",
@@ -349,7 +349,7 @@ export const translations: Record<Locale, Translations> = {
     },
     services: {
       label: "Services",
-      headline: "Three fields of action for strategic success",
+      headline: "Six fields of action for strategic success",
       subline: "Think strategically, execute precisely — our advisory fields interlock to create holistic solutions.",
       requestCta: "Request strategy session",
       relevantFor: "Relevant for",
@@ -409,8 +409,8 @@ export const translations: Record<Locale, Translations> = {
     },
     about: {
       label: "About Visionnaire",
-      headline: "Advisory with clarity, conviction and premium standards",
-      subline: "Visionnaire Consulting accompanies selected companies, brands and ventures with strategic precision, an international perspective and a clear understanding of positioning, development and lasting impact.",
+      headline: "We develop perspectives. We create clear positioning.",
+      subline: "We accompany companies through important strategic decisions with a clear view of market, brand and entrepreneurial development. In doing so, we combine analytical thinking with high standards of quality, clarity and implementability.\n\nWhether realignment, brand profile or growth in an international environment: we work in a structured, partnership-driven way — with the aim of developing resilient solutions that carry substance and create lasting impact.",
       approach: {
         label: "Strategic advisory, redefined",
         headline: "Clarity over volume",

@@ -134,7 +134,7 @@ export const translationsJa: Translations = {
     text2: "ミッドマーケットからDAX企業まで15年以上の経験。フォーカス：戦略的リアラインメント、ブランドリポジショニング、国際展開。成果志向 — お客様のビジネス成果で私たちの成功を測ります。",
   },
   services: {
-    label: "サービス", headline: "戦略的成功のための3つのアクション領域",
+    label: "サービス", headline: "戦略的成功のための6つのアクション領域",
     subline: "戦略的に思考し、精緻に実行する — 私たちのアドバイザリー領域は相互に連携し、ホリスティックなソリューションを創出します。",
     requestCta: "戦略セッションを申し込む", relevantFor: "関連対象", whatWeSupport: "支援内容",
     typicalSituations: "典型的な状況", relevantIndustries: "関連業界", items: services,
@@ -172,8 +172,8 @@ export const translationsJa: Translations = {
     ],
   },
   about: {
-    label: "Visionnaireについて", headline: "明確さ、信念、プレミアムな基準によるアドバイザリー",
-    subline: "Visionnaire Consultingは厳選された企業、ブランド、事業を戦略的精度、国際的視野、ポジショニング・開発・持続的インパクトへの明確な理解をもって伴走します。",
+    label: "Visionnaireについて", headline: "私たちは視座を開く。明確なポジショニングを創る。",
+    subline: "市場、ブランド、事業開発を見据えた確かな視点で、企業の重要な戦略的意思決定を伴走します。分析的思考と、品質・明確さ・実行可能性への高い基準を結びつけます。\n\n再構築、ブランドプロファイル、国際的成長のいずれにおいても、私たちは構造的かつパートナーシップに基づき、実質があり長期的に効果を発揮する持続的なソリューションの開発を目指します。",
     approach: { label: "戦略アドバイザリーの再定義", headline: "量より明確さ", text: "Visionnaire Consultingは穏やかで精緻なプレミアムアドバイザリーを代表します。市場ロジック、ブランドインパクト、構造的明確さ、経済的持続可能性に目を配りながら、企業の精鍛・リアラインメント・発展を伴走します。" },
     thinking: { label: "量より明確さ", headline: "市場、ブランド、開発の文脈", text: "精緻さから生まれる発展を信じています。持続可能な戦略を。過度の演出なくインパクトを発揮するブランドを。短期的に正しく感じるだけでなく、長期的に耐えうる意思決定を。", points: [] },
     working: { label: "私たちの仕事の進め方", headline: "すべてのステップに精度を", principles: [

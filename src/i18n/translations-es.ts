@@ -160,7 +160,7 @@ export const translationsEs: Translations = {
   },
   services: {
     label: "Servicios",
-    headline: "Tres campos de acción para el éxito estratégico",
+    headline: "Seis campos de acción para el éxito estratégico",
     subline: "Pensar estratégicamente, ejecutar con precisión — nuestras áreas de consultoría se integran para crear soluciones holísticas.",
     requestCta: "Solicitar sesión estratégica",
     relevantFor: "Relevante para",
@@ -210,8 +210,8 @@ export const translationsEs: Translations = {
   },
   about: {
     label: "Sobre Visionnaire",
-    headline: "Consultoría con claridad, convicción y estándares premium",
-    subline: "Visionnaire Consulting acompaña a empresas, marcas y proyectos seleccionados con precisión estratégica, perspectiva internacional y una clara comprensión de posicionamiento, desarrollo e impacto duradero.",
+    headline: "Desarrollamos perspectivas. Creamos un posicionamiento claro.",
+    subline: "Acompañamos a las empresas en sus decisiones estratégicas más importantes con una visión clara del mercado, la marca y el desarrollo empresarial. Combinamos pensamiento analítico con altos estándares de calidad, claridad y viabilidad.\n\nYa se trate de reorientación, perfil de marca o crecimiento internacional: trabajamos de forma estructurada, colaborativa y con el objetivo de desarrollar soluciones sólidas, con sustancia y efecto duradero.",
     approach: { label: "Consultoría estratégica, redefinida", headline: "Claridad antes que volumen", text: "Visionnaire Consulting representa una forma de consultoría serena, precisa y premium. Acompañamos empresas y proyectos a través de fases de refinamiento, reorientación y desarrollo — con atención a la lógica de mercado, el impacto de marca, la claridad estructural y la viabilidad económica.\n\nNuestro trabajo no comienza por las superficies, sino por la dirección. El volumen no es la medida — la sustancia lo es." },
     thinking: { label: "Claridad antes que volumen", headline: "Mercados, marcas y desarrollo en contexto", text: "Creemos en desarrollos que nacen de la precisión. En estrategias que son sostenibles. En marcas que no necesitan ser sobreexpuestas para tener impacto. Y en decisiones que no solo parecen correctas a corto plazo, sino que resisten la prueba del tiempo.", points: [] },
     working: {

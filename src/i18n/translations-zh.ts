@@ -134,7 +134,7 @@ export const translationsZh: Translations = {
     text2: "15年以上中型市场至DAX企业的经验。聚焦：战略重新调整、品牌重新定位、国际扩张。以成果为导向——我们以您的商业成功衡量自身的成功。",
   },
   services: {
-    label: "服务", headline: "三大战略成功行动领域",
+    label: "服务", headline: "六大战略成功行动领域",
     subline: "战略思考，精准执行——我们的咨询领域相互衔接，创造整体解决方案。",
     requestCta: "申请战略会议", relevantFor: "相关对象", whatWeSupport: "支持内容",
     typicalSituations: "典型情境", relevantIndustries: "相关行业", items: services,
@@ -172,8 +172,8 @@ export const translationsZh: Translations = {
     ],
   },
   about: {
-    label: "关于Visionnaire", headline: "以清晰、信念和高端标准提供咨询",
-    subline: "Visionnaire Consulting以战略精准、国际视野和对定位、发展与持久影响的清晰理解，陪伴精选的企业、品牌和项目。",
+    label: "关于Visionnaire", headline: "我们拓展视野。我们打造清晰的定位。",
+    subline: "我们以对市场、品牌和企业发展的清晰洞察，陪伴企业做出重要的战略决策。在此过程中，我们将分析思维与对质量、清晰度和可执行性的高标准相结合。\n\n无论是重新调整、品牌形象塑造还是国际化增长：我们以结构化、合作伙伴式的方式工作，致力于开发具有实质内容、能够产生持久效果的稳健解决方案。",
     approach: { label: "战略咨询，重新定义", headline: "清晰优于喧嚣", text: "Visionnaire Consulting代表一种沉稳、精准和高端的咨询形式。我们关注市场逻辑、品牌影响力、结构清晰度和经济可持续性，陪伴企业经历精炼、重新调整和深入发展的阶段。" },
     thinking: { label: "清晰优于喧嚣", headline: "市场、品牌与发展的关联", text: "我们相信源于精准的发展。相信可持续的战略。相信无需过度渲染即能产生影响的品牌。相信不仅短期内正确，而且经得起时间检验的决策。", points: [] },
     working: { label: "我们的工作方式", headline: "每一步都追求精准", principles: [
