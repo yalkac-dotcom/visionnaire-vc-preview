@@ -33,9 +33,9 @@ export const translations: Record<Locale, Translations> = {
     },
     expertise: {
       label: "Über uns",
-      headline: "Wir denken wie Unternehmer. Wir arbeiten wie Strategen.",
-      text: "Wir sind kein klassisches Beratungsunternehmen. Wir denken wie Unternehmer, arbeiten wie Strategen und handeln wie Partner. Unser Fokus: echte Geschäftsergebnisse, nicht Beraterblabla.",
-      text2: "15+ Jahre Erfahrung bei Unternehmen im Mid-Market bis DAX. Fokus auf: Strategische Neuausrichtung, Markenrepositionierung, internationale Expansion. Ergebnisorientiert – wir messen unseren Erfolg an Ihrem Geschäftserfolg.",
+      headline: "Wir entwickeln Perspektiven. Wir schaffen klare Positionierung.",
+      text: "Wir begleiten Unternehmen bei wichtigen strategischen Entscheidungen mit einem klaren Blick für Markt, Marke und unternehmerische Entwicklung. Dabei verbinden wir analytisches Denken mit einem hohen Anspruch an Qualität, Klarheit und Umsetzbarkeit.",
+      text2: "Ob Neuausrichtung, Markenprofil oder Wachstum im internationalen Umfeld: Wir arbeiten strukturiert, partnerschaftlich und mit dem Ziel, tragfähige Lösungen zu entwickeln, die Substanz haben und langfristig wirken.",
     },
     services: {
       label: "Leistungen",
@@ -343,9 +343,9 @@ export const translations: Record<Locale, Translations> = {
     },
     expertise: {
       label: "About Us",
-      headline: "We think like entrepreneurs. We work like strategists.",
-      text: "We are not a typical consulting firm. We think like entrepreneurs, work like strategists and act like partners. Our focus: real business results, not consultant jargon.",
-      text2: "15+ years of experience with mid-market to DAX companies. Focus on: strategic realignment, brand repositioning, international expansion. Results-driven – we measure our success by your business success.",
+      headline: "We develop perspectives. We create clear positioning.",
+      text: "We accompany companies through important strategic decisions with a clear view of market, brand and entrepreneurial development. In doing so, we combine analytical thinking with high standards of quality, clarity and implementability.",
+      text2: "Whether realignment, brand profile or growth in an international environment: we work in a structured, partnership-driven way — with the aim of developing resilient solutions that carry substance and create lasting impact.",
     },
     services: {
       label: "Services",
