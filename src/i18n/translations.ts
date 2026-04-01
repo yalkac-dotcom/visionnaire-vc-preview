@@ -409,8 +409,8 @@ export const translations: Record<Locale, Translations> = {
     },
     about: {
       label: "About Visionnaire",
-      headline: "Advisory with clarity, conviction and premium standards",
-      subline: "Visionnaire Consulting accompanies selected companies, brands and ventures with strategic precision, an international perspective and a clear understanding of positioning, development and lasting impact.",
+      headline: "We develop perspectives. We create clear positioning.",
+      subline: "We accompany companies through important strategic decisions with a clear view of market, brand and entrepreneurial development. In doing so, we combine analytical thinking with high standards of quality, clarity and implementability.\n\nWhether realignment, brand profile or growth in an international environment: we work in a structured, partnership-driven way — with the aim of developing resilient solutions that carry substance and create lasting impact.",
       approach: {
         label: "Strategic advisory, redefined",
         headline: "Clarity over volume",
