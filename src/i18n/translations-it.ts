@@ -226,7 +226,7 @@ export const translationsIt: Translations = {
   },
   services: {
     label: "Servizi",
-    headline: "Tre campi d'azione per il successo strategico",
+    headline: "Sei campi d'azione per il successo strategico",
     subline: "Pensare strategicamente, eseguire con precisione — le nostre aree di consulenza si integrano per creare soluzioni olistiche.",
     requestCta: "Richiedere un colloquio strategico",
     relevantFor: "Rilevante per",
