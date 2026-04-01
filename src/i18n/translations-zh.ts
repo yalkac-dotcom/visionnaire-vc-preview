@@ -134,7 +134,7 @@ export const translationsZh: Translations = {
     text2: "15年以上中型市场至DAX企业的经验。聚焦：战略重新调整、品牌重新定位、国际扩张。以成果为导向——我们以您的商业成功衡量自身的成功。",
   },
   services: {
-    label: "服务", headline: "三大战略成功行动领域",
+    label: "服务", headline: "六大战略成功行动领域",
     subline: "战略思考，精准执行——我们的咨询领域相互衔接，创造整体解决方案。",
     requestCta: "申请战略会议", relevantFor: "相关对象", whatWeSupport: "支持内容",
     typicalSituations: "典型情境", relevantIndustries: "相关行业", items: services,
