@@ -349,7 +349,7 @@ export const translations: Record<Locale, Translations> = {
     },
     services: {
       label: "Services",
-      headline: "Three fields of action for strategic success",
+      headline: "Six fields of action for strategic success",
       subline: "Think strategically, execute precisely — our advisory fields interlock to create holistic solutions.",
       requestCta: "Request strategy session",
       relevantFor: "Relevant for",

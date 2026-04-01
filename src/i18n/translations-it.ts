@@ -286,8 +286,8 @@ export const translationsIt: Translations = {
   },
   about: {
     label: "Chi è Visionnaire",
-    headline: "Consulenza con chiarezza, convinzione e standard premium",
-    subline: "Visionnaire Consulting accompagna imprese, marchi e progetti selezionati con precisione strategica, prospettiva internazionale e una chiara comprensione di posizionamento, sviluppo e impatto duraturo.",
+    headline: "Sviluppiamo prospettive. Creiamo un posizionamento chiaro.",
+    subline: "Affianchiamo le imprese nelle decisioni strategiche più importanti con uno sguardo attento a mercato, marca e sviluppo imprenditoriale. Uniamo pensiero analitico a standard elevati di qualità, chiarezza e concretezza.\n\nChe si tratti di riorientamento, profilo di marca o crescita internazionale: lavoriamo in modo strutturato, collaborativo e con l'obiettivo di sviluppare soluzioni solide, di sostanza e di lungo respiro.",
     approach: {
       label: "Consulenza strategica, ridefinita",
       headline: "Chiarezza prima del volume",
