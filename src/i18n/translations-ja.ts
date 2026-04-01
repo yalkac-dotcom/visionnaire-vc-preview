@@ -134,7 +134,7 @@ export const translationsJa: Translations = {
     text2: "ミッドマーケットからDAX企業まで15年以上の経験。フォーカス：戦略的リアラインメント、ブランドリポジショニング、国際展開。成果志向 — お客様のビジネス成果で私たちの成功を測ります。",
   },
   services: {
-    label: "サービス", headline: "戦略的成功のための3つのアクション領域",
+    label: "サービス", headline: "戦略的成功のための6つのアクション領域",
     subline: "戦略的に思考し、精緻に実行する — 私たちのアドバイザリー領域は相互に連携し、ホリスティックなソリューションを創出します。",
     requestCta: "戦略セッションを申し込む", relevantFor: "関連対象", whatWeSupport: "支援内容",
     typicalSituations: "典型的な状況", relevantIndustries: "関連業界", items: services,
