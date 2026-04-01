@@ -160,7 +160,7 @@ export const translationsEs: Translations = {
   },
   services: {
     label: "Servicios",
-    headline: "Tres campos de acción para el éxito estratégico",
+    headline: "Seis campos de acción para el éxito estratégico",
     subline: "Pensar estratégicamente, ejecutar con precisión — nuestras áreas de consultoría se integran para crear soluciones holísticas.",
     requestCta: "Solicitar sesión estratégica",
     relevantFor: "Relevante para",
