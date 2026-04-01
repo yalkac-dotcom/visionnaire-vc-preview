@@ -33,9 +33,9 @@ export const translations: Record<Locale, Translations> = {
     },
     expertise: {
       label: "Über uns",
-      headline: "Wir denken wie Unternehmer. Wir arbeiten wie Strategen.",
-      text: "Wir sind kein klassisches Beratungsunternehmen. Wir denken wie Unternehmer, arbeiten wie Strategen und handeln wie Partner. Unser Fokus: echte Geschäftsergebnisse, nicht Beraterblabla.",
-      text2: "15+ Jahre Erfahrung bei Unternehmen im Mid-Market bis DAX. Fokus auf: Strategische Neuausrichtung, Markenrepositionierung, internationale Expansion. Ergebnisorientiert – wir messen unseren Erfolg an Ihrem Geschäftserfolg.",
+      headline: "Wir entwickeln Perspektiven. Wir schaffen klare Positionierung.",
+      text: "Wir begleiten Unternehmen bei wichtigen strategischen Entscheidungen mit einem klaren Blick für Markt, Marke und unternehmerische Entwicklung. Dabei verbinden wir analytisches Denken mit einem hohen Anspruch an Qualität, Klarheit und Umsetzbarkeit.",
+      text2: "Ob Neuausrichtung, Markenprofil oder Wachstum im internationalen Umfeld: Wir arbeiten strukturiert, partnerschaftlich und mit dem Ziel, tragfähige Lösungen zu entwickeln, die Substanz haben und langfristig wirken.",
     },
     services: {
       label: "Leistungen",
