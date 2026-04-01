@@ -99,8 +99,8 @@ export const translations: Record<Locale, Translations> = {
     },
     about: {
       label: "Über Visionnaire",
-      headline: "Beratung mit Klarheit, Haltung und hochwertigem Anspruch",
-      subline: "Visionnaire Consulting begleitet ausgewählte Unternehmen, Marken und Vorhaben mit strategischer Präzision, internationalem Blick und einem klaren Verständnis für Positionierung, Entwicklung und langfristige Wirkung.",
+      headline: "Wir entwickeln Perspektiven. Wir schaffen klare Positionierung.",
+      subline: "Wir begleiten Unternehmen bei wichtigen strategischen Entscheidungen mit einem klaren Blick für Markt, Marke und unternehmerische Entwicklung. Dabei verbinden wir analytisches Denken mit einem hohen Anspruch an Qualität, Klarheit und Umsetzbarkeit.\n\nOb Neuausrichtung, Markenprofil oder Wachstum im internationalen Umfeld: Wir arbeiten strukturiert, partnerschaftlich und mit dem Ziel, tragfähige Lösungen zu entwickeln, die Substanz haben und langfristig wirken.",
       approach: {
         label: "Strategische Beratung, neu gefasst",
         headline: "Klarheit vor Lautstärke",
