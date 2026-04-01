@@ -39,7 +39,7 @@ export const translations: Record<Locale, Translations> = {
     },
     services: {
       label: "Leistungen",
-      headline: "Drei Handlungsfelder für strategischen Erfolg",
+      headline: "Sechs Handlungsfelder für strategischen Erfolg",
       subline: "Strategisch denken, präzise umsetzen — unsere Beratungsfelder greifen ineinander und schaffen ganzheitliche Lösungen.",
       requestCta: "Strategiegespräch anfordern",
       relevantFor: "Relevant für",
