@@ -154,9 +154,9 @@ export const translationsEs: Translations = {
   },
   expertise: {
     label: "Sobre Nosotros",
-    headline: "Pensamos como empresarios. Trabajamos como estrategas.",
-    text: "No somos una consultora convencional. Pensamos como empresarios, trabajamos como estrategas y actuamos como socios. Nuestro foco: resultados empresariales reales, no jerga de consultores.",
-    text2: "Más de 15 años de experiencia con empresas del mercado medio hasta nivel DAX. Enfoque en: realineamiento estratégico, reposicionamiento de marca, expansión internacional. Orientados a resultados — medimos nuestro éxito por el éxito de su negocio.",
+    headline: "Desarrollamos perspectivas. Creamos un posicionamiento claro.",
+    text: "Acompañamos a las empresas en sus decisiones estratégicas más importantes con una visión clara del mercado, la marca y el desarrollo empresarial. Combinamos pensamiento analítico con altos estándares de calidad, claridad y viabilidad.",
+    text2: "Ya se trate de reorientación, perfil de marca o crecimiento internacional: trabajamos de forma estructurada, colaborativa y con el objetivo de desarrollar soluciones sólidas, con sustancia y efecto duradero.",
   },
   services: {
     label: "Servicios",

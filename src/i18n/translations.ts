@@ -343,9 +343,9 @@ export const translations: Record<Locale, Translations> = {
     },
     expertise: {
       label: "About Us",
-      headline: "We think like entrepreneurs. We work like strategists.",
-      text: "We are not a typical consulting firm. We think like entrepreneurs, work like strategists and act like partners. Our focus: real business results, not consultant jargon.",
-      text2: "15+ years of experience with mid-market to DAX companies. Focus on: strategic realignment, brand repositioning, international expansion. Results-driven – we measure our success by your business success.",
+      headline: "We develop perspectives. We create clear positioning.",
+      text: "We accompany companies through important strategic decisions with a clear view of market, brand and entrepreneurial development. In doing so, we combine analytical thinking with high standards of quality, clarity and implementability.",
+      text2: "Whether realignment, brand profile or growth in an international environment: we work in a structured, partnership-driven way — with the aim of developing resilient solutions that carry substance and create lasting impact.",
     },
     services: {
       label: "Services",
