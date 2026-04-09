@@ -401,33 +401,32 @@ export const translationsIt: Translations = {
       "Krefelder Str. 562",
       "41066 Mönchengladbach",
     ],
+    supplementaryTitle: "Informazioni Legali Aggiuntive",
     sections: [
       {
-        title: "Risoluzione delle controversie",
-        content: ["Non siamo disposti né obbligati a partecipare a procedimenti di risoluzione delle controversie dinanzi a un organismo di conciliazione per i consumatori."],
+        title: "Risoluzione delle Controversie",
+        content: ["Non siamo né disposti né obbligati a partecipare a procedure di risoluzione delle controversie dinanzi a un organismo di conciliazione per i consumatori."],
       },
       {
-        title: "Responsabilità per i contenuti",
+        title: "Responsabilità per i Contenuti",
         content: [
-          "In qualità di fornitore di servizi, siamo responsabili dei nostri contenuti su queste pagine ai sensi del § 7 comma 1 DDG secondo le leggi generali. Tuttavia, non siamo obbligati a monitorare le informazioni trasmesse o memorizzate da terzi né a indagare su circostanze che indichino un'attività illegale.",
-          "Gli obblighi di rimozione o blocco dell'uso delle informazioni secondo le leggi generali rimangono inalterati. Tuttavia, la responsabilità è possibile solo dal momento in cui veniamo a conoscenza di una specifica violazione. Non appena venissimo a conoscenza di tali violazioni, provvederemo a rimuovere immediatamente i relativi contenuti.",
+          "I contenuti di questo sito web sono stati redatti con la massima cura possibile. In qualità di prestatore di servizi, siamo responsabili dei nostri contenuti presenti su questo sito web ai sensi delle disposizioni di legge generali. Tuttavia, non siamo soggetti a un obbligo generale di monitorare informazioni di terzi trasmesse o memorizzate né di ricercare attivamente circostanze che indichino attività illecite. Restano impregiudicati gli obblighi di legge relativi alla rimozione o al blocco dell'uso di informazioni. Non appena verremo a conoscenza di una violazione concreta, provvederemo a rimuovere immediatamente i contenuti interessati.",
         ],
       },
       {
-        title: "Responsabilità per i link",
+        title: "Responsabilità per i Link",
         content: [
-          "Il nostro sito può contenere link a siti web esterni di terze parti, sui cui contenuti non abbiamo alcuna influenza. Non possiamo pertanto assumerci alcuna responsabilità per tali contenuti esterni. Il rispettivo fornitore o gestore delle pagine collegate è sempre responsabile dei propri contenuti.",
-          "Le pagine collegate sono state verificate al momento del collegamento per possibili violazioni di legge. Contenuti illegali non erano riconoscibili al momento del collegamento. Un controllo permanente dei contenuti delle pagine collegate non è ragionevole senza indicazioni concrete di una violazione. Non appena venissimo a conoscenza di violazioni, provvederemo a rimuovere immediatamente tali link.",
+          "Questo sito web può contenere link a siti web esterni di terzi sui cui contenuti non abbiamo alcuna influenza. Pertanto, non possiamo assumere alcuna garanzia per tali contenuti esterni. Per i contenuti delle pagine collegate è sempre responsabile il rispettivo fornitore o gestore. Le pagine collegate sono state controllate al momento del collegamento per verificare eventuali violazioni di legge. Al momento del collegamento non erano riconoscibili contenuti illeciti. Un controllo permanente del contenuto delle pagine collegate non è tuttavia ragionevole senza indizi concreti di una violazione. Qualora venissimo a conoscenza di violazioni di legge, rimuoveremo immediatamente tali link.",
         ],
       },
       {
-        title: "Diritto d'autore",
+        title: "Diritto d'Autore",
         content: [
-          "I contenuti e le opere creati dal gestore del sito su queste pagine sono soggetti al diritto d'autore tedesco. La riproduzione, l'elaborazione, la distribuzione e qualsiasi tipo di sfruttamento al di fuori dei limiti del diritto d'autore richiedono il previo consenso scritto del rispettivo autore o creatore.",
-          "Il download e la copia di questa pagina sono consentiti solo per uso privato e non commerciale. Laddove i contenuti di questa pagina non siano stati creati dal gestore, vengono rispettati i diritti d'autore di terzi. In particolare, i contenuti di terzi sono contrassegnati come tali. Qualora doveste comunque riscontrare una violazione del diritto d'autore, vi preghiamo di segnalarcelo. Non appena venissimo a conoscenza di violazioni, provvederemo a rimuovere immediatamente tali contenuti.",
+          "I contenuti e le opere pubblicati su questo sito web sono soggetti al diritto d'autore tedesco. Qualsiasi utilizzo che ecceda i limiti previsti dal diritto d'autore richiede il previo consenso scritto del rispettivo titolare dei diritti. I download e le copie di questo sito web sono consentiti esclusivamente per uso privato e non commerciale. Nella misura in cui i contenuti di questo sito web non siano stati creati da noi, vengono rispettati i diritti d'autore di terzi e tali contenuti vengono contrassegnati come tali. Qualora doveste comunque rilevare una possibile violazione del diritto d'autore, vi chiediamo cortesemente di informarci. Non appena verremo a conoscenza di una violazione, provvederemo a rimuovere immediatamente tali contenuti.",
         ],
       },
     ],
+    bindingLanguageNote: "Fa fede giuridicamente la versione tedesca della presente nota legale.",
   },
   footer: {
     brand: "VISIONNAIRE",
