@@ -73,6 +73,15 @@ export default function Impressum() {
               </div>
             </ScrollReveal>
 
+            {/* Supplementary Legal Notices */}
+            {im.supplementaryTitle && (
+              <ScrollReveal delay={100}>
+                <h2 className="text-foreground text-lg font-medium mb-8 mt-4 tracking-[-0.01em]">
+                  {im.supplementaryTitle}
+                </h2>
+              </ScrollReveal>
+            )}
+
             {/* Legal sections */}
             {im.sections.map((section, idx) => (
               <ScrollReveal key={idx} delay={120 + idx * 40}>
@@ -91,6 +100,15 @@ export default function Impressum() {
                 </div>
               </ScrollReveal>
             ))}
+
+            {/* Binding language note (non-DE only) */}
+            {im.bindingLanguageNote && (
+              <ScrollReveal delay={300}>
+                <p className="text-muted-foreground text-sm leading-[1.8] italic mt-6">
+                  {im.bindingLanguageNote}
+                </p>
+              </ScrollReveal>
+            )}
           </div>
         </div>
       </section>

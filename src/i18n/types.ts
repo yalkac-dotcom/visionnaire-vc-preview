@@ -192,7 +192,9 @@ export interface Translations {
     vatLine: string;
     contentResponsibilityTitle: string;
     contentResponsibilityBlock: string[];
+    supplementaryTitle?: string;
     sections: { title: string; content: string[] }[];
+    bindingLanguageNote?: string;
   };
   footer: {
     brand: string;

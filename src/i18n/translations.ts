@@ -214,6 +214,7 @@ export const translations: Record<Locale, Translations> = {
         "Krefelder Str. 562",
         "41066 Mönchengladbach",
       ],
+      supplementaryTitle: "Ergänzende rechtliche Hinweise",
       sections: [
         {
           title: "Streitschlichtung",
@@ -224,22 +225,19 @@ export const translations: Record<Locale, Translations> = {
         {
           title: "Haftung für Inhalte",
           content: [
-            "Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Als Diensteanbieter sind wir jedoch nicht verpflichtet, fremde übermittelte oder gespeicherte Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
-            "Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden entsprechender Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.",
+            "Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Als Diensteanbieter sind wir für eigene Inhalte auf dieser Website nach den allgemeinen gesetzlichen Vorschriften verantwortlich. Eine allgemeine Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder aktiv nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen, besteht jedoch nicht. Gesetzliche Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen bleiben hiervon unberührt. Sobald uns konkrete Rechtsverletzungen bekannt werden, werden wir die betreffenden Inhalte unverzüglich entfernen.",
           ],
         },
         {
           title: "Haftung für Links",
           content: [
-            "Unser Angebot enthält gegebenenfalls Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
-            "Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.",
+            "Diese Website kann Links zu externen Websites Dritter enthalten, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte übernehmen wir daher keine Gewähr. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße geprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle verlinkter Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung jedoch nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links unverzüglich entfernen.",
           ],
         },
         {
           title: "Urheberrecht",
           content: [
-            "Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
-            "Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie dennoch auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.",
+            "Die auf dieser Website veröffentlichten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Jede Verwertung außerhalb der Grenzen des Urheberrechts bedarf der vorherigen schriftlichen Zustimmung des jeweiligen Rechteinhabers. Downloads und Kopien dieser Website sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit Inhalte auf dieser Website nicht von uns erstellt wurden, werden Urheberrechte Dritter beachtet und entsprechende Inhalte als solche gekennzeichnet. Sollten Sie dennoch auf eine mögliche Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte unverzüglich entfernen.",
           ],
         },
       ],
@@ -565,35 +563,34 @@ export const translations: Record<Locale, Translations> = {
         "Krefelder Str. 562",
         "41066 Mönchengladbach",
       ],
+      supplementaryTitle: "Additional Legal Information",
       sections: [
         {
-          title: "Dispute resolution",
+          title: "Dispute Resolution",
           content: [
-            "We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration body.",
+            "We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.",
           ],
         },
         {
-          title: "Liability for content",
+          title: "Liability for Content",
           content: [
-            "As a service provider, we are responsible for our own content on these pages in accordance with § 7 (1) DDG under general law. However, as a service provider, we are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
-            "Obligations to remove or block the use of information under general law remain unaffected. However, liability in this regard is only possible from the point in time at which we become aware of a specific legal infringement. Upon becoming aware of such violations, we will remove the content immediately.",
+            "The content of this website has been created with the greatest possible care. As a service provider, we are responsible for our own content on this website in accordance with the general laws. However, we are under no general obligation to monitor transmitted or stored third-party information or to actively investigate circumstances indicating unlawful activity. Statutory obligations to remove or block the use of information remain unaffected. As soon as we become aware of specific legal infringements, we will remove the relevant content without undue delay.",
           ],
         },
         {
-          title: "Liability for links",
+          title: "Liability for Links",
           content: [
-            "Our website may contain links to external third-party websites over whose content we have no influence. We therefore cannot accept any liability for such external content. The respective provider or operator of the linked pages is always responsible for their content.",
-            "The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognisable at the time of linking. However, permanent content monitoring of linked pages is not reasonable without specific indications of a legal violation. Upon becoming aware of legal violations, we will remove such links immediately.",
+            "This website may contain links to external third-party websites over whose content we have no control. Therefore, we cannot accept any responsibility for such external content. The respective provider or operator of the linked pages is always responsible for their content. The linked pages were checked for possible legal violations at the time of linking. No unlawful content was identifiable at the time of linking. Permanent monitoring of the content of linked pages is not reasonable without concrete indications of a legal violation. If we become aware of any legal violations, we will remove such links without undue delay.",
           ],
         },
         {
           title: "Copyright",
           content: [
-            "The content and works created by the site operator on these pages are subject to German copyright law. Reproduction, editing, distribution and any kind of exploitation outside the limits of copyright law require the prior written consent of the respective author or creator.",
-            "Downloads and copies of this page are only permitted for private, non-commercial use. Where content on this page was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. Upon becoming aware of legal violations, we will remove such content immediately.",
+            "The content and works published on this website are subject to German copyright law. Any use beyond the limits of copyright law requires the prior written consent of the respective rights holder. Downloads and copies of this website are permitted only for private, non-commercial use. Insofar as content on this website was not created by us, third-party copyrights are respected and such content is identified accordingly. Should you nevertheless become aware of a possible copyright infringement, we kindly ask you to notify us accordingly. Upon becoming aware of legal infringements, we will remove such content without undue delay.",
           ],
         },
       ],
+      bindingLanguageNote: "The German version of this legal notice shall prevail.",
     },
     footer: {
       brand: "VISIONNAIRE",
