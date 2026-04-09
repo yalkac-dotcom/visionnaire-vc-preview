@@ -184,18 +184,15 @@ export interface Translations {
   impressum: {
     label: string;
     headline: string;
-    company: string;
-    address: string[];
-    phone: string;
-    fax: string;
-    email: string;
-    representedBy: string;
-    representedByName: string;
-    registerLabel: string;
-    registerValue: string;
-    registerCourt: string;
-    vatLabel: string;
-    vatValue: string;
+    angabenTitle: string;
+    companyBlock: string[];
+    brandNote: string;
+    contactBlock: string[];
+    registerBlock: string[];
+    vatLine: string;
+    contentResponsibilityTitle: string;
+    contentResponsibilityBlock: string[];
+    sections: { title: string; content: string[] }[];
   };
   footer: {
     brand: string;

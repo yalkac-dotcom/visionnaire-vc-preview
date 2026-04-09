@@ -190,18 +190,59 @@ export const translations: Record<Locale, Translations> = {
     impressum: {
       label: "Impressum",
       headline: "Impressum",
-      company: "Visionnaire Consulting GmbH",
-      address: ["Krefelder Str. 562", "41066 Mönchengladbach", "Deutschland"],
-      phone: "+49 (0)2161 83033-0",
-      fax: "+49 (0)2161 83033-19",
-      email: "welcome@visionnaire.de",
-      representedBy: "Vertreten durch die Geschäftsführung",
-      representedByName: "Ann-Catherin Büschkens-Götz",
-      registerLabel: "Handelsregister",
-      registerValue: "HRB 18192",
-      registerCourt: "Amtsgericht Mönchengladbach",
-      vatLabel: "Umsatzsteuer-ID",
-      vatValue: "DE297627424",
+      angabenTitle: "Angaben gemäß § 5 DDG",
+      companyBlock: [
+        "Visionnaire Consulting GmbH",
+        "vertreten durch die Geschäftsführerin Ann-Catherin Büschkens-Götz",
+        "Krefelder Str. 562",
+        "41066 Mönchengladbach",
+        "Deutschland",
+      ],
+      brandNote: "Diese Website wird unter der Marke Visionnaire Consulting betrieben.",
+      contactBlock: [
+        "E-Mail: welcome@visionnaire.de",
+        "Telefon: +49 (0)2161 83033-0",
+      ],
+      registerBlock: [
+        "Registergericht: Amtsgericht Mönchengladbach",
+        "Registernummer: HRB 18192",
+      ],
+      vatLine: "Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE297627424",
+      contentResponsibilityTitle: "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
+      contentResponsibilityBlock: [
+        "Ann-Catherin Büschkens-Götz",
+        "Krefelder Str. 562",
+        "41066 Mönchengladbach",
+      ],
+      sections: [
+        {
+          title: "Streitschlichtung",
+          content: [
+            "Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+          ],
+        },
+        {
+          title: "Haftung für Inhalte",
+          content: [
+            "Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Als Diensteanbieter sind wir jedoch nicht verpflichtet, fremde übermittelte oder gespeicherte Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+            "Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden entsprechender Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.",
+          ],
+        },
+        {
+          title: "Haftung für Links",
+          content: [
+            "Unser Angebot enthält gegebenenfalls Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+            "Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.",
+          ],
+        },
+        {
+          title: "Urheberrecht",
+          content: [
+            "Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
+            "Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie dennoch auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.",
+          ],
+        },
+      ],
     },
     footer: {
       brand: "VISIONNAIRE",
@@ -500,18 +541,59 @@ export const translations: Record<Locale, Translations> = {
     impressum: {
       label: "Legal Notice",
       headline: "Legal Notice",
-      company: "Visionnaire Consulting GmbH",
-      address: ["Krefelder Str. 562", "41066 Mönchengladbach", "Germany"],
-      phone: "+49 (0)2161 83033-0",
-      fax: "+49 (0)2161 83033-19",
-      email: "welcome@visionnaire.de",
-      representedBy: "Represented by management",
-      representedByName: "Ann-Catherin Büschkens-Götz",
-      registerLabel: "Commercial register",
-      registerValue: "HRB 18192",
-      registerCourt: "Amtsgericht Mönchengladbach",
-      vatLabel: "VAT ID",
-      vatValue: "DE297627424",
+      angabenTitle: "Information pursuant to § 5 DDG",
+      companyBlock: [
+        "Visionnaire Consulting GmbH",
+        "represented by Managing Director Ann-Catherin Büschkens-Götz",
+        "Krefelder Str. 562",
+        "41066 Mönchengladbach",
+        "Germany",
+      ],
+      brandNote: "This website is operated under the brand Visionnaire Consulting.",
+      contactBlock: [
+        "Email: welcome@visionnaire.de",
+        "Phone: +49 (0)2161 83033-0",
+      ],
+      registerBlock: [
+        "Register court: Amtsgericht Mönchengladbach",
+        "Register number: HRB 18192",
+      ],
+      vatLine: "VAT identification number pursuant to § 27a UStG: DE297627424",
+      contentResponsibilityTitle: "Responsible for content pursuant to § 18 (2) MStV",
+      contentResponsibilityBlock: [
+        "Ann-Catherin Büschkens-Götz",
+        "Krefelder Str. 562",
+        "41066 Mönchengladbach",
+      ],
+      sections: [
+        {
+          title: "Dispute resolution",
+          content: [
+            "We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration body.",
+          ],
+        },
+        {
+          title: "Liability for content",
+          content: [
+            "As a service provider, we are responsible for our own content on these pages in accordance with § 7 (1) DDG under general law. However, as a service provider, we are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
+            "Obligations to remove or block the use of information under general law remain unaffected. However, liability in this regard is only possible from the point in time at which we become aware of a specific legal infringement. Upon becoming aware of such violations, we will remove the content immediately.",
+          ],
+        },
+        {
+          title: "Liability for links",
+          content: [
+            "Our website may contain links to external third-party websites over whose content we have no influence. We therefore cannot accept any liability for such external content. The respective provider or operator of the linked pages is always responsible for their content.",
+            "The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognisable at the time of linking. However, permanent content monitoring of linked pages is not reasonable without specific indications of a legal violation. Upon becoming aware of legal violations, we will remove such links immediately.",
+          ],
+        },
+        {
+          title: "Copyright",
+          content: [
+            "The content and works created by the site operator on these pages are subject to German copyright law. Reproduction, editing, distribution and any kind of exploitation outside the limits of copyright law require the prior written consent of the respective author or creator.",
+            "Downloads and copies of this page are only permitted for private, non-commercial use. Where content on this page was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. Upon becoming aware of legal violations, we will remove such content immediately.",
+          ],
+        },
+      ],
     },
     footer: {
       brand: "VISIONNAIRE",

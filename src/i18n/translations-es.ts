@@ -280,18 +280,57 @@ export const translationsEs: Translations = {
   impressum: {
     label: "Aviso Legal",
     headline: "Aviso Legal",
-    company: "Visionnaire Consulting GmbH",
-    address: ["Krefelder Str. 562", "41066 Mönchengladbach", "Alemania"],
-    phone: "+49 (0)2161 83033-0",
-    fax: "+49 (0)2161 83033-19",
-    email: "welcome@visionnaire.de",
-    representedBy: "Representada por la dirección",
-    representedByName: "Ann-Catherin Büschkens-Götz",
-    registerLabel: "Registro mercantil",
-    registerValue: "HRB 18192",
-    registerCourt: "Amtsgericht Mönchengladbach",
-    vatLabel: "NIF-IVA",
-    vatValue: "DE297627424",
+    angabenTitle: "Información conforme al § 5 DDG",
+    companyBlock: [
+      "Visionnaire Consulting GmbH",
+      "representada por la directora gerente Ann-Catherin Büschkens-Götz",
+      "Krefelder Str. 562",
+      "41066 Mönchengladbach",
+      "Alemania",
+    ],
+    brandNote: "Este sitio web opera bajo la marca Visionnaire Consulting.",
+    contactBlock: [
+      "Correo electrónico: welcome@visionnaire.de",
+      "Teléfono: +49 (0)2161 83033-0",
+    ],
+    registerBlock: [
+      "Tribunal de registro: Amtsgericht Mönchengladbach",
+      "Número de registro: HRB 18192",
+    ],
+    vatLine: "Número de identificación fiscal conforme al § 27a UStG: DE297627424",
+    contentResponsibilityTitle: "Responsable del contenido conforme al § 18, apartado 2, MStV",
+    contentResponsibilityBlock: [
+      "Ann-Catherin Büschkens-Götz",
+      "Krefelder Str. 562",
+      "41066 Mönchengladbach",
+    ],
+    sections: [
+      {
+        title: "Resolución de litigios",
+        content: ["No estamos dispuestos ni obligados a participar en procedimientos de resolución de litigios ante una entidad de arbitraje de consumo."],
+      },
+      {
+        title: "Responsabilidad por los contenidos",
+        content: [
+          "Como proveedor de servicios, somos responsables de nuestros propios contenidos en estas páginas conforme al § 7, apartado 1, DDG según la legislación general. Sin embargo, no estamos obligados a supervisar la información transmitida o almacenada por terceros ni a investigar circunstancias que indiquen una actividad ilegal.",
+          "Las obligaciones de eliminación o bloqueo del uso de información conforme a la legislación general no se ven afectadas. No obstante, la responsabilidad solo es posible a partir del momento en que tengamos conocimiento de una infracción concreta. En cuanto tengamos conocimiento de tales infracciones, eliminaremos dichos contenidos de inmediato.",
+        ],
+      },
+      {
+        title: "Responsabilidad por los enlaces",
+        content: [
+          "Nuestro sitio web puede contener enlaces a sitios web externos de terceros sobre cuyo contenido no tenemos influencia alguna. Por ello, no podemos asumir responsabilidad alguna por dichos contenidos externos. El proveedor u operador respectivo de las páginas enlazadas es siempre responsable de sus contenidos.",
+          "Las páginas enlazadas fueron verificadas en el momento del enlace en busca de posibles infracciones legales. No se reconocieron contenidos ilegales en el momento del enlace. Sin embargo, un control permanente del contenido de las páginas enlazadas no es razonable sin indicios concretos de una infracción. En cuanto tengamos conocimiento de infracciones legales, eliminaremos dichos enlaces de inmediato.",
+        ],
+      },
+      {
+        title: "Derechos de autor",
+        content: [
+          "Los contenidos y obras creados por el operador del sitio en estas páginas están sujetos a la legislación alemana de derechos de autor. La reproducción, edición, distribución y cualquier tipo de explotación fuera de los límites del derecho de autor requieren el consentimiento previo por escrito del autor o creador correspondiente.",
+          "Las descargas y copias de esta página solo están permitidas para uso privado y no comercial. En la medida en que los contenidos de esta página no hayan sido creados por el operador, se respetan los derechos de autor de terceros. En particular, los contenidos de terceros se identifican como tales. Si, no obstante, detecta una infracción de derechos de autor, le rogamos que nos lo comunique. En cuanto tengamos conocimiento de infracciones legales, eliminaremos dichos contenidos de inmediato.",
+        ],
+      },
+    ],
   },
   footer: {
     brand: "VISIONNAIRE", consulting: "Consulting", tagline: "Estrategia. Marca. Impacto.", rights: "Todos los derechos reservados.",

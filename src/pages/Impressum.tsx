@@ -1,7 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SEOHead } from "@/components/SEOHead";
-import { Mail, Phone } from "lucide-react";
 
 export default function Impressum() {
   const { t } = useLanguage();
@@ -32,75 +31,66 @@ export default function Impressum() {
       <section className="py-14 md:py-18 bg-background">
         <div className="container">
           <div className="max-w-xl">
+            {/* Angaben gemäß § 5 DDG */}
             <ScrollReveal>
               <h2 className="text-foreground text-base font-medium mb-6 tracking-[-0.01em]">
-                {im.company}
+                {im.angabenTitle}
               </h2>
-              <div className="text-muted-foreground text-sm leading-[1.8] mb-10">
-                {im.address.map((line) => (
+              <div className="text-muted-foreground text-sm leading-[1.8] mb-6">
+                {im.companyBlock.map((line) => (
                   <p key={line}>{line}</p>
                 ))}
               </div>
+              <p className="text-muted-foreground text-sm leading-[1.8] mb-6">
+                {im.brandNote}
+              </p>
+              <div className="text-muted-foreground text-sm leading-[1.8] mb-6">
+                {im.contactBlock.map((line, i) => (
+                  <p key={i}>{line}</p>
+                ))}
+              </div>
+              <div className="text-muted-foreground text-sm leading-[1.8] mb-6">
+                {im.registerBlock.map((line, i) => (
+                  <p key={i}>{line}</p>
+                ))}
+              </div>
+              <p className="text-muted-foreground text-sm leading-[1.8] mb-10">
+                {im.vatLine}
+              </p>
             </ScrollReveal>
 
+            {/* Verantwortlich für den Inhalt */}
             <ScrollReveal delay={80}>
-              <div className="grid sm:grid-cols-2 gap-10 mb-10 pb-14 border-b border-border">
-                <div>
-                  <p className="text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">Telefon</p>
-                  <a
-                    href={`tel:${im.phone.replace(/\s/g, "")}`}
-                    className="inline-flex items-center gap-2.5 text-foreground text-sm hover:text-[hsl(var(--brand-blue))] transition-colors duration-200"
-                  >
-                    <Phone size={13} strokeWidth={1.5} className="text-muted-foreground" />
-                    {im.phone}
-                  </a>
-                </div>
-                <div>
-                  <p className="text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">Fax</p>
-                  <p className="text-foreground text-sm">{im.fax}</p>
-                </div>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={120}>
               <div className="mb-10 pb-14 border-b border-border">
-                <p className="text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">E-Mail</p>
-                <a
-                  href={`mailto:${im.email}`}
-                  className="inline-flex items-center gap-2.5 text-foreground text-sm hover:text-[hsl(var(--brand-blue))] transition-colors duration-200"
-                >
-                  <Mail size={13} strokeWidth={1.5} className="text-muted-foreground" />
-                  {im.email}
-                </a>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={160}>
-              <div className="mb-10 pb-14 border-b border-border">
-                <p className="text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">
-                  {im.representedBy}
-                </p>
-                <p className="text-foreground text-sm">{im.representedByName}</p>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={200}>
-              <div className="grid sm:grid-cols-2 gap-10 mb-10 pb-14 border-b border-border">
-                <div>
-                  <p className="text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">
-                    {im.registerLabel}
-                  </p>
-                  <p className="text-foreground text-sm">{im.registerValue}</p>
-                  <p className="text-muted-foreground text-sm mt-1">{im.registerCourt}</p>
-                </div>
-                <div>
-                  <p className="text-warm-grey text-[11px] uppercase tracking-[0.18em] mb-3">
-                    {im.vatLabel}
-                  </p>
-                  <p className="text-foreground text-sm">{im.vatValue}</p>
+                <h2 className="text-foreground text-base font-medium mb-6 tracking-[-0.01em]">
+                  {im.contentResponsibilityTitle}
+                </h2>
+                <div className="text-muted-foreground text-sm leading-[1.8]">
+                  {im.contentResponsibilityBlock.map((line, i) => (
+                    <p key={i}>{line}</p>
+                  ))}
                 </div>
               </div>
             </ScrollReveal>
+
+            {/* Legal sections */}
+            {im.sections.map((section, idx) => (
+              <ScrollReveal key={idx} delay={120 + idx * 40}>
+                <div className="mb-10 pb-14 border-b border-border">
+                  <h2 className="text-foreground text-base font-medium mb-6 tracking-[-0.01em]">
+                    {section.title}
+                  </h2>
+                  {section.content.map((paragraph, pi) => (
+                    <p
+                      key={pi}
+                      className="text-muted-foreground text-sm leading-[1.8] mb-4 last:mb-0"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </ScrollReveal>
+            ))}
           </div>
         </div>
       </section>
