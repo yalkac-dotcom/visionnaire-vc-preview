@@ -377,18 +377,57 @@ export const translationsIt: Translations = {
   impressum: {
     label: "Note Legali",
     headline: "Note Legali",
-    company: "Visionnaire Consulting GmbH",
-    address: ["Krefelder Str. 562", "41066 Mönchengladbach", "Germania"],
-    phone: "+49 (0)2161 83033-0",
-    fax: "+49 (0)2161 83033-19",
-    email: "welcome@visionnaire.de",
-    representedBy: "Rappresentata dalla direzione",
-    representedByName: "Ann-Catherin Büschkens-Götz",
-    registerLabel: "Registro commerciale",
-    registerValue: "HRB 18192",
-    registerCourt: "Amtsgericht Mönchengladbach",
-    vatLabel: "Partita IVA",
-    vatValue: "DE297627424",
+    angabenTitle: "Informazioni ai sensi del § 5 DDG",
+    companyBlock: [
+      "Visionnaire Consulting GmbH",
+      "rappresentata dall'amministratrice Ann-Catherin Büschkens-Götz",
+      "Krefelder Str. 562",
+      "41066 Mönchengladbach",
+      "Germania",
+    ],
+    brandNote: "Questo sito web è gestito con il marchio Visionnaire Consulting.",
+    contactBlock: [
+      "E-mail: welcome@visionnaire.de",
+      "Telefono: +49 (0)2161 83033-0",
+    ],
+    registerBlock: [
+      "Tribunale di registro: Amtsgericht Mönchengladbach",
+      "Numero di registro: HRB 18192",
+    ],
+    vatLine: "Numero di identificazione IVA ai sensi del § 27a UStG: DE297627424",
+    contentResponsibilityTitle: "Responsabile dei contenuti ai sensi del § 18 comma 2 MStV",
+    contentResponsibilityBlock: [
+      "Ann-Catherin Büschkens-Götz",
+      "Krefelder Str. 562",
+      "41066 Mönchengladbach",
+    ],
+    sections: [
+      {
+        title: "Risoluzione delle controversie",
+        content: ["Non siamo disposti né obbligati a partecipare a procedimenti di risoluzione delle controversie dinanzi a un organismo di conciliazione per i consumatori."],
+      },
+      {
+        title: "Responsabilità per i contenuti",
+        content: [
+          "In qualità di fornitore di servizi, siamo responsabili dei nostri contenuti su queste pagine ai sensi del § 7 comma 1 DDG secondo le leggi generali. Tuttavia, non siamo obbligati a monitorare le informazioni trasmesse o memorizzate da terzi né a indagare su circostanze che indichino un'attività illegale.",
+          "Gli obblighi di rimozione o blocco dell'uso delle informazioni secondo le leggi generali rimangono inalterati. Tuttavia, la responsabilità è possibile solo dal momento in cui veniamo a conoscenza di una specifica violazione. Non appena venissimo a conoscenza di tali violazioni, provvederemo a rimuovere immediatamente i relativi contenuti.",
+        ],
+      },
+      {
+        title: "Responsabilità per i link",
+        content: [
+          "Il nostro sito può contenere link a siti web esterni di terze parti, sui cui contenuti non abbiamo alcuna influenza. Non possiamo pertanto assumerci alcuna responsabilità per tali contenuti esterni. Il rispettivo fornitore o gestore delle pagine collegate è sempre responsabile dei propri contenuti.",
+          "Le pagine collegate sono state verificate al momento del collegamento per possibili violazioni di legge. Contenuti illegali non erano riconoscibili al momento del collegamento. Un controllo permanente dei contenuti delle pagine collegate non è ragionevole senza indicazioni concrete di una violazione. Non appena venissimo a conoscenza di violazioni, provvederemo a rimuovere immediatamente tali link.",
+        ],
+      },
+      {
+        title: "Diritto d'autore",
+        content: [
+          "I contenuti e le opere creati dal gestore del sito su queste pagine sono soggetti al diritto d'autore tedesco. La riproduzione, l'elaborazione, la distribuzione e qualsiasi tipo di sfruttamento al di fuori dei limiti del diritto d'autore richiedono il previo consenso scritto del rispettivo autore o creatore.",
+          "Il download e la copia di questa pagina sono consentiti solo per uso privato e non commerciale. Laddove i contenuti di questa pagina non siano stati creati dal gestore, vengono rispettati i diritti d'autore di terzi. In particolare, i contenuti di terzi sono contrassegnati come tali. Qualora doveste comunque riscontrare una violazione del diritto d'autore, vi preghiamo di segnalarcelo. Non appena venissimo a conoscenza di violazioni, provvederemo a rimuovere immediatamente tali contenuti.",
+        ],
+      },
+    ],
   },
   footer: {
     brand: "VISIONNAIRE",
