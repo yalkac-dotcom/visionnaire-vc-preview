@@ -168,7 +168,7 @@ export const translationsJa: Translations = {
     ],
     items: [
       { name: "Visionnaire Consulting", desc: "要求の高い事業、企業、開発のための戦略アドバイザリー。Visionnaire Consultingは母体ブランドであり、ポジショニング、トランスフォーメーション、ブランド、成長において戦略的深度とオペレーション実行力を結合します。", href: "/", role: "母体ブランド" },
-      { name: "Visionnaire Domizil", desc: "格式ある環境におけるプレミアムオフィス・ビジネススペースソリューション。Visionnaire Domizilはプレミアムオフィス、プロフェッショナルなビジネスルーム、ビジネスセンターサービス、そして品質への明確なコミットメントを持つ洗練された職場環境を提供します。", href: "https://visionnaire.de", role: "連携事業領域" },
+      { name: "Visionnaire Domizil", desc: "格式ある環境におけるプレミアムオフィス・ビジネススペースソリューション。Visionnaire Domizilはプレミアムオフィス、プロフェッショナルなビジネスルーム、ビジネスセンターサービス、そして品質への明確なコミットメントを持つ洗練された職場環境を提供します。", href: "https://vcdomizil.de/", role: "連携事業領域" },
     ],
   },
   about: {

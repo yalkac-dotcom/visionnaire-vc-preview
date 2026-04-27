@@ -168,7 +168,7 @@ export const translationsAr: Translations = {
     ],
     items: [
       { name: "Visionnaire Consulting", desc: "استشارات استراتيجية للمشاريع والشركات والتطورات الطموحة. Visionnaire Consulting هي العلامة التجارية الأم وتربط العمق الاستراتيجي بكفاءة التنفيذ التشغيلي.", href: "/", role: "العلامة التجارية الأم" },
-      { name: "Visionnaire Domizil", desc: "حلول مكاتب ومساحات أعمال متميزة في بيئات راقية. تمثل Visionnaire Domizil المكاتب المتميزة وغرف الأعمال المهنية وخدمات مراكز الأعمال وبيئة عمل راقية.", href: "https://visionnaire.de", role: "مجال أعمال مترابط" },
+      { name: "Visionnaire Domizil", desc: "حلول مكاتب ومساحات أعمال متميزة في بيئات راقية. تمثل Visionnaire Domizil المكاتب المتميزة وغرف الأعمال المهنية وخدمات مراكز الأعمال وبيئة عمل راقية.", href: "https://vcdomizil.de/", role: "مجال أعمال مترابط" },
     ],
   },
   about: {

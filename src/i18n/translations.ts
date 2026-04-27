@@ -92,7 +92,7 @@ export const translations: Record<Locale, Translations> = {
         {
           name: "Visionnaire Domizil",
           desc: "Hochwertige Büro- und Geschäftsraumlösungen in repräsentativem Umfeld. Visionnaire Domizil steht für Premiumbüros, professionelle Geschäftsräume, Business-Center-nahe Services und eine kultivierte Arbeitsumgebung mit klarem Qualitätsanspruch.",
-          href: "https://visionnaire.de",
+          href: "https://vcdomizil.de/",
           role: "Verbundener Geschäftsbereich",
         },
       ],
@@ -441,7 +441,7 @@ export const translations: Record<Locale, Translations> = {
         {
           name: "Visionnaire Domizil",
           desc: "Premium office and business space solutions in distinguished environments. Visionnaire Domizil stands for premium offices, professional business rooms, business-centre services and a cultivated working environment with a clear commitment to quality.",
-          href: "https://visionnaire.de",
+          href: "https://vcdomizil.de/",
           role: "Connected Business Area",
         },
       ],

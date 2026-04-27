@@ -168,7 +168,7 @@ export const translationsZh: Translations = {
     ],
     items: [
       { name: "Visionnaire Consulting", desc: "为高要求的项目、企业和发展提供战略咨询。Visionnaire Consulting是母品牌，在定位、转型、品牌和增长领域将战略深度与运营执行力相结合。", href: "/", role: "母品牌" },
-      { name: "Visionnaire Domizil", desc: "在高品位环境中提供高端办公和商务空间解决方案。Visionnaire Domizil代表高端办公室、专业商务空间、商务中心服务和具有明确质量承诺的精致工作环境。", href: "https://visionnaire.de", role: "关联业务领域" },
+      { name: "Visionnaire Domizil", desc: "在高品位环境中提供高端办公和商务空间解决方案。Visionnaire Domizil代表高端办公室、专业商务空间、商务中心服务和具有明确质量承诺的精致工作环境。", href: "https://vcdomizil.de/", role: "关联业务领域" },
     ],
   },
   about: {
