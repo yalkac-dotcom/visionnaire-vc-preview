@@ -22,7 +22,7 @@ export function Footer() {
         <div className="mb-4 pb-6 border-b border-white/10">
           <p className="text-white/55 text-[12px] tracking-[0.12em] uppercase font-[430]">
             {t.footer.domizilNote}:{" "}
-            <a href="https://visionnaire.de" target="_blank" rel="noopener noreferrer" className="text-[hsl(var(--gold-soft))] hover:text-[hsl(var(--gold))] transition-colors duration-200">{t.footer.domizilLink}</a>
+            <a href="https://vcdomizil.de/" target="_blank" rel="noopener noreferrer" className="text-[hsl(var(--gold-soft))] hover:text-[hsl(var(--gold))] transition-colors duration-200">{t.footer.domizilLink}</a>
           </p>
         </div>
 

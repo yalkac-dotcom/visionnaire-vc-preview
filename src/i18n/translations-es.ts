@@ -205,7 +205,7 @@ export const translationsEs: Translations = {
     ],
     items: [
       { name: "Visionnaire Consulting", desc: "Consultoría estratégica para proyectos, empresas y desarrollos exigentes. Visionnaire Consulting es la marca madre y conecta profundidad estratégica con competencia de ejecución operativa — en posicionamiento, transformación, marca y crecimiento.", href: "/", role: "Marca Madre" },
-      { name: "Visionnaire Domizil", desc: "Soluciones premium de oficinas y espacios comerciales en entornos distinguidos. Visionnaire Domizil representa oficinas premium, espacios comerciales profesionales, servicios de centro de negocios y un entorno de trabajo cultivado con un claro compromiso con la calidad.", href: "https://visionnaire.de", role: "Área de Negocio Conectada" },
+      { name: "Visionnaire Domizil", desc: "Soluciones premium de oficinas y espacios comerciales en entornos distinguidos. Visionnaire Domizil representa oficinas premium, espacios comerciales profesionales, servicios de centro de negocios y un entorno de trabajo cultivado con un claro compromiso con la calidad.", href: "https://vcdomizil.de/", role: "Área de Negocio Conectada" },
     ],
   },
   about: {

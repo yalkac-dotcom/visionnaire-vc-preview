@@ -279,7 +279,7 @@ export const translationsIt: Translations = {
       {
         name: "Visionnaire Domizil",
         desc: "Soluzioni premium per uffici e spazi commerciali in ambienti distinguiti. Visionnaire Domizil rappresenta uffici premium, spazi commerciali professionali, servizi di business centre e un ambiente di lavoro coltivato con un chiaro impegno verso la qualità.",
-        href: "https://visionnaire.de",
+        href: "https://vcdomizil.de/",
         role: "Area di Business Connessa",
       },
     ],
