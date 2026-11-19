@@ -18,7 +18,7 @@ export const industriesDe: IndustryItem[] = [
   {
     slug: "hospitality-business-centers",
     name: "Hospitality & Business Centers",
-    desc: "Konzepte für hochwertige Geschäftsräume, Business Center und Hospitality-Projekte.",
+    desc: "Strategische Beratung zu Nutzungskonzepten für Gewerbeimmobilien, Business Center und Hospitality-Projekte.",
     heroHeadline: "Hospitality & Business Centers",
     heroSubline: "Konzeption und Positionierung hochwertiger Geschäfts- und Hospitality-Formate.",
     intro: "Die Grenzen zwischen Arbeit, Gastfreundschaft und Markenerlebnis verschwimmen. Moderne Business Center und Hospitality-Konzepte brauchen eine klare Positionierung, eine starke Servicekultur und ein durchdachtes Raumkonzept. Wir verbinden strategisches Denken mit operativer Umsetzungskompetenz.",
@@ -93,7 +93,7 @@ export const industriesEn: IndustryItem[] = [
   {
     slug: "hospitality-business-centers",
     name: "Hospitality & Business Centers",
-    desc: "Concepts for premium business spaces, business centres and hospitality projects.",
+    desc: "Strategic advisory on usage concepts for commercial real estate, business centres and hospitality projects.",
     heroHeadline: "Hospitality & Business Centers",
     heroSubline: "Conception and positioning of premium business and hospitality formats.",
     intro: "The boundaries between work, hospitality and brand experience are blurring. Modern business centres and hospitality concepts require clear positioning, a strong service culture and a well-designed spatial concept. We combine strategic thinking with operational execution expertise.",

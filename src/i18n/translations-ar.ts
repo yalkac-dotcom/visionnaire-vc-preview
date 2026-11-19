@@ -31,7 +31,7 @@ const services: ServiceItem[] = [
   },
   {
     slug: "standort-konzeptentwicklung", number: "05", title: "تطوير المواقع والمفاهيم",
-    desc: "تطوير وتموضع مفاهيم مرتبطة بالموقع — من مراكز الأعمال وصيغ الضيافة إلى مساحات البيع بالتجزئة والمشاريع متعددة الاستخدامات.",
+    desc: "استشارات استراتيجية لتطوير وتموضع مفاهيم مرتبطة بالموقع — من مراكز الأعمال وصيغ الضيافة إلى مساحات البيع بالتجزئة والمشاريع متعددة الاستخدامات.",
     details: ["تقييم المواقع ومفاهيم الاستخدام", "مفاهيم التشغيل ونماذج الخدمة", "تخطيط المساحات وتحليل المستخدمين", "استراتيجية التأجير والتسويق التجاري", "مفاهيم العلامة التجارية للصيغ المرتبطة بالموقع"],
     situations: ["مساحات شاغرة أو غير مستغلة بشكل كافٍ ذات إمكانات عالية", "تطوير مفاهيم ضيافة أو مراكز أعمال جديدة", "تموضع مشروع متعدد الاستخدامات في بيئة تنافسية", "دمج التجزئة والمكاتب والضيافة في مفهوم واحد"],
     relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
@@ -61,7 +61,7 @@ const industries: IndustryItem[] = [
   },
   {
     slug: "hospitality-business-centers", name: "Hospitality & Business Centers",
-    desc: "مفاهيم لمساحات الأعمال المتميزة ومراكز الأعمال ومشاريع الضيافة.",
+    desc: "استشارات استراتيجية لمفاهيم مساحات الأعمال ومراكز الأعمال ومشاريع الضيافة.",
     heroHeadline: "Hospitality & Business Centers",
     heroSubline: "تصميم وتموضع صيغ الأعمال والضيافة المتميزة.",
     intro: "الحدود بين العمل والضيافة وتجربة العلامة التجارية تتلاشى. مراكز الأعمال ومفاهيم الضيافة الحديثة تتطلب تموضعاً واضحاً وثقافة خدمة قوية ومفهوماً مكانياً متقناً.",
@@ -118,7 +118,7 @@ export const translationsAr: Translations = {
   nav: {
     services: "الخدمات", servicesDropdown: services.map(s => ({ label: s.title, slug: s.slug })),
     industries: "القطاعات", industriesDropdown: industries.map(i => ({ label: i.name, slug: i.slug })),
-    businessUnits: "مجالات الأعمال", about: "من نحن", insights: "رؤى", contact: "اتصل بنا",
+ about: "من نحن", insights: "رؤى", contact: "اتصل بنا",
     projectCta: "طلب جلسة استراتيجية", contactCta: "طلب جلسة استراتيجية",
   },
   hero: {
@@ -153,24 +153,6 @@ export const translationsAr: Translations = {
       { title: "نتائج قابلة للقياس", desc: "لا نظرية بدون تنفيذ. نقيس نجاحنا بنجاح أعمالكم." },
     ],
   },
-  businessUnits: {
-    label: "مجالات الأعمال المترابطة", headline: "علامة تجارية واحدة، مجالات كفاءة مترابطة",
-    subline: "استشارات استراتيجية وبيئات أعمال متميزة — مرتبطة بنفس القناعة، مدعومة بالتزام مشترك بالجودة.",
-    architectureLabel: "هندسة العلامة التجارية", architectureHeadline: "تعبيران، عالم علامة تجارية واحد",
-    architectureText: "تتشارك Visionnaire Consulting وVisionnaire Domizil في الالتزام بالجودة والطابع الهادئ والاستراتيجي ذاته. ما يميزهما هو التركيز المختلف — استشارات استراتيجية من جهة، ومساحات أعمال متميزة وبيئات راقية من جهة أخرى.",
-    galleryLabel: "جودة المساحات",
-    galleryHeadline: "بيئات عمل تمثيلية على أعلى مستوى",
-    galleryItems: [
-      { label: "الاستقبال", alt: "منطقة استقبال أنيقة" },
-      { label: "المكاتب", alt: "مساحات مكتبية متميزة" },
-      { label: "المؤتمرات", alt: "غرفة اجتماعات أنيقة" },
-      { label: "مساحة العمل", alt: "منطقة عمل هادئة" },
-    ],
-    items: [
-      { name: "Visionnaire Consulting", desc: "استشارات استراتيجية للمشاريع والشركات والتطورات الطموحة. Visionnaire Consulting هي العلامة التجارية الأم وتربط العمق الاستراتيجي بكفاءة التنفيذ التشغيلي.", href: "/", role: "العلامة التجارية الأم" },
-      { name: "Visionnaire Domizil", desc: "حلول مكاتب ومساحات أعمال متميزة في بيئات راقية. تمثل Visionnaire Domizil المكاتب المتميزة وغرف الأعمال المهنية وخدمات مراكز الأعمال وبيئة عمل راقية.", href: "https://vcdomizil.de/", role: "مجال أعمال مترابط" },
-    ],
-  },
   about: {
     label: "عن Visionnaire", headline: "نطوّر الرؤى. ونصنع تموضعاً واضحاً.",
     subline: "نرافق الشركات في قراراتها الاستراتيجية الأكثر أهمية بنظرة واضحة للسوق والعلامة التجارية والتطوير الريادي. نجمع بين التفكير التحليلي ومعايير عالية للجودة والوضوح وقابلية التنفيذ.\n\nسواء كان الأمر يتعلق بإعادة التوجيه أو بناء هوية العلامة التجارية أو النمو الدولي: نعمل بشكل منظم وتشاركي وبهدف تطوير حلول متينة ذات جوهر وتأثير طويل الأمد.",
@@ -184,7 +166,6 @@ export const translationsAr: Translations = {
       { title: "منظور طويل الأمد", desc: "التطوير لا يحتاج أن يكون صاخباً، لكن يجب أن يكون متيناً." },
     ]},
     position: { label: "المنظور الدولي", headline: "منظور دولي، توجيه واضح", text: "تجمع Visionnaire بين الدقة الاستراتيجية ومنظور منفتح على أسواق وسياقات ومسارات تطوير مختلفة." },
-    connection: { label: "عالم العلامة التجارية", headline: "عالم علامة تجارية مترابط", text: "Visionnaire Consulting جزء من عالم علامة تجارية متماسك. وحدات الأعمال المختلفة قد تحدد أولويات مختلفة — لكنها تبقى مرتبطة بنفس القناعة: الوضوح والجودة والتأثير الراقي." },
     attitude: {
       headline: "ما يحرّكنا",
       text: "تنظر Visionnaire Consulting إلى الاستشارات باعتبارها مسؤولية ريادية. هدفنا هو مرافقة الشركات بوضوح وتحليل وفهم للسوق ودعم متين في الاتجاه الصحيح. ليس الضجيج هو ما يقودنا، بل الاتجاه والموثوقية والحلول ذات الجوهر.",
@@ -242,9 +223,9 @@ export const translationsAr: Translations = {
   },
   footer: {
     brand: "VISIONNAIRE", consulting: "Consulting", tagline: "استراتيجية. علامة تجارية. تأثير.", rights: "جميع الحقوق محفوظة.",
-    domizilLink: "Visionnaire Domizil", domizilNote: "مجال أعمال مترابط ضمن مجموعة Visionnaire",
+
     impressum: "إشعار قانوني", datenschutz: "الخصوصية",
-    navServices: "الخدمات", navIndustries: "القطاعات", navAbout: "من نحن", navInsights: "رؤى", navContact: "اتصل بنا", navBusinessUnits: "مجالات الأعمال",
+    navServices: "الخدمات", navIndustries: "القطاعات", navAbout: "من نحن", navInsights: "رؤى", navContact: "اتصل بنا",
   },
   industryPage: { backToOverview: "جميع القطاعات", consultingFields: "مجالات استشارية ذات صلة", challengesLabel: "التحديات الرئيسية", projectsLabel: "مشاريع مختارة", ctaPrimary: "طلب جلسة استراتيجية", ctaSecondary: "اكتشف أسلوب عملنا", matchingServices: "خدمات ذات صلة" },
   servicePage: { backToOverview: "جميع الخدمات", whatWeSupport: "فيما ندعم", typicalSituations: "مواقف نموذجية", relevantIndustries: "قطاعات ذات صلة", ctaPrimary: "طلب جلسة استراتيجية", ctaSecondary: "اكتشف أسلوب عملنا" },

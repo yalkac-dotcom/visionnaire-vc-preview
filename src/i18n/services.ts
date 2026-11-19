@@ -99,7 +99,7 @@ export const servicesDe: ServiceItem[] = [
     slug: "standort-konzeptentwicklung",
     number: "05",
     title: "Standort- & Konzeptentwicklung",
-    desc: "Entwicklung und Positionierung standortgebundener Konzepte — von Business Centern und Hospitality-Formaten bis zu Retail-Flächen und Mixed-Use-Projekten.",
+    desc: "Strategische Beratung zur Entwicklung und Positionierung standortgebundener Konzepte — von Business Centern und Hospitality-Formaten bis zu Retail-Flächen und Mixed-Use-Projekten.",
     details: [
       "Standortbewertung und Nutzungskonzepte",
       "Betriebskonzepte und Servicemodelle",
@@ -242,7 +242,7 @@ export const servicesEn: ServiceItem[] = [
     slug: "location-concept-development",
     number: "05",
     title: "Location & Concept Development",
-    desc: "Development and positioning of location-based concepts — from business centres and hospitality formats to retail spaces and mixed-use projects.",
+    desc: "Strategic advisory on the development and positioning of location-based concepts — from business centres and hospitality formats to retail spaces and mixed-use projects.",
     details: [
       "Site assessment and usage concepts",
       "Operating concepts and service models",

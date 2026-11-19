@@ -8,7 +8,7 @@ import { translationsZh } from "./translations-zh";
 import { translationsAr } from "./translations-ar";
 
 export type { Locale, Translations };
-export type { ServiceItem, IndustryItem, WhyUsItem, BusinessUnit, InsightItem } from "./types";
+export type { ServiceItem, IndustryItem, WhyUsItem, InsightItem } from "./types";
 
 export const translations: Record<Locale, Translations> = {
   de: {
@@ -17,7 +17,6 @@ export const translations: Record<Locale, Translations> = {
       servicesDropdown: servicesDe.map(s => ({ label: s.title, slug: s.slug })),
       industries: "Branchen",
       industriesDropdown: industriesDe.map(i => ({ label: i.name, slug: i.slug })),
-      businessUnits: "Unternehmensbereiche",
       about: "Über uns",
       insights: "Insights",
       contact: "Kontakt",
@@ -67,36 +66,6 @@ export const translations: Record<Locale, Translations> = {
         { title: "Messbare Ergebnisse", desc: "Keine Theorie ohne Umsetzung. Wir messen unseren Erfolg an Ihrem Geschäftserfolg." },
       ],
     },
-    businessUnits: {
-      label: "Verbundene Geschäftsbereiche",
-      headline: "Eine Marke, verbundene Kompetenzfelder",
-      subline: "Strategische Beratung und hochwertige Geschäftsumfelder — verbunden durch dieselbe Haltung, getragen von einem gemeinsamen Qualitätsanspruch.",
-      architectureLabel: "Markenarchitektur",
-      architectureHeadline: "Zwei Ausdrucksformen, eine Markenwelt",
-      architectureText: "Visionnaire Consulting und Visionnaire Domizil verbindet ein gemeinsamer Qualitätsanspruch und dieselbe ruhige, strategische Grundhaltung. Was sie unterscheidet, ist ihr jeweiliger Fokus — strategische Beratung auf der einen, hochwertige Geschäftsräume und repräsentative Umfelder auf der anderen Seite. Gemeinsam bilden sie eine kohärente Markenwelt, die in unterschiedlichen Feldern mit demselben Anspruch agiert.",
-      galleryLabel: "Raumqualität",
-      galleryHeadline: "Repräsentative Arbeitsumgebungen auf höchstem Niveau",
-      galleryItems: [
-        { label: "Empfang", alt: "Eleganter Empfangsbereich" },
-        { label: "Büroflächen", alt: "Hochwertige Büroflächen" },
-        { label: "Konferenz", alt: "Stilvoller Meetingraum" },
-        { label: "Arbeitsplatz", alt: "Ruhiger Arbeitsbereich" },
-      ],
-      items: [
-        {
-          name: "Visionnaire Consulting",
-          desc: "Strategische Beratung für anspruchsvolle Vorhaben, Unternehmen und Entwicklungen. Visionnaire Consulting ist die Muttermarke und verbindet strategische Tiefe mit operativer Umsetzungskompetenz — in den Bereichen Positionierung, Transformation, Marke und Wachstum.",
-          href: "/",
-          role: "Muttermarke",
-        },
-        {
-          name: "Visionnaire Domizil",
-          desc: "Hochwertige Büro- und Geschäftsraumlösungen in repräsentativem Umfeld. Visionnaire Domizil steht für Premiumbüros, professionelle Geschäftsräume, Business-Center-nahe Services und eine kultivierte Arbeitsumgebung mit klarem Qualitätsanspruch.",
-          href: "https://vcdomizil.de/",
-          role: "Verbundener Geschäftsbereich",
-        },
-      ],
-    },
     about: {
       label: "Über Visionnaire",
       headline: "Wir entwickeln Perspektiven. Wir schaffen klare Positionierung.",
@@ -127,11 +96,6 @@ export const translations: Record<Locale, Translations> = {
         label: "Internationale Perspektive",
         headline: "Internationale Perspektive, klare Einordnung",
         text: "Visionnaire verbindet strategische Präzision mit einem offenen Blick auf unterschiedliche Märkte, Kontexte und Entwicklungspfade. Internationale Erfahrung ist für uns kein Selbstzweck, sondern Teil eines differenzierten Verständnisses von Wachstum, Positionierung und Wirkung.",
-      },
-      connection: {
-        label: "Das Markenuniversum",
-        headline: "Ein verbundenes Markenuniversum",
-        text: "Visionnaire Consulting ist Teil einer zusammenhängenden Markenwelt. Unterschiedliche Geschäftsbereiche können dabei verschiedene Schwerpunkte setzen — verbunden bleiben sie durch dieselbe Haltung: Klarheit, Qualität, kultivierte Wirkung und ein präzises Verständnis für anspruchsvolle Kontexte.",
       },
       attitude: {
         headline: "Was uns treibt",
@@ -177,7 +141,7 @@ export const translations: Record<Locale, Translations> = {
       subjects: ["Strategiegespräch anfordern", "Beratung anfragen", "Allgemeine Anfrage"],
       subjectDescriptions: [
         "Für Vorhaben, die strategisch geschärft, strukturell weiterentwickelt oder hochwertig positioniert werden sollen.",
-        "Für konkrete Beratungsanliegen in den Bereichen Strategie, Transformation, Marke, Wachstum oder verbundenen Geschäftsfeldern.",
+        "Für konkrete Beratungsanliegen in den Bereichen Strategie, Transformation, Marke, Wachstum.",
         "Für erste Einordnungen, weiterführende Informationen oder übergreifende Themen.",
       ],
       noteHeadline: "Ausgewählte Themen und anspruchsvolle Kontexte",
@@ -247,8 +211,6 @@ export const translations: Record<Locale, Translations> = {
       consulting: "Consulting",
       tagline: "Strategie. Marke. Wirkung.",
       rights: "Alle Rechte vorbehalten.",
-      domizilLink: "Visionnaire Domizil",
-      domizilNote: "Ein verbundener Geschäftsbereich der Visionnaire-Gruppe",
       impressum: "Impressum",
       datenschutz: "Datenschutz",
       navServices: "Leistungen",
@@ -256,7 +218,6 @@ export const translations: Record<Locale, Translations> = {
       navAbout: "Über uns",
       navInsights: "Insights",
       navContact: "Kontakt",
-      navBusinessUnits: "Unternehmensbereiche",
     },
     industryPage: {
       backToOverview: "Alle Branchen",
@@ -366,7 +327,6 @@ export const translations: Record<Locale, Translations> = {
       servicesDropdown: servicesEn.map(s => ({ label: s.title, slug: s.slug })),
       industries: "Industries",
       industriesDropdown: industriesEn.map(i => ({ label: i.name, slug: i.slug })),
-      businessUnits: "Business Units",
       about: "About",
       insights: "Insights",
       contact: "Contact",
@@ -416,36 +376,6 @@ export const translations: Record<Locale, Translations> = {
         { title: "Measurable outcomes", desc: "No theory without implementation. We measure our success by your business success." },
       ],
     },
-    businessUnits: {
-      label: "Connected Business Areas",
-      headline: "One brand, connected fields of expertise",
-      subline: "Strategic advisory and premium business environments — connected by the same conviction, carried by a shared commitment to quality.",
-      architectureLabel: "Brand Architecture",
-      architectureHeadline: "Two expressions, one brand world",
-      architectureText: "Visionnaire Consulting and Visionnaire Domizil share a common commitment to quality and the same calm, strategic disposition. What distinguishes them is their respective focus — strategic advisory on one side, premium business spaces and distinguished environments on the other. Together, they form a coherent brand world that operates across different fields with the same exacting standards.",
-      galleryLabel: "Spatial Quality",
-      galleryHeadline: "Distinguished working environments at the highest level",
-      galleryItems: [
-        { label: "Reception", alt: "Elegant reception area" },
-        { label: "Offices", alt: "Premium office spaces" },
-        { label: "Conference", alt: "Stylish meeting room" },
-        { label: "Workspace", alt: "Quiet working area" },
-      ],
-      items: [
-        {
-          name: "Visionnaire Consulting",
-          desc: "Strategic advisory for discerning ventures, companies and developments. Visionnaire Consulting is the parent brand and connects strategic depth with operational execution — across positioning, transformation, brand and growth.",
-          href: "/",
-          role: "Parent Brand",
-        },
-        {
-          name: "Visionnaire Domizil",
-          desc: "Premium office and business space solutions in distinguished environments. Visionnaire Domizil stands for premium offices, professional business rooms, business-centre services and a cultivated working environment with a clear commitment to quality.",
-          href: "https://vcdomizil.de/",
-          role: "Connected Business Area",
-        },
-      ],
-    },
     about: {
       label: "About Visionnaire",
       headline: "We develop perspectives. We create clear positioning.",
@@ -476,11 +406,6 @@ export const translations: Record<Locale, Translations> = {
         label: "International perspective",
         headline: "International perspective, clear orientation",
         text: "Visionnaire combines strategic precision with an open perspective on different markets, contexts and development paths. International experience is not an end in itself for us, but part of a differentiated understanding of growth, positioning and impact.",
-      },
-      connection: {
-        label: "The Brand Universe",
-        headline: "A connected brand universe",
-        text: "Visionnaire Consulting is part of a cohesive brand world. Different business units may set different priorities — but they remain connected through the same conviction: clarity, quality, cultivated impact and a precise understanding of discerning contexts.",
       },
       attitude: {
         headline: "What drives us",
@@ -526,7 +451,7 @@ export const translations: Record<Locale, Translations> = {
       subjects: ["Request strategy session", "Request consultation", "General enquiry"],
       subjectDescriptions: [
         "For ventures that need strategic sharpening, structural development or premium positioning.",
-        "For specific advisory needs in strategy, transformation, brand, growth or connected business fields.",
+        "For specific advisory needs in strategy, transformation, brand, growth.",
         "For initial assessments, further information or overarching topics.",
       ],
       noteHeadline: "Selected topics and discerning contexts",
@@ -597,8 +522,6 @@ export const translations: Record<Locale, Translations> = {
       consulting: "Consulting",
       tagline: "Strategy. Brand. Impact.",
       rights: "All rights reserved.",
-      domizilLink: "Visionnaire Domizil",
-      domizilNote: "A connected business area of the Visionnaire Group",
       impressum: "Legal Notice",
       datenschutz: "Privacy Policy",
       navServices: "Services",
@@ -606,7 +529,6 @@ export const translations: Record<Locale, Translations> = {
       navAbout: "About",
       navInsights: "Insights",
       navContact: "Contact",
-      navBusinessUnits: "Business Units",
     },
     industryPage: {
       backToOverview: "All industries",

@@ -31,7 +31,7 @@ const services: ServiceItem[] = [
   },
   {
     slug: "standort-konzeptentwicklung", number: "05", title: "选址与概念开发",
-    desc: "从商务中心和酒店业态到零售空间和综合体项目，开发和定位基于选址的概念。",
+    desc: "为商务中心、酒店业态、零售空间和综合体项目的选址概念开发与定位提供战略咨询。",
     details: ["选址评估与使用概念", "运营概念与服务模式", "空间规划与用户分析", "租户策略与商业化", "基于选址形态的品牌概念"],
     situations: ["具有高潜力的空置或低利用率空间", "开发新的酒店或商务中心概念", "在竞争环境中定位综合体项目", "将零售、办公和酒店整合在一个概念中"],
     relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
@@ -61,7 +61,7 @@ const industries: IndustryItem[] = [
   },
   {
     slug: "hospitality-business-centers", name: "Hospitality & Business Centers",
-    desc: "高端商业空间、商务中心和酒店项目的概念。",
+    desc: "为商业空间、商务中心和酒店项目的概念提供战略咨询。",
     heroHeadline: "Hospitality & Business Centers",
     heroSubline: "高端商务与酒店业态的构思与定位。",
     intro: "工作、酒店服务与品牌体验之间的界限正在模糊。现代商务中心和酒店概念需要清晰的定位、强大的服务文化和精心设计的空间概念。",
@@ -118,7 +118,7 @@ export const translationsZh: Translations = {
   nav: {
     services: "服务", servicesDropdown: services.map(s => ({ label: s.title, slug: s.slug })),
     industries: "行业", industriesDropdown: industries.map(i => ({ label: i.name, slug: i.slug })),
-    businessUnits: "业务领域", about: "关于我们", insights: "洞察", contact: "联系我们",
+ about: "关于我们", insights: "洞察", contact: "联系我们",
     projectCta: "申请战略会议", contactCta: "申请战略会议",
   },
   hero: {
@@ -153,24 +153,6 @@ export const translationsZh: Translations = {
       { title: "可衡量的成果", desc: "没有不执行的理论。我们以您的商业成功衡量自身的成功。" },
     ],
   },
-  businessUnits: {
-    label: "关联业务领域", headline: "一个品牌，互联的专业领域",
-    subline: "战略咨询与高端商务环境——以相同的信念连接，以共同的质量承诺支撑。",
-    architectureLabel: "品牌架构", architectureHeadline: "两种表达，一个品牌世界",
-    architectureText: "Visionnaire Consulting和Visionnaire Domizil共享对质量的共同承诺和同样沉稳、战略性的气质。它们的区别在于各自的焦点——一方是战略咨询，另一方是高端商务空间和高品位环境。二者共同构成了一个在不同领域以同样严格标准运营的统一品牌世界。",
-    galleryLabel: "空间品质",
-    galleryHeadline: "最高水准的代表性工作环境",
-    galleryItems: [
-      { label: "前台", alt: "优雅的接待区" },
-      { label: "办公室", alt: "高端办公空间" },
-      { label: "会议室", alt: "精致的会议室" },
-      { label: "工位", alt: "静谧的工作区域" },
-    ],
-    items: [
-      { name: "Visionnaire Consulting", desc: "为高要求的项目、企业和发展提供战略咨询。Visionnaire Consulting是母品牌，在定位、转型、品牌和增长领域将战略深度与运营执行力相结合。", href: "/", role: "母品牌" },
-      { name: "Visionnaire Domizil", desc: "在高品位环境中提供高端办公和商务空间解决方案。Visionnaire Domizil代表高端办公室、专业商务空间、商务中心服务和具有明确质量承诺的精致工作环境。", href: "https://vcdomizil.de/", role: "关联业务领域" },
-    ],
-  },
   about: {
     label: "关于Visionnaire", headline: "我们拓展视野。我们打造清晰的定位。",
     subline: "我们以对市场、品牌和企业发展的清晰洞察，陪伴企业做出重要的战略决策。在此过程中，我们将分析思维与对质量、清晰度和可执行性的高标准相结合。\n\n无论是重新调整、品牌形象塑造还是国际化增长：我们以结构化、合作伙伴式的方式工作，致力于开发具有实质内容、能够产生持久效果的稳健解决方案。",
@@ -184,7 +166,6 @@ export const translationsZh: Translations = {
       { title: "长期视角", desc: "发展不必张扬，但必须经久。" },
     ]},
     position: { label: "国际视野", headline: "国际视野，清晰导向", text: "Visionnaire将战略精准与对不同市场、情境和发展路径的开放视野相结合。" },
-    connection: { label: "品牌宇宙", headline: "互联的品牌宇宙", text: "Visionnaire Consulting是统一品牌世界的一部分。不同的业务部门可以设定不同的优先级——但它们通过相同的信念保持连接：清晰、质量、精致的影响和对高要求情境的精准理解。" },
     attitude: {
       headline: "驱动我们的力量",
       text: "Visionnaire Consulting将咨询视为企业家的责任。我们致力于以清晰的方向、分析能力、市场理解和扎实的支持引导企业走向正确的方向。我们注重的不是声量，而是方向、可靠性和有实质的解决方案。",
@@ -214,7 +195,7 @@ export const translationsZh: Translations = {
     formName: "您的姓名", formCompany: "企业（选填）", formEmail: "您的电子邮件", formPhone: "电话（选填）",
     formSubject: "主题", formMessage: "简短留言（最多500字）", formSend: "申请战略会议",
     subjects: ["申请战略会议", "申请咨询", "一般咨询"],
-    subjectDescriptions: ["针对需要战略精炼、结构发展或高端定位的项目。", "针对战略、转型、品牌、增长或关联业务领域的具体咨询需求。", "针对初步评估、进一步信息或综合主题。"],
+    subjectDescriptions: ["针对需要战略精炼、结构发展或高端定位的项目。", "针对战略、转型、品牌、增长的具体咨询需求。", "针对初步评估、进一步信息或综合主题。"],
     noteHeadline: "精选主题与高要求情境", note: "我们特别欢迎有关战略项目、品牌与定位主题、转型问题和高端企业发展的咨询。",
     closingHeadline: "我们以审慎和保密态度处理每一项咨询", closingText: "每项咨询都将得到应有的关注。期待与您交流。",
     formConsent: "我同意为处理我的咨询而使用我的数据。更多信息请参阅", formConsentLink: "隐私政策",
@@ -241,9 +222,9 @@ export const translationsZh: Translations = {
   },
   footer: {
     brand: "VISIONNAIRE", consulting: "Consulting", tagline: "战略。品牌。影响力。", rights: "版权所有。",
-    domizilLink: "Visionnaire Domizil", domizilNote: "Visionnaire集团的关联业务领域",
+
     impressum: "法律声明", datenschutz: "隐私政策",
-    navServices: "服务", navIndustries: "行业", navAbout: "关于我们", navInsights: "洞察", navContact: "联系我们", navBusinessUnits: "业务领域",
+    navServices: "服务", navIndustries: "行业", navAbout: "关于我们", navInsights: "洞察", navContact: "联系我们",
   },
   industryPage: { backToOverview: "所有行业", consultingFields: "相关咨询领域", challengesLabel: "核心挑战", projectsLabel: "精选项目", ctaPrimary: "申请战略会议", ctaSecondary: "了解我们的方法", matchingServices: "相关服务" },
   servicePage: { backToOverview: "所有服务", whatWeSupport: "支持内容", typicalSituations: "典型情境", relevantIndustries: "相关行业", ctaPrimary: "申请战略会议", ctaSecondary: "了解我们的方法" },

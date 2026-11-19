@@ -27,12 +27,6 @@ export interface IndustryItem {
   caseStudies: { title: string; desc: string }[];
 }
 
-export interface BusinessUnit {
-  name: string;
-  desc: string;
-  href: string;
-  role?: string;
-}
 
 export interface InsightItem {
   slug: string;
@@ -48,7 +42,6 @@ export interface Translations {
     servicesDropdown: { label: string; slug: string }[];
     industries: string;
     industriesDropdown: { label: string; slug: string }[];
-    businessUnits: string;
     about: string;
     insights: string;
     contact: string;
@@ -93,18 +86,6 @@ export interface Translations {
     headline: string;
     items: WhyUsItem[];
   };
-  businessUnits: {
-    label: string;
-    headline: string;
-    subline: string;
-    architectureLabel?: string;
-    architectureHeadline?: string;
-    architectureText?: string;
-    galleryLabel?: string;
-    galleryHeadline?: string;
-    galleryItems?: { label: string; alt: string }[];
-    items: BusinessUnit[];
-  };
   about: {
     label: string;
     headline: string;
@@ -126,11 +107,6 @@ export interface Translations {
       principles: { title: string; desc: string }[];
     };
     position: {
-      label: string;
-      headline: string;
-      text: string;
-    };
-    connection?: {
       label: string;
       headline: string;
       text: string;
@@ -201,8 +177,6 @@ export interface Translations {
     consulting: string;
     tagline?: string;
     rights: string;
-    domizilLink: string;
-    domizilNote: string;
     impressum: string;
     datenschutz: string;
     navServices: string;
@@ -210,7 +184,6 @@ export interface Translations {
     navAbout: string;
     navInsights: string;
     navContact: string;
-    navBusinessUnits: string;
   };
   industryPage: {
     backToOverview: string;

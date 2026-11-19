@@ -3,7 +3,6 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { HeroScrollIndicator } from "@/components/HeroScrollIndicator";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
 import heroAbout from "@/assets/hero-about.jpg";
 import ctaAmbient from "@/assets/cta-ambient.jpg";
 
@@ -143,30 +142,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      {/* Brand universe */}
-      {t.about.connection && (
-        <section className="py-10 md:py-12 bg-background">
-          <div className="container">
-            <div className="max-w-3xl">
-              <ScrollReveal>
-                <p className="text-brand-blue text-[11px] uppercase tracking-[0.2em] font-medium mb-5">{t.about.connection.label}</p>
-              </ScrollReveal>
-              <ScrollReveal delay={80}>
-                <h2 className="text-foreground text-[1.5rem] md:text-[2rem] font-normal leading-[1.2] tracking-[-0.01em] mb-8">{t.about.connection.headline}</h2>
-              </ScrollReveal>
-              <ScrollReveal delay={160}>
-                <p className="text-foreground/65 text-[15px] md:text-base leading-[1.8] mb-6">{t.about.connection.text}</p>
-              </ScrollReveal>
-              <ScrollReveal delay={220}>
-                <Link to="/unternehmensbereiche" className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-[hsl(var(--brand-blue))] hover:text-foreground transition-colors duration-200">
-                  {t.nav.businessUnits} <ArrowUpRight size={12} />
-                </Link>
-              </ScrollReveal>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* CTA */}
       <section className="relative py-14 md:py-18 bg-cloud-neutral overflow-hidden">

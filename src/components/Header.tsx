@@ -85,7 +85,6 @@ export function Header() {
             </button>
           </div>
 
-          <Link to="/unternehmensbereiche" className={linkClass}>{t.nav.businessUnits}</Link>
           <Link to="/ueber-uns" className={linkClass}>{t.nav.about}</Link>
           <Link to="/insights" className={linkClass}>{t.nav.insights}</Link>
           <Link to="/kontakt" className={linkClass}>{t.nav.contact}</Link>
@@ -187,7 +186,6 @@ export function Header() {
           )}
 
           {[
-            { to: "/unternehmensbereiche", label: t.nav.businessUnits },
             { to: "/ueber-uns", label: t.nav.about },
             { to: "/insights", label: t.nav.insights },
             { to: "/kontakt", label: t.nav.contact },

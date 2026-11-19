@@ -85,7 +85,7 @@ const services: ServiceItem[] = [
     slug: "standort-konzeptentwicklung",
     number: "05",
     title: "Sviluppo di Location e Concept",
-    desc: "Sviluppo e posizionamento di concept legati a una sede — dai business centre ai format di ospitalità, dagli spazi retail ai progetti mixed-use.",
+    desc: "Consulenza strategica per lo sviluppo e il posizionamento di concept legati a una sede — dai business centre ai format di ospitalità, dagli spazi retail ai progetti mixed-use.",
     details: [
       "Valutazione dei siti e concept di utilizzo",
       "Concept operativi e modelli di servizio",
@@ -141,7 +141,7 @@ const industries: IndustryItem[] = [
   {
     slug: "hospitality-business-centers",
     name: "Hospitality & Business Centers",
-    desc: "Concept per spazi commerciali premium, business centre e progetti di ospitalità.",
+    desc: "Consulenza strategica per concept di spazi commerciali, business centre e progetti di ospitalità.",
     heroHeadline: "Hospitality & Business Centers",
     heroSubline: "Concezione e posizionamento di format premium di business e ospitalità.",
     intro: "I confini tra lavoro, ospitalità ed esperienza di marca si stanno dissolvendo. I moderni business centre e i concept di ospitalità richiedono un posizionamento chiaro, una forte cultura del servizio e un concept spaziale ben progettato. Combiniamo pensiero strategico con competenza operativa.",
@@ -204,7 +204,6 @@ export const translationsIt: Translations = {
     servicesDropdown: services.map(s => ({ label: s.title, slug: s.slug })),
     industries: "Settori",
     industriesDropdown: industries.map(i => ({ label: i.name, slug: i.slug })),
-    businessUnits: "Aree di Business",
     about: "Chi Siamo",
     insights: "Insights",
     contact: "Contatto",
@@ -254,36 +253,6 @@ export const translationsIt: Translations = {
       { title: "Risultati misurabili", desc: "Nessuna teoria senza implementazione. Misuriamo il nostro successo dal vostro successo aziendale." },
     ],
   },
-  businessUnits: {
-    label: "Aree di Business Connesse",
-    headline: "Un marchio, competenze connesse",
-    subline: "Consulenza strategica e ambienti di business premium — connessi dalla stessa convinzione, sostenuti da un impegno condiviso verso la qualità.",
-    architectureLabel: "Architettura del Marchio",
-    architectureHeadline: "Due espressioni, un mondo di marca",
-    architectureText: "Visionnaire Consulting e Visionnaire Domizil condividono un impegno comune verso la qualità e la stessa disposizione calma e strategica. Ciò che li distingue è il rispettivo focus — consulenza strategica da un lato, spazi commerciali premium e ambienti distinguiti dall'altro. Insieme formano un mondo di marca coerente che opera in campi diversi con gli stessi standard elevati.",
-    galleryLabel: "Qualità degli Spazi",
-    galleryHeadline: "Ambienti di lavoro rappresentativi al più alto livello",
-    galleryItems: [
-      { label: "Reception", alt: "Area reception elegante" },
-      { label: "Uffici", alt: "Spazi ufficio premium" },
-      { label: "Conferenze", alt: "Sala riunioni di stile" },
-      { label: "Postazioni", alt: "Area di lavoro tranquilla" },
-    ],
-    items: [
-      {
-        name: "Visionnaire Consulting",
-        desc: "Consulenza strategica per progetti, imprese e sviluppi esigenti. Visionnaire Consulting è il marchio madre e collega profondità strategica con competenza operativa — in posizionamento, trasformazione, marca e crescita.",
-        href: "/",
-        role: "Marchio Madre",
-      },
-      {
-        name: "Visionnaire Domizil",
-        desc: "Soluzioni premium per uffici e spazi commerciali in ambienti distinguiti. Visionnaire Domizil rappresenta uffici premium, spazi commerciali professionali, servizi di business centre e un ambiente di lavoro coltivato con un chiaro impegno verso la qualità.",
-        href: "https://vcdomizil.de/",
-        role: "Area di Business Connessa",
-      },
-    ],
-  },
   about: {
     label: "Chi è Visionnaire",
     headline: "Sviluppiamo prospettive. Creiamo un posizionamento chiaro.",
@@ -314,11 +283,6 @@ export const translationsIt: Translations = {
       label: "Prospettiva Internazionale",
       headline: "Prospettiva internazionale, orientamento chiaro",
       text: "Visionnaire combina precisione strategica con una prospettiva aperta su diversi mercati, contesti e percorsi di sviluppo. L'esperienza internazionale non è fine a se stessa, ma parte di una comprensione differenziata di crescita, posizionamento e impatto.",
-    },
-    connection: {
-      label: "L'Universo del Marchio",
-      headline: "Un universo di marca connesso",
-      text: "Visionnaire Consulting fa parte di un mondo di marca coeso. Diverse unità di business possono stabilire priorità diverse — ma restano connesse dalla stessa convinzione: chiarezza, qualità, impatto coltivato e una comprensione precisa di contesti esigenti.",
     },
     attitude: {
       headline: "Cosa ci guida",
@@ -364,7 +328,7 @@ export const translationsIt: Translations = {
     subjects: ["Richiedere un colloquio strategico", "Richiedere consulenza", "Richiesta generale"],
     subjectDescriptions: [
       "Per progetti che necessitano di affinamento strategico, sviluppo strutturale o posizionamento premium.",
-      "Per esigenze di consulenza specifiche in strategia, trasformazione, marca, crescita o aree di business connesse.",
+      "Per esigenze di consulenza specifiche in strategia, trasformazione, marca, crescita.",
       "Per prime valutazioni, ulteriori informazioni o temi trasversali.",
     ],
     noteHeadline: "Temi selezionati e contesti esigenti",
@@ -433,8 +397,6 @@ export const translationsIt: Translations = {
     consulting: "Consulting",
     tagline: "Strategia. Marca. Impatto.",
     rights: "Tutti i diritti riservati.",
-    domizilLink: "Visionnaire Domizil",
-    domizilNote: "Un'area di business connessa del Gruppo Visionnaire",
     impressum: "Note Legali",
     datenschutz: "Privacy",
     navServices: "Servizi",
@@ -442,7 +404,6 @@ export const translationsIt: Translations = {
     navAbout: "Chi Siamo",
     navInsights: "Insights",
     navContact: "Contatto",
-    navBusinessUnits: "Aree di Business",
   },
   industryPage: {
     backToOverview: "Tutti i settori",

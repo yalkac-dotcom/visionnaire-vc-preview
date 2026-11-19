@@ -12,18 +12,9 @@ export function Footer() {
         {/* Nav links */}
         <div className="mb-4 pb-6 border-b border-white/12 flex flex-wrap gap-x-8 gap-y-3 text-[12px] uppercase tracking-[0.17em] font-[440]">
           <Link to="/leistungen" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navServices}</Link>
-          <Link to="/unternehmensbereiche" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navBusinessUnits}</Link>
           <Link to="/ueber-uns" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navAbout}</Link>
           <Link to="/insights" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navInsights}</Link>
           <Link to="/kontakt" className="text-white/80 hover:text-white transition-colors duration-200">{t.footer.navContact}</Link>
-        </div>
-
-        {/* Domizil note */}
-        <div className="mb-4 pb-6 border-b border-white/10">
-          <p className="text-white/55 text-[12px] tracking-[0.12em] uppercase font-[430]">
-            {t.footer.domizilNote}:{" "}
-            <a href="https://vcdomizil.de/" target="_blank" rel="noopener noreferrer" className="text-[hsl(var(--gold-soft))] hover:text-[hsl(var(--gold))] transition-colors duration-200">{t.footer.domizilLink}</a>
-          </p>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">

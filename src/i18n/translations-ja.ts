@@ -31,7 +31,7 @@ const services: ServiceItem[] = [
   },
   {
     slug: "standort-konzeptentwicklung", number: "05", title: "ロケーション＆コンセプト開発",
-    desc: "ビジネスセンターやホスピタリティ形態から商業スペース、複合施設まで、立地型コンセプトの開発とポジショニング。",
+    desc: "ビジネスセンターやホスピタリティ形態から商業スペース、複合施設まで、立地型コンセプトの開発とポジショニングに関する戦略コンサルティング。",
     details: ["立地評価と利用コンセプト", "運営コンセプトとサービスモデル", "空間計画とユーザー分析", "テナント戦略と収益化", "立地型フォーマットのブランドコンセプト"],
     situations: ["高い潜在力を持つ空室・未活用スペース", "新しいホスピタリティ・ビジネスセンターコンセプトの開発", "競争環境における複合施設のポジショニング", "リテール・オフィス・ホスピタリティの統合コンセプト"],
     relevantIndustries: ["hospitality-business-centers", "retail-consumer-concepts"],
@@ -61,7 +61,7 @@ const industries: IndustryItem[] = [
   },
   {
     slug: "hospitality-business-centers", name: "Hospitality & Business Centers",
-    desc: "プレミアムビジネススペース、ビジネスセンター、ホスピタリティプロジェクトのコンセプト。",
+    desc: "商業スペース、ビジネスセンター、ホスピタリティプロジェクトのコンセプトに関する戦略コンサルティング。",
     heroHeadline: "Hospitality & Business Centers",
     heroSubline: "プレミアムビジネス・ホスピタリティフォーマットの構想とポジショニング。",
     intro: "仕事とホスピタリティとブランド体験の境界が曖昧になっています。現代のビジネスセンターとホスピタリティコンセプトには、明確なポジショニング、強力なサービスカルチャー、綿密な空間コンセプトが必要です。",
@@ -118,7 +118,7 @@ export const translationsJa: Translations = {
   nav: {
     services: "サービス", servicesDropdown: services.map(s => ({ label: s.title, slug: s.slug })),
     industries: "業界", industriesDropdown: industries.map(i => ({ label: i.name, slug: i.slug })),
-    businessUnits: "事業領域", about: "私たちについて", insights: "インサイト", contact: "お問い合わせ",
+ about: "私たちについて", insights: "インサイト", contact: "お問い合わせ",
     projectCta: "戦略セッションを申し込む", contactCta: "戦略セッションを申し込む",
   },
   hero: {
@@ -153,24 +153,6 @@ export const translationsJa: Translations = {
       { title: "測定可能な成果", desc: "理論だけでは終わりません。お客様のビジネス成果で私たちの成功を測ります。" },
     ],
   },
-  businessUnits: {
-    label: "連携事業領域", headline: "一つのブランド、つながる専門領域",
-    subline: "戦略アドバイザリーとプレミアムビジネス環境 — 同じ信念で結ばれ、品質への共通のコミットメントで支えられています。",
-    architectureLabel: "ブランドアーキテクチャ", architectureHeadline: "二つの表現、一つのブランドワールド",
-    architectureText: "Visionnaire ConsultingとVisionnaire Domizilは品質への共通のコミットメントと同じ穏やかで戦略的な姿勢を共有しています。それぞれの焦点が異なります — 一方は戦略アドバイザリー、他方はプレミアムビジネススペースと格式ある環境。ともに、異なるフィールドで同じ厳格な基準をもって活動する一貫したブランドワールドを形成しています。",
-    galleryLabel: "空間品質",
-    galleryHeadline: "最高水準のレプレゼンタティブな職場環境",
-    galleryItems: [
-      { label: "レセプション", alt: "エレガントな受付エリア" },
-      { label: "オフィス", alt: "プレミアムオフィススペース" },
-      { label: "会議室", alt: "スタイリッシュなミーティングルーム" },
-      { label: "ワークスペース", alt: "静かな作業エリア" },
-    ],
-    items: [
-      { name: "Visionnaire Consulting", desc: "要求の高い事業、企業、開発のための戦略アドバイザリー。Visionnaire Consultingは母体ブランドであり、ポジショニング、トランスフォーメーション、ブランド、成長において戦略的深度とオペレーション実行力を結合します。", href: "/", role: "母体ブランド" },
-      { name: "Visionnaire Domizil", desc: "格式ある環境におけるプレミアムオフィス・ビジネススペースソリューション。Visionnaire Domizilはプレミアムオフィス、プロフェッショナルなビジネスルーム、ビジネスセンターサービス、そして品質への明確なコミットメントを持つ洗練された職場環境を提供します。", href: "https://vcdomizil.de/", role: "連携事業領域" },
-    ],
-  },
   about: {
     label: "Visionnaireについて", headline: "私たちは視座を開く。明確なポジショニングを創る。",
     subline: "市場、ブランド、事業開発を見据えた確かな視点で、企業の重要な戦略的意思決定を伴走します。分析的思考と、品質・明確さ・実行可能性への高い基準を結びつけます。\n\n再構築、ブランドプロファイル、国際的成長のいずれにおいても、私たちは構造的かつパートナーシップに基づき、実質があり長期的に効果を発揮する持続的なソリューションの開発を目指します。",
@@ -184,7 +166,6 @@ export const translationsJa: Translations = {
       { title: "長期的視野", desc: "開発は目立つ必要はありませんが、耐久性がなければなりません。" },
     ]},
     position: { label: "国際的視野", headline: "国際的視野、明確なオリエンテーション", text: "Visionnaireは戦略的精度と、異なる市場・コンテキスト・発展経路に対する開かれた視野を結合します。" },
-    connection: { label: "ブランドユニバース", headline: "つながるブランドユニバース", text: "Visionnaire Consultingは統一されたブランドワールドの一部です。異なる事業部門は異なる優先順位を設定できますが、同じ信念で結ばれています：明確さ、品質、洗練されたインパクト。" },
     attitude: {
       headline: "私たちの原動力",
       text: "Visionnaire Consultingはコンサルティングを起業家的責任と捉えています。明確さ、分析力、市場理解、そして確かなサポートをもって企業を正しい方向へ導くことが私たちの目標です。量ではなく方向性、信頼性、そして実質のあるソリューションを重視しています。",
@@ -217,7 +198,7 @@ export const translationsJa: Translations = {
     formSubject: "お問い合わせ件名", formMessage: "簡単なメッセージ（最大500文字）",
     formSend: "戦略セッションを申し込む",
     subjects: ["戦略セッションを申し込む", "コンサルティングの依頼", "一般的なお問い合わせ"],
-    subjectDescriptions: ["戦略的精鍛、構造的発展、プレミアムポジショニングを必要とするプロジェクトのために。", "戦略、トランスフォーメーション、ブランド、成長、連携事業領域における具体的なアドバイザリーニーズのために。", "初期評価、詳細情報、包括的なテーマのために。"],
+    subjectDescriptions: ["戦略的精鍛、構造的発展、プレミアムポジショニングを必要とするプロジェクトのために。", "戦略、トランスフォーメーション、ブランド、成長における具体的なアドバイザリーニーズのために。", "初期評価、詳細情報、包括的なテーマのために。"],
     noteHeadline: "厳選されたテーマと要求の高いコンテキスト",
     note: "戦略的事業、ブランド・ポジショニングテーマ、トランスフォーメーション課題、プレミアムな起業家的発展に関するお問い合わせを特に歓迎します。",
     closingHeadline: "お問い合わせは慎重かつディスクリートに対応します",
@@ -247,10 +228,10 @@ export const translationsJa: Translations = {
   },
   footer: {
     brand: "VISIONNAIRE", consulting: "Consulting", tagline: "戦略。ブランド。インパクト。", rights: "All rights reserved.",
-    domizilLink: "Visionnaire Domizil", domizilNote: "Visionnaireグループの連携事業領域",
+
     impressum: "法的情報", datenschutz: "プライバシー",
     navServices: "サービス", navIndustries: "業界", navAbout: "私たちについて",
-    navInsights: "インサイト", navContact: "お問い合わせ", navBusinessUnits: "事業領域",
+    navInsights: "インサイト", navContact: "お問い合わせ",
   },
   industryPage: { backToOverview: "すべての業界", consultingFields: "関連コンサルティング分野", challengesLabel: "主要な課題", projectsLabel: "厳選されたプロジェクト", ctaPrimary: "戦略セッションを申し込む", ctaSecondary: "私たちのアプローチを知る", matchingServices: "関連サービス" },
   servicePage: { backToOverview: "すべてのサービス", whatWeSupport: "支援内容", typicalSituations: "典型的な状況", relevantIndustries: "関連業界", ctaPrimary: "戦略セッションを申し込む", ctaSecondary: "私たちのアプローチを知る" },
