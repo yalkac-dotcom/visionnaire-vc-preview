@@ -31,7 +31,6 @@ export default function Insights() {
                 <article className="bg-background p-8 md:p-10 lg:p-14 h-full flex flex-col">
                   <div className="flex items-center gap-4 mb-6">
                     <span className="text-brand-blue text-[10px] uppercase tracking-[0.2em] font-medium">{item.category}</span>
-                    <span className="text-foreground/35 text-[10px] tracking-[0.15em]">{item.date}</span>
                   </div>
                   <h2 className="text-foreground text-lg md:text-xl font-normal mb-4 tracking-[-0.01em] leading-[1.3]">{item.title}</h2>
                   <p className="text-foreground/60 text-sm leading-[1.7] flex-1">{item.excerpt}</p>
