@@ -142,7 +142,7 @@ export default function Contact() {
                   )}
                   <div>
                     <label className="block text-foreground/65 text-[12px] uppercase tracking-[0.18em] mb-3">{t.contact.formEmail}</label>
-                    <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className={inputClass} />
+                    <input type="email" required maxLength={254} value={email} onChange={(e) => setEmail(e.target.value)} className={inputClass} />
                   </div>
                   {t.contact.formPhone && (
                     <div>
@@ -162,7 +162,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <label className="block text-foreground/65 text-[12px] uppercase tracking-[0.18em] mb-3">{t.contact.formMessage}</label>
-                    <textarea rows={5} required value={message} onChange={(e) => setMessage(e.target.value)} className={`${inputClass} resize-none`} />
+                    <textarea rows={5} required maxLength={500} value={message} onChange={(e) => setMessage(e.target.value)} className={`${inputClass} resize-none`} />
                   </div>
 
                   {/* DSGVO consent checkbox */}
