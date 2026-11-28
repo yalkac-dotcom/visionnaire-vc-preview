@@ -174,7 +174,7 @@ export const translations: Record<Locale, Translations> = {
       vatLine: "Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE297627424",
       contentResponsibilityTitle: "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
       contentResponsibilityBlock: [
-        "Ann-Catherin Büschkens-Götz",
+        "Lara Maria Zampese",
         "Krefelder Str. 562",
         "41066 Mönchengladbach",
       ],
