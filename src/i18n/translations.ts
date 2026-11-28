@@ -157,7 +157,7 @@ export const translations: Record<Locale, Translations> = {
       angabenTitle: "Angaben gemäß § 5 DDG",
       companyBlock: [
         "Visionnaire Consulting GmbH",
-        "vertreten durch die Geschäftsführerin Ann-Catherin Büschkens-Götz",
+        "vertreten durch die Geschäftsführerin Lara Maria Zampese",
         "Krefelder Str. 562",
         "41066 Mönchengladbach",
         "Deutschland",
